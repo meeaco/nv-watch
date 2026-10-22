@@ -2,23 +2,19 @@ name: NV watch digest
 
 on:
   schedule:
-    # 03:40 UTC daily: after arXiv's 00:00 UTC announcement, before the 05:50 UTC Claude routine
     - cron: "40 3 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
-defaults:
-  run:
-     working-directory: nv-watch
-concurrency:
-  group: nv-watch
-  cancel-in-progress: false
 
 jobs:
   digest:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: nv-watch
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,8 +22,8 @@ jobs:
           python-version: "3.12"
       - name: Build digest
         env:
-          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}        # optional
-          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}  # optional
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: python scripts/nv_watch.py
       - name: Commit digest
         run: |
