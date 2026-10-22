@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-10-22T09:21:27+00:00",
+ "generated_utc": "2026-10-22T09:41:40+00:00",
  "date": "2026-10-22",
  "search_window_utc": [
-  "2026-10-17T09:21+00:00",
-  "2026-10-22T09:21+00:00"
+  "2026-10-17T09:41+00:00",
+  "2026-10-22T09:41+00:00"
  ],
  "sources": {
   "arXiv": {
@@ -12,11 +12,11 @@
   },
   "Crossref": {
    "ok": true,
-   "hits": 6
+   "hits": 7
   },
   "OpenAlex": {
    "ok": false,
-   "error": "GET failed after 4 tries: https://api.openalex.org/works?search=nitrogen-vacancy&filter=from_created_date%3A2026-10-17&per-page=100&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ccreated_date%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index%2Cids%2Ctype :: HTTP Error 429: Too Many Requests"
+   "error": "GET failed after 4 tries: https://api.openalex.org/works?search=nitrogen-vacancy&filter=from_created_date%3A2026-10-17&per-page=100&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ccreated_date%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index%2Cids%2Ctype&api_key=ZJhZfNyB2R53RoQJc1lSpt :: HTTP"
   }
  },
  "arxiv_new": [
@@ -154,6 +154,32 @@
    "published": "2026-10-20",
    "doi": "10.3390/app162010389",
    "_key": "10.3390/app162010389",
+   "score": 4
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1038/s41467-026-78386-z",
+   "url": "https://doi.org/10.1038/s41467-026-78386-z",
+   "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
+   "authors": [
+    "Florian Schall",
+    "Lukas Lindner",
+    "Yves Rottstaedt",
+    "Marcel Rattunde",
+    "Florentin Reiter",
+    "Rüdiger Quay",
+    "Roman Bek",
+    "Alexander M. Zaitsev",
+    "Takeshi Ohshima",
+    "Andrew D. Greentree",
+    "Jan Jeske"
+   ],
+   "abstract": "Abstract While magnetometers based on nitrogen-vacancy (NV) centers in diamond have emerged as the most important solid-state quantum sensors, ensembles are typically limited to a few percent optical contrast. Here, we demonstrate a laser threshold magnetometry-based NV system that achieves 100% optical contrast in combination with strong output signals up to 50 mW. By integrating the NV centers into a laser cavity, we show magnetic-field-dependent shifts of the laser threshold, allowing the laser system to be entirely switched off with the NV centers’ magnetic resonance. We determine the photon-shot-noise fundamental sensitivity limit to be &lt; 400 fT/ $$\\sqrt{{{\\rm{Hz}}}}$$ Hz for all vector components and demonstrate that it improves super-linearly with contrast. This sensitivity is not achieved at the usual cost of smaller linewidth, i.e., maintains good intrinsic dynamic range. This provides a perspective for highly sensitive magnetometry operated outside magnetically-shielded rooms for applications including magnetoencephalography, magnetic navigation, and magnetic anomaly detection.",
+   "venue": "Nature Communications",
+   "created": "2026-10-22T09:01:45Z",
+   "published": "2026-10-22",
+   "doi": "10.1038/s41467-026-78386-z",
+   "_key": "10.1038/s41467-026-78386-z",
    "score": 4
   },
   {
