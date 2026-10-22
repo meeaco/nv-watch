@@ -8,7 +8,9 @@ on:
 
 permissions:
   contents: write
-
+defaults:
+  run:
+     working-directory: nv-watch
 concurrency:
   group: nv-watch
   cancel-in-progress: false
