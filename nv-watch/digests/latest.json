@@ -1,294 +1,99 @@
 {
- "generated_utc": "2026-10-22T09:41:40+00:00",
- "date": "2026-10-22",
+ "generated_utc": "2026-10-23T07:38:53+00:00",
+ "date": "2026-10-23",
  "search_window_utc": [
-  "2026-10-17T09:41+00:00",
-  "2026-10-22T09:41+00:00"
+  "2026-10-18T07:38+00:00",
+  "2026-10-23T07:38+00:00"
  ],
  "sources": {
   "arXiv": {
    "ok": true,
-   "hits": 5
+   "hits": 4
   },
   "Crossref": {
    "ok": true,
-   "hits": 7
+   "hits": 8
   },
   "OpenAlex": {
    "ok": false,
-   "error": "GET failed after 4 tries: https://api.openalex.org/works?search=nitrogen-vacancy&filter=from_created_date%3A2026-10-17&per-page=100&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ccreated_date%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index%2Cids%2Ctype&api_key=ZJhZfNyB2R53RoQJc1lSpt :: HTTP"
+   "error": "GET failed after 4 tries: https://api.openalex.org/works?search=nitrogen-vacancy&filter=from_created_date%3A2026-10-18&per-page=100&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ccreated_date%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index%2Cids%2Ctype&api_key=ZJhZfNyB2R53RoQJc1lSpt :: HTTP"
   }
  },
  "arxiv_new": [
   {
    "source": "arXiv",
-   "id": "2610.29279",
-   "url": "https://arxiv.org/abs/2610.29279",
-   "title": "Low-field dephasing time of an optically polarized NV$^-$ spin bath beyond the P1 limit in diamond: a cluster-correlation-expansion and exact spin-bath study",
+   "id": "2610.31084",
+   "url": "https://arxiv.org/abs/2610.31084",
+   "title": "Nitrogen vacancy cluster-mediated ferroelectric domain growth in wurtzite AlN",
    "authors": [
-    "Chikara Shinei"
+    "Zijian Zhou",
+    "Kan-Hao Xue",
+    "Ziqi Pang",
+    "Heng Yu",
+    "Shanzhong Xie",
+    "Hang Liu",
+    "Haiming Qin",
+    "Yi Tong",
+    "Bowen Su",
+    "Yi Yang",
+    "Tian-Ling Ren",
+    "Xiangshui Miao"
    ],
-   "abstract": "Dense ensembles of nitrogen-vacancy (NV$^-$) centres in nitrogen-rich diamond dephase on the electron spins of the substitutional nitrogen (P1) centres. If the paramagnetic nitrogen is instead converted into NV$^-$ centres, the laser that initializes the sensor also pumps the bath into $m_s$ = 0, a state with no moment along its own axis. Using cluster-correlation-expansion (CCE) calculations, combined with an exact solver for probe-bath exchange and with no adjustable parameter, this paper asks whether such an optically polarized NV$^-$ bath dephases a sensor more slowly than a P1 bath of the same density. The answer is set by the field. In a field along [111], three quarters of the bath centres lie off the field axis, and the moment of their $m_s$ = 0 state along the field grows from 0.04 at 25 G to 0.46 at 300 G and 0.81 at 800 G. At 25 G the polarized bath is therefore nearly silent: at $10^{17}$ cm$^{-3}$ the dephasing time $T_2^*$ of a separately addressed $^{15}$NV$^-$ probe is 112 us, six times the 18.1 us of a P1 bath, and still 2.4 times at 90 % polarization; an ensemble measurement gains a factor of two. At 300 G the advantage over P1 shrinks to 1.4, and at 800 G the polarized bath dephases faster than P1. The field dependence of every bath, P1 included, follows the mean moment of its centres along the field. For the Hahn echo, exchange with on-axis bath centres and bath relaxation ($T_1$ = 6 ms) limit the gain to 1.2 times the P1 value at 25 G. Optical polarization of an NV$^-$ bath at low field therefore offers dephasing times beyond the P1 limit of nitrogen-rich diamond.",
-   "primary_category": "quant-ph",
-   "categories": [
-    "quant-ph"
-   ],
-   "published": "2026-10-21T06:34:28Z",
-   "updated": "2026-10-21T06:34:28Z",
-   "doi": "",
-   "journal_ref": "",
-   "score": 4
-  },
-  {
-   "source": "arXiv",
-   "id": "2610.24988",
-   "url": "https://arxiv.org/abs/2610.24988",
-   "title": "Strong Thermal Conductivity Suppression in Isotope Purified Single Crystal Diamond with Phonon Scatterings of Color Centers",
-   "authors": [
-    "Jinwen Liu",
-    "Junliang Fan",
-    "Zimu Jiang",
-    "Zifeng Huang",
-    "Zhe Cheng"
-   ],
-   "abstract": "The thermal conductivity of natural diamond can be further improved by ~50% by eliminating isotope impurity to obtain pure 12C diamond. However, unlike isolated point defects, how color centers scatter phonons and correspondingly limit the thermal conductivity remain poorly understood. Here, we report the thermal conductivities of two isotope-purified diamond with different Nitrogen-vacancy (NV) color center concentrations, confirmed by photoluminescence (PL) and secondary-ion mass spectrometry (SIMS). Results show ~ 3200 W m-1 K-1 and ~ 2100 W m-1 K-1 for two samples of low and high NV concentrations, respectively. Modified Callaway model analyses show that first-principles-derived scattering parameters can reproduce room-temperature thermal conductivity of the high NV concentration sample under a vacancy concentration assumption (~30% of the total Nitrogen concentration), but fail to reproduce its temperature dependence. Compared to PL and SIMS results, which show ~7.1-fold NV concentration and ~92-fold difference in total Nitrogen concentration between two samples, suggesting the assumed 30% vacancy fraction may be greatly overestimated. Taken together, these results suggest that NV-color-center defects may scatter phonons more strongly than models treating Nitrogen and vacancy as independent point defects, providing new insights into color-center-induced phonon-scattering mechanisms.",
-   "primary_category": "cond-mat.mtrl-sci",
-   "categories": [
-    "cond-mat.mtrl-sci",
-    "physics.app-ph"
-   ],
-   "published": "2026-10-18T03:47:04Z",
-   "updated": "2026-10-18T03:47:04Z",
-   "doi": "",
-   "journal_ref": "",
-   "score": 3
-  },
-  {
-   "source": "arXiv",
-   "id": "2610.26332",
-   "url": "https://arxiv.org/abs/2610.26332",
-   "title": "Investigating relative population partitioning in the presence of B$^-_\\text{C}$ defects in diamond",
-   "authors": [
-    "Rodrick Kuate Defo",
-    "Steven L. Richardson"
-   ],
-   "abstract": "Leveraging our earlier formalism for charge-state decay [see R. Kuate Defo et al., 108 235208 (2023)], we investigate relative population partitioning in the presence of singly negatively charged substitutional boron impurities (B$^-_{\\rm C}$) in diamond samples, where these diamond samples also contain substitutional nitrogen (N$_{\\rm C }$) impurities and have ether-terminated surfaces. Effectively, given any two defects, one donor and one acceptor, such that their charge-transition levels, their relative populations, and the temperature are known, the timescale for charge transfer between the two defects is completely determined. We use this insight and experimental measurements for the timescale for charge transfer between NV$^-$ centers and N$_{\\rm C}$ hybridized with the ether-terminated surface of diamond, as well as the temperature and the relative populations for the NV$^-$ centers, [see Z. Yuan et al., Phys. Rev. Res. 2, 033263 (2020)] to argue that an additional defect must be modulating the relative populations of N$_{\\rm C}$ hybridized with the ether-terminated surface of diamond. The shifts in the local Fermi level for N$_{\\rm C}$ hybridized with the ether-terminated surface of diamond are consistent with the additional defect being a substitutional boron impurity (B$_{\\rm C}$). Ultimately, our results allow for the determination of local relative concentrations of ionized defects.",
+   "abstract": "Aluminum nitride-based ferroelectrics combine high remanent polarization, thermal stability, weak size effects, a wide bandgap and back-end process compatibility, making them promising for high density non-volatile memory. However, their high coercive field ($E_\\mathrm{c}$) and unclear polarization switching mechanism limit further applications. Theoretical predictions indicate preferential reversed domain growth along the polar axis, whereas experiments show nearly isotropic growth or preferential growth perpendicular to this axis. Here, we combine density functional theory, Deep Potential molecular dynamics and experimental characterization to determine how nitrogen vacancies ($V_\\mathrm{N}$) regulate domain growth and $E_\\mathrm{c}$. In ideal crystal, strong lattice coupling along the polar axis drives preferential domain growth in this direction. $V_\\mathrm{N}$ locally weakens this coupling and promotes polarization nucleation. The spatial distribution of $V_\\mathrm{N}$ and the temporal sequence of vacancy induced switching jointly determine the direction and morphology of reversed domain growth. We further show that scandium doping promotes $V_\\mathrm{N}$ formation, thereby enhancing defect mediated nucleation and reducing $E_\\mathrm{c}$. These findings establish a multiscale mechanism governing thin-film domain-growth kinetics and macroscopic $E_\\mathrm{c}$, reconciling experimental observations with ideal crystal simulations and providing defect engineering principles for low-voltage, reliable and scalable ferroelectric devices.",
    "primary_category": "cond-mat.mtrl-sci",
    "categories": [
     "cond-mat.mtrl-sci"
    ],
-   "published": "2026-10-19T13:06:16Z",
-   "updated": "2026-10-19T13:06:16Z",
+   "published": "2026-10-22T10:56:32Z",
+   "updated": "2026-10-22T10:56:32Z",
    "doi": "",
    "journal_ref": "",
-   "score": 3
-  },
-  {
-   "source": "arXiv",
-   "id": "2610.24815",
-   "url": "https://arxiv.org/abs/2610.24815",
-   "title": "Low-Field J-Coupling Spectroscopy Measured with a Diamond Nitrogen Vacancy Spectrometer",
-   "authors": [
-    "Stephen J. DeVience",
-    "John W. Blanchard",
-    "Camille G. McDonnell",
-    "Ronald L. Walsworth"
-   ],
-   "abstract": "Nitrogen vacancy centers in diamond (NVs) are point defects well suited to quantum sensing of magnetic fields. NV spin states can be initialized and read out optically with high spatial resolution, enabling detection of pL-scale volumes of nuclear spins. Using Coherently Averaged Synchronized Readout (CASR), standard NMR spectroscopy techniques such as free decay, spin echo, and PGSE have been performed with Hz-scale spectral resolution using NV-diamond sensors. However, using NV detection for conventional high-resolution NMR at multi-tesla fields is challenging due to the need to manipulate NV electronic spins at resonance frequencies 100 GHz or higher. Low-field J-coupling spectroscopy provides an alternative path to chemical resolution in a regime more easily accessible to NVs. Here, we demonstrate homonuclear and heteronuclear J-coupling spectroscopy using an NV-NMR spectrometer based on permanent magnets operating at $\\sim$890 kHz proton Larmor frequency (bias magnetic field $\\sim$21 mT). This field strength enables chemical characterization based on J-coupling using sequences such as Synchronized Echo (SyncE) and Spin-Echo Double Resonance (SEDOR), which do not require the strong chemical shift dispersion and pristine field homogeneity of high-field NMR. The frequency range is easily detected by NVs using standard XY dynamical decoupling sequences and is well-suited for applying Overhauser DNP, which can boost proton signal by two orders of magnitude. We acquire initial NV-NMR measurements of T$_1$, T$_2$, and Overhauser DNP in glycerol before advancing to SEDOR spectroscopy of methanol-$^{13}$C and a methanol-$^{13}$C/acetonitrile-2-$^{13}$C mixture at sample volumes $\\sim$50 pL, in which we demonstrate measurement of $^1J_\\text{CH}$ couplings and resolution between species. We also acquire a homonuclear J-coupling spectrum of a natural-abundance propylene carbonate sample.",
-   "primary_category": "physics.chem-ph",
-   "categories": [
-    "physics.chem-ph",
-    "physics.app-ph",
-    "physics.atom-ph",
-    "quant-ph"
-   ],
-   "published": "2026-10-17T18:44:44Z",
-   "updated": "2026-10-17T18:44:44Z",
-   "doi": "",
-   "journal_ref": "",
-   "score": 0
-  },
-  {
-   "source": "arXiv",
-   "id": "2610.26413",
-   "url": "https://arxiv.org/abs/2610.26413",
-   "title": "Two-qubit cryo-CMOS control of a spin register in diamond",
-   "authors": [
-    "H. B. van Ommen",
-    "N. E. Fakkel",
-    "M. van Riggelen",
-    "J. Yun",
-    "L. A. Enthoven",
-    "M. A. B. ElBadry",
-    "F. Sebastiano",
-    "M. Babaie",
-    "T. H. Taminiau"
-   ],
-   "abstract": "Utility-scale quantum technologies will not only require a well-performing quantum platform, but also classical control hardware that is scalable, efficient, and meets the design requirements set by the quantum system of interest. One approach is the application of silicon CMOS technology, a highly scalable and mature technology, to design application-specific integrated circuits (ASIC) that are optimized for the quantum system. In this work, we present two-qubit control of electron and nuclear spins in NV centres in diamond, using a cryogenic CMOS qubit controller integrated with a diamond quantum device in a cryostat. Using Gate Set Tomography (GST) we characterize the performance of the single-qubit gates on both electron- and carbon nuclear spins, and analyze the limiting noise processes. We use dynamical decoupling to engineer a two-qubit gate, and estimate $F_\\text{2q,avg} = 95(2)\\%$ for the electron-nuclear two-qubit gate fidelity. Our demonstration of cryo-CMOS-driven two-qubit gates is a key step towards highly-integrated quantum devices based on colour centres.",
-   "primary_category": "quant-ph",
-   "categories": [
-    "quant-ph"
-   ],
-   "published": "2026-10-19T13:47:18Z",
-   "updated": "2026-10-19T13:47:18Z",
-   "doi": "",
-   "journal_ref": "",
-   "score": 0
+   "score": 2
   }
  ],
  "journal_new": [
   {
    "source": "Crossref",
-   "id": "10.3390/app162010389",
-   "url": "https://doi.org/10.3390/app162010389",
-   "title": "High-Resolution Study of the Magnetic Properties in Marine Sediments Based on Diamond NV Center Magnetometry",
+   "id": "10.1063/5.0353236",
+   "url": "https://doi.org/10.1063/5.0353236",
+   "title": "Helium-ion beam pattern imaging using irradiation-induced VB− centers in h-BN composite films",
    "authors": [
-    "Yu-An Du",
-    "Huafeng Qin",
-    "Shuangchi Liu",
-    "Yongxin Pan"
+    "Yiyuan Wu",
+    "Menghao Yue",
+    "Xiangyuan Li",
+    "Jijun Zou"
    ],
-   "abstract": "Magnetostratigraphic dating has been widely employed for the study of marine sediments, including ferromanganese nodules (MFNs) and ferromanganese crusts (MFCs), using high-resolution rock magnetic microscopy (RMM) techniques. However, these sediments accumulate at extremely slow rates of millimeters per million year (mm/Ma), while previously employed scanning SQUID microscopes (SSM) and Hall probe microscope are limited to sub-millimeter spatial resolution. This constraint has hindered the detailed characterization of these magnetic archives. Recently developed RMM techniques leveraging nitrogen-vacancy (NV) centers in diamond offer higher spatial resolutions, approximately 1 μm for quantum diamond microscope (QDM) and 180 μm for scanning quantum diamond microscope (SQDM). In this study, we employed both techniques to conduct high-resolution magnetic field measurements and imaging on a thin-sectioned MFN sample. The results reveal intricate internal magnetic structures, providing technical support and empirical evidence to advance the analytical precision of magnetostratigraphy in marine sediments.",
-   "venue": "Applied Sciences",
-   "created": "2026-10-20T13:56:41Z",
-   "published": "2026-10-20",
-   "doi": "10.3390/app162010389",
-   "_key": "10.3390/app162010389",
-   "score": 4
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1038/s41467-026-78386-z",
-   "url": "https://doi.org/10.1038/s41467-026-78386-z",
-   "title": "Laser-enhanced quantum sensing boosts sensitivity and dynamic range",
-   "authors": [
-    "Florian Schall",
-    "Lukas Lindner",
-    "Yves Rottstaedt",
-    "Marcel Rattunde",
-    "Florentin Reiter",
-    "Rüdiger Quay",
-    "Roman Bek",
-    "Alexander M. Zaitsev",
-    "Takeshi Ohshima",
-    "Andrew D. Greentree",
-    "Jan Jeske"
-   ],
-   "abstract": "Abstract While magnetometers based on nitrogen-vacancy (NV) centers in diamond have emerged as the most important solid-state quantum sensors, ensembles are typically limited to a few percent optical contrast. Here, we demonstrate a laser threshold magnetometry-based NV system that achieves 100% optical contrast in combination with strong output signals up to 50 mW. By integrating the NV centers into a laser cavity, we show magnetic-field-dependent shifts of the laser threshold, allowing the laser system to be entirely switched off with the NV centers’ magnetic resonance. We determine the photon-shot-noise fundamental sensitivity limit to be &lt; 400 fT/ $$\\sqrt{{{\\rm{Hz}}}}$$ Hz for all vector components and demonstrate that it improves super-linearly with contrast. This sensitivity is not achieved at the usual cost of smaller linewidth, i.e., maintains good intrinsic dynamic range. This provides a perspective for highly sensitive magnetometry operated outside magnetically-shielded rooms for applications including magnetoencephalography, magnetic navigation, and magnetic anomaly detection.",
-   "venue": "Nature Communications",
-   "created": "2026-10-22T09:01:45Z",
+   "abstract": "Spatially resolved characterization of helium-ion irradiation is important for beam profiling, irradiation-process control, and radiation-effects research. In this work, irradiation-induced color centers in hexagonal boron nitride (h-BN) were investigated for helium-ion beam-pattern imaging. Spherical h-BN/cycloolefin copolymer (Sh-BN/COC) composite films were irradiated with 50 keV He+ ions, while h-BN crystalline particles irradiated with 1.5 MeV Xe+ ions were examined as a comparative high-damage system. The irradiation fluence ranged from 1×1013 to 1 × 1016 ions cm−2. Following irradiation, a broad near-infrared photoluminescence (PL) band centered at approximately 820 nm was observed under 532 nm laser excitation. Room-temperature optically detected magnetic resonance features distributed around 3.45 GHz further supported the attribution of this emission to negatively charged boron-vacancy (VB−) centers. The PL intensity exhibited a non-monotonic dependence on irradiation fluence, while severe structural disorder and PL quenching occurred at the highest fluence. For beam-pattern imaging, the Sh-BN/COC composite film was irradiated through a five-slit mask and subsequently characterized by two-dimensional PL mapping. The reconstructed PL image reproduced the mask-defined irradiation pattern and resolved adjacent features separated by 40 μm. Using the conventional half-pitch definition, this feature size corresponds to a nominal equivalent spatial frequency of 12.5 line pairs per millimeter (lp/mm). These results demonstrate the feasibility of using irradiation-induced VB− centers in h-BN composite films as passive spatial recorders for post-irradiation helium-ion beam-pattern imaging.",
+   "venue": "Journal of Applied Physics",
+   "created": "2026-10-22T12:19:26Z",
    "published": "2026-10-22",
-   "doi": "10.1038/s41467-026-78386-z",
-   "_key": "10.1038/s41467-026-78386-z",
+   "doi": "10.1063/5.0353236",
+   "_key": "10.1063/5.0353236",
+   "score": 6
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1038/s41467-026-78802-4",
+   "url": "https://doi.org/10.1038/s41467-026-78802-4",
+   "title": "A van der Waals photon-ratchet for enhancing spin-defect emission and quantum sensing",
+   "authors": [
+    "E. Mayner",
+    "Y. Zhumagulov",
+    "C. de Giorgio",
+    "F. Chu",
+    "P. P. Swain",
+    "G. E. Fantner",
+    "A. Kis",
+    "O. V. Yazyev",
+    "A. Radenovic"
+   ],
+   "abstract": "Abstract Spin defects in two-dimensional materials are promising platforms for quantum information technologies and nanoscale sensing. The negatively charged boron vacancy ( $${\\mathrm{V}}_{\\mathrm{B}}^{-}$$ V B − ) in hexagonal boron nitride (hBN) is particularly attractive due to its sensitivity to temperature, magnetic fields, and pressure, but its application is limited by intrinsically weak photoluminescence (PL). Here we demonstrate a van der Waals heterostructure that enhances the PL intensity of $${\\mathrm{V}}_{\\mathrm{B}}^{-}$$ V B − by up to 45× at 4 Kelvin while preserving compatibility with ultrathin optoelectronic platforms. A quasi type-I band alignment at the PbI 2 –defected hBN interface facilitates efficient interlayer coupling to the defect, and strong spectral overlap supports fluorescence resonance energy transfer. Ab initio calculations indicate that this coupling enables a photon-ratcheting mechanism, in which optical absorption in PbI 2 generates a nonlinear polarization that drives $${\\mathrm{V}}_{\\mathrm{B}}^{-}$$ V B − excitation. This process is compatible with interlayer energy transfer while maintaining minimal electronic and spin hybridization and preserving optically detected magnetic resonance (ODMR) contrast. The heterostructure further exhibits improved sensitivity to external magnetic fields. These results establish a route for the enhancement of defect emission via interlayer optical coupling and introduce a general materials strategy for amplifying weak quantum defect signals in nanomaterials.",
+   "venue": "Nature Communications",
+   "created": "2026-10-22T14:16:12Z",
+   "published": "2026-10-22",
+   "doi": "10.1038/s41467-026-78802-4",
+   "_key": "10.1038/s41467-026-78802-4",
    "score": 4
-  },
-  {
-   "source": "Crossref",
-   "id": "10.63371/ic.v5.n3.a1739",
-   "url": "https://doi.org/10.63371/ic.v5.n3.a1739",
-   "title": "Diseño Híbrido Humano: Sensor Cuántico Externo, Fibra Óptica, Chip y Computadora en Tiempo Real Human Hybrid Design: External Quantum Sensor, Optical Fiber, Chip and Computer in Real Time",
-   "authors": [
-    "Carlos Sánchez Ortega"
-   ],
-   "abstract": "An external, removable hybrid system was designed to report, in real time, the capture of cellular alarms before macrophages release cytokines that alert the immune system. The architecture was organized into three operating levels: a quantum sensor based on nanodiamonds with nitrogen-vacancy centers placed on the skin through a microneedle patch; an optical fiber channel that carries the excitation light and the returning fluorescence; and an integrated circuit that digitizes the signal, applies a threshold algorithm and reports the alarm to a computer. The computer validates the alarm and sends the instruction to activate preventive therapies, such as transcutaneous vagus nerve stimulation and low-frequency microcurrents in bone tissue. A power system with a photovoltaic cell, power management chip, supercapacitor and solid-state battery was also designed, together with its protection circuit, the short duty-cycle algorithm of the chip and a lightweight symmetric encryption scheme for communication. The energy calculation estimated an average power of 49.3 microwatts and a required illuminance of 100 lux on a 4 square centimeter photovoltaic cell, lower than that of an average office, with an estimated autonomy of 48 to 72 hours in darkness. It was concluded that the external model avoids the rejection and degradation typical of implants, although organ depth and biological noise are its main limitations.",
-   "venue": "Ibero Ciencias - Revista Científica y Académica - ISSN 3072-7197",
-   "created": "2026-10-18T02:16:34Z",
-   "published": "2026-10-17",
-   "doi": "10.63371/ic.v5.n3.a1739",
-   "_key": "10.63371/ic.v5.n3.a1739",
-   "score": 3
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1088/1402-4896/aeb758",
-   "url": "https://doi.org/10.1088/1402-4896/aeb758",
-   "title": "Improved state readout in NV centers using regression models and rabi driving",
-   "authors": [
-    "Fritz Joseph Joseph Haltenberger",
-    "Manpreet Singh Jattana"
-   ],
-   "abstract": "Abstract Readout of state populations in nitrogen-vacancy centers from fluorescence measurements at roomtemperature is routinely achieved via contrast-based calibration. The fidelities achieved by this conventional approach are limited by reducing the dynamical fluorescence behaviour of the NV center to a scalar value, and calculating the population of each possible state independently. To address these limitations, we use regression models trained on experimental data to map the fluorescence signals onto ideal simulated populations. Additionally, we enhance the informational content of the fluorescence signals by performing measurements during induced Rabi oscillations. Our results demonstrate that including these dynamical signals significantly reduces state readout errors across multiple tested models. Notably, linear ridge regression performs nearly on par with a non-linear kernel-based model, showing that simple models already capture the relevant mapping between the enhanced fluorescence signals and the underlying state populations. This data-driven approach provides a robust alternative that achieves higher fidelities than conventional calibration in our setting, paving the way for high-fidelity state readout in solid-state quantum registers.",
-   "venue": "Physica Scripta",
-   "created": "2026-10-21T22:55:31Z",
-   "published": "2026-10-21",
-   "doi": "10.1088/1402-4896/aeb758",
-   "_key": "10.1088/1402-4896/aeb758",
-   "score": 3
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1109/jsen.2026.3742581",
-   "url": "https://doi.org/10.1109/jsen.2026.3742581",
-   "title": "High-Sensitivity Quantum Diamond Nitrogen-Vacancy Center Magnetic Sensing System",
-   "authors": [
-    "Qingtao Guo",
-    "Chenggang Guan",
-    "Junchang Huang",
-    "Jiaoli Gong",
-    "Linfeng Zhan",
-    "Chaoqiang Dong",
-    "Qiang Wan",
-    "Yifeng Chen",
-    "Xuan Chen",
-    "Chen Xu",
-    "Qingling Mei",
-    "Junzhu Ye",
-    "Liangyu Chen",
-    "Heng Luo",
-    "Xiang Chen",
-    "Mingqing Cai"
-   ],
-   "abstract": "",
-   "venue": "IEEE Sensors Journal",
-   "created": "2026-10-19T19:11:57Z",
-   "published": "2026",
-   "doi": "10.1109/jsen.2026.3742581",
-   "_key": "10.1109/jsen.2026.3742581",
-   "score": 1
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1016/j.mtchem.2026.104113",
-   "url": "https://doi.org/10.1016/j.mtchem.2026.104113",
-   "title": "Nanodiamond-like bixbyite FeMnO3 anchored on N-doped graphene for enhanced electrocatalytic detection of the vitamin E analogue Trolox in fruit samples",
-   "authors": [
-    "Rajalakshmi Sakthivel",
-    "Yu-Xi Hsu",
-    "Akash Ashokrao Jagtap",
-    "Sayee Kannan Ramaraj",
-    "Yu-Chien Lin",
-    "S. Ramesh",
-    "Ren-Jei Chung"
-   ],
-   "abstract": "",
-   "venue": "Materials Today Chemistry",
-   "created": "2026-10-17T05:52:27Z",
-   "published": "2026-12",
-   "doi": "10.1016/j.mtchem.2026.104113",
-   "_key": "10.1016/j.mtchem.2026.104113",
-   "score": 0
-  },
-  {
-   "source": "Crossref",
-   "id": "10.3390/nano16201313",
-   "url": "https://doi.org/10.3390/nano16201313",
-   "title": "Nanodiamond-Enabled Passively Q-Switched Solid-State Laser Operating at 2 μm",
-   "authors": [
-    "Zhe Meng",
-    "Yang Zhang",
-    "Haoyang Tang",
-    "Yuejin Jiang",
-    "Zhaoxue Li",
-    "Xining Yang",
-    "Sujian Niu"
-   ],
-   "abstract": "This work demonstrates a passively Q-switched (PQS) Tm:YAlO3 (Tm:YAP) laser at 2 μm employing a nanodiamond (ND) saturable absorber (SA). Microstructural analysis indicates that the spin-coated ND film exhibits spherical grains and forms effective interfacial contact with the CaF2 substrate. Employing a 5%-transmittance output coupler (OC), the ND-based SA facilitated the generation of a PQS laser. Key performance metrics include: an average output power of 367.7 mW at an absorbed pump power of 9.66 W, and a central wavelength of 1931.2 nm. Moreover, stable pulse trains exhibited a minimum pulse duration of 376.9 ns at a repetition rate of 86.27 kHz, setting a record for the shortest pulse width ever reported for ND-based PQS lasers. Under the same conditions, the beam quality factors were measured as M 2 x = 1.02 and M 2 y = 1.08. These results confirm that ND serves as an excellent modulator, showing great potential for mid-infrared pulsed laser applications.",
-   "venue": "Nanomaterials",
-   "created": "2026-10-19T08:11:02Z",
-   "published": "2026-10-17",
-   "doi": "10.3390/nano16201313",
-   "_key": "10.3390/nano16201313",
-   "score": 0
   }
  ]
 }
