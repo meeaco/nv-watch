@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-10-23T07:38:53+00:00",
+ "generated_utc": "2026-10-23T07:47:37+00:00",
  "date": "2026-10-23",
  "search_window_utc": [
-  "2026-10-18T07:38+00:00",
-  "2026-10-23T07:38+00:00"
+  "2026-10-18T07:47+00:00",
+  "2026-10-23T07:47+00:00"
  ],
  "sources": {
   "arXiv": {
@@ -16,7 +16,7 @@
   },
   "OpenAlex": {
    "ok": false,
-   "error": "GET failed after 4 tries: https://api.openalex.org/works?search=nitrogen-vacancy&filter=from_created_date%3A2026-10-18&per-page=100&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ccreated_date%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index%2Cids%2Ctype&api_key=ZJhZfNyB2R53RoQJc1lSpt :: HTTP"
+   "error": "GET failed after 4 tries: https://api.openalex.org/works?search=nitrogen-vacancy&filter=from_created_date%3A2026-10-18&per-page=100&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ccreated_date%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index%2Cids%2Ctype&api_key=*** :: HTTP Error 429: Too Man"
   }
  },
  "arxiv_new": [
