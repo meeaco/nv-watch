@@ -72,6 +72,11 @@ def score(title: str, abstract: str) -> int:
 
 
 # ---------------------------------------------------------------- http
+def _redact(url: str) -> str:
+    """Strip credentials from a URL before it is logged or written to the digest."""
+    return re.sub(r"(api_key|mailto)=[^&]*", r"\1=***", url)
+
+
 def get(url: str, retries: int = 4, pause: float = 5.0, accept: str | None = None) -> bytes:
     last = None
     for i in range(retries):
@@ -82,7 +87,7 @@ def get(url: str, retries: int = 4, pause: float = 5.0, accept: str | None = Non
         except Exception as e:  # noqa: BLE001
             last = e
             time.sleep(pause * (i + 1))
-    raise RuntimeError(f"GET failed after {retries} tries: {url} :: {last}")
+    raise RuntimeError(f"GET failed after {retries} tries: {_redact(url)} :: {last}")
 
 
 def clean(s: str | None) -> str:
