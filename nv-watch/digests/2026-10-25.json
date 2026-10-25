@@ -1,0 +1,96 @@
+{
+ "generated_utc": "2026-10-25T08:41:30+00:00",
+ "date": "2026-10-25",
+ "search_window_utc": [
+  "2026-10-20T08:41+00:00",
+  "2026-10-25T08:41+00:00"
+ ],
+ "sources": {
+  "arXiv": {
+   "ok": true,
+   "hits": 2
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 9
+  },
+  "OpenAlex": {
+   "ok": false,
+   "error": "GET failed after 4 tries: https://api.openalex.org/works?search=nitrogen-vacancy&filter=from_created_date%3A2026-10-20&per-page=100&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ccreated_date%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index%2Cids%2Ctype&api_key=*** :: HTTP Error 429: Too Man"
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.diamond.2026.114330",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114330",
+   "title": "Revealing the dominant decoherence mechanism in high‑nitrogen shallow NV centers through dielectric interface engineering",
+   "authors": [
+    "Yunpeng Yang",
+    "Sen Zhang",
+    "Ruizhi Zhang",
+    "Binxiao Fu",
+    "Benjian Liu",
+    "Zuanquan Chen",
+    "Rui Chen",
+    "Chao Chen",
+    "Wensi Yang",
+    "Shiya Zheng",
+    "Huijie Zheng",
+    "Kang Liu",
+    "Bing Dai",
+    "Jiaqi Zhu"
+   ],
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-10-24T15:17:51Z",
+   "published": "2026-10",
+   "doi": "10.1016/j.diamond.2026.114330",
+   "_key": "10.1016/j.diamond.2026.114330",
+   "score": 2
+  },
+  {
+   "source": "Crossref",
+   "id": "10.26297/2312-9409.2026.4.12",
+   "url": "https://doi.org/10.26297/2312-9409.2026.4.12",
+   "title": "NV-дефекты алмаза в области квантовой защиты информации: перспективы использования в оборонной промышленности",
+   "authors": [
+    "В.Б. Анастасия",
+    "А.Б. Николай",
+    "Ю.З. Михаил"
+   ],
+   "abstract": "работа представляет собой краткий обзор исследований и достижений в сфере развитии квантовых технологий, применяемых как в области квантовой защиты информации, в первую очередь, так и для развития других сфер, имеющих значение для обеспечения нужд государства. Цель данной работы – анализ перспектив использования NV-дефектов твердотельных структур, изучение их свойств, а также определение положения, которое они занимают при разработке методов и способов защиты информации в оборонной промышленности. Методы проведения работы – использование некоторые результаты исследований ведущих российских и зарубежных ученых, полученные в течение последних нескольких лет и охватывающие круг вопросов, связанных с использованием NV-дефектов в различных областях промышленности, в том числе в оборонной. Результаты данной работы: обозначены перспективы использования NV-дефектов не только в алмазной кристаллической решетке, но и других твердотельных структурах; определены четыре основных вызова для внедрения (масштабирование, интеграция, стоимость, устойчивость); обоснована перспективность замены алмаза на карбид кремния (6H-SiC) для интеграции с существующей микроэлектроникой. Выводы: NV-дефекты являются базовым элементом для создания квантовых сенсоров, систем квантового распределения ключей и квантовых вычислителей оборонного назначения. The paper provides a brief overview of research and achievements. in the field of the development of quantum technologies used both in the field of quantum information protection, first of all, and for the development of other areas that are important for meeting the needs of the state. The purpose of this work is to analyze the prospects for using NV defects in solid–state structures, study their properties, and determine the position they occupy in the development of methods and methods of information protection in the defense industry. The methods of the work are based on some of the research results of leading Russian and foreign scientists obtained over the past few years and covering a range of issues related to the use of NV defects in various fields of industry, including defense. The results of this work: the prospects of using NV defects not only in the diamond crystal lattice, but also in other solid-state structures are outlined; four main challenges for implementation (scaling, integration, cost, stability) are identified; the prospects for diamond replacement are substantiated silicon carbide (6H-SiC) for integration with existing microelectronics. Conclusions: NV defects are a basic element for creating quantum sensors, quantum key distribution systems, and defense-grade quantum computers.",
+   "venue": "Scientific works of KubSTU",
+   "created": "2026-10-24T20:46:38Z",
+   "published": "2026-10-18",
+   "doi": "10.26297/2312-9409.2026.4.12",
+   "_key": "10.26297/2312-9409.2026.4.12",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.apcatb.2026.127690",
+   "url": "https://doi.org/10.1016/j.apcatb.2026.127690",
+   "title": "Synergy between Nitrogen Vacancy and Bifunctional Rh/Rh2O3 Cocatalyst for Photocatalytic Overall Water Splitting",
+   "authors": [
+    "Sajjad ul Haq",
+    "Zijian Huang",
+    "Xiantong Zheng",
+    "Ding Wang",
+    "Muhammad Salman Nasir",
+    "Jiaming Liu",
+    "Ruoxue Chai",
+    "Ping Wang",
+    "Baowen Zhou"
+   ],
+   "abstract": "",
+   "venue": "Applied Catalysis B: Environment and Energy",
+   "created": "2026-10-25T06:36:01Z",
+   "published": "2026-10",
+   "doi": "10.1016/j.apcatb.2026.127690",
+   "_key": "10.1016/j.apcatb.2026.127690",
+   "score": 0
+  }
+ ]
+}
