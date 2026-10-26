@@ -35,6 +35,7 @@ jobs:
         env:
           CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}        # optional, Crossref/OpenAlex polite pool
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}  # optional
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}              # optional, Semantic Scholar
         run: python scripts/nv_watch.py
       - name: Commit digest
         run: |

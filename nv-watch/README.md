@@ -10,7 +10,7 @@ Daily digest of new NV-centre / diamond quantum-sensing papers. A Claude schedul
 | **arXiv OAI-PMH** (`oaipmh.arxiv.org/oai`, set `physics`) | every physics record created in the look-back window | catches days the job missed |
 | **arXiv API** search | full-abstract search, all categories | third net; its search index lags, so on its own it returned only 1–5 hits per 5-day window |
 | **Crossref** | journal articles created in the window | |
-| **OpenAlex** | one boolean search, filtered by publication date over the last ~35 days | `from_created_date` is a premium filter, and the old 5-query search returned 429 every day |
+| **OpenAlex** | one boolean search over journals and conferences only (no Zenodo or repository copies), filtered by publication date over the last ~35 days | `from_created_date` is a premium filter, and the old 5-query search returned 429 every day |
 
 - Journal items with no abstract (Elsevier withholds them from Crossref) are back-filled from OpenAlex DOI lookups, then from the Semantic Scholar batch API.
 - Relevance: `CORE` must match. A bare "nitrogen vacancy" also needs spin or sensing context (`CONTEXT`). Catalysis, battery and nitride papers are dropped (`OFFTOPIC`) unless they mention diamond or NV centres explicitly.
@@ -21,6 +21,6 @@ Daily digest of new NV-centre / diamond quantum-sensing papers. A Claude schedul
 
 Setup: public repo; Settings → Actions → General → Workflow permissions: "Read and write".
 
-Optional repo secrets: `CONTACT_EMAIL` (puts Crossref/OpenAlex requests in their faster "polite" pool), `OPENALEX_API_KEY`.
+Optional repo secrets: `CONTACT_EMAIL` (puts Crossref/OpenAlex requests in their faster "polite" pool), `OPENALEX_API_KEY`, `S2_API_KEY` (Semantic Scholar; the anonymous pool often returns 429).
 
 Tuning: `ARXIV_CATS`, `ARXIV_TERMS`, `CROSSREF_QUERIES`, `OPENALEX_SEARCH`, `CORE`/`CONTEXT`/`OFFTOPIC`, and the ranking weights in `BOOST`.

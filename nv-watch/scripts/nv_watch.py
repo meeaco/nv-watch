@@ -36,6 +36,7 @@ SEEN_KEEP_DAYS = 90
 UA = "nv-watch/1.0 (daily literature digest; GitHub Actions)"
 MAILTO = os.environ.get("CONTACT_EMAIL", "").strip()          # optional, for Crossref/OpenAlex polite pools
 OPENALEX_KEY = os.environ.get("OPENALEX_API_KEY", "").strip()  # optional
+S2_KEY = os.environ.get("S2_API_KEY", "").strip()              # optional, Semantic Scholar
 
 # ---------------------------------------------------------------- relevance
 CORE = re.compile(
@@ -103,12 +104,13 @@ def _redact(url: str) -> str:
 
 
 def get(url: str, retries: int = 4, pause: float = 5.0, accept: str | None = None,
-        data: bytes | None = None, max_wait: float = 120.0) -> bytes:
+        data: bytes | None = None, max_wait: float = 120.0, extra_headers: dict | None = None) -> bytes:
     """GET (or POST when data is given). Honours Retry-After; error text includes HTTP status and body."""
     last = ""
     hdr = {"User-Agent": UA, **({"Accept": accept} if accept else {})}
     if data is not None:
         hdr["Content-Type"] = "application/json"
+    hdr.update(extra_headers or {})
     for i in range(retries):
         wait = pause * (2 ** i)
         try:
@@ -200,6 +202,7 @@ ARXIV_CATS = ["quant-ph", "cond-mat.mes-hall", "cond-mat.mtrl-sci", "cond-mat.st
               "physics.chem-ph", "physics.med-ph", "q-bio.QM"]
 RSS_NS = {"arxiv": "http://arxiv.org/schemas/atom", "dc": "http://purl.org/dc/elements/1.1/"}
 ANNOUNCED: dict[str, str] = {}   # category -> announcement date seen in its feed (for the digest header)
+RSS_SCANNED = {"items": 0, "new_or_cross": 0}
 
 
 def arxiv_rss() -> list[dict]:
@@ -220,9 +223,11 @@ def arxiv_rss() -> list[dict]:
         except ValueError:
             ANNOUNCED[cat] = pub
         for it in ch.findall("item"):
+            RSS_SCANNED["items"] += 1
             atype = clean(it.findtext("arxiv:announce_type", "", RSS_NS))
             if atype.startswith("replace"):
                 continue  # replacements of old papers are not news
+            RSS_SCANNED["new_or_cross"] += 1
             link = clean(it.findtext("link"))
             m = re.search(r"abs/([^v\s]+)", link)
             if not m:
@@ -278,6 +283,9 @@ def arxiv_oai(since: dt.datetime) -> list[dict]:
                         created = md.findtext("a:created", "", OAI_NS)
                         if created < created_min:
                             continue  # metadata update / replacement of an older paper
+                        idm = re.match(r"(\d{2})(\d{2})\.\d{4,5}$", md.findtext("a:id", "", OAI_NS) or "")
+                        if not idm or f"20{idm.group(1)}-{idm.group(2)}" < created_min[:7]:
+                            continue  # <created> can be the latest version's date: v1 is older than the window
                         title = clean(md.findtext("a:title", "", OAI_NS))
                         abstract = clean(md.findtext("a:abstract", "", OAI_NS))
                         if not is_relevant(title, abstract):
@@ -391,7 +399,7 @@ def openalex_search(since: dt.date) -> list[dict]:
     out: dict[str, dict] = {}
     pub_from = (since - dt.timedelta(days=OPENALEX_PUB_BACK_DAYS)).isoformat()
     params = _openalex_params({
-        "search": OPENALEX_SEARCH, "filter": f"from_publication_date:{pub_from},type:article",
+        "search": OPENALEX_SEARCH, "filter": f"from_publication_date:{pub_from},type:article,primary_location.source.type:journal|conference",
         "sort": "publication_date:desc", "per-page": 200,
         "select": "id,doi,title,publication_date,created_date,primary_location,authorships,"
                   "abstract_inverted_index,type"})
@@ -446,8 +454,9 @@ def enrich_abstracts(items: list[dict]) -> dict:
     if left:
         try:
             body = json.dumps({"ids": [f"DOI:{d}" for d in left[:400]]}).encode()
-            data = json.loads(get("https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr",
-                                  data=body, retries=3, pause=10, max_wait=60))
+            url = "https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr"
+            data = json.loads(get(url, data=body, retries=4, pause=20, max_wait=120, extra_headers=(
+                {"x-api-key": S2_KEY} if S2_KEY else None)))
             for d, p in zip(left, data):
                 if not p:
                     continue
@@ -503,6 +512,8 @@ def main() -> int:
             else:
                 items.extend(got)
             status[name] = {"ok": True, "hits": len(got), "secs": round(time.time() - t0)}
+            if name == "arXiv-RSS":
+                status[name]["scanned"] = RSS_SCANNED["new_or_cross"]
         except Exception as e:  # noqa: BLE001
             status[name] = {"ok": False, "error": str(e)[:300], "secs": round(time.time() - t0)}
         print(f"{name}: {status[name]}", file=sys.stderr)
@@ -595,7 +606,7 @@ def main() -> int:
     md = [f"# NV watch digest {today}", "",
           f"Generated {digest['generated_utc']} UTC. Search window {digest['search_window_utc'][0]} → "
           f"{digest['search_window_utc'][1]} (items already reported in earlier digests are excluded).", "",
-          "Sources: " + "; ".join(f"{k}: {'ok, ' + str(v['hits']) + ' hits' if v['ok'] else 'FAILED – ' + v['error']}"
+          "Sources: " + "; ".join(f"{k}: {'ok, ' + str(v['hits']) + ' hits' + (' of ' + str(v['scanned']) + ' scanned' if 'scanned' in v else '') if v['ok'] else 'FAILED – ' + v['error']}"
                                   for k, v in status.items()), "",
           f"arXiv announcement covered by RSS: {digest['arxiv_announcement'] or 'none (weekend/holiday or RSS failed)'}. "
           f"Journal abstracts back-filled: {enrich['filled']}/{enrich['missing']}"
