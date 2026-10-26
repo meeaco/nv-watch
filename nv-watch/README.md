@@ -2,19 +2,25 @@
 
 Daily digest of new NV-centre / diamond quantum-sensing papers. A Claude scheduled task reads it.
 
-- `scripts/nv_watch.py` queries the **arXiv API**, **Crossref** and **OpenAlex**. The arXiv search covers full abstracts across all categories, including cross-lists.
-  - The search window is the last 5 days by submission or creation date.
-  - Items already reported are skipped, using `state/seen.json`.
-  - The output is `digests/latest.md` and `digests/latest.json`, plus a dated copy of each.
-- `.github/workflows/nv-watch.yml` runs it every day at 03:40 UTC and commits the result. You can also run it by hand from the **Actions** tab ("Run workflow").
+`scripts/nv_watch.py` (standard library only) collects candidates from five sources and screens them with a keyword filter:
 
-Setup:
-1. Create a **public** repo named `nv-watch`.
-2. Upload these files, keeping the folders.
-3. Go to Settings → Actions → General → Workflow permissions, and choose "Read and write".
+| source | what it covers | why |
+|---|---|---|
+| **arXiv RSS** (`rss.arxiv.org/rss/<cat>`) | that day's announcement for the categories in `ARXIV_CATS`, new papers and cross-lists | complete for the current day |
+| **arXiv OAI-PMH** (`oaipmh.arxiv.org/oai`, set `physics`) | every physics record created in the look-back window | catches days the job missed |
+| **arXiv API** search | full-abstract search, all categories | third net; its search index lags, so on its own it returned only 1–5 hits per 5-day window |
+| **Crossref** | journal articles created in the window | |
+| **OpenAlex** | one boolean search, filtered by publication date over the last ~35 days | `from_created_date` is a premium filter, and the old 5-query search returned 429 every day |
 
-Optional repo secrets:
-- `CONTACT_EMAIL`: Crossref/OpenAlex give priority access to requests that include a contact email.
-- `OPENALEX_API_KEY`
+- Journal items with no abstract (Elsevier withholds them from Crossref) are back-filled from OpenAlex DOI lookups, then from the Semantic Scholar batch API.
+- Relevance: `CORE` must match. A bare "nitrogen vacancy" also needs spin or sensing context (`CONTEXT`). Catalysis, battery and nitride papers are dropped (`OFFTOPIC`) unless they mention diamond or NV centres explicitly.
+- Items already reported are skipped (`state/seen.json`). Same-day re-runs merge into a single dated digest.
+- Output: `digests/latest.{md,json}` and `digests/YYYY-MM-DD.{md,json}`. The header shows ok/FAILED and hit count for each source, the arXiv announcement date covered, how many abstracts were back-filled, and a link to the Actions run.
 
-Tuning: the search terms are in `ARXIV_TERMS`, `CROSSREF_QUERIES` and `OPENALEX_QUERIES`. The relevance filter is `CORE`, and the ranking weights for widefield, thermometry, relaxometry and bio work are in `BOOST`.
+`.github/workflows/nv-watch.yml` (at the repo root; GitHub ignores workflow files anywhere else) runs at 01:17, 02:47 and 04:23 UTC. GitHub has been starting scheduled jobs 4–6 h late, so with three runs one usually lands before the morning routine. You can also run it by hand from the **Actions** tab ("Run workflow").
+
+Setup: public repo; Settings → Actions → General → Workflow permissions: "Read and write".
+
+Optional repo secrets: `CONTACT_EMAIL` (puts Crossref/OpenAlex requests in their faster "polite" pool), `OPENALEX_API_KEY`.
+
+Tuning: `ARXIV_CATS`, `ARXIV_TERMS`, `CROSSREF_QUERIES`, `OPENALEX_SEARCH`, `CORE`/`CONTEXT`/`OFFTOPIC`, and the ranking weights in `BOOST`.

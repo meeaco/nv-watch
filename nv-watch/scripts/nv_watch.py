@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """NV-diamond literature watch.
 
-Queries the arXiv API, Crossref and OpenAlex for new NV-centre / diamond
-quantum-sensing items, de-duplicates against previously seen items
+Collects new NV-centre / diamond quantum-sensing items from
+  * arXiv RSS     - today's announcement (new + cross-lists) for the physics categories below
+  * arXiv OAI-PMH - every physics record created in the look-back window (catches missed days)
+  * arXiv API     - full-text search (kept as a third net; its index lags, so it is incomplete)
+  * Crossref, OpenAlex - journals; missing abstracts are back-filled from OpenAlex / Semantic Scholar
+and de-duplicates against previously seen items
 (state/seen.json) and writes:
 
   digests/latest.json, digests/latest.md, digests/YYYY-MM-DD.{json,md}
@@ -18,6 +22,7 @@ import re
 import sys
 import time
 import urllib.parse
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -38,7 +43,7 @@ CORE = re.compile(
     r"magnetomet|diamonds?|defects?|colou?r|layer|sensor|quantum|ODMR|electron)|"
     r"\bNV\$?\^?\{?[-−]\}?\$?\s|\bNVs?\b[^.]{0,80}\bdiamond|diamond[^.]{0,80}\bNVs?\b|"
     r"optically[\s\-]detected magnetic resonance|\bODMR\b|"
-    r"diamond[\s\-](?:magnetomet|quantum sens|sensor|membrane|thermomet)|quantum diamond|nanodiamond",
+    r"diamond[\s\-](?:magnetomet|quantum sens|sensor|membrane|thermomet)|quantum diamond|nanodiamond(?!-like)",
     re.I,
 )
 # terms that move an item up for widefield-ensemble / thermometry / relaxometry / bio work
@@ -56,8 +61,28 @@ BOOST = {
 NOISE_DOI = re.compile(r"/(?:v\d+/)?(?:review|decision|response)\d*$|\.s\d{3}$", re.I)
 
 
+# "nitrogen vacancy" is also a defect in carbon nitride, GaN/AlN, TiN, perovskites ... -> need sensing/spin context
+CONTEXT = re.compile(
+    r"diamond|алмаз|\bNVs?\b|ODMR|optically[\s\-]detected|colou?r[\s\-]cent|spin[\s\-]defect|qubit|"
+    r"magnetomet|quantum[\s\-]sens|relaxometr|spin|hyperfine|photoluminescen|zero[\s\-]phonon",
+    re.I,
+)
+OFFTOPIC = re.compile(
+    r"photocatal|electrocatal|catalys|water[\s\-]splitting|hydrogen evolution|C3N4|carbon nitride|"
+    r"batter(?:y|ies)|anode|cathode|supercapacit|wurtzite|ferroelectric|\bGaN\b|\bAlN\b|\bTiN\b|perovskite|"
+    r"MXene|ammonia synthesis|nitrogen reduction",
+    re.I,
+)
+STRONG = re.compile(r"diamond|\bNV[\s\-]?(?:\$?\^?\{?[-−]\}?\$?)?\s*(?:cent|ensembl|spin|magnetomet)|nanodiamond(?!-like)|ODMR", re.I)
+
+
 def is_relevant(title: str, abstract: str) -> bool:
-    return bool(CORE.search(f"{title} \n {abstract}"))
+    text = f"{title} \n {abstract}"
+    if not CORE.search(text):
+        return False
+    if OFFTOPIC.search(text) and not STRONG.search(text):
+        return False
+    return bool(CONTEXT.search(text))
 
 
 def score(title: str, abstract: str) -> int:
@@ -77,17 +102,36 @@ def _redact(url: str) -> str:
     return re.sub(r"(api_key|mailto)=[^&]*", r"\1=***", url)
 
 
-def get(url: str, retries: int = 4, pause: float = 5.0, accept: str | None = None) -> bytes:
-    last = None
+def get(url: str, retries: int = 4, pause: float = 5.0, accept: str | None = None,
+        data: bytes | None = None, max_wait: float = 120.0) -> bytes:
+    """GET (or POST when data is given). Honours Retry-After; error text includes HTTP status and body."""
+    last = ""
+    hdr = {"User-Agent": UA, **({"Accept": accept} if accept else {})}
+    if data is not None:
+        hdr["Content-Type"] = "application/json"
     for i in range(retries):
+        wait = pause * (2 ** i)
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA, **({"Accept": accept} if accept else {})})
-            with urllib.request.urlopen(req, timeout=60) as r:
+            req = urllib.request.Request(url, headers=hdr, data=data)
+            with urllib.request.urlopen(req, timeout=90) as r:
                 return r.read()
+        except urllib.error.HTTPError as e:
+            body = ""
+            try:
+                body = clean(e.read().decode("utf-8", "replace"))[:200]
+            except Exception:  # noqa: BLE001
+                pass
+            last = f"HTTP {e.code} {e.reason}" + (f" | {body}" if body else "")
+            ra = e.headers.get("Retry-After") if e.headers else None
+            if ra and ra.strip().isdigit():
+                wait = float(ra)
+            if e.code in (400, 401, 403, 404) or wait > max_wait:
+                break  # not worth retrying
         except Exception as e:  # noqa: BLE001
-            last = e
-            time.sleep(pause * (i + 1))
-    raise RuntimeError(f"GET failed after {retries} tries: {_redact(url)} :: {last}")
+            last = repr(e)
+        if i < retries - 1:
+            time.sleep(wait)
+    raise RuntimeError(f"{'POST' if data else 'GET'} failed: {_redact(url)} :: {last}")
 
 
 def clean(s: str | None) -> str:
@@ -149,6 +193,143 @@ def arxiv_search(since: dt.datetime, until: dt.datetime) -> list[dict]:
     return list(out.values())
 
 
+# ---------------------------------------------------------------- arXiv RSS (today's announcement)
+# Categories where NV / diamond sensing papers appear as primary or cross-list.
+ARXIV_CATS = ["quant-ph", "cond-mat.mes-hall", "cond-mat.mtrl-sci", "cond-mat.str-el", "cond-mat.supr-con",
+              "physics.app-ph", "physics.ins-det", "physics.optics", "physics.bio-ph", "physics.atom-ph",
+              "physics.chem-ph", "physics.med-ph", "q-bio.QM"]
+RSS_NS = {"arxiv": "http://arxiv.org/schemas/atom", "dc": "http://purl.org/dc/elements/1.1/"}
+ANNOUNCED: dict[str, str] = {}   # category -> announcement date seen in its feed (for the digest header)
+
+
+def arxiv_rss() -> list[dict]:
+    out: dict[str, dict] = {}
+    errors = []
+    for cat in ARXIV_CATS:
+        try:
+            root = ET.fromstring(get(f"https://rss.arxiv.org/rss/{cat}", retries=3))
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{cat}: {e}")
+            continue
+        ch = root.find("channel")
+        if ch is None:
+            continue
+        pub = clean(ch.findtext("pubDate") or ch.findtext("lastBuildDate") or "")
+        try:
+            ANNOUNCED[cat] = dt.datetime.strptime(pub[:16], "%a, %d %b %Y").date().isoformat()
+        except ValueError:
+            ANNOUNCED[cat] = pub
+        for it in ch.findall("item"):
+            atype = clean(it.findtext("arxiv:announce_type", "", RSS_NS))
+            if atype.startswith("replace"):
+                continue  # replacements of old papers are not news
+            link = clean(it.findtext("link"))
+            m = re.search(r"abs/([^v\s]+)", link)
+            if not m:
+                continue
+            aid = m.group(1)
+            desc = it.findtext("description") or ""
+            abstract = clean(desc.split("Abstract:", 1)[1] if "Abstract:" in desc else desc)
+            cats = [clean(c.text) for c in it.findall("category") if c.text]
+            rec = out.setdefault(aid, {
+                "source": "arXiv", "id": aid, "url": f"https://arxiv.org/abs/{aid}",
+                "title": clean(it.findtext("title")), "authors":
+                    [clean(a) for a in re.split(r",\s*|\s+and\s+", it.findtext("dc:creator", "", RSS_NS) or "") if a.strip()],
+                "abstract": abstract, "primary_category": "", "categories": cats,
+                "published": ANNOUNCED[cat], "updated": "", "doi": "", "journal_ref": "",
+            })
+            if atype == "new":
+                rec["primary_category"] = cat
+            rec["categories"] = sorted(set(rec["categories"]) | set(cats))
+        time.sleep(1)
+    if errors and not out and len(errors) == len(ARXIV_CATS):
+        raise RuntimeError("; ".join(errors)[:300])
+    return list(out.values())
+
+
+# ---------------------------------------------------------------- arXiv OAI-PMH (whole window, all physics)
+OAI_BASES = ["https://oaipmh.arxiv.org/oai", "https://export.arxiv.org/oai2"]
+OAI_NS = {"o": "http://www.openarchives.org/OAI/2.0/", "a": "http://arxiv.org/OAI/arXiv/"}
+
+
+def arxiv_oai(since: dt.datetime) -> list[dict]:
+    """ListRecords from the window start; keep records whose v1 was created in the window."""
+    created_min = (since - dt.timedelta(days=1)).date().isoformat()
+    last_err = None
+    for base in OAI_BASES:
+        for oai_set in ("physics", None):
+            out: dict[str, dict] = {}
+            params = {"verb": "ListRecords", "metadataPrefix": "arXiv", "from": since.date().isoformat()}
+            if oai_set:
+                params["set"] = oai_set
+            url = f"{base}?{urllib.parse.urlencode(params)}"
+            try:
+                for _page in range(60):
+                    root = ET.fromstring(get(url, retries=5, pause=10, max_wait=300))
+                    err = root.find("o:error", OAI_NS)
+                    if err is not None:
+                        if err.get("code") == "noRecordsMatch":
+                            return []
+                        raise RuntimeError(f"OAI error {err.get('code')}: {clean(err.text)}")
+                    for rec in root.iterfind(".//o:record", OAI_NS):
+                        md = rec.find("o:metadata/a:arXiv", OAI_NS)
+                        if md is None:
+                            continue
+                        created = md.findtext("a:created", "", OAI_NS)
+                        if created < created_min:
+                            continue  # metadata update / replacement of an older paper
+                        title = clean(md.findtext("a:title", "", OAI_NS))
+                        abstract = clean(md.findtext("a:abstract", "", OAI_NS))
+                        if not is_relevant(title, abstract):
+                            continue
+                        aid = md.findtext("a:id", "", OAI_NS)
+                        cats = (md.findtext("a:categories", "", OAI_NS) or "").split()
+                        authors = [clean(f"{a.findtext('a:forenames', '', OAI_NS)} {a.findtext('a:keyname', '', OAI_NS)}")
+                                   for a in md.findall("a:authors/a:author", OAI_NS)]
+                        out[aid] = {
+                            "source": "arXiv", "id": aid, "url": f"https://arxiv.org/abs/{aid}", "title": title,
+                            "authors": authors, "abstract": abstract,
+                            "primary_category": cats[0] if cats else "", "categories": cats,
+                            "published": created, "updated": md.findtext("a:updated", "", OAI_NS) or "",
+                            "doi": md.findtext("a:doi", "", OAI_NS) or "",
+                            "journal_ref": clean(md.findtext("a:journal-ref", "", OAI_NS)),
+                        }
+                    tok = root.find(".//o:resumptionToken", OAI_NS)
+                    if tok is None or not (tok.text or "").strip():
+                        return list(out.values())
+                    url = f"{base}?{urllib.parse.urlencode({'verb': 'ListRecords', 'resumptionToken': tok.text.strip()})}"
+                    time.sleep(5)  # OAI flow control
+                raise RuntimeError("OAI: too many pages")
+            except Exception as e:  # noqa: BLE001
+                last_err = e
+                if "badArgument" not in str(e) and "noSetHierarchy" not in str(e):
+                    break  # set was fine, endpoint failed -> try next base
+    raise RuntimeError(str(last_err))
+
+
+def merge_arxiv(lists: list[list[dict]], names: list[str]) -> list[dict]:
+    """Merge arXiv records from several harvesters; richer fields win, provenance kept in found_by."""
+    out: dict[str, dict] = {}
+    for recs, name in zip(lists, names):
+        for r in recs:
+            cur = out.get(r["id"])
+            if cur is None:
+                out[r["id"]] = {**r, "found_by": [name]}
+                continue
+            cur["found_by"].append(name)
+            for k in ("primary_category", "doi", "journal_ref", "updated"):
+                if not cur.get(k) and r.get(k):
+                    cur[k] = r[k]
+            if len(r.get("authors", [])) > len(cur.get("authors", [])):
+                cur["authors"] = r["authors"]
+            if len(r.get("abstract", "")) > len(cur.get("abstract", "")):
+                cur["abstract"] = r["abstract"]
+            if re.match(r"\d{4}-\d{2}-\d{2}", r.get("published", "")) and r["published"] < cur.get("published", "9"):
+                cur["published"] = r["published"]
+            cur["categories"] = sorted(set(cur.get("categories", [])) | set(r.get("categories", [])))
+    return list(out.values())
+
+
 # ---------------------------------------------------------------- Crossref
 CROSSREF_QUERIES = ["nitrogen-vacancy diamond", "NV center diamond sensing", "NV centers magnetometry",
                     "nanodiamond quantum sensing", "diamond quantum sensor ODMR"]
@@ -185,8 +366,9 @@ def crossref_search(since: dt.date) -> list[dict]:
 
 
 # ---------------------------------------------------------------- OpenAlex
-OPENALEX_QUERIES = ["nitrogen-vacancy", "NV center diamond", "NV centers diamond", "nanodiamond sensing",
-                    "diamond magnetometry"]
+OPENALEX_SEARCH = ('"nitrogen-vacancy" OR "nitrogen vacancy" OR "NV center" OR "NV centers" OR "NV centre" '
+                   'OR "NV ensemble" OR nanodiamond OR "diamond magnetometry" OR "diamond quantum" OR ODMR')
+OPENALEX_PUB_BACK_DAYS = 30   # publication_date can trail/lead indexing; seen.json removes repeats
 
 
 def _inv_to_text(inv: dict | None) -> str:
@@ -196,36 +378,89 @@ def _inv_to_text(inv: dict | None) -> str:
     return " ".join(w for _, w in pos)
 
 
+def _openalex_params(extra: dict) -> dict:
+    p = dict(extra)
+    if MAILTO:
+        p["mailto"] = MAILTO
+    if OPENALEX_KEY:
+        p["api_key"] = OPENALEX_KEY
+    return p
+
+
 def openalex_search(since: dt.date) -> list[dict]:
     out: dict[str, dict] = {}
-    for qtext in OPENALEX_QUERIES:
-        params = {"search": qtext, "filter": f"from_created_date:{since.isoformat()}", "per-page": 100,
-                  "select": "id,doi,title,publication_date,created_date,primary_location,authorships,"
-                            "abstract_inverted_index,ids,type"}
-        if MAILTO:
-            params["mailto"] = MAILTO
-        if OPENALEX_KEY:
-            params["api_key"] = OPENALEX_KEY
-        data = json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(params)))
-        for w in data.get("results", []):
-            title = clean(w.get("title"))
-            abstract = clean(_inv_to_text(w.get("abstract_inverted_index")))
-            if not is_relevant(title, abstract):
-                continue
-            doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
-            if doi and NOISE_DOI.search(doi):
-                continue
-            src = ((w.get("primary_location") or {}).get("source") or {})
-            key = doi or w.get("id")
-            out[key] = {
-                "source": "OpenAlex", "id": key, "url": f"https://doi.org/{doi}" if doi else w.get("id"),
-                "title": title,
-                "authors": [clean((a.get("author") or {}).get("display_name")) for a in w.get("authorships") or []],
-                "abstract": abstract, "venue": clean(src.get("display_name")),
-                "created": w.get("created_date", ""), "published": w.get("publication_date", ""), "doi": doi,
-            }
-        time.sleep(1.5)
+    pub_from = (since - dt.timedelta(days=OPENALEX_PUB_BACK_DAYS)).isoformat()
+    params = _openalex_params({
+        "search": OPENALEX_SEARCH, "filter": f"from_publication_date:{pub_from},type:article",
+        "sort": "publication_date:desc", "per-page": 200,
+        "select": "id,doi,title,publication_date,created_date,primary_location,authorships,"
+                  "abstract_inverted_index,type"})
+    data = json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(params),
+                          retries=3, pause=20, max_wait=90))
+    for w in data.get("results", []):
+        title = clean(w.get("title"))
+        abstract = clean(_inv_to_text(w.get("abstract_inverted_index")))
+        if not is_relevant(title, abstract):
+            continue
+        doi = (w.get("doi") or "").replace("https://doi.org/", "").lower()
+        if doi and NOISE_DOI.search(doi):
+            continue
+        src = ((w.get("primary_location") or {}).get("source") or {})
+        key = doi or w.get("id")
+        out[key] = {
+            "source": "OpenAlex", "id": key, "url": f"https://doi.org/{doi}" if doi else w.get("id"),
+            "title": title,
+            "authors": [clean((a.get("author") or {}).get("display_name")) for a in w.get("authorships") or []],
+            "abstract": abstract, "venue": clean(src.get("display_name")),
+            "created": w.get("created_date", ""), "published": w.get("publication_date", ""), "doi": doi,
+        }
     return list(out.values())
+
+
+# ---------------------------------------------------------------- abstract back-fill for journal items
+def enrich_abstracts(items: list[dict]) -> dict:
+    """Fill missing abstracts (Elsevier etc. withhold them from Crossref). Best effort, never fatal."""
+    need = {i["doi"]: i for i in items if i.get("doi") and not i.get("abstract")}
+    report = {"missing": len(need), "filled": 0, "errors": []}
+    if not need:
+        return report
+    dois = list(need)
+    # OpenAlex: DOI lookups in batches of 50 (cheap list calls, no search)
+    for k in range(0, len(dois), 50):
+        batch = dois[k:k + 50]
+        try:
+            params = _openalex_params({"filter": "doi:" + "|".join(batch), "per-page": 50,
+                                       "select": "doi,abstract_inverted_index"})
+            data = json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(params),
+                                  retries=2, pause=15, max_wait=60))
+            for w in data.get("results", []):
+                d = (w.get("doi") or "").replace("https://doi.org/", "").lower()
+                txt = clean(_inv_to_text(w.get("abstract_inverted_index")))
+                if d in need and txt and not need[d].get("abstract"):
+                    need[d]["abstract"], need[d]["abstract_from"] = txt, "OpenAlex"
+                    report["filled"] += 1
+        except Exception as e:  # noqa: BLE001
+            report["errors"].append(f"OpenAlex: {str(e)[:120]}")
+    # Semantic Scholar batch endpoint for whatever is still missing
+    left = [d for d in dois if not need[d].get("abstract")]
+    if left:
+        try:
+            body = json.dumps({"ids": [f"DOI:{d}" for d in left[:400]]}).encode()
+            data = json.loads(get("https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr",
+                                  data=body, retries=3, pause=10, max_wait=60))
+            for d, p in zip(left, data):
+                if not p:
+                    continue
+                txt = clean(p.get("abstract") or "")
+                src = "Semantic Scholar"
+                if not txt and (p.get("tldr") or {}).get("text"):
+                    txt, src = "[TLDR only] " + clean(p["tldr"]["text"]), "Semantic Scholar TLDR"
+                if txt:
+                    need[d]["abstract"], need[d]["abstract_from"] = txt, src
+                    report["filled"] += 1
+        except Exception as e:  # noqa: BLE001
+            report["errors"].append(f"Semantic Scholar: {str(e)[:120]}")
+    return report
 
 
 # ---------------------------------------------------------------- state / output
@@ -252,15 +487,33 @@ def main() -> int:
     status: dict[str, dict] = {}
     items: list[dict] = []
 
-    for name, fn in [("arXiv", lambda: arxiv_search(since, now)),
+    arx_lists, arx_names = [], []
+    for name, fn in [("arXiv-RSS", arxiv_rss),
+                     ("arXiv-OAI", lambda: arxiv_oai(since)),
+                     ("arXiv-API", lambda: arxiv_search(since, now)),
                      ("Crossref", lambda: crossref_search(since.date())),
                      ("OpenAlex", lambda: openalex_search(since.date()))]:
+        t0 = time.time()
         try:
             got = fn()
-            status[name] = {"ok": True, "hits": len(got)}
-            items.extend(got)
+            if name.startswith("arXiv"):
+                got = [g for g in got if is_relevant(g["title"], g["abstract"])]
+                arx_lists.append(got)
+                arx_names.append(name)
+            else:
+                items.extend(got)
+            status[name] = {"ok": True, "hits": len(got), "secs": round(time.time() - t0)}
         except Exception as e:  # noqa: BLE001
-            status[name] = {"ok": False, "error": str(e)[:300]}
+            status[name] = {"ok": False, "error": str(e)[:300], "secs": round(time.time() - t0)}
+        print(f"{name}: {status[name]}", file=sys.stderr)
+    # the arXiv block counts as working if any harvester worked
+    status["arXiv"] = {"ok": any(status[n]["ok"] for n in ("arXiv-RSS", "arXiv-OAI", "arXiv-API")),
+                       "hits": 0}
+    if not status["arXiv"]["ok"]:
+        status["arXiv"]["error"] = "all arXiv harvesters failed"
+    merged = merge_arxiv(arx_lists, arx_names)
+    status["arXiv"]["hits"] = len(merged)
+    items.extend(merged)
 
     # de-duplicate: arXiv first; journal items that match an arXiv DOI / title are attached, not repeated
     def norm_title(t: str) -> str:
@@ -294,6 +547,7 @@ def main() -> int:
         i["score"] = score(i["title"], i.get("abstract", ""))
     new_arx.sort(key=lambda i: (-i["score"], i["published"]))
     new_jnl.sort(key=lambda i: (-i["score"], i.get("created", "")))
+    enrich = enrich_abstracts(new_jnl)
 
     today = now.date().isoformat()
     for i in new_arx:
@@ -317,9 +571,15 @@ def main() -> int:
         except Exception:  # noqa: BLE001
             pass
 
+    run_url = (f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}/actions/runs/"
+               f"{os.environ['GITHUB_RUN_ID']}") if os.environ.get("GITHUB_RUN_ID") else ""
+    announced = sorted({v for v in ANNOUNCED.values() if re.match(r"\d{4}-", v)})
     digest = {
         "generated_utc": now.isoformat(timespec="seconds"),
         "date": today,
+        "run_url": run_url,
+        "arxiv_announcement": announced[-1] if announced else "",
+        "abstract_backfill": enrich,
         "search_window_utc": [since.isoformat(timespec="minutes"), now.isoformat(timespec="minutes")],
         "sources": status,
         "arxiv_new": new_arx,
@@ -337,11 +597,16 @@ def main() -> int:
           f"{digest['search_window_utc'][1]} (items already reported in earlier digests are excluded).", "",
           "Sources: " + "; ".join(f"{k}: {'ok, ' + str(v['hits']) + ' hits' if v['ok'] else 'FAILED – ' + v['error']}"
                                   for k, v in status.items()), "",
+          f"arXiv announcement covered by RSS: {digest['arxiv_announcement'] or 'none (weekend/holiday or RSS failed)'}. "
+          f"Journal abstracts back-filled: {enrich['filled']}/{enrich['missing']}"
+          + (f" ({'; '.join(enrich['errors'])})" if enrich["errors"] else "") + ".",
+          *( [f"Run: {run_url}"] if run_url else [] ), "",
           f"## arXiv ({len(new_arx)} new)", ""]
     for i in new_arx:
         md += [f"### [{i['title']}]({i['url']})",
                f"- {fmt_authors(i['authors'])} · arXiv:{i['id']} · {i['primary_category']} "
                f"(cats: {', '.join(i['categories'])}) · submitted {i['published'][:10]} · relevance score {i['score']}"
+               + f" · found by {'+'.join(i.get('found_by', []))}"
                + (f" · journal ref: {i['journal_ref']}" if i.get("journal_ref") else ""),
                f"- Abstract: {i['abstract']}", ""]
     md += [f"## Journals ({len(new_jnl)} new)", ""]
@@ -349,7 +614,8 @@ def main() -> int:
         md += [f"### [{i['title']}]({i['url']})",
                f"- {fmt_authors(i['authors'])} · {i.get('venue','')} · created {i.get('created','')[:10]} · "
                f"published {i.get('published','')} · via {i['source']} · relevance score {i['score']}",
-               f"- Abstract: {i.get('abstract') or '(not provided by index)'}", ""]
+               f"- Abstract{' (via ' + i['abstract_from'] + ')' if i.get('abstract_from') else ''}: "
+               f"{i.get('abstract') or '(not provided by any index)'}", ""]
     mdt = "\n".join(md)
     (DIGESTS / f"{today}.md").write_text(mdt)
     (DIGESTS / "latest.md").write_text(mdt)
