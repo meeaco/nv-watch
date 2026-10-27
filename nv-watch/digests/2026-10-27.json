@@ -1,0 +1,186 @@
+{
+ "generated_utc": "2026-10-27T06:21:56+00:00",
+ "date": "2026-10-27",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/40460649482",
+ "arxiv_announcement": "2026-10-27",
+ "abstract_backfill": {
+  "missing": 3,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-10-22T06:21+00:00",
+  "2026-10-27T06:21+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 1,
+   "secs": 14,
+   "scanned": 377
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 2,
+   "secs": 31
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 1,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 10,
+   "secs": 18
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 46,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 2
+  }
+ },
+ "arxiv_new": [
+  {
+   "source": "arXiv",
+   "id": "2610.35016",
+   "url": "https://arxiv.org/abs/2610.35016",
+   "title": "From Single Spins to Ensembles: A Calibrated Symbolic Regression Pipeline for NV Spectroscopy",
+   "authors": [
+    "Evan Zhang",
+    "Zhenghang Zhi",
+    "Zewei Wang",
+    "Zeheng Wang"
+   ],
+   "abstract": "Characterizing nitrogen-vacancy (NV) ensembles requires connecting their collective spectra to individual centers that experience different local environments. We develop a symbolic-regression pipeline that carries single-center spin structure into a calibrated ensemble model by generating individual spectral responses and combining them with explicit weights. A constrained search selects Hermitian operator terms from single-center optically detected magnetic resonance spectra, fits their coefficients, and retains the selected expressions as source models for the ensemble. Ensemble calibration then accounts for resonance shifts, local disorder, orientation, and optical response while keeping the individual spectral contributions accessible. On public single-center and ensemble data, the zero-field ensemble held-frequency root-mean-square error decreases from 0.008835 to 0.003872 in normalized photoluminescence, a 56.2% improvement over matched uncorrected composition. In controlled QuTiP ensembles of 128 sites spanning four NV orientations, models calibrated at 0 and 3 mT predict an independently held-out 5.17 mT spectrum with errors of 0.000207-0.000228 across three random seeds, comparable to the 0.000200 noise standard deviation. Resolving the simulated response into its individual-center contributions shows how local spectral diversity combines into the ensemble line shape. By retaining the source Hamiltonians while calibrating sample-dependent spectral differences, the pipeline connects local spin physics to collective optical readout and makes the contributions to an ensemble line shape available for physical interpretation.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "cs.AI",
+    "quant-ph"
+   ],
+   "published": "2026-10-26",
+   "updated": "2026-10-27",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 2
+  }
+ ],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1063/5.0350351",
+   "url": "https://doi.org/10.1063/5.0350351",
+   "title": "Effect of crystal size on triplet pair dynamics in singlet fission of rubrene",
+   "authors": [
+    "Yusuke Wakikawa",
+    "Kazuma Kachi",
+    "Tadaaki Ikoma"
+   ],
+   "abstract": "Singlet fission proceeds via spin-correlated triplet (TT) pairs and offers promising applications in solar cells, magneto-optical sensors, and quantum technologies. Here, we quantitatively investigated how crystalline morphology influences TT pair dynamics during singlet fission in rubrene orthorhombic crystals by combining experimental and theoretical analyses of the magnetic field dependence of the magnetoluminescence (ML) effect, defined as the magnetic-field-induced change in fluorescence intensity, up to 300 mT at room temperature. Rapidly annealed thin films exhibit an anomalous low-field ML effect, whose maximum reaches -25.2%, and the negative effect persists up to 300 mT. By contrast, millimeter-sized single crystals exhibit a decrease of approximately one order of magnitude in the negative ML effect, accompanied by a low-field shift of the zero-crossing field separating negative and positive ML. The observed results were successfully reproduced by density-matrix simulations based on a four-site model and could be explained by an enhancement in an effective TT pair dissociation rate with increasing crystal size, which shortens the lifetime of the spin-correlated TT pairs undergoing repeated cycles of hopping and spin mixing. The optically detected magnetic resonance measurements at zero field further suggest that long-lived triplet excitons are more readily detected in rapidly annealed films with micrometer-sized crystals than in millimeter-sized single crystals, providing complementary evidence for morphology-dependent triplet localization and transport. These results demonstrate that crystalline morphology provides an effective route to tune TT pair lifetime and spin mixing in rubrene singlet fission, which is crucial for optimizing singlet-fission-based applications.",
+   "venue": "The Journal of Chemical Physics",
+   "created": "2026-10-02T00:00:00",
+   "published": "2026-10-01",
+   "doi": "10.1063/5.0350351",
+   "_key": "10.1063/5.0350351",
+   "score": 8
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1063/5.0345285",
+   "url": "https://doi.org/10.1063/5.0345285",
+   "title": "Development of an ultrahigh-vacuum-compatible cryogen-free scanning nitrogen-vacancy magnetometer",
+   "authors": [
+    "Sihai Jiao",
+    "Chunzheng Wang",
+    "Haoran Zheng",
+    "Zhong Wang",
+    "Maosen Guo",
+    "Changjiang Zhu",
+    "Chunlei Gao"
+   ],
+   "abstract": "Scanning nitrogen-vacancy (NV) magnetometry has emerged as a powerful technique for nanoscale magnetic imaging owing to its high spatial resolution, high magnetic sensitivity, and noninvasive optical readout. For low-temperature operation, existing scanning NV microscopes have been implemented in different cryogenic systems, including liquid-helium cryostats and closed-cycle refrigerators. However, ultrahigh-vacuum compatibility and in situ sample/probe exchange remain largely unavailable in these systems, hindering measurements on pristine and surface-sensitive quantum materials. Here, we report a cryogen-free ultrahigh-vacuum scanning nitrogen-vacancy microscope equipped with an in-vacuum three-axis vector superconducting magnet, reaching a base pressure of 2 × 10-10 Torr and sample temperatures down to 2 K. The system enables in situ exchange and separate temperature control of both the sample and the probe. A pillar-array diamond probe architecture is implemented to provide flexible selection of NV centers with different crystallographic orientations, allowing access to complementary magnetic-field projections of a single spin texture. System performance is verified through thermal characterization, single-NV characterization, NV-sample distance calibration, and magnetic imaging demonstrations, which include imaging the same skyrmion bubble with two nitrogen-vacancy centers of different orientations in CoFeB and resolving individual superconducting vortices in bulk NbSe2.",
+   "venue": "Review of Scientific Instruments",
+   "created": "2026-10-03T00:00:00",
+   "published": "2026-10-01",
+   "doi": "10.1063/5.0345285",
+   "_key": "10.1063/5.0345285",
+   "score": 8
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1109/tim.2026.3747104",
+   "url": "https://doi.org/10.1109/tim.2026.3747104",
+   "title": "CNN-Assisted Bias-Field-Free Weak Magnetic Field Measurement With a Fiber-Coupled NV Ensemble Probe",
+   "authors": [
+    "Na Li",
+    "Jinxu Wang",
+    "Yong Wang",
+    "Kunpeng Zhang",
+    "Heng Hang",
+    "Jinfeng Wang",
+    "Yang Wang",
+    "Zhiqiang Zhang",
+    "Wentao Lu",
+    "Bo Yang",
+    "Guanxiang Du",
+    "Guijin Tang"
+   ],
+   "abstract": "",
+   "venue": "IEEE Transactions on Instrumentation and Measurement",
+   "created": "2026-10-26T19:23:32Z",
+   "published": "2026",
+   "doi": "10.1109/tim.2026.3747104",
+   "_key": "10.1109/tim.2026.3747104",
+   "score": 2
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.diamond.2026.114287",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114287",
+   "title": "Nanodiamond colorants for digital art brand marketing: Spectral tuning and visual communication study",
+   "authors": [
+    "Dong Xie",
+    "Wei-Lun Hsu"
+   ],
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-10-26T17:14:45Z",
+   "published": "2026-10",
+   "doi": "10.1016/j.diamond.2026.114287",
+   "_key": "10.1016/j.diamond.2026.114287",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1103/fjhl-yd66",
+   "url": "https://doi.org/10.1103/fjhl-yd66",
+   "title": "Nonlinear optical charge-state switching and pumping to dark state of a diamond nitrogen-vacancy center",
+   "authors": [
+    "Prasoon K. Shandilya",
+    "Vinaya K. Kavatamane",
+    "Sigurd Flågan",
+    "David P. Lake",
+    "Denis Sukachev",
+    "Paul E. Barclay"
+   ],
+   "abstract": "",
+   "venue": "Physical Review Letters",
+   "created": "2026-10-26T22:46:21Z",
+   "published": "2026-10-26",
+   "doi": "10.1103/fjhl-yd66",
+   "_key": "10.1103/fjhl-yd66",
+   "score": 0
+  }
+ ]
+}
