@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-10-28T09:01:30+00:00",
+ "generated_utc": "2026-10-28T10:38:23+00:00",
  "date": "2026-10-28",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/40661028670",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/40673683552",
  "arxiv_announcement": "2026-10-28",
  "abstract_backfill": {
   "missing": 0,
@@ -9,14 +9,14 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-10-23T09:01+00:00",
-  "2026-10-28T09:01+00:00"
+  "2026-10-23T10:38+00:00",
+  "2026-10-28T10:38+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 2,
-   "secs": 14,
+   "secs": 13,
    "scanned": 294
   },
   "arXiv-OAI": {
@@ -25,14 +25,14 @@
    "secs": 30
   },
   "arXiv-API": {
-   "ok": false,
-   "error": "GET failed: https://export.arxiv.org/api/query?search_query=%28abs%3Ananodiamond+OR+abs%3Ananodiamonds+OR+abs%3A%22diamond+quantum+sensing%22+OR+abs%3A%22diamond+membrane%22+OR+abs%3A%22NV+thermometry%22+OR+abs%3A%22NV+relaxometry%22%29+AND+submittedDate%3A%5B202610230901+TO+202610280901%5D&start=0&",
-   "secs": 256
+   "ok": true,
+   "hits": 2,
+   "secs": 11
   },
   "Crossref": {
    "ok": true,
    "hits": 8,
-   "secs": 15
+   "secs": 17
   },
   "OpenAlex": {
    "ok": true,

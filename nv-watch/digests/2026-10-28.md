@@ -1,11 +1,11 @@
 # NV watch digest 2026-10-28
 
-Generated 2026-10-28T09:01:30+00:00 UTC. Search window 2026-10-23T09:01+00:00 → 2026-10-28T09:01+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-10-28T10:38:23+00:00 UTC. Search window 2026-10-23T10:38+00:00 → 2026-10-28T10:38+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 2 hits of 294 scanned; arXiv-OAI: ok, 2 hits; arXiv-API: FAILED – GET failed: https://export.arxiv.org/api/query?search_query=%28abs%3Ananodiamond+OR+abs%3Ananodiamonds+OR+abs%3A%22diamond+quantum+sensing%22+OR+abs%3A%22diamond+membrane%22+OR+abs%3A%22NV+thermometry%22+OR+abs%3A%22NV+relaxometry%22%29+AND+submittedDate%3A%5B202610230901+TO+202610280901%5D&start=0&; Crossref: ok, 8 hits; OpenAlex: ok, 49 hits; arXiv: ok, 2 hits
+Sources: arXiv-RSS: ok, 2 hits of 294 scanned; arXiv-OAI: ok, 2 hits; arXiv-API: ok, 2 hits; Crossref: ok, 8 hits; OpenAlex: ok, 49 hits; arXiv: ok, 2 hits
 
 arXiv announcement covered by RSS: 2026-10-28. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/40661028670
+Run: https://github.com/meeaco/nv-watch/actions/runs/40673683552
 
 ## arXiv (1 new)
 
