@@ -1,0 +1,164 @@
+{
+ "generated_utc": "2026-10-28T06:53:15+00:00",
+ "date": "2026-10-28",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/40646588195",
+ "arxiv_announcement": "2026-10-28",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-10-23T06:53+00:00",
+  "2026-10-28T06:53+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 2,
+   "secs": 13,
+   "scanned": 294
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 2,
+   "secs": 33
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 2,
+   "secs": 27
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 8,
+   "secs": 16
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 49,
+   "secs": 1
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 2
+  }
+ },
+ "arxiv_new": [
+  {
+   "source": "arXiv",
+   "id": "2610.36359",
+   "url": "https://arxiv.org/abs/2610.36359",
+   "title": "Multi-day single-cell magnetic imaging of living cancer cells using Quantum Cell Monitoring",
+   "authors": [
+    "Andre Pointner",
+    "Sarah Belasi",
+    "Regine Schneider-Stock",
+    "Roland Nagy"
+   ],
+   "abstract": "Live-cell imaging of cellular and tissue samples relies predominantly on optical modalities, such as fluorescence, confocal, and multiphoton microscopy, in which cellular information is encoded in emitted photons. Photons scatter and attenuate in biological samples, restricting depth resolution, while the excitation light required to produce them induces photodamage that perturbs the very biology under observation. Magnetic fields, by contrast, traverse biological samples without attenuation at cellular length scales, but the imaging modality that extracts the encoded information, magnetic resonance imaging, cannot resolve individual cells. Here we present Quantum Cell Monitoring (QCM), a widefield nitrogen-vacancy magnetometry platform that encodes single-cell information in stray magnetic fields rather than emitted photons and reads it out at subcellular resolution. Integrated with a specialized live-cell incubator, QCM tracks magnetically labeled living cancer for up to 72 h through their individual magnetic field signatures. It captures single-cell mitosis and morphological remodeling, as well as cell cluster formation, splitting, and migration even within dense regions where brightfield contrast collapses. By shifting the carrier of single-cell information from propagating optical photons to static magnetic stray fields, QCM decouples cell from cellular optical accessibility and auto-fluorescence, enabling sustained live-cell observation in regimes inaccessible to optical microscopy.",
+   "primary_category": "physics.optics",
+   "categories": [
+    "physics.bio-ph",
+    "physics.optics",
+    "quant-ph"
+   ],
+   "published": "2026-10-26",
+   "updated": "2026-10-28",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 7
+  }
+ ],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1073/pnas.2534326123",
+   "url": "https://doi.org/10.1073/pnas.2534326123",
+   "title": "Solid-state laser refrigeration of nanoscale quantum sensors",
+   "authors": [
+    "Zhaojie Feng",
+    "Anupum Pant",
+    "Robert G. Felsted",
+    "Alexander B. Bard",
+    "Xiaojing Xia",
+    "Siamak Dadras",
+    "Kamran Shayan",
+    "Danika R. Luntz-Martin",
+    "Donald Mannikko",
+    "Lars Forberger",
+    "Alexey Soldatenko",
+    "Ilia M. Pavlovetc",
+    "Stefan Stoll",
+    "Masaru K. Kuno",
+    "A. Nick Vamivakas",
+    "Peter J. Pauzauskie"
+   ],
+   "abstract": "Photothermal heating remains a major challenge during the optical excitation of nanoscale quantum sensors [C. Bradac, S. F. Lim, H. C. Chang, I. Aharonovich, Adv. Opt. Mater. 8 , 2000183 (2020)]. At low laser powers, heating of the sensor leads to the thermal drift of quantum electronic transition energies. At high laser powers, sensors degrade due to thermally induced phase transitions, including melting. Here, we report a general approach for mitigating the photothermal heating of nanoscale quantum sensors through solid-state laser refrigeration of the sensors’ underlying substrate. Experimentally, both nanodiamonds and gold nanocrystals are attached separately to a ceramic laser-cooling substrate through van der Waals interaction. A combination of Debye–Waller factor thermometry and optically detected magnetic resonance spectroscopy of nitrogen vacancy centers is used to demonstrate that solid-state laser refrigeration of the substrate can reduce the temperature of attached nanodiamond payloads by 25 ± 3 K below steady-state operating temperatures. Stokes/anti-Stokes Raman spectroscopy is used to demonstrate reduced photothermal heating of plasmonic gold nanocrystals by 8.8 ± 2.7 K during surface-enhanced Raman spectroscopy sensing of rhodamine-6G molecules. These results suggest that solid-state laser cooling could open up experimental possibilities for rapid feedback-controlled cooling of a wide range of nanoscale quantum resources.",
+   "venue": "Proceedings of the National Academy of Sciences",
+   "created": "2026-10-27T00:00:00",
+   "published": "2026-10-26",
+   "doi": "10.1073/pnas.2534326123",
+   "_key": "10.1073/pnas.2534326123",
+   "score": 6
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1021/acscatal.6c06227",
+   "url": "https://doi.org/10.1021/acscatal.6c06227",
+   "title": "Mechanism-Driven Size Optimization of Fully Exposed Rh Cluster Catalysts for Butane Dehydrogenation",
+   "authors": [
+    "Xiaowen Chen",
+    "Xiaohai Wang",
+    "Doudou Wang",
+    "Tianyi Ruan",
+    "Xiangbin Cai",
+    "Feng Hong",
+    "Yang Si",
+    "Jingwang Zhang",
+    "Guodong Wen",
+    "Jiangyong Diao",
+    "Mi Peng",
+    "Geng Sun",
+    "Ding Ma",
+    "Hongyang Liu"
+   ],
+   "abstract": "Abstract Nonoxidative butane dehydrogenation offers a direct route to C4 olefins, yet it remains challenged by the need to promote C–H activation while ensuring olefin desorption and suppressing C–C cracking. Here, we report a mechanism-guided study that combines density functional theory calculations with experimental validation to rationally design Rh-based catalysts for butane dehydrogenation. A series of Rh models with distinct geometric configurations on a graphene surface, including isolated Rh atom, fully exposed Rh2 and Rh3 clusters, and extended Rh surfaces, were constructed to elucidate the structure–activity relationship. The calculations reveal a volcano-type dependence of dehydrogenation activity on the Rh geometric configuration. Fully exposed Rh3 clusters exhibit optimal energetics for sequential C–H activation, whereas isolated Rh atoms and Rh nanoparticles show inferior activity. Experimental studies on Rh/nanodiamond@graphene catalysts confirm the prediction, demonstrating that fully exposed Rh clusters with an average Rh–Rh coordination number of approximately 1.9 achieve the best balance between C–H activation, olefin desorption, and C–C bond cleavage suppression. This study highlights highly efficient Rh active sites by regulating the geometric configuration and electronic property and provides a general strategy for designing dehydrogenation catalysts.",
+   "venue": "ACS Catalysis",
+   "created": "2026-10-27T00:00:00",
+   "published": "2026-10-26",
+   "doi": "10.1021/acscatal.6c06227",
+   "_key": "10.1021/acscatal.6c06227",
+   "score": 3
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.apsusc.2026.168786",
+   "url": "https://doi.org/10.1016/j.apsusc.2026.168786",
+   "title": "Frequency-dependent dielectric behavior of aerosol-jet printed nanodiamond thin films",
+   "authors": [
+    "Felix White",
+    "Attila Rektor",
+    "Tony Valayil Varghese",
+    "Karthik Chinnathambi",
+    "Josh Eixenberger",
+    "M. Meyyappan",
+    "David Estrada"
+   ],
+   "abstract": "",
+   "venue": "Applied Surface Science",
+   "created": "2026-10-28T00:04:36Z",
+   "published": "2026-10",
+   "doi": "10.1016/j.apsusc.2026.168786",
+   "_key": "10.1016/j.apsusc.2026.168786",
+   "score": 2
+  }
+ ]
+}
