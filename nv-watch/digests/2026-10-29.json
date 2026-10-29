@@ -1,18 +1,16 @@
 {
- "generated_utc": "2026-10-29T07:11:01+00:00",
+ "generated_utc": "2026-10-29T08:57:50+00:00",
  "date": "2026-10-29",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/40833778963",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/40845930765",
  "arxiv_announcement": "2026-10-29",
  "abstract_backfill": {
-  "missing": 2,
+  "missing": 0,
   "filled": 0,
-  "errors": [
-   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
-  ]
+  "errors": []
  },
  "search_window_utc": [
-  "2026-10-24T07:11+00:00",
-  "2026-10-29T07:11+00:00"
+  "2026-10-24T08:57+00:00",
+  "2026-10-29T08:57+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
@@ -24,7 +22,7 @@
   "arXiv-OAI": {
    "ok": true,
    "hits": 2,
-   "secs": 35
+   "secs": 32
   },
   "arXiv-API": {
    "ok": true,
@@ -34,12 +32,12 @@
   "Crossref": {
    "ok": true,
    "hits": 11,
-   "secs": 15
+   "secs": 12
   },
   "OpenAlex": {
    "ok": true,
    "hits": 49,
-   "secs": 2
+   "secs": 1
   },
   "arXiv": {
    "ok": true,
