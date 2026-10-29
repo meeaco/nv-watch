@@ -1,0 +1,130 @@
+{
+ "generated_utc": "2026-10-29T07:11:01+00:00",
+ "date": "2026-10-29",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/40833778963",
+ "arxiv_announcement": "2026-10-29",
+ "abstract_backfill": {
+  "missing": 2,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-10-24T07:11+00:00",
+  "2026-10-29T07:11+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 13,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 2,
+   "secs": 35
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 2,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 11,
+   "secs": 15
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 49,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 2
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "Crossref",
+   "id": "10.1002/adfm.79303",
+   "url": "https://doi.org/10.1002/adfm.79303",
+   "title": "Hardware‐Intrinsic Encryption Using Spectrally Multiplexed Nitrogen Vacancy Spin Ensembles in Nanodiamonds",
+   "authors": [
+    "Jiaqi Li",
+    "Tongtong Zhang",
+    "Zhiqin Chu"
+   ],
+   "abstract": "ABSTRACT Secure encryption lies at the heart of data protection across virtually every sector of modern society. Physical unclonable functions (PUFs) provide an indispensable root of trust for ensuring this security. However, existing PUFs remain limited by two key constraints: a trade‐off between cryptographic capacity and physical footprint, and architectural vulnerabilities to both key‐centric interception and machine‐learning (ML) cloning attacks. Here, we introduce a hardware‐intrinsic, coherent‐spin‐mediated encryption architecture based on nanodiamonds (NDs) containing nitrogen‐vacancy (NV) centers. Spectral multiplexing of spin‐resonance channels directly transduces microwave‐programmed plaintext into the frequency and phase of coherent Rabi oscillations, yielding hardware‐specific temporal waveforms as physical ciphertext. Operating within a sub‐wavelength footprint, this process supports over 10 45 addressable encryption states, corresponding to an encoding density of approximately 721 bits µm – 2 , which represents the highest value reported for a physical‐security platform. The coherent quantum evolution of the NV spin ensembles, together with ND‐specific disorder, produces a complex, channel‐dependent plaintext‐to‐waveform transformation that proved difficult for the evaluated ML models to reconstruct, with predictive accuracy approaching the random‐guessing baseline. These results establish a new encryption paradigm, delivering an ultra‐dense, intrinsically unclonable encryption foundation for next‐generation secure devices.",
+   "venue": "Advanced Functional Materials",
+   "created": "2026-10-29T05:02:16Z",
+   "published": "2026-10-28",
+   "doi": "10.1002/adfm.79303",
+   "_key": "10.1002/adfm.79303",
+   "score": 2
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1021/acssensors.6c04017",
+   "url": "https://doi.org/10.1021/acssensors.6c04017",
+   "title": "Quantum Sensing Technologies for Ultrasensitive Biomarker Detection in Biomedical Diagnostics from Fundamental Principles to Clinical Translation",
+   "authors": [
+    "Umapathi Krishnamoorthy"
+   ],
+   "abstract": "Abstract Quantum sensing technologies offer unprecedented detection sensitivities down to single-molecule, attomolar detection limits and thus are emerging as transformative tools for ultra-sensitive biomarker detection in biomedical diagnostics. This comprehensive review synthesizes insights from over 380 plus studies to provide recent advances in quantum sensor platforms, examining the fundamental quantum mechanical principles that enable enhanced sensitivity, and surveys a diverse range of quantum sensing technologies along with their applications across the biomedical field. Specifically, nitrogen-vacancy (NV) centers in diamond, quantum dots, superconducting quantum interference devices (SQUIDs), and other quantum sensing modalities applied to biomarker detection for cancer diagnostics, cardiovascular disease, neurological disorders, and infectious disease detection are reviewed. Further, the key technical challenges that hurdle their clinical translation are critically evaluated. The review results demonstrate that quantum-enhanced biosensors have achieved detection limits of the order of magnitude below conventional methods. Intrinsic to their capabilities, several quantum sensing platforms have progressed to clinical testing and early commercialization efforts. Specifically, for point-of-care diagnosis, early disease detection, and personalized medicine.",
+   "venue": "ACS Sensors",
+   "created": "2026-10-28T20:01:56Z",
+   "published": "2026-10-28",
+   "doi": "10.1021/acssensors.6c04017",
+   "_key": "10.1021/acssensors.6c04017",
+   "score": 1
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.diamond.2026.114342",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114342",
+   "title": "A new look at water crystallization in nanodiamond hydrosols",
+   "authors": [
+    "Petr V. Dmitraykov",
+    "Nikita M. Kuznetsov",
+    "Kristina Yu. Bazyleva",
+    "Alexander I. Buzin",
+    "Artem V. Bakirov",
+    "Sergei N. Chvalun",
+    "Anastasiia S. Chizhikova",
+    "Alexander V. Shvidchenko",
+    "Eugeny D. Eidelman",
+    "Alexander Ya. Vul"
+   ],
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-10-28T20:03:43Z",
+   "published": "2026-10",
+   "doi": "10.1016/j.diamond.2026.114342",
+   "_key": "10.1016/j.diamond.2026.114342",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.diamond.2026.114314",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114314",
+   "title": "Corrigendum to “Detecting gaseous molecular oxygen with fluorescent nanodiamonds at elevated pressures” [Diam. Relat. Mater. 169 (2026) 114159]",
+   "authors": [
+    "Nicholas Nunn",
+    "Antonin Marek",
+    "Olga A. Shenderova",
+    "Marco D. Torelli"
+   ],
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-10-28T22:09:02Z",
+   "published": "2026-10",
+   "doi": "10.1016/j.diamond.2026.114314",
+   "_key": "10.1016/j.diamond.2026.114314",
+   "score": 0
+  }
+ ]
+}
