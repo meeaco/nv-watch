@@ -1,28 +1,30 @@
 {
- "generated_utc": "2026-10-30T10:54:14+00:00",
- "date": "2026-10-30",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41044128548",
- "arxiv_announcement": "2026-10-30",
+ "generated_utc": "2026-10-31T07:03:21+00:00",
+ "date": "2026-10-31",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41179049704",
+ "arxiv_announcement": "2026-10-31",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 1,
   "filled": 0,
-  "errors": []
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
  },
  "search_window_utc": [
-  "2026-10-25T10:54+00:00",
-  "2026-10-30T10:54+00:00"
+  "2026-10-26T07:03+00:00",
+  "2026-10-31T07:03+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 3,
+   "hits": 0,
    "secs": 13,
-   "scanned": 529
+   "scanned": 0
   },
   "arXiv-OAI": {
-   "ok": true,
-   "hits": 6,
-   "secs": 47
+   "ok": false,
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-10-26&set=physics :: TimeoutError('The read operation timed out')",
+   "secs": 1203
   },
   "arXiv-API": {
    "ok": true,
@@ -31,238 +33,104 @@
   },
   "Crossref": {
    "ok": true,
-   "hits": 12,
+   "hits": 14,
    "secs": 12
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 51,
+   "hits": 53,
    "secs": 1
   },
   "arXiv": {
    "ok": true,
-   "hits": 6
+   "hits": 5
   }
  },
- "arxiv_new": [
-  {
-   "source": "arXiv",
-   "id": "2610.24340",
-   "url": "https://arxiv.org/abs/2610.24340",
-   "title": "Maximum-Temperature Theorem for a Nanothermometer",
-   "authors": [
-    "Taras Plakhotnik"
-   ],
-   "abstract": "We derive a sharp upper bound on the quasi-steady temperature rise of a sensor of arbitrary shape and known thermometric volume $V_\\mathrm{s}$, placed anywhere inside a region enclosed by an isothermal reference surface. The bound also requires the total heat power generated in the region $\\dot{Q}_\\mathrm{r}$ and a lower bound on its thermal conductivity $κ_{\\scriptscriptstyle{\\mathcal {V}_{\\mathrm{r}}}}$. It is otherwise independent of the heat-source distribution, domain shape, and source--sensor distance. For $\\dot Q_\\mathrm{r}=50~\\mathrm{pW}$, $κ_{\\scriptscriptstyle{\\mathcal{V}_{\\mathrm r}}} =0.1~\\mathrm{W\\,m^{-1}K^{-1}}$, and $V_{\\mathrm s}$ equal to the volume of a $60~\\mathrm{nm}$-diameter sphere, the theorem permits a maximum temperature rise of approximately $2~\\mathrm{mK}$. Neither source localization nor uncertain source--sensor separation can therefore account for reported kelvin-scale intracellular readings under steady-state heat conduction. The result applies to sensors based on nanodiamonds, upconversion nanoparticles, fluorescent polymer beads, and core--shell quantum dots.",
-   "primary_category": "cond-mat.stat-mech",
-   "categories": [
-    "cond-mat.stat-mech",
-    "cond-mat.mtrl-sci",
-    "physics.class-ph"
-   ],
-   "published": "2026-10-29",
-   "updated": "2026-10-30",
-   "doi": "",
-   "journal_ref": "",
-   "found_by": [
-    "arXiv-OAI"
-   ],
-   "score": 11
-  },
-  {
-   "source": "arXiv",
-   "id": "2610.38762",
-   "url": "https://arxiv.org/abs/2610.38762",
-   "title": "A Luminescent Organic Triradical as an Optically Addressable Qudit",
-   "authors": [
-    "Kueyoung E. Kim",
-    "Avik Bhanja",
-    "Alistair Inglis",
-    "William K. Myers",
-    "Sam L. Bayliss",
-    "Richard H. Friend",
-    "Petri Murto"
-   ],
-   "abstract": "Luminescent molecular trityl radicals provide options for optically-addressable electron spins and are promising for quantum sensing. Here, we present a luminescent triradical comprising three trityl groups covalently attached to a central phenyl ring. We find two distinct photoluminescence bands at 633 nm and 690 nm with different temporal evolutions, which we attribute to excited quartet and doublet states respectively. The ground state quartet is 1 meV (11.5K) lower in energy than the doublet, resulting in near-equal population of doublets and quartets at room temperature. We demonstrate optically initialized spin polarization, coherent control of the ground state quartet, and optical readout. Potential for optical quantum sensing is shown via optically detected magnetic resonance at room temperature and magneto-photoluminescence up to 3% at 5 mT. This material is a candidate optically addressable molecular qudit, providing opportunities to leverage larger state spaces than qubit systems.",
-   "primary_category": "cond-mat.mtrl-sci",
-   "categories": [
-    "cond-mat.mtrl-sci"
-   ],
-   "published": "2026-10-28",
-   "updated": "2026-10-30",
-   "doi": "",
-   "journal_ref": "",
-   "found_by": [
-    "arXiv-RSS",
-    "arXiv-OAI",
-    "arXiv-API"
-   ],
-   "score": 3
-  },
-  {
-   "source": "arXiv",
-   "id": "2610.39693",
-   "url": "https://arxiv.org/abs/2610.39693",
-   "title": "Optimized Dynamical Decoupling for Spin Ensembles with Large Inhomogeneities",
-   "authors": [
-    "Rajan Paul",
-    "Genko Genov",
-    "Oliver Schmid",
-    "Shinobu Onoda",
-    "Yutaka Kobayashi",
-    "Junichi Isoya",
-    "Fedor Jelezko"
-   ],
-   "abstract": "Spin ensembles show increasing promise for highly efficient quantum sensing and quantum technologies. However, protecting their coherent properties remains a significant challenge. Dynamical decoupling (DD) typically employs a sequence of fast pulses that aim to reduce the effect of unwanted system-environment interactions. However, the performance of the DD sequences typically suffers in spin ensembles, e.g., due to amplitude and frequency inhomogeneities and control errors. In this work, we compare the performance of an extensive number of DD protocols for coherence protection and quantum sensing in an ensemble of negatively charged NV centers under ambient conditions. We identify the optimal approach that uses rapid adiabatic passage pulses, which are robust to amplitude and frequency inhomogeneity, in combination with the variation of their phases. We experimentally demonstrate an improved signal contrast and an order-of-magnitude increase in memory time with the optimal sequence compared to the widely used XY8 with standard rectangular pulses. We also apply our approach for improved sensing of a weak oscillating field. While our particular demonstration is with NV centers in diamond, the optimized protocol is generally applicable to other spin ensembles and to systems with high amplitude and/or frequency inhomogeneities.",
-   "primary_category": "quant-ph",
-   "categories": [
-    "quant-ph"
-   ],
-   "published": "2026-10-29",
-   "updated": "2026-10-30",
-   "doi": "",
-   "journal_ref": "",
-   "found_by": [
-    "arXiv-RSS",
-    "arXiv-OAI",
-    "arXiv-API"
-   ],
-   "score": 2
-  },
-  {
-   "source": "arXiv",
-   "id": "2610.39022",
-   "url": "https://arxiv.org/abs/2610.39022",
-   "title": "High bandwidth heterodyne sensing with bulk NV diamond",
-   "authors": [
-    "H. A. M. Taylor",
-    "J. P. Duff",
-    "L. B. Miller",
-    "A. Tritt",
-    "M. S. Oldfield",
-    "K. Helmerson",
-    "M. S. J. Barson"
-   ],
-   "abstract": "Developing high performance portable sensors is of significant importance for both terrestrial and satellite communications, with quantum sensors offering potential advantages in sensitivity and bandwidth. The nitrogen vacancy center in diamond is a popular quantum sensing platform for its relative simplicity and wide range of acceptable operating conditions, but suffers a limited instantaneous bandwidth due to the narrow linewidth of the spin resonance. In this work, we first present a magnetic quantum sensing scheme utilizing heterodyne mixing with strong optical and microwave driving, achieving MHz-scale instantaneous bandwidth with a sensitivity of $548 \\; \\text{pT/}\\sqrt{\\text{Hz}}$ in an active diamond volume of $ 2.5\\times 10^{-4} \\; \\text{mm}^3$ with $2 \\times 10^{11}$ NV centers. We then demonstrate expansion of the sensing bandwidth by employing a strong magnetic gradient and many individually modulated microwave control fields, expanding the single resonance bandwidth to 48 MHz with a peak sensitivity of $8.5 \\; \\text{nT/}\\sqrt{\\text{Hz}}$.",
-   "primary_category": "quant-ph",
-   "categories": [
-    "quant-ph"
-   ],
-   "published": "2026-10-28",
-   "updated": "2026-10-30",
-   "doi": "",
-   "journal_ref": "",
-   "found_by": [
-    "arXiv-RSS",
-    "arXiv-OAI",
-    "arXiv-API"
-   ],
-   "score": 1
-  }
- ],
+ "arxiv_new": [],
  "journal_new": [
   {
    "source": "OpenAlex",
-   "id": "10.1103/x5ym-1w9j",
-   "url": "https://doi.org/10.1103/x5ym-1w9j",
-   "title": "Signatures of Gaussian superconducting fluctuations in nonlocal noise magnetometry",
+   "id": "10.1016/j.commatsci.2026.115184",
+   "url": "https://doi.org/10.1016/j.commatsci.2026.115184",
+   "title": "First-principles determination of sub-lattice 3D vector magnetic fields in antiferromagnetic hematite",
    "authors": [
-    "Dror Orgad"
+    "Jun Lü"
    ],
-   "abstract": "We calculate the two-point magnetic noise spectrum arising from Gaussian superconducting fluctuations, a quantity directly measurable by spin qubit pairs such as nitrogen vacancy centers in diamond. The analysis utilizes the time-dependent Ginzburg-Landau theory, reflecting the direct contribution of fluctuating Cooper pairs to the current correlations and consequent magnetic noise. We treat both two-dimensional systems and wires, considering them in equilibrium and under a uniform electric field. The signal is expected to be strongest in high-temperature superconductors, and we contrast our findings with the predicted signatures of a vortex liquid to offer an additional route to elucidate the nature of fluctuations in these systems.",
-   "venue": "Physical review. B./Physical review. B",
-   "created": "2026-05-21T00:00:00",
-   "published": "2026-10-28",
-   "doi": "10.1103/x5ym-1w9j",
-   "_key": "10.1103/x5ym-1w9j",
-   "score": 4
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1002/qute.70537",
-   "url": "https://doi.org/10.1002/qute.70537",
-   "title": "Front Cover: Real‐Time Monitoring of Paramagnetic Reactions Using Spin Relaxometry with Fluorescent Nanodiamonds (Adv. Quantum Technol. 11/2026)",
-   "authors": [
-    "Trent Ralph",
-    "Erin S. Grant",
-    "Lianne Lay",
-    "Sepehr Ahmadi",
-    "David A. Simpson"
-   ],
-   "abstract": "",
-   "venue": "Advanced Quantum Technologies",
-   "created": "2026-10-29T14:57:49Z",
+   "abstract": "In quantum materials, accurately predicting the full three-dimensional vector magnetic field inside materials is crucial for bridging theoretical magnetism and experimental observations. However, conventional approaches relying on the vector potential face inherent limitations of field strength arbitrariness due to gauge dependence. By integrating first-principles calculations with microscopic magnetostatic field modeling based on atomic-scale spin densities, this work quantitatively determines the 3D vector magnetic fields inside the unit cell of hematite ( α − Fe 2 O 3 ), without introducing a vector potential. This approach adopts gauge invariance and variational principle, to enable precise determination of field magnitudes. Applying this approach to antiferromagnetic hematite as a model system, this paper achieves the first clear visualization of its sublattice-resolved 3D vector magnetic field and quantitatively analyzes the internal field evolution across the Morin transition. It is found that although no region of the crystal in antiferromagnetic hematite exhibits a vanishing total magnetic field, each vector component spans a substantial volume where its magnitude approaches zero. Calculations yield a most probable internal flux density of 1.5 T below and 1.0 T above the Morin transition, showing close agreement (within 4%) with experimental values in both regimes. Notably, 99% of the crystal volume is subjected to magnetic flux densities below 17 T in both phases. Crucially, the ultrahigh effective magnetic field inferred from Mössbauer spectroscopy reflects a localized on-site scalar energy coupling, fundamentally distinct from the extended 3D magnetostatic vector field landscape. In contrast, the statistical characteristics of the total field from muon spin relaxation and rotation ( μ SR) and the vector components from neutron scattering provide direct microscopic evidence. The morphology of the magnetic field isosurfaces evolves from reflecting long-range lattice order at low fields to tracing localized ionic orbitals at high fields (above 2 T). Furthermore, the consistency of the predicted surface fields with nitrogen-vacancy center magnetometry provides a complementary validation at the hematite’s surface, solidifying the reliability of the approach across different spatial regimes. New results thus yield a unified framework that reconciles the apparent discrepancies in critical transition fields from various experiments, which offers fundamental insights for the understanding and control of magnetic structures at the atomic scale in quantum materials and devices.",
+   "venue": "Computational Materials Science",
+   "created": "2026-10-30T00:00:00",
    "published": "2026-10-29",
-   "doi": "10.1002/qute.70537",
-   "_key": "10.1002/qute.70537",
-   "score": 4
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1364/oe.612892",
-   "url": "https://doi.org/10.1364/oe.612892",
-   "title": "High Sensitivity Fiber-Coupled Vector Magnetometry using NV Centers in a Femtosecond Laser-Written Diamond Waveguide",
-   "authors": [
-    "Demininggus Pekei",
-    "Giulio Coccia",
-    "Argyri Giakoumaki",
-    "Roberta Ramponi",
-    "A Bennett",
-    "Shane Eaton",
-    "JP Hadden"
-   ],
-   "abstract": "",
-   "venue": "Optics Express",
-   "created": "2026-10-29T17:00:07Z",
-   "published": "2026-10-29",
-   "doi": "10.1364/oe.612892",
-   "_key": "10.1364/oe.612892",
-   "score": 2
+   "doi": "10.1016/j.commatsci.2026.115184",
+   "_key": "10.1016/j.commatsci.2026.115184",
+   "score": 7
   },
   {
    "source": "OpenAlex",
-   "id": "10.1364/oe.611797",
-   "url": "https://doi.org/10.1364/oe.611797",
-   "title": "All-fiber quantum current transformer based on nitrogen-vacancy centers",
+   "id": "10.1002/adma.75484",
+   "url": "https://doi.org/10.1002/adma.75484",
+   "title": "Scalable and Lithography‐Free Fabrication of High‐Aspect‐Ratio Diamond Nanowires for Photonic and Electrochemical Applications",
    "authors": [
-    "Qingtao Guo",
-    "Chenggang Guan",
-    "龚姣丽",
-    "junchang huang",
-    "Chaoqiang Dong",
-    "何泓洋 He Hongyang",
-    "ruichang zheng",
-    "Qingling Mei",
-    "Junzhu Ye",
-    "liangyu chen",
-    "Mingqing Cai"
+    "Jishnu Murukeshan",
+    "Xiang Zhang",
+    "Yifan Zhu",
+    "Kinfung Ngan",
+    "Daniel Hernández",
+    "Tymofii S. Pieshkov",
+    "Prithwiraj Ganguly",
+    "Zhi Kai Ng",
+    "Vinod Kumar",
+    "Alex Giangiorgi",
+    "S. M. King",
+    "Xinting Shuai",
+    "Róbert Vajtai",
+    "Edwin Hang Tong Teo",
+    "Sidong Lei",
+    "Shuo Sun",
+    "Jun Lou",
+    "Pulickel Madhavapanicker Ajayan"
    ],
-   "abstract": "High-voltage substations impose stringent requirements on current measurement, demanding simultaneously high electrical insulation and stable, high-precision performance. Here we propose and experimentally validate an all-fiber quantum current transformer based on nitrogen-vacancy (NV) centers in diamond. The transformer employs four optical fibers to realize power delivery and signal transmission between the high-voltage and low-voltage sides, completely eliminating metallic electrical connections. The system achieves a magnetic sensitivity of 4.05 nT/Hz 1/2 , with highly linear current response ( R 2 = 0.998) and a measurement accuracy better than 1%. This all-fiber architecture satisfies the dual constraints of high-voltage insulation and low power consumption while preserving the metrological precision of quantum sensing, providing a viable pathway toward non-invasive precision current monitoring in next-generation smart substations.",
-   "venue": "Optics Express",
-   "created": "2026-10-14T00:00:00",
-   "published": "2026-10-13",
-   "doi": "10.1364/oe.611797",
-   "_key": "10.1364/oe.611797",
-   "score": 1
+   "abstract": "ABSTRACT The scalable integration of low‐dimensional diamond nanostructures into advanced technologies is fundamentally bottlenecked by the complexity and high cost of conventional lithography. Here we report a highly scalable, lithography‐free top‐down etching approach to produce densely distributed high‐aspect‐ratio (HAR) diamond nanowires across polycrystalline (PCD), single‐crystal (SCD), and boron‐doped diamond (BDD) substrates, including continuous fabrication on a full 2‐inch wafer. By correlating time‐dependent surface characterizations, transmission electron microscopy (TEM), energy‐dispersive x‐ray spectroscopy (EDS) elemental mapping, and 3D femtosecond laser tomography, we elucidate an Ag‐initiated, redeposition‐sustained secondary inorganic micromasking process: self‐assembled Ag nanoclusters initiate nanowire formation, while redeposited inorganic residues derived from the carrier wafer and chamber environment sustain anisotropic etching during prolonged reactive ion etching (RIE). The broad versatility of this method is validated through distinct functional demonstrations: PCD nanowires demonstrate a pronounced transition to hydrophobicity; SCD nanowires demonstrate spatial modulation and localized enhancement of ensemble nitrogen‐vacancy (NV) photoluminescence, while finite‐difference time‐domain (FDTD) simulations support nanowire‐assisted optical extraction; BDD nanowires provide an approximately 30‐fold increase in electrochemical double‐layer capacitance (C dl )‐derived accessible electrochemical surface area, achieving a 2.5‐fold enhancement in pollutant‐degradation kinetics with stable electrochemical operation. This study establishes a viable and scalable pathway for integrating diamond nanostructures into advanced sensing, photonics, and electrocatalysis.",
+   "venue": "Advanced Materials",
+   "created": "2026-10-30T00:00:00",
+   "published": "2026-10-28",
+   "doi": "10.1002/adma.75484",
+   "_key": "10.1002/adma.75484",
+   "score": 5
   },
   {
    "source": "Crossref",
-   "id": "10.1103/xh3t-sspj",
-   "url": "https://doi.org/10.1103/xh3t-sspj",
-   "title": "Magnetic levitation and spatial superposition of a nanodiamond with a current-carrying chip",
-   "authors": [
-    "Qian Xiang",
-    "Shafaq Gulzar Elahi",
-    "Andrew Geraci",
-    "Sougato Bose",
-    "Anupam Mazumdar"
-   ],
+   "id": "10.1002/adfm.79353",
+   "url": "https://doi.org/10.1002/adfm.79353",
+   "title": "Correction to “Irradiation‐Induced Spin Bath Evolution and as‐Grown Hydrogen Defects in CVD Diamond Revealed by NV‐Based DEER Spectroscopy”",
+   "authors": [],
    "abstract": "",
-   "venue": "Physical Review A",
-   "created": "2026-10-29T17:15:26Z",
-   "published": "2026-10-29",
-   "doi": "10.1103/xh3t-sspj",
-   "_key": "10.1103/xh3t-sspj",
+   "venue": "Advanced Functional Materials",
+   "created": "2026-10-30T11:22:37Z",
+   "published": "2026-10-30",
+   "doi": "10.1002/adfm.79353",
+   "_key": "10.1002/adfm.79353",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1139/cjp-2026-0236",
+   "url": "https://doi.org/10.1139/cjp-2026-0236",
+   "title": "Non-Markovian Quantum Memory in a Hybrid NV Center--Mechanical Mode System: BLP and RHP Characterization of Spin--Phonon Coupling Effects",
+   "authors": [
+    "Mohamed El Mouhajir",
+    "Said Mouslih",
+    "Mohamed Jakha",
+    "Moha Ouali",
+    "Sabrine El Asri",
+    "Souad Taj",
+    "B. Manaut"
+   ],
+   "abstract": "We investigate non-Markovian quantum memory in a negatively charged nitrogen-vacancy (NV) center strain-coupled to a quantized mechanical mode. From the spin-1 NV Hamiltonian and the C_3v spin--strain interaction, we derive an effective qubit--phonon model with transverse exchange and longitudinal phase-modulation couplings. The open dynamics is described by a GKSL master equation, and memory in the reduced qubit channel is characterized using trace-distance backflow for the orthogonal reference pair │±〉= (│0〉± │-1〉) / √2 and the Rivas--Huelga--Plenio (RHP) CP-divisibility criterion. At resonance, the reference-pair BLP backflow follows transverse &gt; hybrid &gt; longitudinal, whereas the extrapolated RHP quantity follows hybrid &gt; transverse &gt;&gt; longitudinal. Adding g_z / ω_m = 0.10 to the transverse baseline g⊥ / ω_m = 0.20 reduces the reference-pair backflow by 8.61% while increasing the RHP quantity by approximately 78.65%. This opposite response is traced to the distinct roles of coherent exchange and longitudinal phase modulation in distinguishability recovery and full-channel CP-indivisibility. The same ordering contrast persists over the sampled detuning interval, whereas thermal occupation can modify the BLP hierarchy and induce isolated noninvertibility of the reduced dynamical map for some exchange-containing regimes. Numerical validation and convergence tests confirm the robustness of the principal resonance result and delineate the validity of the inverse-based RHP construction.",
+   "venue": "Canadian Journal of Physics",
+   "created": "2026-10-30T21:33:26Z",
+   "published": "2026-10-30",
+   "doi": "10.1139/cjp-2026-0236",
+   "_key": "10.1139/cjp-2026-0236",
    "score": 0
   }
  ]

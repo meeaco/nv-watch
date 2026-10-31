@@ -1,0 +1,137 @@
+{
+ "generated_utc": "2026-10-31T07:03:21+00:00",
+ "date": "2026-10-31",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41179049704",
+ "arxiv_announcement": "2026-10-31",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-10-26T07:03+00:00",
+  "2026-10-31T07:03+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 13,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": false,
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-10-26&set=physics :: TimeoutError('The read operation timed out')",
+   "secs": 1203
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 5,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 14,
+   "secs": 12
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 53,
+   "secs": 1
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 5
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1016/j.commatsci.2026.115184",
+   "url": "https://doi.org/10.1016/j.commatsci.2026.115184",
+   "title": "First-principles determination of sub-lattice 3D vector magnetic fields in antiferromagnetic hematite",
+   "authors": [
+    "Jun Lü"
+   ],
+   "abstract": "In quantum materials, accurately predicting the full three-dimensional vector magnetic field inside materials is crucial for bridging theoretical magnetism and experimental observations. However, conventional approaches relying on the vector potential face inherent limitations of field strength arbitrariness due to gauge dependence. By integrating first-principles calculations with microscopic magnetostatic field modeling based on atomic-scale spin densities, this work quantitatively determines the 3D vector magnetic fields inside the unit cell of hematite ( α − Fe 2 O 3 ), without introducing a vector potential. This approach adopts gauge invariance and variational principle, to enable precise determination of field magnitudes. Applying this approach to antiferromagnetic hematite as a model system, this paper achieves the first clear visualization of its sublattice-resolved 3D vector magnetic field and quantitatively analyzes the internal field evolution across the Morin transition. It is found that although no region of the crystal in antiferromagnetic hematite exhibits a vanishing total magnetic field, each vector component spans a substantial volume where its magnitude approaches zero. Calculations yield a most probable internal flux density of 1.5 T below and 1.0 T above the Morin transition, showing close agreement (within 4%) with experimental values in both regimes. Notably, 99% of the crystal volume is subjected to magnetic flux densities below 17 T in both phases. Crucially, the ultrahigh effective magnetic field inferred from Mössbauer spectroscopy reflects a localized on-site scalar energy coupling, fundamentally distinct from the extended 3D magnetostatic vector field landscape. In contrast, the statistical characteristics of the total field from muon spin relaxation and rotation ( μ SR) and the vector components from neutron scattering provide direct microscopic evidence. The morphology of the magnetic field isosurfaces evolves from reflecting long-range lattice order at low fields to tracing localized ionic orbitals at high fields (above 2 T). Furthermore, the consistency of the predicted surface fields with nitrogen-vacancy center magnetometry provides a complementary validation at the hematite’s surface, solidifying the reliability of the approach across different spatial regimes. New results thus yield a unified framework that reconciles the apparent discrepancies in critical transition fields from various experiments, which offers fundamental insights for the understanding and control of magnetic structures at the atomic scale in quantum materials and devices.",
+   "venue": "Computational Materials Science",
+   "created": "2026-10-30T00:00:00",
+   "published": "2026-10-29",
+   "doi": "10.1016/j.commatsci.2026.115184",
+   "_key": "10.1016/j.commatsci.2026.115184",
+   "score": 7
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1002/adma.75484",
+   "url": "https://doi.org/10.1002/adma.75484",
+   "title": "Scalable and Lithography‐Free Fabrication of High‐Aspect‐Ratio Diamond Nanowires for Photonic and Electrochemical Applications",
+   "authors": [
+    "Jishnu Murukeshan",
+    "Xiang Zhang",
+    "Yifan Zhu",
+    "Kinfung Ngan",
+    "Daniel Hernández",
+    "Tymofii S. Pieshkov",
+    "Prithwiraj Ganguly",
+    "Zhi Kai Ng",
+    "Vinod Kumar",
+    "Alex Giangiorgi",
+    "S. M. King",
+    "Xinting Shuai",
+    "Róbert Vajtai",
+    "Edwin Hang Tong Teo",
+    "Sidong Lei",
+    "Shuo Sun",
+    "Jun Lou",
+    "Pulickel Madhavapanicker Ajayan"
+   ],
+   "abstract": "ABSTRACT The scalable integration of low‐dimensional diamond nanostructures into advanced technologies is fundamentally bottlenecked by the complexity and high cost of conventional lithography. Here we report a highly scalable, lithography‐free top‐down etching approach to produce densely distributed high‐aspect‐ratio (HAR) diamond nanowires across polycrystalline (PCD), single‐crystal (SCD), and boron‐doped diamond (BDD) substrates, including continuous fabrication on a full 2‐inch wafer. By correlating time‐dependent surface characterizations, transmission electron microscopy (TEM), energy‐dispersive x‐ray spectroscopy (EDS) elemental mapping, and 3D femtosecond laser tomography, we elucidate an Ag‐initiated, redeposition‐sustained secondary inorganic micromasking process: self‐assembled Ag nanoclusters initiate nanowire formation, while redeposited inorganic residues derived from the carrier wafer and chamber environment sustain anisotropic etching during prolonged reactive ion etching (RIE). The broad versatility of this method is validated through distinct functional demonstrations: PCD nanowires demonstrate a pronounced transition to hydrophobicity; SCD nanowires demonstrate spatial modulation and localized enhancement of ensemble nitrogen‐vacancy (NV) photoluminescence, while finite‐difference time‐domain (FDTD) simulations support nanowire‐assisted optical extraction; BDD nanowires provide an approximately 30‐fold increase in electrochemical double‐layer capacitance (C dl )‐derived accessible electrochemical surface area, achieving a 2.5‐fold enhancement in pollutant‐degradation kinetics with stable electrochemical operation. This study establishes a viable and scalable pathway for integrating diamond nanostructures into advanced sensing, photonics, and electrocatalysis.",
+   "venue": "Advanced Materials",
+   "created": "2026-10-30T00:00:00",
+   "published": "2026-10-28",
+   "doi": "10.1002/adma.75484",
+   "_key": "10.1002/adma.75484",
+   "score": 5
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1002/adfm.79353",
+   "url": "https://doi.org/10.1002/adfm.79353",
+   "title": "Correction to “Irradiation‐Induced Spin Bath Evolution and as‐Grown Hydrogen Defects in CVD Diamond Revealed by NV‐Based DEER Spectroscopy”",
+   "authors": [],
+   "abstract": "",
+   "venue": "Advanced Functional Materials",
+   "created": "2026-10-30T11:22:37Z",
+   "published": "2026-10-30",
+   "doi": "10.1002/adfm.79353",
+   "_key": "10.1002/adfm.79353",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1139/cjp-2026-0236",
+   "url": "https://doi.org/10.1139/cjp-2026-0236",
+   "title": "Non-Markovian Quantum Memory in a Hybrid NV Center--Mechanical Mode System: BLP and RHP Characterization of Spin--Phonon Coupling Effects",
+   "authors": [
+    "Mohamed El Mouhajir",
+    "Said Mouslih",
+    "Mohamed Jakha",
+    "Moha Ouali",
+    "Sabrine El Asri",
+    "Souad Taj",
+    "B. Manaut"
+   ],
+   "abstract": "We investigate non-Markovian quantum memory in a negatively charged nitrogen-vacancy (NV) center strain-coupled to a quantized mechanical mode. From the spin-1 NV Hamiltonian and the C_3v spin--strain interaction, we derive an effective qubit--phonon model with transverse exchange and longitudinal phase-modulation couplings. The open dynamics is described by a GKSL master equation, and memory in the reduced qubit channel is characterized using trace-distance backflow for the orthogonal reference pair │±〉= (│0〉± │-1〉) / √2 and the Rivas--Huelga--Plenio (RHP) CP-divisibility criterion. At resonance, the reference-pair BLP backflow follows transverse &gt; hybrid &gt; longitudinal, whereas the extrapolated RHP quantity follows hybrid &gt; transverse &gt;&gt; longitudinal. Adding g_z / ω_m = 0.10 to the transverse baseline g⊥ / ω_m = 0.20 reduces the reference-pair backflow by 8.61% while increasing the RHP quantity by approximately 78.65%. This opposite response is traced to the distinct roles of coherent exchange and longitudinal phase modulation in distinguishability recovery and full-channel CP-indivisibility. The same ordering contrast persists over the sampled detuning interval, whereas thermal occupation can modify the BLP hierarchy and induce isolated noninvertibility of the reduced dynamical map for some exchange-containing regimes. Numerical validation and convergence tests confirm the robustness of the principal resonance result and delineate the validity of the inverse-based RHP construction.",
+   "venue": "Canadian Journal of Physics",
+   "created": "2026-10-30T21:33:26Z",
+   "published": "2026-10-30",
+   "doi": "10.1139/cjp-2026-0236",
+   "_key": "10.1139/cjp-2026-0236",
+   "score": 0
+  }
+ ]
+}
