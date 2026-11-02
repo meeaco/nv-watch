@@ -1,28 +1,28 @@
 {
- "generated_utc": "2026-11-01T11:19:49+00:00",
- "date": "2026-11-01",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41301396282",
- "arxiv_announcement": "2026-11-01",
+ "generated_utc": "2026-11-02T07:44:00+00:00",
+ "date": "2026-11-02",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41408176749",
+ "arxiv_announcement": "2026-11-02",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 2,
   "filled": 0,
   "errors": []
  },
  "search_window_utc": [
-  "2026-10-27T11:19+00:00",
-  "2026-11-01T11:19+00:00"
+  "2026-10-28T07:44+00:00",
+  "2026-11-02T07:44+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 0,
    "secs": 14,
-   "scanned": 0
+   "scanned": 278
   },
   "arXiv-OAI": {
-   "ok": true,
-   "hits": 6,
-   "secs": 161
+   "ok": false,
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-10-28&set=physics :: TimeoutError('The read operation timed out')",
+   "secs": 702
   },
   "arXiv-API": {
    "ok": true,
@@ -32,7 +32,7 @@
   "Crossref": {
    "ok": true,
    "hits": 10,
-   "secs": 12
+   "secs": 35
   },
   "OpenAlex": {
    "ok": true,
@@ -41,9 +41,90 @@
   },
   "arXiv": {
    "ok": true,
-   "hits": 6
+   "hits": 3
   }
  },
  "arxiv_new": [],
- "journal_new": []
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1002/smll.76526",
+   "url": "https://doi.org/10.1002/smll.76526",
+   "title": "Silk Ionomer Biohybrid Nanoshells Integrating Fluorescent Nanodiamonds for Protective and Optically Responsive β‐Cell Interfaces",
+   "authors": [
+    "Udathari Kumarasinghe",
+    "Devendra Timsina",
+    "Julian M. Sutaria",
+    "Ying Luo",
+    "David Lee Kaplan",
+    "Ying Chen",
+    "Cristian Staii"
+   ],
+   "abstract": "Protecting therapeutic cells while positioning optical probes at the cell-environment interface remains a major challenge in cell-based therapies. Here, we report a multifunctional biohybrid nanoshell combining conformal silk ionomer encapsulation with spatially localized fluorescent nanodiamond probes on pancreatic β-cell spheroids. Ultrathin coatings were constructed by electrostatic layer-by-layer assembly and incorporated carboxylated fluorescent nanodiamonds containing nitrogen-vacancy (NV) centers. This architecture enabled controlled placement of photostable optical probes while maintaining coating integrity. The coatings preserved spheroid metabolic activity and glucose-responsive insulin secretion. Incorporated nanodiamonds displayed pH-responsive optical behavior and were distinguished from the silk matrix and localized at the coated spheroid interface by fluorescence lifetime imaging. The transient silk nanoshell may provide early cytoprotection while minimizing long-term transport limitations. These findings demonstrate successful integration, spatial localization, and optical responsiveness of NV-containing nanodiamonds within an engineered cellular interface. However, quantitative sensing will require future spin-dependent measurements, including NV relaxometry or optically detected magnetic resonance. This platform provides a foundation for integrating protective cell-surface coatings with quantitative nanodiamond-based sensing in cell therapies.",
+   "venue": "Small",
+   "created": "2026-11-01T00:00:00",
+   "published": "2026-10-31",
+   "doi": "10.1002/smll.76526",
+   "_key": "10.1002/smll.76526",
+   "score": 8
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1093/pasj/psag138",
+   "url": "https://doi.org/10.1093/pasj/psag138",
+   "title": "AKARI near-infrared spectroscopy of circumstellar hydrocarbon dust associated with young stellar objects",
+   "authors": [
+    "Y. Kuroda",
+    "Hidehiro Kaneda",
+    "Natsuko Izumi",
+    "Takuma Kokusho",
+    "Shinki Oyabu"
+   ],
+   "abstract": "Abstract We investigate the processing of the circumstellar polycyclic aromatic hydrocarbons (PAHs) associated with young stellar objects (YSOs) through their stellar activities. We analyze the AKARI near-infrared (2.6–4.4$\\, \\mu {\\rm m}$ ) long-slit spectral data of 10 YSOs, focusing on the aromatic feature at a wavelength of 3.3$\\, \\mu {\\rm m}$ and the aliphatic features at 3.4–3.6$\\, \\mu {\\rm m}$. The spectral fitting results show large variations from target to target in the flux ratio of the aliphatic to aromatic features, the shape of the aliphatic feature profile, and the central wavelength of the aromatic feature. In particular, ${\\rm HD}\\,\\,97048$ and Elias 1 show strong aliphatic features at wavelengths longer than 3.5$\\, \\mu {\\rm m}$, which is consistent with the hydrogenated nanodiamond features reported in previous studies. We find that the properties of the hydrocarbon dust vary under the influence of the YSO activity, where the degree of dust processing is likely to be related to the age of the YSO and the amount of the circumstellar dust. In addition, correlation is observed between the variations of the H$_2$O and CO$_2$ ice features and the aliphatic feature profiles, suggesting connection between the formation of CO$_2$ ice and the processing of aliphatic hydrocarbons. Finally, we find a significant correlation between the variations in the central wavelength of the aromatic feature and the shape of the aliphatic feature profile. These findings may be consistent with a tentative scenario in which circumstellar PAHs are converted to nanodiamonds through irradiation by high-energy particles produced by YSO activity.",
+   "venue": "Publications of the Astronomical Society of Japan",
+   "created": "2026-09-29T00:00:00",
+   "published": "2026-10-31",
+   "doi": "10.1093/pasj/psag138",
+   "_key": "10.1093/pasj/psag138",
+   "score": 0
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1016/j.microc.2026.120077",
+   "url": "https://doi.org/10.1016/j.microc.2026.120077",
+   "title": "Machine-learning-assisted dispersive micro-solid-phase extraction of heavy metals in cosmetics using nickel chromite-functionalized activated nanodiamonds prior to microwave plasma-atomic emission spectrometry",
+   "authors": [
+    "Mahboube Shirani",
+    "Hassan Elzain Hassan Ahmed",
+    "Mohammad Saleh Barghi Jahromi",
+    "Marzieh Teimouri",
+    "Mustafa Soylak"
+   ],
+   "abstract": "",
+   "venue": "Microchemical Journal",
+   "created": "2026-10-22T00:00:00",
+   "published": "2026-10-21",
+   "doi": "10.1016/j.microc.2026.120077",
+   "_key": "10.1016/j.microc.2026.120077",
+   "score": 0
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1007/s00723-026-01888-y",
+   "url": "https://doi.org/10.1007/s00723-026-01888-y",
+   "title": "Double Resonance Spectroscopy: Optically Detected Magnetic Resonance and Electron-Nuclear Double Resonance",
+   "authors": [
+    "R. A. Babunts",
+    "P. G. Baranov",
+    "N. G. Romanov"
+   ],
+   "abstract": "",
+   "venue": "Applied Magnetic Resonance",
+   "created": "2026-10-31T00:00:00",
+   "published": "2026-10-30",
+   "doi": "10.1007/s00723-026-01888-y",
+   "_key": "10.1007/s00723-026-01888-y",
+   "score": 0
+  }
+ ]
 }
