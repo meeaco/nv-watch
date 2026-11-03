@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-03T07:58:23+00:00",
+ "generated_utc": "2026-11-03T10:08:06+00:00",
  "date": "2026-11-03",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41599858670",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41616687930",
  "arxiv_announcement": "2026-11-03",
  "abstract_backfill": {
   "missing": 0,
@@ -9,30 +9,30 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-10-29T07:58+00:00",
-  "2026-11-03T07:58+00:00"
+  "2026-10-29T10:08+00:00",
+  "2026-11-03T10:08+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 0,
-   "secs": 13,
-   "scanned": 0
+   "hits": 5,
+   "secs": 14,
+   "scanned": 521
   },
   "arXiv-OAI": {
-   "ok": false,
-   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-10-29&set=physics :: TimeoutError('The read operation timed out')",
-   "secs": 1083
+   "ok": true,
+   "hits": 9,
+   "secs": 39
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 6,
+   "hits": 5,
    "secs": 11
   },
   "Crossref": {
    "ok": true,
    "hits": 6,
-   "secs": 32
+   "secs": 30
   },
   "OpenAlex": {
    "ok": true,
@@ -41,7 +41,7 @@
   },
   "arXiv": {
    "ok": true,
-   "hits": 6
+   "hits": 9
   }
  },
  "arxiv_new": [
