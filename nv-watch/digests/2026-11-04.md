@@ -1,11 +1,11 @@
 # NV watch digest 2026-11-04
 
-Generated 2026-11-04T07:31:40+00:00 UTC. Search window 2026-10-30T07:31+00:00 → 2026-11-04T07:31+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-04T09:56:49+00:00 UTC. Search window 2026-10-30T09:56+00:00 → 2026-11-04T09:56+00:00 (items already reported in earlier digests are excluded).
 
 Sources: arXiv-RSS: ok, 2 hits of 265 scanned; arXiv-OAI: ok, 9 hits; arXiv-API: ok, 7 hits; Crossref: ok, 4 hits; OpenAlex: ok, 45 hits; arXiv: ok, 9 hits
 
-arXiv announcement covered by RSS: 2026-11-04. Journal abstracts back-filled: 0/1 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 429  | {"mess).
-Run: https://github.com/meeaco/nv-watch/actions/runs/41792869073
+arXiv announcement covered by RSS: 2026-11-04. Journal abstracts back-filled: 0/0.
+Run: https://github.com/meeaco/nv-watch/actions/runs/41810891460
 
 ## arXiv (2 new)
 
