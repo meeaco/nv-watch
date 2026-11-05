@@ -1,0 +1,151 @@
+{
+ "generated_utc": "2026-11-05T07:56:39+00:00",
+ "date": "2026-11-05",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/41990756743",
+ "arxiv_announcement": "2026-11-05",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-10-31T07:56+00:00",
+  "2026-11-05T07:56+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 239
+  },
+  "arXiv-OAI": {
+   "ok": false,
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-10-31&set=physics :: TimeoutError('The read operation timed out')",
+   "secs": 1202
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 7,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 3,
+   "secs": 21
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 48,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 7
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1021/acs.jpcc.6c03800",
+   "url": "https://doi.org/10.1021/acs.jpcc.6c03800",
+   "title": "Predicting Defect States: A Quick Screening Protocol for Substitutional Point Defect Engineering",
+   "authors": [
+    "Hyosik Kang",
+    "Lukas Muechler"
+   ],
+   "abstract": "Abstract Point defects in crystalline materials play a central role in determining electronic, optical, and magnetic properties. However, systematic exploration of defect configurations remains computationally expensive because large supercell calculations are required to approximate isolated defects under periodic boundary conditions. We present a unit-cell-based tight-binding protocol that enables rapid prescreening of substitutional defects. The protocol extracts Wannier tight-binding Hamiltonians from small, fully relaxed unit cells of the host and defect-like systems, replicates the host Hamiltonian to construct a supercell model, and introduces the defect by modifying only the on-site energies at the substitution site while leaving the hopping parameters unchanged. We validate the protocol across three diverse systems: isostructural substitutional defects in transition-metal dichalcogenides (MMo MoS2, M = Ce, Zr, Nb, Tc, and Ru), symmetry-breaking carbon substitutions in hexagonal boron nitride (CBCN h-BN), and nitrogen-vacancy (NV) centers in diamond. These case studies span two-dimensional and three-dimensional hosts, simple substitutions, and substitution-vacancy complexes. In all cases, the protocol successfully captures the number of in-gap states, their degeneracies, and their shallow or deep character relative to host band edges, despite some quantitative deviations in absolute energy positions. We further identify limitations for vacancies of highly electronegative atoms and for charge-state or spin-polarization effects, both of which involve self-consistent charge redistribution not captured by the protocol.",
+   "venue": "The Journal of Physical Chemistry C",
+   "created": "2026-06-11T00:00:00",
+   "published": "2026-11-03",
+   "doi": "10.1021/acs.jpcc.6c03800",
+   "_key": "10.1021/acs.jpcc.6c03800",
+   "score": 3
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1364/ao.611880",
+   "url": "https://doi.org/10.1364/ao.611880",
+   "title": "Characterization of Autofluorescence in Optical Fibers for NV-based Sensing Applications",
+   "authors": [
+    "Sigfrid Lindén Johansson",
+    "Alexander Bukschat",
+    "Dennis Lönard",
+    "Alena Erlenbach",
+    "Jonas Gutsche",
+    "Artur Widera"
+   ],
+   "abstract": "Optical fibers are crucial for guiding light in various sensing applications. Especially for quantum sensors such as the nitrogen-vacancy (NV) center in diamond, they enable light control and device miniaturization. However, fluorescence and scattering within the fiber, often referred to as fiber background, autofluorescence, or autoluminescence, can overlap spectrally with the NV centers' fluorescence, degrading the signal-to-noise ratio and thus limiting sensor sensitivity. Here, we investigate the optical spectra of standard optical fibers, considering material dependencies, physical influences, and their fluorescence scaling with excitation power and wavelength. Our results identify spectral components and fiber types with minimal unwanted background signals, guiding the selection of optimal fibers for NV-based quantum sensing.",
+   "venue": "Applied Optics",
+   "created": "2026-02-11T00:00:00",
+   "published": "2026-11-03",
+   "doi": "10.1364/ao.611880",
+   "_key": "10.1364/ao.611880",
+   "score": 1
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/qdlj-d839",
+   "url": "https://doi.org/10.1103/qdlj-d839",
+   "title": "Scalable subsystem-optimized robust control for parallel quantum gates",
+   "authors": [
+    "Xiaodong Yang",
+    "Ran Liu",
+    "Jun Li"
+   ],
+   "abstract": "Accurate and efficient implementation of parallel quantum gates is crucial for scalable quantum information processing. However, the unavoidable crosstalk between qubits in current noisy processors impedes the achievement of high gate fidelities and renders full Hilbert-space control optimization prohibitively difficult. Here, we overcome this challenge by reducing the full-system optimization to crosstalk-robust control over constant-sized subsystems, which dramatically reduces the computational cost. Our method effectively eliminates the leading-order gate operation deviations induced by crosstalk, thereby suppressing error rates. Within this framework, we construct analytical pulse solutions for parallel single-qubit gates and numerical pulses for parallel multi-qubit operations. We validate the proposed approach numerically across multiple platforms, including coupled nitrogen-vacancy centers, a nuclear-spin processor, and superconducting-qubit arrays with up to 200 qubits. As a result, the noise scaling is reduced from exponential to linear for parallel single-qubit gates, and an order-of-magnitude reduction is achieved for parallel multi-qubit gates. Moreover, our method does not require precise knowledge of crosstalk strengths and makes no assumption about the underlying qubit connectivity or lattice geometry, thereby establishing a scalable framework for parallel quantum control in large-scale quantum architectures.",
+   "venue": "Physical Review A",
+   "created": "2026-10-24T00:00:00",
+   "published": "2026-10-23",
+   "doi": "10.1103/qdlj-d839",
+   "_key": "10.1103/qdlj-d839",
+   "score": 0
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1016/j.carbon.2026.122246",
+   "url": "https://doi.org/10.1016/j.carbon.2026.122246",
+   "title": "Visible range sub-band gap photoexcitation of conductive hydrogenated nanodiamonds",
+   "authors": [
+    "Marie Finas",
+    "Hugues A. Girard",
+    "Arsène Chemin",
+    "Yasmine BOUAOUNI",
+    "Christophe Colbeau‐Justin",
+    "Mohan Kumar Kuntumalla",
+    "A. Hoffman",
+    "Maria M. Brzhezinskaya",
+    "Jean‐Charles Arnault"
+   ],
+   "abstract": "Hydrogenated milled nanodiamonds (H-MND) are emerging as original candidates for photocatalysis applications, demonstrating notably outstanding performances for PFOA degradation in water under solar-type illumination. However, the involved sub-band gap photoexcitation mechanisms remain poorly understood, as the material's electronic properties, such as its electron affinity, surface states, and Fermi level depend on both its surface chemistry and its interface with solvent. In this work, surface chemistry and unoccupied surface states of H-MND are investigated by X-Ray Photoelectron Spectroscopy (XPS) and Near Edge X-ray Absorption Fine Structure (NEXAFS), respectively. Their transient photoconductivity under UV and visible light is evaluated by Time-Resolved Microwave Conductivity (TRMC). Comparison with detonation hydrogenated nanodiamonds and oxidized nanodiamonds revealed that all materials exhibit surface states, but that only a hydrogenated surface combined with a high crystallinity (H-MND) induces the creation of free charge carriers under illumination. A broader look at ND band diagrams in air and in aqueous environments allowed us to deduce that ND electron affinity, coupled with the charge transfer equilibrium between ND and their environment, governs sub-band gap photoexcitation. After stabilization in aqueous colloid and creation of an adsorbate layer at the surface enhancing hole conductivity, H-MND exhibit intense photoconductivity at both 2.8 and 3.9 eV, attributed to electronic transitions from the valence band to unoccupied C-H surface states. This study provides crucial insights into the photoexcitation mechanisms of ND and confirms the use of H-MND as a new and efficient photocatalyst in water, even outperforming TiO2 under visible illumination.",
+   "venue": "Carbon",
+   "created": "2026-10-24T00:00:00",
+   "published": "2026-10-23",
+   "doi": "10.1016/j.carbon.2026.122246",
+   "_key": "10.1016/j.carbon.2026.122246",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.mtcomm.2026.116573",
+   "url": "https://doi.org/10.1016/j.mtcomm.2026.116573",
+   "title": "Synergistic active corrosion protection effects of pH-sensitive UiO-66 and nanodiamond hybrids in epoxy coatings under multi-environment conditions",
+   "authors": [
+    "Erfan Tataei",
+    "Amin Dabaleh",
+    "Akbar Shojaei",
+    "Ali Mohammadi"
+   ],
+   "abstract": "",
+   "venue": "Materials Today Communications",
+   "created": "2026-11-04T17:16:36Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.mtcomm.2026.116573",
+   "_key": "10.1016/j.mtcomm.2026.116573",
+   "score": 0
+  }
+ ]
+}
