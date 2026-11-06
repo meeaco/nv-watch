@@ -1,0 +1,68 @@
+{
+ "generated_utc": "2026-11-06T07:58:15+00:00",
+ "date": "2026-11-06",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42184352818",
+ "arxiv_announcement": "2026-11-06",
+ "abstract_backfill": {
+  "missing": 0,
+  "filled": 0,
+  "errors": []
+ },
+ "search_window_utc": [
+  "2026-11-01T07:58+00:00",
+  "2026-11-06T07:58+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 272
+  },
+  "arXiv-OAI": {
+   "ok": false,
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-01&set=physics :: TimeoutError('The read operation timed out')",
+   "secs": 1202
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 4,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 3,
+   "secs": 13
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 48,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 4
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.3390/micro6040093",
+   "url": "https://doi.org/10.3390/micro6040093",
+   "title": "Carbon Nanofillers in Polymer Composites: A Comparative Review of Dimensional Effects on Properties",
+   "authors": [
+    "Zhenhao Zhou",
+    "Jie Gao",
+    "Xiaobing Han"
+   ],
+   "abstract": "Carbon nanofillers have become a research hotspot in high-performance polymer composites, yet the correlation between filler dimensionality and macroscopic properties remains to be systematically elucidated. This review classifies carbon nanofillers into zero-dimensional (fullerenes, nanodiamonds), one-dimensional (carbon nanotubes, nanofibers), two-dimensional (graphene, nanoplatelets), and three-dimensional (assembled carbon black aggregates, graphene foams, and CNT sponges, whose 0D/1D/2D building blocks are specified where relevant) categories and compares their effects on electrical, mechanical, and thermal properties. The findings reveal that dimensionality significantly influences performance through three important pathways, namely percolation network efficiency, interfacial stress transfer, and thermal transport mechanisms including interfacial thermal resistance and phonon scattering. Zero-dimensional fillers excel in wear resistance, one-dimensional fillers impart optimal impact toughness with high aspect ratio, two-dimensional fillers provide the best tensile strength and modulus enhancement with ultra-high specific surface area, and three-dimensional fillers establish long-range continuous reinforcing networks with interconnected porous structures at low loadings. This review also elucidates the synergistic effects of carbon nanofillers with different dimensionalities, demonstrating that judicious filler combinations can break through the performance ceiling of single-filler systems, and three fundamental synergistic mechanisms (network bridging, network filling, and interlayer intercalation/exfoliation) are identified. This review provides a systematic theoretical framework and experimental basis for filler selection and structural design of high-performance polymer composites.",
+   "venue": "Micro",
+   "created": "2026-11-05T00:00:00",
+   "published": "2026-11-04",
+   "doi": "10.3390/micro6040093",
+   "_key": "10.3390/micro6040093",
+   "score": 0
+  }
+ ]
+}
