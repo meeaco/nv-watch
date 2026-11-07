@@ -1,0 +1,67 @@
+{
+ "generated_utc": "2026-11-07T07:15:11+00:00",
+ "date": "2026-11-07",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42350486699",
+ "arxiv_announcement": "2026-11-07",
+ "abstract_backfill": {
+  "missing": 0,
+  "filled": 0,
+  "errors": []
+ },
+ "search_window_utc": [
+  "2026-11-02T07:15+00:00",
+  "2026-11-07T07:15+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 4,
+   "secs": 40
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 3,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 4,
+   "secs": 13
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 44,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 4
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.29121/shodhkosh.v7.i2.2026.9346",
+   "url": "https://doi.org/10.29121/shodhkosh.v7.i2.2026.9346",
+   "title": "DESIGN AND DEVELOPMENT OF A QUANTUM METROLOGY-BASED NETWORK FOR ULTRA-SENSITIVE MAGNETIC AND ELECTRIC FIELD DETECTION",
+   "authors": [
+    "K Maddileti",
+    "Y. S. Reddy"
+   ],
+   "abstract": "In the field of quantum sensing, biomedical diagnostics, nanoscale characterization and advanced electromagnetic monitoring, the detection of weak magnetic and electric fields demands ultra-sensitive sensors with low noise levels, high spatial resolution, and high sensitivity. But, the conventional sensors are sensitive, limited in spatial resolution and have poor noise immunity. This study presents a theoretical and numerical simulation-based investigation of Quantum Metrology-Based Ultra-Sensitive Magnetic and Electric Field Detection (QMUFD) framework, which involves NV-center diamond sensing, preparation of a quantum state, adaptively interrogating the NV-center, suppressing the decoherence, optimizing the Fisher information, and estimating a joint field. The proposed method aims at optimizing the quantum interrogation parameters without sacrificing the quantum coherence effect in the process, to achieve the best possible weak-field detection. The quantitative evaluation results are that the sensitivity of magnetic field is 0.80 nT/√Hz, the sensitivity of electric field is 8.5 V/cm/√Hz, and the SNR is 49.7 dB, the estimation error is 0.62% and the gap of the QCRB is reduced to 4.2%. Ablation analysis shows that adaptive optimization and suppression of the decoherence significantly help in boosting performance. The framework suggested in this work can therefore be used as a promising basis for the high precision measurement of nanoscale magnetic and electric fields, for biomedical, semiconductor, material and quantum based measurement systems.",
+   "venue": "ShodhKosh Journal of Visual and Performing Arts",
+   "created": "2026-11-06T00:00:00",
+   "published": "2026-11-04",
+   "doi": "10.29121/shodhkosh.v7.i2.2026.9346",
+   "_key": "10.29121/shodhkosh.v7.i2.2026.9346",
+   "score": 3
+  }
+ ]
+}
