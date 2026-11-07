@@ -1,16 +1,18 @@
 {
- "generated_utc": "2026-11-07T07:15:11+00:00",
+ "generated_utc": "2026-11-07T09:17:24+00:00",
  "date": "2026-11-07",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42350486699",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42359092157",
  "arxiv_announcement": "2026-11-07",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 1,
   "filled": 0,
-  "errors": []
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 429  | {\"mess"
+  ]
  },
  "search_window_utc": [
-  "2026-11-02T07:15+00:00",
-  "2026-11-07T07:15+00:00"
+  "2026-11-02T09:17+00:00",
+  "2026-11-07T09:17+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
@@ -22,7 +24,7 @@
   "arXiv-OAI": {
    "ok": true,
    "hits": 4,
-   "secs": 40
+   "secs": 42
   },
   "arXiv-API": {
    "ok": true,
@@ -31,7 +33,7 @@
   },
   "Crossref": {
    "ok": true,
-   "hits": 4,
+   "hits": 5,
    "secs": 13
   },
   "OpenAlex": {
@@ -62,6 +64,28 @@
    "doi": "10.29121/shodhkosh.v7.i2.2026.9346",
    "_key": "10.29121/shodhkosh.v7.i2.2026.9346",
    "score": 3
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.carbon.2026.122262",
+   "url": "https://doi.org/10.1016/j.carbon.2026.122262",
+   "title": "Solution-phase fluorination of nanodiamond: Near-surface NV− activation and spin relaxation",
+   "authors": [
+    "Szabolcs Czene",
+    "Olga Krafcsik",
+    "Nikoletta Jegenyés",
+    "Dávid Beke",
+    "László Péter",
+    "Vladimir Verkhovlyuk",
+    "Ádám Gali"
+   ],
+   "abstract": "",
+   "venue": "Carbon",
+   "created": "2026-11-07T07:55:33Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.carbon.2026.122262",
+   "_key": "10.1016/j.carbon.2026.122262",
+   "score": 0
   }
  ]
 }
