@@ -1,11 +1,11 @@
 # NV watch digest 2026-11-08
 
-Generated 2026-11-08T07:26:57+00:00 UTC. Search window 2026-11-03T07:26+00:00 → 2026-11-08T07:26+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-08T09:34:33+00:00 UTC. Search window 2026-11-03T09:34+00:00 → 2026-11-08T09:34+00:00 (items already reported in earlier digests are excluded).
 
 Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: FAILED – GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-03&set=physics :: TimeoutError('The read operation timed out'); arXiv-API: ok, 1 hits; Crossref: ok, 4 hits; OpenAlex: ok, 42 hits; arXiv: ok, 1 hits
 
-arXiv announcement covered by RSS: 2026-11-08. Journal abstracts back-filled: 0/1 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
-Run: https://github.com/meeaco/nv-watch/actions/runs/42458829753
+arXiv announcement covered by RSS: 2026-11-08. Journal abstracts back-filled: 0/0.
+Run: https://github.com/meeaco/nv-watch/actions/runs/42467756592
 
 ## arXiv (0 new)
 

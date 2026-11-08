@@ -1,18 +1,16 @@
 {
- "generated_utc": "2026-11-08T07:26:57+00:00",
+ "generated_utc": "2026-11-08T09:34:33+00:00",
  "date": "2026-11-08",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42458829753",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42467756592",
  "arxiv_announcement": "2026-11-08",
  "abstract_backfill": {
-  "missing": 1,
+  "missing": 0,
   "filled": 0,
-  "errors": [
-   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
-  ]
+  "errors": []
  },
  "search_window_utc": [
-  "2026-11-03T07:26+00:00",
-  "2026-11-08T07:26+00:00"
+  "2026-11-03T09:34+00:00",
+  "2026-11-08T09:34+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
@@ -24,7 +22,7 @@
   "arXiv-OAI": {
    "ok": false,
    "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-03&set=physics :: TimeoutError('The read operation timed out')",
-   "secs": 1202
+   "secs": 1095
   },
   "arXiv-API": {
    "ok": true,
@@ -34,12 +32,12 @@
   "Crossref": {
    "ok": true,
    "hits": 4,
-   "secs": 27
+   "secs": 21
   },
   "OpenAlex": {
    "ok": true,
    "hits": 42,
-   "secs": 1
+   "secs": 2
   },
   "arXiv": {
    "ok": true,
