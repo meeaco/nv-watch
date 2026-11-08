@@ -1,0 +1,124 @@
+{
+ "generated_utc": "2026-11-08T07:26:57+00:00",
+ "date": "2026-11-08",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42458829753",
+ "arxiv_announcement": "2026-11-08",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-11-03T07:26+00:00",
+  "2026-11-08T07:26+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": false,
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-03&set=physics :: TimeoutError('The read operation timed out')",
+   "secs": 1202
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 1,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 4,
+   "secs": 27
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 42,
+   "secs": 1
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 1
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/z6h7-y4cp",
+   "url": "https://doi.org/10.1103/z6h7-y4cp",
+   "title": "Quantum gyroscope based on a Berry phase induced by three-dimensional rotation",
+   "authors": [
+    "Huaijin Zhang",
+    "Zhang-qi Yin"
+   ],
+   "abstract": "Solid-spin defects in diamond provide long coherence times and room-temperature optical initialization and readout, making them an attractive platform for compact solid-state quantum gyroscopes. A central challenge for NV-based gyroscopes is that the rotation-induced signal is weak, while near-resonant operation, although enhancing the response, can induce nonadiabatic transitions that degrade the accumulated geometric phase and readout fidelity. Here we investigate a levitated diamond under three-dimensional rotation, in which intrinsic ${}^{14}\\mathrm{N}$ nuclear spins associated with NV centers act as sensing qubits. We show that the rotation is encoded in a geometric (Berry) phase and identify a near-resonant regime with strongly enhanced phase response. To suppress the resulting nonadiabatic leakage, we introduce a counter-diabatic protocol derived from the Kato gauge potential. This enables robust geometric-phase accumulation and improves the sensitivity by four orders of magnitude relative to the conventional detuned protocol. We further evaluate the achievable sensitivity and the dominant experimental limitations, including decoherence and protocol overhead, thereby establishing a realistic route toward high-performance NV-based solid-state quantum gyroscopes.",
+   "venue": "Physical Review Applied",
+   "created": "2026-03-24T00:00:00",
+   "published": "2026-11-06",
+   "doi": "10.1103/z6h7-y4cp",
+   "_key": "10.1103/z6h7-y4cp",
+   "score": 6
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1063/5.0358207",
+   "url": "https://doi.org/10.1063/5.0358207",
+   "title": "Defects in solids for quantum technologies",
+   "authors": [
+    "Viktor Ivády",
+    "Igor A. Abrikosov",
+    "Ádám Gali"
+   ],
+   "abstract": "Point defects introducing deep levels in the bandgap of semiconductors were long regarded merely as imperfections to be eliminated, degrading the performance of electronic devices. Over the past three decades, however, point defects in wide-bandgap semiconductors have become one of the most diverse resources for quantum technology, providing atomic-scale spin qubits, spin-photon interfaces, and quantum sensors that operate not just at cryogenic temperatures but also well above room temperature. By now, the field has passed the first stage, in which a handful of celebrated centers, such as the nitrogen-vacancy center in diamond and the silicon vacancy and divacancy in 4H-SiC, dominated developments, and has become a vibrant, rapidly evolving, application-driven research field. Today, the activity of many researchers is directed toward finding new promising color centers, their fabrication, characterization, and control. The central questions here are which of the host materials and which of the enormous number of conceivable defects can meet the requirements of a given application, how such defects can be identified unambiguously, how they can be created on demand in a reproducible manner, and how their properties can be controlled. This Guest Editorial introduces the special collection that samples the field along these lines. We place the collection in context, summarize the contributions grouped by the problem they address, and comment on where the community is heading.",
+   "venue": "Journal of Applied Physics",
+   "created": "2026-11-07T00:00:00",
+   "published": "2026-11-06",
+   "doi": "10.1063/5.0358207",
+   "_key": "10.1063/5.0358207",
+   "score": 3
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1016/j.measurement.2026.123682",
+   "url": "https://doi.org/10.1016/j.measurement.2026.123682",
+   "title": "A review of magnetic sensors for nondestructive testing",
+   "authors": [
+    "Xun Zou",
+    "Yu Li",
+    "Wuliang Yin"
+   ],
+   "abstract": "Magnetic sensors are essential components for electromagnetic nondestructive testing (NDT). In practical applications, the diverse operating principles and performance characteristics make magnetic sensor selection challenging. This review analyzes mainstream magnetic sensors used in NDT, including induction coils, Hall effect sensors, magnetoresistive sensors, giant magneto-impedance sensors, magnetoelectric composite sensors, fluxgate magnetometers, superconducting quantum interference devices, optically pumped magnetometers, and nitrogen-vacancy center sensors. Their operating principles, applications in major NDT techniques and performance characteristics are summarized, with magnetic noise discussed in relation to measurement conditions and practical defect detectability. In addition, comparisons are presented in terms of representative magnetic noise, output sensitivity, advantages, and limitations. Based on the comparisons, key considerations for sensor selection and future research directions are also discussed.",
+   "venue": "Measurement",
+   "created": "2026-11-06T00:00:00",
+   "published": "2026-11-01",
+   "doi": "10.1016/j.measurement.2026.123682",
+   "_key": "10.1016/j.measurement.2026.123682",
+   "score": 2
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1021/acs.analchem.6c04315",
+   "url": "https://doi.org/10.1021/acs.analchem.6c04315",
+   "title": "Nanodiamonds in Biomedical Advances: From Bioactive Materials to Quantum Sensors",
+   "authors": [
+    "Xixi Wu",
+    "Wenhui Liu",
+    "Xiuhong Lei",
+    "Romana Schirhagl"
+   ],
+   "abstract": "",
+   "venue": "Analytical Chemistry",
+   "created": "2026-11-07T00:00:00",
+   "published": "2026-11-06",
+   "doi": "10.1021/acs.analchem.6c04315",
+   "_key": "10.1021/acs.analchem.6c04315",
+   "score": 0
+  }
+ ]
+}
