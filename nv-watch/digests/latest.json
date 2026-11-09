@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-09T08:02:32+00:00",
+ "generated_utc": "2026-11-09T10:24:46+00:00",
  "date": "2026-11-09",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42583115649",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42600671822",
  "arxiv_announcement": "2026-11-09",
  "abstract_backfill": {
   "missing": 0,
@@ -9,20 +9,20 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-04T08:02+00:00",
-  "2026-11-09T08:02+00:00"
+  "2026-11-04T10:24+00:00",
+  "2026-11-09T10:24+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 1,
-   "secs": 15,
+   "secs": 14,
    "scanned": 232
   },
   "arXiv-OAI": {
    "ok": false,
-   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-04&set=physics :: HTTP 503 first byte timeout | <?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"> <html> <he",
-   "secs": 1031
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-04&set=physics :: TimeoutError('The read operation timed out')",
+   "secs": 1092
   },
   "arXiv-API": {
    "ok": true,
@@ -32,7 +32,7 @@
   "Crossref": {
    "ok": true,
    "hits": 4,
-   "secs": 27
+   "secs": 14
   },
   "OpenAlex": {
    "ok": true,
