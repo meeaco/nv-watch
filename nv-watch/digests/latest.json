@@ -1,32 +1,32 @@
 {
- "generated_utc": "2026-11-08T11:20:18+00:00",
- "date": "2026-11-08",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42475290763",
- "arxiv_announcement": "2026-11-08",
+ "generated_utc": "2026-11-09T08:02:32+00:00",
+ "date": "2026-11-09",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42583115649",
+ "arxiv_announcement": "2026-11-09",
  "abstract_backfill": {
   "missing": 0,
   "filled": 0,
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-03T11:20+00:00",
-  "2026-11-08T11:20+00:00"
+  "2026-11-04T08:02+00:00",
+  "2026-11-09T08:02+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 0,
-   "secs": 14,
-   "scanned": 0
+   "hits": 1,
+   "secs": 15,
+   "scanned": 232
   },
   "arXiv-OAI": {
    "ok": false,
-   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-03&set=physics :: TimeoutError('The read operation timed out')",
-   "secs": 977
+   "error": "GET failed: https://export.arxiv.org/oai2?verb=ListRecords&metadataPrefix=arXiv&from=2026-11-04&set=physics :: HTTP 503 first byte timeout | <?xml version=\"1.0\" encoding=\"utf-8\"?> <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"> <html> <he",
+   "secs": 1031
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 0,
+   "hits": 1,
    "secs": 11
   },
   "Crossref": {
@@ -36,87 +36,66 @@
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 42,
-   "secs": 1
+   "hits": 44,
+   "secs": 2
   },
   "arXiv": {
    "ok": true,
-   "hits": 0
+   "hits": 1
   }
  },
- "arxiv_new": [],
+ "arxiv_new": [
+  {
+   "source": "arXiv",
+   "id": "2611.08830",
+   "url": "https://arxiv.org/abs/2611.08830",
+   "title": "Kinetic Cluster Embedding for Qubit Decoherence in Dissipative Spin Baths",
+   "authors": [
+    "Xiaofei Yu",
+    "Jonah Nagura",
+    "Stella Wang",
+    "Evan J. Villafranca",
+    "Peter C. Maurer",
+    "Giulia Galli"
+   ],
+   "abstract": "Interpreting the decoherence of a spin qubit requires knowing how the surrounding bath spins behave: whether they fluctuate independently, exchange polarization incoherently, or evolve as coherent groups. These processes can yield the same Hahn-echo coherence time yet produce different coherence signals under pulse control of the qubit. Existing theoretical approaches either capture bath correlations at a cost that grows combinatorially with spin-bath cluster size or neglect polarization transport altogether. We introduce kinetic cluster embedding (KCE), which uses a single dimensionless parameter, comparing the flip-flop coupling of a spin pair with its detuning and linewidth, to decide how each pair must be treated. Pairs that can complete an appreciable exchange oscillation are propagated with the full dissipative quantum dynamics. All other spins are treated as random-telegraph fluctuators coupled through a kinetic network of polarization-transfer rates. We show that for nitrogen-vacancy centers coupled to surface electron spins, KCE propagates about 7 four-spin clusters, compared to more than 10$^5$ propagated by fourth-order master-equation cluster-correlation (ME-CCE4); nevertheless it reproduces ME-CCE4 coherence times to within 15$\\%$ for dipolar couplings of order $10^{2}$ times the bath relaxation rate. For a three-dimensional P1 bath, the agreement is within 16$\\%$. Coherent multispin clusters emerge as the leading correction to independent fluctuators, and they leave a distinct signature in the CPMG response. Importantly, we find that whether a rate description suffices is set not by coupling strength alone but by whether a pair can exchange polarization coherently before detuning and damping suppress it.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-06T00:37:14Z",
+   "updated": "2026-11-06T00:37:14Z",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-API"
+   ],
+   "score": 2
+  }
+ ],
  "journal_new": [
   {
    "source": "OpenAlex",
-   "id": "10.1103/z6h7-y4cp",
-   "url": "https://doi.org/10.1103/z6h7-y4cp",
-   "title": "Quantum gyroscope based on a Berry phase induced by three-dimensional rotation",
+   "id": "10.1016/j.freeradbiomed.2026.11.013",
+   "url": "https://doi.org/10.1016/j.freeradbiomed.2026.11.013",
+   "title": "Using Diamond Relaxometry to Measure Free Radicals on Human Single Spermatozoa: From Boar to Human",
    "authors": [
-    "Huaijin Zhang",
-    "Zhang-qi Yin"
-   ],
-   "abstract": "Solid-spin defects in diamond provide long coherence times and room-temperature optical initialization and readout, making them an attractive platform for compact solid-state quantum gyroscopes. A central challenge for NV-based gyroscopes is that the rotation-induced signal is weak, while near-resonant operation, although enhancing the response, can induce nonadiabatic transitions that degrade the accumulated geometric phase and readout fidelity. Here we investigate a levitated diamond under three-dimensional rotation, in which intrinsic ${}^{14}\\mathrm{N}$ nuclear spins associated with NV centers act as sensing qubits. We show that the rotation is encoded in a geometric (Berry) phase and identify a near-resonant regime with strongly enhanced phase response. To suppress the resulting nonadiabatic leakage, we introduce a counter-diabatic protocol derived from the Kato gauge potential. This enables robust geometric-phase accumulation and improves the sensitivity by four orders of magnitude relative to the conventional detuned protocol. We further evaluate the achievable sensitivity and the dominant experimental limitations, including decoherence and protocol overhead, thereby establishing a realistic route toward high-performance NV-based solid-state quantum gyroscopes.",
-   "venue": "Physical Review Applied",
-   "created": "2026-03-24T00:00:00",
-   "published": "2026-11-06",
-   "doi": "10.1103/z6h7-y4cp",
-   "_key": "10.1103/z6h7-y4cp",
-   "score": 6
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1063/5.0358207",
-   "url": "https://doi.org/10.1063/5.0358207",
-   "title": "Defects in solids for quantum technologies",
-   "authors": [
-    "Viktor Ivády",
-    "Igor A. Abrikosov",
-    "Ádám Gali"
-   ],
-   "abstract": "Point defects introducing deep levels in the bandgap of semiconductors were long regarded merely as imperfections to be eliminated, degrading the performance of electronic devices. Over the past three decades, however, point defects in wide-bandgap semiconductors have become one of the most diverse resources for quantum technology, providing atomic-scale spin qubits, spin-photon interfaces, and quantum sensors that operate not just at cryogenic temperatures but also well above room temperature. By now, the field has passed the first stage, in which a handful of celebrated centers, such as the nitrogen-vacancy center in diamond and the silicon vacancy and divacancy in 4H-SiC, dominated developments, and has become a vibrant, rapidly evolving, application-driven research field. Today, the activity of many researchers is directed toward finding new promising color centers, their fabrication, characterization, and control. The central questions here are which of the host materials and which of the enormous number of conceivable defects can meet the requirements of a given application, how such defects can be identified unambiguously, how they can be created on demand in a reproducible manner, and how their properties can be controlled. This Guest Editorial introduces the special collection that samples the field along these lines. We place the collection in context, summarize the contributions grouped by the problem they address, and comment on where the community is heading.",
-   "venue": "Journal of Applied Physics",
-   "created": "2026-11-07T00:00:00",
-   "published": "2026-11-06",
-   "doi": "10.1063/5.0358207",
-   "_key": "10.1063/5.0358207",
-   "score": 3
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1016/j.measurement.2026.123682",
-   "url": "https://doi.org/10.1016/j.measurement.2026.123682",
-   "title": "A review of magnetic sensors for nondestructive testing",
-   "authors": [
-    "Xun Zou",
-    "Yu Li",
-    "Wuliang Yin"
-   ],
-   "abstract": "Magnetic sensors are essential components for electromagnetic nondestructive testing (NDT). In practical applications, the diverse operating principles and performance characteristics make magnetic sensor selection challenging. This review analyzes mainstream magnetic sensors used in NDT, including induction coils, Hall effect sensors, magnetoresistive sensors, giant magneto-impedance sensors, magnetoelectric composite sensors, fluxgate magnetometers, superconducting quantum interference devices, optically pumped magnetometers, and nitrogen-vacancy center sensors. Their operating principles, applications in major NDT techniques and performance characteristics are summarized, with magnetic noise discussed in relation to measurement conditions and practical defect detectability. In addition, comparisons are presented in terms of representative magnetic noise, output sensitivity, advantages, and limitations. Based on the comparisons, key considerations for sensor selection and future research directions are also discussed.",
-   "venue": "Measurement",
-   "created": "2026-11-06T00:00:00",
-   "published": "2026-11-01",
-   "doi": "10.1016/j.measurement.2026.123682",
-   "_key": "10.1016/j.measurement.2026.123682",
-   "score": 2
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1021/acs.analchem.6c04315",
-   "url": "https://doi.org/10.1021/acs.analchem.6c04315",
-   "title": "Nanodiamonds in Biomedical Advances: From Bioactive Materials to Quantum Sensors",
-   "authors": [
-    "Xixi Wu",
-    "Wenhui Liu",
-    "Xiuhong Lei",
+    "Hui Ting Li",
+    "Naomi Hofsink",
+    "Jitske Eliveld",
+    "Annemieke Hoek",
+    "Lucija Buric",
+    "Astrid E.P. Cantineau",
     "Romana Schirhagl"
    ],
-   "abstract": "",
-   "venue": "Analytical Chemistry",
+   "abstract": "Oxidative stress is increasingly recognized as an important contributor to male infertility, yet current methods for measuring reactive oxygen species and free radicals in spermatozoa lack single-cell resolution and often rely on indirect or non-specific detection strategies. Diamond relaxometry, a quantum sensing technique based on nitrogen-vacancy centers in fluorescent nanodiamonds (FNDs), enables direct detection of local free radical production in living cells. Although previously demonstrated in boar spermatozoa, application at the level of individual human sperm cells required further methodological optimization. This study aimed to translate and optimize T 1 relaxometry from a pre-clinical boar sperm model to human spermatozoa. A stepwise optimization strategy was applied in boar spermatozoa, systematically evaluating incubation time, temperature and processing media focusing on FNDs colocalization with spermatozoa head, cell metabolic activity, and protocol-induced effects on T 1 measurements. The optimized protocol was subsequently translated to human spermatozoa. We showed that incubation time of 1h (vs. 3h), incubation temperature at room temperature (vs. 37°C) and albumin-containing processing medium, yielded a clinically compatible protocol that preserved sperm metabolic activity while ensuring robust FND binding and stable T 1 relaxation times. Using the optimized protocol, significant reductions in T 1 relaxation time were observed following menadione treatment in both boar (1 mM) and human spermatozoa (10 μM), demonstrating sensitivity to increases in free radical production at the single-cell level ( p <0.001 and p =0.043, respectively). In human spermatozoa, FND colocalization reached 36%, enabling successful relaxometry measurements. In conclusion, we successfully optimized and translated diamond relaxometry from boar to human spermatozoa and established a clinically compatible protocol for single-cell free radical detection in human spermatozoa. This work demonstrates the feasibility of quantum sensing in individual human sperm cells and provides a foundation for future studies investigating oxidative stress as a biomarker in male infertility.",
+   "venue": "Free Radical Biology and Medicine",
    "created": "2026-11-07T00:00:00",
-   "published": "2026-11-06",
-   "doi": "10.1021/acs.analchem.6c04315",
-   "_key": "10.1021/acs.analchem.6c04315",
-   "score": 0
+   "published": "2026-11-01",
+   "doi": "10.1016/j.freeradbiomed.2026.11.013",
+   "_key": "10.1016/j.freeradbiomed.2026.11.013",
+   "score": 11
   }
  ]
 }
