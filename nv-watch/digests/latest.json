@@ -1,28 +1,30 @@
 {
- "generated_utc": "2026-11-09T12:57:21+00:00",
- "date": "2026-11-09",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42621265453",
- "arxiv_announcement": "2026-11-09",
+ "generated_utc": "2026-11-10T08:27:48+00:00",
+ "date": "2026-11-10",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42782815421",
+ "arxiv_announcement": "2026-11-10",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 2,
   "filled": 0,
-  "errors": []
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
  },
  "search_window_utc": [
-  "2026-11-04T12:57+00:00",
-  "2026-11-09T12:57+00:00"
+  "2026-11-05T08:27+00:00",
+  "2026-11-10T08:27+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 1,
-   "secs": 13,
-   "scanned": 232
+   "hits": 0,
+   "secs": 14,
+   "scanned": 0
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 3,
-   "secs": 30
+   "secs": 41
   },
   "arXiv-API": {
    "ok": true,
@@ -31,12 +33,12 @@
   },
   "Crossref": {
    "ok": true,
-   "hits": 4,
-   "secs": 18
+   "hits": 3,
+   "secs": 39
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 44,
+   "hits": 43,
    "secs": 1
   },
   "arXiv": {
@@ -44,58 +46,48 @@
    "hits": 3
   }
  },
- "arxiv_new": [
-  {
-   "source": "arXiv",
-   "id": "2611.08830",
-   "url": "https://arxiv.org/abs/2611.08830",
-   "title": "Kinetic Cluster Embedding for Qubit Decoherence in Dissipative Spin Baths",
-   "authors": [
-    "Xiaofei Yu",
-    "Jonah Nagura",
-    "Stella Wang",
-    "Evan J. Villafranca",
-    "Peter C. Maurer",
-    "Giulia Galli"
-   ],
-   "abstract": "Interpreting the decoherence of a spin qubit requires knowing how the surrounding bath spins behave: whether they fluctuate independently, exchange polarization incoherently, or evolve as coherent groups. These processes can yield the same Hahn-echo coherence time yet produce different coherence signals under pulse control of the qubit. Existing theoretical approaches either capture bath correlations at a cost that grows combinatorially with spin-bath cluster size or neglect polarization transport altogether. We introduce kinetic cluster embedding (KCE), which uses a single dimensionless parameter, comparing the flip-flop coupling of a spin pair with its detuning and linewidth, to decide how each pair must be treated. Pairs that can complete an appreciable exchange oscillation are propagated with the full dissipative quantum dynamics. All other spins are treated as random-telegraph fluctuators coupled through a kinetic network of polarization-transfer rates. We show that for nitrogen-vacancy centers coupled to surface electron spins, KCE propagates about 7 four-spin clusters, compared to more than 10$^5$ propagated by fourth-order master-equation cluster-correlation (ME-CCE4); nevertheless it reproduces ME-CCE4 coherence times to within 15$\\%$ for dipolar couplings of order $10^{2}$ times the bath relaxation rate. For a three-dimensional P1 bath, the agreement is within 16$\\%$. Coherent multispin clusters emerge as the leading correction to independent fluctuators, and they leave a distinct signature in the CPMG response. Importantly, we find that whether a rate description suffices is set not by coupling strength alone but by whether a pair can exchange polarization coherently before detuning and damping suppress it.",
-   "primary_category": "quant-ph",
-   "categories": [
-    "quant-ph"
-   ],
-   "published": "2026-11-06T00:37:14Z",
-   "updated": "2026-11-06T00:37:14Z",
-   "doi": "",
-   "journal_ref": "",
-   "found_by": [
-    "arXiv-RSS",
-    "arXiv-API"
-   ],
-   "score": 2
-  }
- ],
+ "arxiv_new": [],
  "journal_new": [
   {
-   "source": "OpenAlex",
-   "id": "10.1016/j.freeradbiomed.2026.11.013",
-   "url": "https://doi.org/10.1016/j.freeradbiomed.2026.11.013",
-   "title": "Using Diamond Relaxometry to Measure Free Radicals on Human Single Spermatozoa: From Boar to Human",
+   "source": "Crossref",
+   "id": "10.1016/j.diamond.2026.114387",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114387",
+   "title": "Systematic investigation of the relaxometric responses of FNDs to SPER/NO as a controlled radical challenge for NV nanodiamond quantum sensors",
    "authors": [
-    "Hui Ting Li",
-    "Naomi Hofsink",
-    "Jitske Eliveld",
-    "Annemieke Hoek",
-    "Lucija Buric",
-    "Astrid E.P. Cantineau",
+    "Yuanyuan Chai",
+    "Geert van den Bogaart",
     "Romana Schirhagl"
    ],
-   "abstract": "Oxidative stress is increasingly recognized as an important contributor to male infertility, yet current methods for measuring reactive oxygen species and free radicals in spermatozoa lack single-cell resolution and often rely on indirect or non-specific detection strategies. Diamond relaxometry, a quantum sensing technique based on nitrogen-vacancy centers in fluorescent nanodiamonds (FNDs), enables direct detection of local free radical production in living cells. Although previously demonstrated in boar spermatozoa, application at the level of individual human sperm cells required further methodological optimization. This study aimed to translate and optimize T 1 relaxometry from a pre-clinical boar sperm model to human spermatozoa. A stepwise optimization strategy was applied in boar spermatozoa, systematically evaluating incubation time, temperature and processing media focusing on FNDs colocalization with spermatozoa head, cell metabolic activity, and protocol-induced effects on T 1 measurements. The optimized protocol was subsequently translated to human spermatozoa. We showed that incubation time of 1h (vs. 3h), incubation temperature at room temperature (vs. 37°C) and albumin-containing processing medium, yielded a clinically compatible protocol that preserved sperm metabolic activity while ensuring robust FND binding and stable T 1 relaxation times. Using the optimized protocol, significant reductions in T 1 relaxation time were observed following menadione treatment in both boar (1 mM) and human spermatozoa (10 μM), demonstrating sensitivity to increases in free radical production at the single-cell level ( p <0.001 and p =0.043, respectively). In human spermatozoa, FND colocalization reached 36%, enabling successful relaxometry measurements. In conclusion, we successfully optimized and translated diamond relaxometry from boar to human spermatozoa and established a clinically compatible protocol for single-cell free radical detection in human spermatozoa. This work demonstrates the feasibility of quantum sensing in individual human sperm cells and provides a foundation for future studies investigating oxidative stress as a biomarker in male infertility.",
-   "venue": "Free Radical Biology and Medicine",
-   "created": "2026-11-07T00:00:00",
-   "published": "2026-11-01",
-   "doi": "10.1016/j.freeradbiomed.2026.11.013",
-   "_key": "10.1016/j.freeradbiomed.2026.11.013",
-   "score": 11
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-11-09T16:04:43Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.diamond.2026.114387",
+   "_key": "10.1016/j.diamond.2026.114387",
+   "score": 4
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1007/s10854-026-18861-x",
+   "url": "https://doi.org/10.1007/s10854-026-18861-x",
+   "title": "Nanodiamond-incorporated g-C3N4 hybrid fillers for enhanced thermal transport in epoxy composites",
+   "authors": [
+    "Zelong Wang",
+    "Jinhua Duan",
+    "Cailing Hu",
+    "Peichang Zhang",
+    "Chengwei Ma",
+    "Shiyu Zhang",
+    "Chao Han",
+    "Ning Cai"
+   ],
+   "abstract": "",
+   "venue": "Journal of Materials Science: Materials in Electronics",
+   "created": "2026-11-10T05:01:43Z",
+   "published": "2026-11",
+   "doi": "10.1007/s10854-026-18861-x",
+   "_key": "10.1007/s10854-026-18861-x",
+   "score": 0
   }
  ]
 }

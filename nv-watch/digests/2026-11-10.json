@@ -1,0 +1,93 @@
+{
+ "generated_utc": "2026-11-10T08:27:48+00:00",
+ "date": "2026-11-10",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42782815421",
+ "arxiv_announcement": "2026-11-10",
+ "abstract_backfill": {
+  "missing": 2,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-11-05T08:27+00:00",
+  "2026-11-10T08:27+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 3,
+   "secs": 41
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 1,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 3,
+   "secs": 39
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 43,
+   "secs": 1
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 3
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.diamond.2026.114387",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114387",
+   "title": "Systematic investigation of the relaxometric responses of FNDs to SPER/NO as a controlled radical challenge for NV nanodiamond quantum sensors",
+   "authors": [
+    "Yuanyuan Chai",
+    "Geert van den Bogaart",
+    "Romana Schirhagl"
+   ],
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-11-09T16:04:43Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.diamond.2026.114387",
+   "_key": "10.1016/j.diamond.2026.114387",
+   "score": 4
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1007/s10854-026-18861-x",
+   "url": "https://doi.org/10.1007/s10854-026-18861-x",
+   "title": "Nanodiamond-incorporated g-C3N4 hybrid fillers for enhanced thermal transport in epoxy composites",
+   "authors": [
+    "Zelong Wang",
+    "Jinhua Duan",
+    "Cailing Hu",
+    "Peichang Zhang",
+    "Chengwei Ma",
+    "Shiyu Zhang",
+    "Chao Han",
+    "Ning Cai"
+   ],
+   "abstract": "",
+   "venue": "Journal of Materials Science: Materials in Electronics",
+   "created": "2026-11-10T05:01:43Z",
+   "published": "2026-11",
+   "doi": "10.1007/s10854-026-18861-x",
+   "_key": "10.1007/s10854-026-18861-x",
+   "score": 0
+  }
+ ]
+}
