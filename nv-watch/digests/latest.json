@@ -1,28 +1,28 @@
 {
- "generated_utc": "2026-11-10T12:43:02+00:00",
- "date": "2026-11-10",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42818109817",
- "arxiv_announcement": "2026-11-10",
+ "generated_utc": "2026-11-11T07:46:42+00:00",
+ "date": "2026-11-11",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/42981967362",
+ "arxiv_announcement": "2026-11-11",
  "abstract_backfill": {
   "missing": 0,
   "filled": 0,
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-05T12:43+00:00",
-  "2026-11-10T12:43+00:00"
+  "2026-11-06T07:46+00:00",
+  "2026-11-11T07:46+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 0,
-   "secs": 13,
-   "scanned": 425
+   "hits": 1,
+   "secs": 14,
+   "scanned": 241
   },
   "arXiv-OAI": {
    "ok": true,
-   "hits": 3,
-   "secs": 37
+   "hits": 4,
+   "secs": 46
   },
   "arXiv-API": {
    "ok": true,
@@ -31,84 +31,126 @@
   },
   "Crossref": {
    "ok": true,
-   "hits": 4,
-   "secs": 21
+   "hits": 5,
+   "secs": 24
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 43,
+   "hits": 45,
    "secs": 1
   },
   "arXiv": {
    "ok": true,
-   "hits": 3
+   "hits": 4
   }
  },
- "arxiv_new": [],
+ "arxiv_new": [
+  {
+   "source": "arXiv",
+   "id": "2611.13791",
+   "url": "https://arxiv.org/abs/2611.13791",
+   "title": "Eigenmode and field imaging of a compact superconducting resonator array",
+   "authors": [
+    "Benedek Ga\\'al",
+    "Vincent Jouanny",
+    "Simone Frasca",
+    "Christophe Galland",
+    "Pasquale Scarlino",
+    "Valentin Goblot"
+   ],
+   "abstract": "Superconducting resonator arrays can tailor the photonic environment for quantum information processing, but conventional port-based microwave spectroscopy alone does not resolve the rich spatial structure of their modes. Here, we apply laser scanning microscopy (LSM) and nitrogen-vacancy (NV) center magnetometry to a two-dimensional superconducting resonator array consisting of 33 lumped-element resonators arranged in a honeycomb lattice hosting topological edge states. We demonstrate the complementarity of the two techniques: LSM images the eigenmodes, while NV magnetometry maps the local microwave magnetic field amplitude. Using this spatial information, we experimentally validate that the realized lattice matches the design, we image the topological edge state and measure its sublattice polarization, and place an upper bound of $\\approx0.3\\%$ on the relative on-site frequency disorder in the lattice. Our work establishes a combined spatial characterization approach for compact superconducting resonator arrays with applications in hybrid spin--superconducting quantum systems.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-10",
+   "updated": "2026-11-11",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 4
+  }
+ ],
  "journal_new": [
   {
-   "source": "Crossref",
-   "id": "10.1016/j.diamond.2026.114387",
-   "url": "https://doi.org/10.1016/j.diamond.2026.114387",
-   "title": "Systematic investigation of the relaxometric responses of FNDs to SPER/NO as a controlled radical challenge for NV nanodiamond quantum sensors",
+   "source": "OpenAlex",
+   "id": "10.22037/afb.v13i1.53699",
+   "url": "https://doi.org/10.22037/afb.v13i1.53699",
+   "title": "Mycotoxin Mitigation Using Nanomaterials: A Systematic Review on Removal Efficiency, Material Characteristics, and Key Influencing Factor",
    "authors": [
-    "Yuanyuan Chai",
-    "Geert van den Bogaart",
-    "Romana Schirhagl"
+    "Setayesh Zamanpour",
+    "Anna Abdolshahi"
    ],
-   "abstract": "",
-   "venue": "Diamond and Related Materials",
-   "created": "2026-11-09T16:04:43Z",
-   "published": "2026-11",
-   "doi": "10.1016/j.diamond.2026.114387",
-   "_key": "10.1016/j.diamond.2026.114387",
-   "score": 4
+   "abstract": "Background and Objective: Mycotoxins are toxic secondary metabolites produced by fungi. Despite many efforts to control fungal growth, they frequently contaminate agricultural products, food, and feed, posing a critical health risk for humans and animals. Physical, chemical, and biological methods to mitigate mycotoxin levels across matrices are limited, so recent studies have focused on innovative, efficient, and cost-effective materials to remove or adsorb mycotoxins. Given their unique properties, nanomaterials have been introduced as a promising tool for adsorbing mycotoxins and reducing their toxic effects; this systematic review evaluated data from studies on the efficiency of different nanomaterials in removing mycotoxins. Materials and Methods: Relevant studies were systematically searched in PubMed, Web of Science, and Scopus up to 12 August 2025, and only English-language articles were included. Two investigators independently screened titles, abstracts, and full texts according to eligibility criteria defined by the PICOS framework. Data on nanomaterial type, matrix, mycotoxin type, nanomaterial concentration, and mycotoxin reduction percentage were extracted, and reduction rates were summarized descriptively as unweighted means, overall and for each nanomaterial subgroup; no meta-analysis or formal risk-of-bias assessment was performed. Results and Conclusion: Based on the results, the most used nanomaterials were metal-based nanomaterials > nanocomposites > organic nanomaterials > carbon-based nanomaterials. Most studies targeted aflatoxins, followed by ochratoxin A, fumonisin (FB1, FB2, FB total), zearalenone, and deoxynivalenol. The included studies reported varying levels of mycotoxin reduction across different media and food/feed matrices, although these effects did not necessarily reflect direct adsorption and could also result from inhibited fungal growth or toxin production. Nanomaterials therefore show promising in vitro mycotoxin-reducing efficiency; their safety and suitability for food and feed applications remain to be established. INTRODUCTION Mycotoxins are toxic substances generated by some fungal strains, mainly from the Aspergillus, Penicillium, and Fusarium Sps, as secondary metabolites. These microbial toxins are associated with acute and chronic diseases and a high death rate in both humans and animals [1, 2]. To date, more than 400 types of mycotoxins have been recorded, among which aflatoxins, ochratoxin, zeara-lenone, deoxynivalenol, and fumonisins are the most commonly found in food items. Major mycotoxin contam-ination is observed in cereals (corn, wheat, rice), nuts, and oilseeds [3]. Additionally, some main animal products can contain considerable levels of mycotoxins due to contam-inated feed [4, 5]. Updated global prevalence data also indicate a high co-occurrence of mycotoxins in food; for example, maize can be contaminated with both aflatoxins and fumonisins, posing synergistic health risks. According to the joint report of the Food and Agriculture Organization and the World Health Organization, mycotoxins have been quantified in approximately a quarter of cereal crops and 60-80% of grains worldwide, resulting in the annual waste of one billion tons of food and feed [6, 7]. Mycotoxins can occur from farm to fork, requiring control, management, and preventive actions throughout the food processing chain. The most influential factors for contamination include climatic conditions (temperature, moisture), agricultural practices from pre- to post-harvest, and storage [8]. To protect human and animal health and reduce exposure to this critical contamination, countries have established mandatory regulations to limit mycotoxin concentrations in food and feed [9]. To mitigate mycotoxin contam-ination in food and feed commodities, preventive str-ategies aim to inhibit toxin-producing fungal growth and employ methods and materials to reduce mycotoxin levels in contaminated items. These strategies rely on physical, chemical, and biological methods [10]. Recently, resistant crop varieties, along with good agricultural practices and good manufacturing practices, have been considered to control mycotoxin contamination. Controlling relative humidity and temperature during storage can limit fungal growth and mycotoxin production from harvest to post-harvest stages, as can con-trolling insect invasion in pre- and post-harvest stages (Figure 1). However, neglecting critical points in agricultural practices and the food production chain may increase mycotoxin incidence [11-13]. To date, mycotoxin contamination, especially aflatoxins, has been annually reported as one of the top ten hazards in food and feed by the Rapid Alert System for Food and Feed. This means that despite efforts to control fungal growth and prevent mycotoxin production, it remains a critical problem in food and feed items and poses a global hazard to human and animal health. In this regard, implementing strategies to reduce mycotoxins in contaminated food and feeds is crucial [14-16]. Myco-toxin adsorbents are sub-stances that can remove toxin molecules by preventing their absorption in the gastro-intestinal tract, thus reducing their harmful effects. These adsorbent agents include inorganic or organic materials that bind mycotoxins to their surface or degrade /transform them into lower-toxicity metabolites [17-20]. Nanotechnology offers new opportunities to detect, prevent, and remove mycotoxin contamination [21,22]. This is due to the unique properties of nanomaterials, such as a high surface area-to-volume ratio, tunable physico-chemical properties, and functional versatility [18-20,23,24]. Over the past decade, advances in nanotech-nology have introduced highly efficient adsorbents [25-29]. Emerging nanomaterials based on carbon, poly-saccharides, polymers, or metal particles offer vast active surfaces for adsorbing targeted mycotoxins [30]. Because the size, shape, and polarity of a mycotoxin molecule influence its interaction with different binders, nano-materials show promise for myco-toxin adsorption because of their large surface area and ability to interact with both polar and non-polar com-pounds [31-33]. The growing interest in nanomaterials as mycotoxin adsor-bents stems from their high specific surface area and tunable surface chemistry, which facilitate interactions with a wide range of mycotoxins. Furthermore, surface functionalization can enhance adsorption selectivity toward specific mycotoxins [34, 35]. 1.1. Nanomaterial Types for the Adsor-ption of Mycotoxins 1.1.1. Carbon-based nanostructures Carbon nanomaterials are generally stable, inert, and can adsorb both polar and non-polar mycotoxins. They also remain stable colloid across a range of pH conditions [20, 36]. The most used nanomaterials in this class for mycotoxin elimination were graphene and its derivatives (native graphene, reduced graphene, and graphene oxide), carbon nanotubes, fullerenes, fibers, and nanodiamonds. 1.1.2. Metal nanoparticles The strong adsorption capacity of metal-based nanoparticles is related to their desirable pores, vast specific surface area, and conjugation affinity. In this regard, growing applications have established them as mycotoxin adsorbents [37, 38]. Metal and metal oxide nanoparticles have been used as antifungal agents and mycotoxin adsorbents in the mycotoxin control framework. The most studied metal and metal oxide nanoparticles in this field are Ag NPs, Se NPs, Fe NPs, Cu NPs, ZnO, SiO2, TiO2, CuO, MgO,- and NiO. 1.1.3. Chitosan-based nanomaterials Chitosan is a natural, nontoxic, biodegradable polysaccharide that has attracted attention as a promising material for mycotoxin elimination. Chitosan, used alone or with other nanomaterials, has shown a specific capacity for mycotoxin removal [36, 39]. Chitosan is also widely used in edible coatings to preserve food quality [40]. 1.1.4. Nanocomposites Nanocomposites are hybrid materials composed of nanoscale inorganic fillers integrated within or coated by organic polymers, offering enhanced surface area, tunable surface chemistry, and improved mechanical/thermal stability, leading to superior adsorption performance for diverse mycotoxins. Mycotoxin adsorption onto nano-composites can proceed via hydrogen bonding, Van der Waals forces, electrostatic interactions, π–π interactions, chelation or complexation, and pore confinement [41, 42]. 1.1.5. Magnetic nanoparticles Magnetic nanoparticles, especially when incur-porated into nanocomposites, can offer high adsorption capacity and facilitate easy separation due to their mag-netic properties [43, 44]. Magnetic chitosan-based com-posites have also been applied as sorbents for contam-inants in dairy beverages [45]. This systematic review focused on major nanomaterials proposed as binders and their efficiency in reducing mycotoxin concentrations across different matrices (Figure 2). MATERIALS AND METHODS 2.1. Data Sources and Search Strategy We systematically searched PubMed, Web of Science, and Scopus up to 12 August 2025 and included only English-language articles. Two investigators (AA and SZ) independently screened the titles, abstracts, and full-text articles to identify eligible studies. The keywords considered for the systematic search were: (mycotoxin OR aflatoxin OR ochratoxin A OR patulin OR fumonisins OR zearalenone OR trichothecenes) AND (nanomaterial OR nanostructure OR nanoparticle OR nano) AND (reduction OR binding OR mitigation OR removal). The full database-specific search strategies are provided in Table 1. This systematic review did not involve people, humans, or animals as participants; therefore, we did not need to register the review protocol with PROSPERO. 2.2. Study Selection We defined inclusion and exclusion criteria using the PICOS framework (population, intervention/exposure, comparator, outcome, and study design). Published studies were considered eligible for inc",
+   "venue": "Applied food biotechnology",
+   "created": "2026-11-10T00:00:00",
+   "published": "2026-11-07",
+   "doi": "10.22037/afb.v13i1.53699",
+   "_key": "10.22037/afb.v13i1.53699",
+   "score": 9
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1021/acs.nanolett.6c04198",
+   "url": "https://doi.org/10.1021/acs.nanolett.6c04198",
+   "title": "Resolving Overlapping Signals in Quantum Relaxometry Enabled by Spectral Hole Burning",
+   "authors": [
+    "Fei Kong",
+    "Zhehua Huang",
+    "Zhengze Zhao",
+    "Pengju Zhao",
+    "Zhecheng Wang",
+    "Ya Wang",
+    "Fazhan Shi"
+   ],
+   "abstract": "Abstract Quantum relaxometry based on nitrogen-vacancy (NV) centers in diamond is an easy-to-use technique that detects magnetic noise by measuring the longitudinal relaxation of NV centers. It is favored in chemical and biological applications due to the robustness against imperfect spin control. By tuning the energy level, NV relaxometry can detect magnetic noise generated by other spins and obtain magnetic resonance spectra through cross relaxation. However, the spectral resolution is greatly limited by the inhomogeneous broadening of NV centers, especially for nanodiamond-based relaxometry. Here we demonstrate a hole-burning technique to remove the inhomogeneous broadening. We utilize a weak pump field to deplete specific NV centers during the relaxation measurement, which contribute a reverse signal in the cross-relaxation spectra with a much narrower line width. Our method retains the convenience and sensitivity of NV relaxometry, opening up new avenues for high-resolution magnetic resonance spectroscopy in complex scenarios.",
+   "venue": "Nano Letters",
+   "created": "2026-07-22T00:00:00",
+   "published": "2026-11-09",
+   "doi": "10.1021/acs.nanolett.6c04198",
+   "_key": "10.1021/acs.nanolett.6c04198",
+   "score": 8
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/zmky-pr37",
+   "url": "https://doi.org/10.1103/zmky-pr37",
+   "title": "High-purity entanglement mediated by magnons despite weak coupling",
+   "authors": [
+    "Sanchar Sharma"
+   ],
+   "abstract": "Entangling distant spins via a shared magnonic bus typically faces a tradeoff: stronger spin-magnon coupling increases the entanglement fidelity, but also the spin decay rate. We propose a protocol that breaks this tradeoff. The magnons couple only to a transition outside the computational basis, in which the Bell state is created. Our protocol is probabilistic, and weak coupling reduces the success probability but not the fidelity. We analyze a setup where the spins are two nitrogen-vacancy (NV) centers near a magnetic wire. In the absence of NV dephasing, the protocol reaches unit fidelity with a maximally entangled state, for arbitrarily weak coupling. In our simulations via the Monte-Carlo wavefunction approach, the NV-magnon coupling is taken to be one-third of the magnon linewidth. Considering finite NV dephasing, we predict a fidelity of >0.99 for a state-of-the-art rate, and an optimal fidelity of 0.91 for a moderate rate, both at 0.6% success probability.",
+   "venue": "Physical Review Letters",
+   "created": "2026-07-24T00:00:00",
+   "published": "2026-11-09",
+   "doi": "10.1103/zmky-pr37",
+   "_key": "10.1103/zmky-pr37",
+   "score": 2
   },
   {
    "source": "Crossref",
-   "id": "10.1002/advs.78645",
-   "url": "https://doi.org/10.1002/advs.78645",
-   "title": "Energy Matching in NV Spin‐Phonon Interaction Enabling High‐Temperature Quantum Sensing via Lifetime Readout",
+   "id": "10.1021/acsphotonics.6c02244",
+   "url": "https://doi.org/10.1021/acsphotonics.6c02244",
+   "title": "Nonlinear Optical Signatures of Collective Vibronic Correlations in NV– Centers",
    "authors": [
-    "Yujing Cao",
-    "Junjie Lin",
-    "Wei Wang",
-    "Qianru Chen",
-    "Yan Liu",
-    "Jie Ren",
-    "E Wu",
-    "Heping Zeng"
+    "Yinxiu Xue",
+    "Onur Kurt",
+    "Ying Wang",
+    "Jian Shi",
+    "You Zhou",
+    "Yuhang Ren"
    ],
-   "abstract": "ABSTRACT High‐temperature quantum sensing with NV centers has long been hindered by the spin contrast degradation from the thermally accelerated intersystem crossing (ISC) and the thermally induced fluorescence instability in the conventional intensity‐based readout. Here, we systematically investigate the NV spin‐phonon interaction in the ISC transition and the zero‐field splitting (ZFS) shift, which are two key aspects governing NV high‐temperature sensing performance. We report an energy matching between their characteristic phonon modes, which enables the ISC‐induced sensitivity degradation to be effectively compensated by the steepened slope of the ZFS shift, thereby preserving a high sensitivity even at high temperatures. This effect is particularly evident in the lifetime‐based optically detected magnetic resonance (ODMR) measurements, as the lifetime readout remains robust against thermally induced fluorescence instability at high temperatures. We reach a shot‐noise‐limited temperature sensitivity of 8.3 µK Hz −1/2 at 490 K in the lifetime‐based continuous‐wave ODMR scheme. Our work has opened up opportunities for highly sensitive NV quantum sensors under extreme conditions.",
-   "venue": "Advanced Science",
-   "created": "2026-11-10T12:14:52Z",
+   "abstract": "Abstract We demonstrate that second harmonic generation (SHG) reveals signatures of a collective vibronic response associated with electron–phonon coupling in NV– centers in diamond. Broadband SHG spectroscopy resolves resonances associated with the zero-phonon line and phonon sideband. Complementary photoluminescence and ultrafast pump–probe measurements reveal a broad vibronic sideband and a coherent 40-THz optical phonon, demonstrating the participation of high-frequency phonons in the nonlinear optical response. Polarization-resolved SHG further reveals a crossover from an electronically dominated response to a collective vibronic response and, at higher defect densities, increasing disorder-induced decoherence. Our results reveal collective vibronic correlations associated with electron–phonon coupling and establish SHG as a phase-sensitive probe of vibronic dynamics in solid-state quantum systems.",
+   "venue": "ACS Photonics",
+   "created": "2026-11-10T19:02:04Z",
    "published": "2026-11-10",
-   "doi": "10.1002/advs.78645",
-   "_key": "10.1002/advs.78645",
-   "score": 4
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1007/s10854-026-18861-x",
-   "url": "https://doi.org/10.1007/s10854-026-18861-x",
-   "title": "Nanodiamond-incorporated g-C3N4 hybrid fillers for enhanced thermal transport in epoxy composites",
-   "authors": [
-    "Zelong Wang",
-    "Jinhua Duan",
-    "Cailing Hu",
-    "Peichang Zhang",
-    "Chengwei Ma",
-    "Shiyu Zhang",
-    "Chao Han",
-    "Ning Cai"
-   ],
-   "abstract": "",
-   "venue": "Journal of Materials Science: Materials in Electronics",
-   "created": "2026-11-10T05:01:43Z",
-   "published": "2026-11",
-   "doi": "10.1007/s10854-026-18861-x",
-   "_key": "10.1007/s10854-026-18861-x",
-   "score": 0
+   "doi": "10.1021/acsphotonics.6c02244",
+   "_key": "10.1021/acsphotonics.6c02244",
+   "score": 2
   }
  ]
 }
