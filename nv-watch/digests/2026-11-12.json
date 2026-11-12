@@ -1,0 +1,73 @@
+{
+ "generated_utc": "2026-11-12T08:24:13+00:00",
+ "date": "2026-11-12",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/43182624168",
+ "arxiv_announcement": "2026-11-12",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-11-07T08:24+00:00",
+  "2026-11-12T08:24+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 4,
+   "secs": 39
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 1,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 5,
+   "secs": 20
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 46,
+   "secs": 1
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 4
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1016/j.apsusc.2026.168923",
+   "url": "https://doi.org/10.1016/j.apsusc.2026.168923",
+   "title": "Erasing chemical history: fluorination-driven surface engineering of detonation nanodiamonds",
+   "authors": [
+    "Killian Henry",
+    "Jaâfar Ghanbaja",
+    "Sidahmed Ighili",
+    "Nicolas Batisse",
+    "Brigitte Vigolo",
+    "Marc Dubois"
+   ],
+   "abstract": "",
+   "venue": "Applied Surface Science",
+   "created": "2026-11-11T00:00:00",
+   "published": "2026-11-01",
+   "doi": "10.1016/j.apsusc.2026.168923",
+   "_key": "10.1016/j.apsusc.2026.168923",
+   "score": 0
+  }
+ ]
+}
