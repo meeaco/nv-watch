@@ -1,0 +1,120 @@
+{
+ "generated_utc": "2026-11-14T07:38:27+00:00",
+ "date": "2026-11-14",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/43572029337",
+ "arxiv_announcement": "2026-11-14",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-11-09T07:38+00:00",
+  "2026-11-14T07:38+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 5,
+   "secs": 65
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 4,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 9,
+   "secs": 22
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 45,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 5
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "Crossref",
+   "id": "10.1021/acsnanoscienceau.6c00148",
+   "url": "https://doi.org/10.1021/acsnanoscienceau.6c00148",
+   "title": "Fabrication and Utilization of NV Flakes for High-Pressure Quantum Sensing above 1.5 Megabar",
+   "authors": [
+    "Wuhao Chen",
+    "Qinyue Luo",
+    "Xiaoran Zhang",
+    "Cheng Jin",
+    "Ying Liu",
+    "Yating Jia",
+    "Shanmin Wang",
+    "Xiaobing Liu",
+    "Sen Yang",
+    "Jinlong Zhu"
+   ],
+   "abstract": "Abstract High-resolution quantum sensing under extreme conditions is essential for condensed matter physics. Nitrogen-vacancy (NV) centers enable in situ magnetic imaging inside a diamond anvil cell, yet current approaches rely on either randomly oriented particles or custom-fabricated diamond anvils─offering ease of integration or field imaging, respectively, but not both. Here we present NV flakes as a unified platform: micrometer- to submicrometer-thicksingle-crystal flakes characterized by optically detected magnetic resonance and photoluminescence. We clarify the origins of anomalous spectral features and demonstrate robust NV sensing above 1.5 megabar. Detecting the Meissner effect in a 100 nm YBCO film confirms the flakes’ promise for high-pressure quantum metrology.",
+   "venue": "ACS Nanoscience Au",
+   "created": "2026-11-13T13:02:39Z",
+   "published": "2026-11-13",
+   "doi": "10.1021/acsnanoscienceau.6c00148",
+   "_key": "10.1021/acsnanoscienceau.6c00148",
+   "score": 7
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1364/optica.611467",
+   "url": "https://doi.org/10.1364/optica.611467",
+   "title": "Seeing the forbidden: overcoming optical selection rules through nanophotonic integration",
+   "authors": [
+    "Alex H. Rubin",
+    "Vytautas Žalandauskas",
+    "Pranta Saha",
+    "Rubek Poudel",
+    "Aurora Teien",
+    "Liam Hofmann",
+    "Nathan R. Gonzalez",
+    "Scott Dhuey",
+    "Marianne Etzelmüller Bathen",
+    "Marina Radulaski"
+   ],
+   "abstract": "Optically addressable spin defects in silicon carbide, including the neutral divacancy (VV$^0$) and the negative nitrogen-vacancy (NV$^-$), are among leading building blocks of solid-state quantum technologies. Integrating these defects into photonic structures such as nanopillars improves photon collection efficiency, but the consequences extend further. We show that the sub-wavelength geometry of nanopillars drastically modifies the local electromagnetic environment, providing optical access to defect transitions that are otherwise suppressed by selection rules in bulk material. Using low-temperature photoluminescence spectroscopy, we observe that emission from the PL3 divacancy, which is nearly absent in planar devices, becomes pronounced in nanopillars owing to a polarization transformation of the excitation field within the pillar. We further leverage the orientation-dependent collection of nanopillars to resolve the origin of previously ambiguous spectral lines. In particular, the NV4$'$ feature displays the signal enhancement expected for axially oriented NV$^-$ centres, consistent with assignment to a higher excited state of the $kh$ defect configuration. Our results establish nanophotonic integration as a symmetry-sensitive probe that can both activate nominally dark transitions and identify the dipole character of poorly understood defect states.",
+   "venue": "Optica",
+   "created": "2026-05-08T00:00:00",
+   "published": "2026-11-12",
+   "doi": "10.1364/optica.611467",
+   "_key": "10.1364/optica.611467",
+   "score": 3
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.matdes.2026.117523",
+   "url": "https://doi.org/10.1016/j.matdes.2026.117523",
+   "title": "Hierarchically structured PVDF/Graphene Oxide-Nanodiamond nanofibrous membranes with enhanced wettability and Oil/Water separation",
+   "authors": [
+    "Atefeh Jahani-Darzi",
+    "Seyed Reza Nabavi",
+    "Hamid Emadi"
+   ],
+   "abstract": "",
+   "venue": "Materials &amp; Design",
+   "created": "2026-11-13T16:35:56Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.matdes.2026.117523",
+   "_key": "10.1016/j.matdes.2026.117523",
+   "score": 2
+  }
+ ]
+}
