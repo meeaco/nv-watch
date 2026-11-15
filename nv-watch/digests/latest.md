@@ -1,24 +1,24 @@
-# NV watch digest 2026-11-14
+# NV watch digest 2026-11-15
 
-Generated 2026-11-14T11:33:31+00:00 UTC. Search window 2026-11-09T11:33+00:00 → 2026-11-14T11:33+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-15T07:54:18+00:00 UTC. Search window 2026-11-10T07:54+00:00 → 2026-11-15T07:54+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 5 hits; arXiv-API: ok, 4 hits; Crossref: ok, 9 hits; OpenAlex: ok, 45 hits; arXiv: ok, 5 hits
+Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 5 hits; arXiv-API: ok, 4 hits; Crossref: ok, 10 hits; OpenAlex: ok, 45 hits; arXiv: ok, 5 hits
 
-arXiv announcement covered by RSS: 2026-11-14. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/43590585605
+arXiv announcement covered by RSS: 2026-11-15. Journal abstracts back-filled: 0/2 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
+Run: https://github.com/meeaco/nv-watch/actions/runs/43692004383
 
 ## arXiv (0 new)
 
 ## Journals (3 new)
 
-### [Fabrication and Utilization of NV Flakes for High-Pressure Quantum Sensing above 1.5 Megabar](https://doi.org/10.1021/acsnanoscienceau.6c00148)
-- Wuhao Chen et al. (10 authors) · ACS Nanoscience Au · created 2026-11-13 · published 2026-11-13 · via Crossref · relevance score 7
-- Abstract: Abstract High-resolution quantum sensing under extreme conditions is essential for condensed matter physics. Nitrogen-vacancy (NV) centers enable in situ magnetic imaging inside a diamond anvil cell, yet current approaches rely on either randomly oriented particles or custom-fabricated diamond anvils─offering ease of integration or field imaging, respectively, but not both. Here we present NV flakes as a unified platform: micrometer- to submicrometer-thicksingle-crystal flakes characterized by optically detected magnetic resonance and photoluminescence. We clarify the origins of anomalous spectral features and demonstrate robust NV sensing above 1.5 megabar. Detecting the Meissner effect in a 100 nm YBCO film confirms the flakes’ promise for high-pressure quantum metrology.
+### [High-bandwidth heterodyne sensing with bulk N- V diamond](https://doi.org/10.1103/tf8y-nlsk)
+- H. A. M. Taylor et al. (7 authors) · Physical Review Applied · created 2026-10-31 · published 2026-11-13 · via OpenAlex · relevance score 1
+- Abstract: Developing high performance portable sensors is of significant importance for both terrestrial and satellite communications, with quantum sensors offering potential advantages in sensitivity and bandwidth. The nitrogen vacancy center in diamond is a popular quantum sensing platform for its relative simplicity and wide range of acceptable operating conditions, but suffers a limited instantaneous bandwidth due to the narrow linewidth of the spin resonance. In this work, we first present a magnetic quantum sensing scheme utilizing heterodyne mixing with strong optical and microwave driving, achieving MHz-scale instantaneous bandwidth with a sensitivity of $548 \; \text{pT/}\sqrt{\text{Hz}}$ in an active diamond volume of $ 2.5\times 10^{-4} \; \text{mm}^3$ with $2 \times 10^{11}$ NV centers. We then demonstrate expansion of the sensing bandwidth by employing a strong magnetic gradient and many individually modulated microwave control fields, expanding the single resonance bandwidth to 48 MHz with a peak sensitivity of $8.5 \; \text{nT/}\sqrt{\text{Hz}}$.
 
-### [Seeing the forbidden: overcoming optical selection rules through nanophotonic integration](https://doi.org/10.1364/optica.611467)
-- Alex H. Rubin et al. (10 authors) · Optica · created 2026-05-08 · published 2026-11-12 · via OpenAlex · relevance score 3
-- Abstract: Optically addressable spin defects in silicon carbide, including the neutral divacancy (VV$^0$) and the negative nitrogen-vacancy (NV$^-$), are among leading building blocks of solid-state quantum technologies. Integrating these defects into photonic structures such as nanopillars improves photon collection efficiency, but the consequences extend further. We show that the sub-wavelength geometry of nanopillars drastically modifies the local electromagnetic environment, providing optical access to defect transitions that are otherwise suppressed by selection rules in bulk material. Using low-temperature photoluminescence spectroscopy, we observe that emission from the PL3 divacancy, which is nearly absent in planar devices, becomes pronounced in nanopillars owing to a polarization transformation of the excitation field within the pillar. We further leverage the orientation-dependent collection of nanopillars to resolve the origin of previously ambiguous spectral lines. In particular, the NV4$'$ feature displays the signal enhancement expected for axially oriented NV$^-$ centres, consistent with assignment to a higher excited state of the $kh$ defect configuration. Our results establish nanophotonic integration as a symmetry-sensitive probe that can both activate nominally dark transitions and identify the dipole character of poorly understood defect states.
+### [Effect of nanodiamond addition on the thermal, transport, mechanical, and electrochemical properties of morpholinium-based organic ionic plastic crystals](https://doi.org/10.1007/s11581-026-07639-0)
+- Ivan Stebnitskii, Aleksei Utkin, Yulia Mateyshina · Ionics · created 2026-11-14 · published 2026-11-14 · via Crossref · relevance score 0
+- Abstract: (not provided by any index)
 
-### [Hierarchically structured PVDF/Graphene Oxide-Nanodiamond nanofibrous membranes with enhanced wettability and Oil/Water separation](https://doi.org/10.1016/j.matdes.2026.117523)
-- Atefeh Jahani-Darzi, Seyed Reza Nabavi, Hamid Emadi · Materials &amp; Design · created 2026-11-13 · published 2026-11 · via Crossref · relevance score 2
+### [UV laser activation of NV centers in CVD diamond](https://doi.org/10.1016/j.carbon.2026.122320)
+- Vitali V. Kononenko et al. (10 authors) · Carbon · created 2026-11-14 · published 2026-11 · via Crossref · relevance score 0
 - Abstract: (not provided by any index)

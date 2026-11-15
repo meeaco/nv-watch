@@ -1,0 +1,117 @@
+{
+ "generated_utc": "2026-11-15T07:54:18+00:00",
+ "date": "2026-11-15",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/43692004383",
+ "arxiv_announcement": "2026-11-15",
+ "abstract_backfill": {
+  "missing": 2,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-11-10T07:54+00:00",
+  "2026-11-15T07:54+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 0
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 5,
+   "secs": 45
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 4,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 10,
+   "secs": 14
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 45,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 5
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/tf8y-nlsk",
+   "url": "https://doi.org/10.1103/tf8y-nlsk",
+   "title": "High-bandwidth heterodyne sensing with bulk N- V diamond",
+   "authors": [
+    "H. A. M. Taylor",
+    "Josh P. Duff",
+    "L. B. Miller",
+    "A. Tritt",
+    "M. S. Oldfield",
+    "K. Helmerson",
+    "M. S. J. Barson"
+   ],
+   "abstract": "Developing high performance portable sensors is of significant importance for both terrestrial and satellite communications, with quantum sensors offering potential advantages in sensitivity and bandwidth. The nitrogen vacancy center in diamond is a popular quantum sensing platform for its relative simplicity and wide range of acceptable operating conditions, but suffers a limited instantaneous bandwidth due to the narrow linewidth of the spin resonance. In this work, we first present a magnetic quantum sensing scheme utilizing heterodyne mixing with strong optical and microwave driving, achieving MHz-scale instantaneous bandwidth with a sensitivity of $548 \\; \\text{pT/}\\sqrt{\\text{Hz}}$ in an active diamond volume of $ 2.5\\times 10^{-4} \\; \\text{mm}^3$ with $2 \\times 10^{11}$ NV centers. We then demonstrate expansion of the sensing bandwidth by employing a strong magnetic gradient and many individually modulated microwave control fields, expanding the single resonance bandwidth to 48 MHz with a peak sensitivity of $8.5 \\; \\text{nT/}\\sqrt{\\text{Hz}}$.",
+   "venue": "Physical Review Applied",
+   "created": "2026-10-31T00:00:00",
+   "published": "2026-11-13",
+   "doi": "10.1103/tf8y-nlsk",
+   "_key": "10.1103/tf8y-nlsk",
+   "score": 1
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1007/s11581-026-07639-0",
+   "url": "https://doi.org/10.1007/s11581-026-07639-0",
+   "title": "Effect of nanodiamond addition on the thermal, transport, mechanical, and electrochemical properties of morpholinium-based organic ionic plastic crystals",
+   "authors": [
+    "Ivan Stebnitskii",
+    "Aleksei Utkin",
+    "Yulia Mateyshina"
+   ],
+   "abstract": "",
+   "venue": "Ionics",
+   "created": "2026-11-14T14:32:59Z",
+   "published": "2026-11-14",
+   "doi": "10.1007/s11581-026-07639-0",
+   "_key": "10.1007/s11581-026-07639-0",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.carbon.2026.122320",
+   "url": "https://doi.org/10.1016/j.carbon.2026.122320",
+   "title": "UV laser activation of NV centers in CVD diamond",
+   "authors": [
+    "Vitali V. Kononenko",
+    "Margarita A. Dezhkina",
+    "Alexey A. Kupriyanov",
+    "Maxim S. Komlenok",
+    "Alexey F. Popovich",
+    "Taras V. Kononenko",
+    "Pavel V. Fedotov",
+    "Vitaly I. Konov",
+    "Aleksander T. Salkazanov",
+    "Alexander S. Gusev"
+   ],
+   "abstract": "",
+   "venue": "Carbon",
+   "created": "2026-11-14T23:59:03Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.carbon.2026.122320",
+   "_key": "10.1016/j.carbon.2026.122320",
+   "score": 0
+  }
+ ]
+}
