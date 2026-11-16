@@ -1,115 +1,143 @@
 {
- "generated_utc": "2026-11-15T11:59:23+00:00",
- "date": "2026-11-15",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/43711540763",
- "arxiv_announcement": "2026-11-15",
+ "generated_utc": "2026-11-16T08:02:44+00:00",
+ "date": "2026-11-16",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/43828126507",
+ "arxiv_announcement": "2026-11-16",
  "abstract_backfill": {
   "missing": 0,
   "filled": 0,
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-10T11:59+00:00",
-  "2026-11-15T11:59+00:00"
+  "2026-11-11T08:02+00:00",
+  "2026-11-16T08:02+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 0,
+   "hits": 3,
    "secs": 14,
-   "scanned": 0
+   "scanned": 253
   },
   "arXiv-OAI": {
    "ok": true,
-   "hits": 5,
-   "secs": 59
+   "hits": 7,
+   "secs": 38
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 3,
-   "secs": 29
+   "hits": 4,
+   "secs": 30
   },
   "Crossref": {
    "ok": true,
-   "hits": 10,
-   "secs": 14
+   "hits": 7,
+   "secs": 32
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 45,
+   "hits": 46,
    "secs": 1
   },
   "arXiv": {
    "ok": true,
-   "hits": 5
+   "hits": 8
   }
  },
- "arxiv_new": [],
- "journal_new": [
+ "arxiv_new": [
   {
-   "source": "OpenAlex",
-   "id": "10.1103/tf8y-nlsk",
-   "url": "https://doi.org/10.1103/tf8y-nlsk",
-   "title": "High-bandwidth heterodyne sensing with bulk N- V diamond",
+   "source": "arXiv",
+   "id": "2611.17521",
+   "url": "https://arxiv.org/abs/2611.17521",
+   "title": "Thermally Activated Magnetic Switching in Antiferromagnetic Van der Waals Trilayers Resolved by Single-Spin Diamond Magnetometry",
    "authors": [
-    "H. A. M. Taylor",
-    "Josh P. Duff",
-    "L. B. Miller",
-    "A. Tritt",
-    "M. S. Oldfield",
-    "K. Helmerson",
-    "M. S. J. Barson"
+    "Fabian A. Gerritsma",
+    "Roland W. Mulder",
+    "Bal\\'azs Nagyfalusi",
+    "Pieter C. J. A. van Zweeden",
+    "Samer Kurdi",
+    "Francisco Machado",
+    "Jaime Ferrer",
+    "Samuel Ma\\~nas-Valero",
+    "Toeno van der Sar"
    ],
-   "abstract": "Developing high performance portable sensors is of significant importance for both terrestrial and satellite communications, with quantum sensors offering potential advantages in sensitivity and bandwidth. The nitrogen vacancy center in diamond is a popular quantum sensing platform for its relative simplicity and wide range of acceptable operating conditions, but suffers a limited instantaneous bandwidth due to the narrow linewidth of the spin resonance. In this work, we first present a magnetic quantum sensing scheme utilizing heterodyne mixing with strong optical and microwave driving, achieving MHz-scale instantaneous bandwidth with a sensitivity of $548 \\; \\text{pT/}\\sqrt{\\text{Hz}}$ in an active diamond volume of $ 2.5\\times 10^{-4} \\; \\text{mm}^3$ with $2 \\times 10^{11}$ NV centers. We then demonstrate expansion of the sensing bandwidth by employing a strong magnetic gradient and many individually modulated microwave control fields, expanding the single resonance bandwidth to 48 MHz with a peak sensitivity of $8.5 \\; \\text{nT/}\\sqrt{\\text{Hz}}$.",
-   "venue": "Physical Review Applied",
-   "created": "2026-10-31T00:00:00",
+   "abstract": "Van der Waals magnets provide a versatile platform for exploring magnetic phenomena that emerge from reduced dimensionality, including layer-dependent magnetic ordering. Here, we use scanning nitrogen-vacancy (NV) centers in diamond magnetometry to measure the magnetization of a trilayer of the A-type antiferromagnet CrPS$_4$, resolving its zero-field bistability between the up-down-up ($\\uparrow\\downarrow\\uparrow$) and down-up-down ($\\downarrow\\uparrow\\downarrow$) layer magnetization configurations. The coercive field decreases approximately linearly with temperature, consistent with the N\\'eel--Arrhenius model. Density Functional Theory calculations capture the temperature dependence of the magnetization and determine the coercive field in the coherent-rotation case. The measured coercive fields are lower, identifying thermally activated domain nucleation as the reversal mechanism. Spatial magnetic imaging supports this picture, revealing independently switching regions likely pinned by structural inhomogeneities. Our results highlight the power of scanning NV magnetometry for the quantitative investigation of magnetization reversal in two-dimensional magnets, unraveling the magnetic phenomenology that emerges in low-dimensional systems.",
+   "primary_category": "cond-mat.mes-hall",
+   "categories": [
+    "cond-mat.mes-hall"
+   ],
+   "published": "2026-11-12",
+   "updated": "2026-11-16",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 7
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.17366",
+   "url": "https://arxiv.org/abs/2611.17366",
+   "title": "Axis-selective AC magnetic-field imaging in the tens-of-megahertz regime using RF-dressed continuous-wave scanning NV magnetometry",
+   "authors": [
+    "Shuntaro Komuro",
+    "Ryusei Okaniwa",
+    "Kazuma Okura",
+    "Kunitaka Hayashi",
+    "Toshu An",
+    "Junko Ishi-Hayase"
+   ],
+   "abstract": "Spatially resolved magnetic-field imaging reveals material properties and local currents in microelectronic devices. Conventional pulsed scanning nitrogen-vacancy (NV) magnetometry (SNVM) faces increasingly stringent microwave (MW) pulse-control requirements for detecting radio-frequency (RF) magnetic fields at frequencies ranging from tens to hundreds of megahertz. To address this challenge, we implement an RF-dressed continuous-wave (CW) sensing scheme for SNVM and demonstrate AC magnetic-field imaging at 33.5 MHz. The method exploits electron-spin double resonance in the NV spin-1 three-level system: the target RF magnetic field coherently couples two spin eigenstates, forming RF-dressed states whose splittings are detected in continuous-wave electron-spin double resonance (CW-ESDR) spectra under continuous laser, MW, and RF excitation. This approach avoids short, high-power MW pulses and synchronization between the RF field and a pulsed sensing sequence. Using an NV-ensemble diamond probe integrated with an atomic force microscope (AFM), we image the Oersted field of an RF-driven L-shaped microcircuit. Successively selecting three crystallographic NV axes by static bias-field control yields maps of RF magnetic-field projection magnitudes, with distinct distributions qualitatively reproduced by Biot-Savart calculations. Transverse bias-field control also tunes the RF-coupled spin-state transition frequency from 14.4 to 89.3 MHz, as characterized by spectroscopy and Hamiltonian analysis, with RF-dressed resonances directly observed in CW-ESDR spectra at 89.3 MHz. Together with previous RF magnetic-field detection up to 632 MHz using the same RF-dressed CW sensing principle in a confocal NV setup, these results support extending AC magnetic-field imaging with SNVM toward the hundreds-of-megahertz regime and, with additional phase information, vector magnetic-field reconstruction.",
+   "primary_category": "physics.ins-det",
+   "categories": [
+    "cond-mat.mes-hall",
+    "physics.ins-det",
+    "quant-ph"
+   ],
+   "published": "2026-11-16",
+   "updated": "",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS"
+   ],
+   "score": 6
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.18215",
+   "url": "https://arxiv.org/abs/2611.18215",
+   "title": "Spin Interferometry Generated by Cavity Memory",
+   "authors": [
+    "Siyu Li",
+    "Yifan Shi",
+    "Yicheng Xiao",
+    "Haotian Xu",
+    "Shixuan Zhang",
+    "Aoqin Liang",
+    "Yanxi Wu",
+    "Xiaokang Li",
+    "Guoqing Wang"
+   ],
+   "abstract": "We report the control and observation of coherent spin interferometry generated by cavity memory using an ensemble of nitrogen-vacancy (NV) centers coupled to a microwave cavity. The abrupt switch-on and switch-off of a detuned drive produce transient fields at the cavity frequency that supply the two spin rotations for Ramsey interferometry, observed using both microwave and fluorescence readout. Spectrally scanning the spin profile across the cavity and drive frequencies distinguishes cavity-generated Ramsey interference from conventional Rabi dynamics. Temporal weighting of the reflected microwave signal enables spectrally selective population readout at a single probe frequency. By programming the phase and amplitude of the drive envelope, we extend the same mechanism to more quantum control sequences, including spin-echo and Rabi control.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
    "published": "2026-11-13",
-   "doi": "10.1103/tf8y-nlsk",
-   "_key": "10.1103/tf8y-nlsk",
-   "score": 1
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1007/s11581-026-07639-0",
-   "url": "https://doi.org/10.1007/s11581-026-07639-0",
-   "title": "Effect of nanodiamond addition on the thermal, transport, mechanical, and electrochemical properties of morpholinium-based organic ionic plastic crystals",
-   "authors": [
-    "Ivan Stebnitskii",
-    "Aleksei Utkin",
-    "Yulia Mateyshina"
+   "updated": "2026-11-16",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
    ],
-   "abstract": "",
-   "venue": "Ionics",
-   "created": "2026-11-14T14:32:59Z",
-   "published": "2026-11-14",
-   "doi": "10.1007/s11581-026-07639-0",
-   "_key": "10.1007/s11581-026-07639-0",
-   "score": 0
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1016/j.carbon.2026.122320",
-   "url": "https://doi.org/10.1016/j.carbon.2026.122320",
-   "title": "UV laser activation of NV centers in CVD diamond",
-   "authors": [
-    "Vitali V. Kononenko",
-    "Margarita A. Dezhkina",
-    "Alexey A. Kupriyanov",
-    "Maxim S. Komlenok",
-    "Alexey F. Popovich",
-    "Taras V. Kononenko",
-    "Pavel V. Fedotov",
-    "Vitaly I. Konov",
-    "Aleksander T. Salkazanov",
-    "Alexander S. Gusev"
-   ],
-   "abstract": "",
-   "venue": "Carbon",
-   "created": "2026-11-14T23:59:03Z",
-   "published": "2026-11",
-   "doi": "10.1016/j.carbon.2026.122320",
-   "_key": "10.1016/j.carbon.2026.122320",
-   "score": 0
+   "score": 2
   }
- ]
+ ],
+ "journal_new": []
 }

@@ -1,24 +1,24 @@
-# NV watch digest 2026-11-15
+# NV watch digest 2026-11-16
 
-Generated 2026-11-15T11:59:23+00:00 UTC. Search window 2026-11-10T11:59+00:00 → 2026-11-15T11:59+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-16T08:02:44+00:00 UTC. Search window 2026-11-11T08:02+00:00 → 2026-11-16T08:02+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 5 hits; arXiv-API: ok, 3 hits; Crossref: ok, 10 hits; OpenAlex: ok, 45 hits; arXiv: ok, 5 hits
+Sources: arXiv-RSS: ok, 3 hits of 253 scanned; arXiv-OAI: ok, 7 hits; arXiv-API: ok, 4 hits; Crossref: ok, 7 hits; OpenAlex: ok, 46 hits; arXiv: ok, 8 hits
 
-arXiv announcement covered by RSS: 2026-11-15. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/43711540763
+arXiv announcement covered by RSS: 2026-11-16. Journal abstracts back-filled: 0/0.
+Run: https://github.com/meeaco/nv-watch/actions/runs/43828126507
 
-## arXiv (0 new)
+## arXiv (3 new)
 
-## Journals (3 new)
+### [Thermally Activated Magnetic Switching in Antiferromagnetic Van der Waals Trilayers Resolved by Single-Spin Diamond Magnetometry](https://arxiv.org/abs/2611.17521)
+- Fabian A. Gerritsma et al. (9 authors) · arXiv:2611.17521 · cond-mat.mes-hall (cats: cond-mat.mes-hall) · submitted 2026-11-12 · relevance score 7 · found by arXiv-RSS+arXiv-OAI+arXiv-API
+- Abstract: Van der Waals magnets provide a versatile platform for exploring magnetic phenomena that emerge from reduced dimensionality, including layer-dependent magnetic ordering. Here, we use scanning nitrogen-vacancy (NV) centers in diamond magnetometry to measure the magnetization of a trilayer of the A-type antiferromagnet CrPS$_4$, resolving its zero-field bistability between the up-down-up ($\uparrow\downarrow\uparrow$) and down-up-down ($\downarrow\uparrow\downarrow$) layer magnetization configurations. The coercive field decreases approximately linearly with temperature, consistent with the N\'eel--Arrhenius model. Density Functional Theory calculations capture the temperature dependence of the magnetization and determine the coercive field in the coherent-rotation case. The measured coercive fields are lower, identifying thermally activated domain nucleation as the reversal mechanism. Spatial magnetic imaging supports this picture, revealing independently switching regions likely pinned by structural inhomogeneities. Our results highlight the power of scanning NV magnetometry for the quantitative investigation of magnetization reversal in two-dimensional magnets, unraveling the magnetic phenomenology that emerges in low-dimensional systems.
 
-### [High-bandwidth heterodyne sensing with bulk N- V diamond](https://doi.org/10.1103/tf8y-nlsk)
-- H. A. M. Taylor et al. (7 authors) · Physical Review Applied · created 2026-10-31 · published 2026-11-13 · via OpenAlex · relevance score 1
-- Abstract: Developing high performance portable sensors is of significant importance for both terrestrial and satellite communications, with quantum sensors offering potential advantages in sensitivity and bandwidth. The nitrogen vacancy center in diamond is a popular quantum sensing platform for its relative simplicity and wide range of acceptable operating conditions, but suffers a limited instantaneous bandwidth due to the narrow linewidth of the spin resonance. In this work, we first present a magnetic quantum sensing scheme utilizing heterodyne mixing with strong optical and microwave driving, achieving MHz-scale instantaneous bandwidth with a sensitivity of $548 \; \text{pT/}\sqrt{\text{Hz}}$ in an active diamond volume of $ 2.5\times 10^{-4} \; \text{mm}^3$ with $2 \times 10^{11}$ NV centers. We then demonstrate expansion of the sensing bandwidth by employing a strong magnetic gradient and many individually modulated microwave control fields, expanding the single resonance bandwidth to 48 MHz with a peak sensitivity of $8.5 \; \text{nT/}\sqrt{\text{Hz}}$.
+### [Axis-selective AC magnetic-field imaging in the tens-of-megahertz regime using RF-dressed continuous-wave scanning NV magnetometry](https://arxiv.org/abs/2611.17366)
+- Shuntaro Komuro et al. (6 authors) · arXiv:2611.17366 · physics.ins-det (cats: cond-mat.mes-hall, physics.ins-det, quant-ph) · submitted 2026-11-16 · relevance score 6 · found by arXiv-RSS
+- Abstract: Spatially resolved magnetic-field imaging reveals material properties and local currents in microelectronic devices. Conventional pulsed scanning nitrogen-vacancy (NV) magnetometry (SNVM) faces increasingly stringent microwave (MW) pulse-control requirements for detecting radio-frequency (RF) magnetic fields at frequencies ranging from tens to hundreds of megahertz. To address this challenge, we implement an RF-dressed continuous-wave (CW) sensing scheme for SNVM and demonstrate AC magnetic-field imaging at 33.5 MHz. The method exploits electron-spin double resonance in the NV spin-1 three-level system: the target RF magnetic field coherently couples two spin eigenstates, forming RF-dressed states whose splittings are detected in continuous-wave electron-spin double resonance (CW-ESDR) spectra under continuous laser, MW, and RF excitation. This approach avoids short, high-power MW pulses and synchronization between the RF field and a pulsed sensing sequence. Using an NV-ensemble diamond probe integrated with an atomic force microscope (AFM), we image the Oersted field of an RF-driven L-shaped microcircuit. Successively selecting three crystallographic NV axes by static bias-field control yields maps of RF magnetic-field projection magnitudes, with distinct distributions qualitatively reproduced by Biot-Savart calculations. Transverse bias-field control also tunes the RF-coupled spin-state transition frequency from 14.4 to 89.3 MHz, as characterized by spectroscopy and Hamiltonian analysis, with RF-dressed resonances directly observed in CW-ESDR spectra at 89.3 MHz. Together with previous RF magnetic-field detection up to 632 MHz using the same RF-dressed CW sensing principle in a confocal NV setup, these results support extending AC magnetic-field imaging with SNVM toward the hundreds-of-megahertz regime and, with additional phase information, vector magnetic-field reconstruction.
 
-### [Effect of nanodiamond addition on the thermal, transport, mechanical, and electrochemical properties of morpholinium-based organic ionic plastic crystals](https://doi.org/10.1007/s11581-026-07639-0)
-- Ivan Stebnitskii, Aleksei Utkin, Yulia Mateyshina · Ionics · created 2026-11-14 · published 2026-11-14 · via Crossref · relevance score 0
-- Abstract: (not provided by any index)
+### [Spin Interferometry Generated by Cavity Memory](https://arxiv.org/abs/2611.18215)
+- Siyu Li et al. (9 authors) · arXiv:2611.18215 · quant-ph (cats: quant-ph) · submitted 2026-11-13 · relevance score 2 · found by arXiv-RSS+arXiv-OAI+arXiv-API
+- Abstract: We report the control and observation of coherent spin interferometry generated by cavity memory using an ensemble of nitrogen-vacancy (NV) centers coupled to a microwave cavity. The abrupt switch-on and switch-off of a detuned drive produce transient fields at the cavity frequency that supply the two spin rotations for Ramsey interferometry, observed using both microwave and fluorescence readout. Spectrally scanning the spin profile across the cavity and drive frequencies distinguishes cavity-generated Ramsey interference from conventional Rabi dynamics. Temporal weighting of the reflected microwave signal enables spectrally selective population readout at a single probe frequency. By programming the phase and amplitude of the drive envelope, we extend the same mechanism to more quantum control sequences, including spin-echo and Rabi control.
 
-### [UV laser activation of NV centers in CVD diamond](https://doi.org/10.1016/j.carbon.2026.122320)
-- Vitali V. Kononenko et al. (10 authors) · Carbon · created 2026-11-14 · published 2026-11 · via Crossref · relevance score 0
-- Abstract: (not provided by any index)
+## Journals (0 new)
