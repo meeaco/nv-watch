@@ -1,109 +1,75 @@
 {
- "generated_utc": "2026-11-17T13:31:57+00:00",
- "date": "2026-11-17",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44093635648",
- "arxiv_announcement": "2026-11-17",
+ "generated_utc": "2026-11-18T08:36:06+00:00",
+ "date": "2026-11-18",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44268388773",
+ "arxiv_announcement": "2026-11-18",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 1,
   "filled": 0,
-  "errors": []
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
  },
  "search_window_utc": [
-  "2026-11-12T13:31+00:00",
-  "2026-11-17T13:31+00:00"
+  "2026-11-13T08:36+00:00",
+  "2026-11-18T08:36+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 2,
-   "secs": 14,
-   "scanned": 486
+   "hits": 3,
+   "secs": 13,
+   "scanned": 320
   },
   "arXiv-OAI": {
    "ok": true,
-   "hits": 7,
+   "hits": 8,
    "secs": 54
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 4,
-   "secs": 14
+   "hits": 6,
+   "secs": 27
   },
   "Crossref": {
    "ok": true,
-   "hits": 10,
-   "secs": 14
+   "hits": 9,
+   "secs": 13
   },
   "OpenAlex": {
    "ok": true,
    "hits": 40,
-   "secs": 1
+   "secs": 3
   },
   "arXiv": {
    "ok": true,
-   "hits": 7
+   "hits": 8
   }
  },
  "arxiv_new": [
   {
    "source": "arXiv",
-   "id": "2611.20751",
-   "url": "https://arxiv.org/abs/2611.20751",
-   "title": "Cavity Control of Emission Dynamics from Spin Defects in Hexagonal Boron Nitride",
+   "id": "2611.21765",
+   "url": "https://arxiv.org/abs/2611.21765",
+   "title": "AI Scientist Discovered Robust Quantum Control",
    "authors": [
-    "Anuj Kumar Singh",
-    "Atanu Patra",
-    "Paul Konrad",
-    "Subhamoy Sahoo",
-    "Ankur Arora",
-    "Johannes D\\\"ureth",
-    "Georgy V. Astakhov",
-    "Monika Emmerling",
-    "Martin Kamp",
-    "Andreas Sperlich",
-    "Vladimir Dyakonov",
-    "Sven H\\\"ofling",
-    "Simon Betzold"
+    "Jiahao Yan",
+    "Xuanying Lai",
+    "Xiaoshui Lin",
+    "Yizhou Wang",
+    "Changyu Yao",
+    "Guanghui He",
+    "Thomas Lewer",
+    "Chong Zu",
+    "Chuanwei Zhang"
    ],
-   "abstract": "Optically addressable negatively charged boron vacancy ($\\mathrm{V_B^-}$) defects in hexagonal boron nitride (hBN) are promising for quantum sensing at room temperature. The two-dimensional structure of hBN allows direct access to the local environment, enabling proximal sensing of target materials. However, its broadband emission and low quantum yield hinder efficient light-matter interaction, and the coupling of $\\mathrm{V_B^-}$ optical dipoles to confined cavity fields remains poorly understood. In this study, we integrate $\\mathrm{V_B^-}$ defects with a tunable plano-concave microcavity, achieving three-dimensional optical confinement. This approach yields photoluminescence (PL) enhancement and cavity-modified optical decay dynamics, providing insights into the orientation of the $\\mathrm{V_B^-}$ defect dipole. Time-resolved PL measurements identify a distinct fast decay component, suggesting a complex dipole geometry for the defects. Therefore, a tilted optical dipole model is considered to attribute the fast and slow decay components to in-plane and out-of-plane dipole contributions, respectively. Additionally, optically detected magnetic resonance and excitation-polarisation-dependent PL measurements provide further insights into local symmetry breaking and potential optical dipole configurations. These results highlight the role of optical dipole orientation in $\\mathrm{V_B^-}$ defect-cavity coupling.",
-   "primary_category": "physics.optics",
-   "categories": [
-    "cond-mat.mes-hall",
-    "cond-mat.mtrl-sci",
-    "physics.optics"
-   ],
-   "published": "2026-11-16",
-   "updated": "2026-11-17",
-   "doi": "",
-   "journal_ref": "",
-   "found_by": [
-    "arXiv-RSS",
-    "arXiv-OAI",
-    "arXiv-API"
-   ],
-   "score": 3
-  },
-  {
-   "source": "arXiv",
-   "id": "2611.21560",
-   "url": "https://arxiv.org/abs/2611.21560",
-   "title": "Optimal Quantum Sensing Algorithms for Discrete-Frequency Spectroscopy",
-   "authors": [
-    "Yu-Jie Liu",
-    "Richard R. Allen",
-    "Ruohan Shen",
-    "Bingtian Ye",
-    "Timothy T. Chang",
-    "Joonhee Choi",
-    "Soonwon Choi"
-   ],
-   "abstract": "Spectroscopy is a versatile tool that drives scientific discovery and underpins modern technologies. Quantum sensing offers promising opportunities to advance spectroscopy through enhanced sensitivity and spectral and spatial resolution. However, existing approaches largely focus on improving general measurement capabilities, often overlooking the structure of specific sensing tasks and leaving potential performance gains untapped. Here, we develop an algorithmic approach to quantum sensing tailored to various spectroscopic tasks, providing new avenues for improvement. Specifically, we consider general time-varying signals supported on a known set of $N$ candidate frequencies, a setting we call discrete-frequency spectroscopy. We formulate three types of practically motivated sensing tasks---Detection, Search, and Learning---that require progressively more spectral information. For all tasks, we design optimal quantum sensing algorithms achieving a $\\sqrt{N}$ speedup over conventional frequency-scanning approaches. Optimal Detection and Search need only a single-qubit sensor under $\\pi$-pulse control, whereas optimal Learning provably requires coherent processing with a quantum computer. End-to-end numerical simulations incorporating various experimental imperfections predict up to two-orders-of-magnitude speedup in Detection. As an example, we analyze the feasibility of our Detection and Search algorithms for real-world molecular screening based on state-of-the-art nitrogen-vacancy centers. We also show how quantum-computing-enhanced Learning enables wireless communication in a weak-signal regime where conventional methods fail. Our results establish a practical route toward realizing quantum advantages via designing task-specific sensing algorithms.",
+   "abstract": "Protecting quantum coherence is a central theme of modern quantum technologies. Carefully designed control pulses can extend coherence by suppressing disorder and unwanted interactions. However, designing robust pulse sequences remains challenging in interacting multi-level systems, where multiple independent error channels must be controlled in the presence of experimental imperfections. Here we introduce QORA, a multi-agent artificial intelligence framework that integrates theoretical reasoning, automated experimental calibration and control for closed-loop discovery of quantum control sequences. Applied to a dense ensemble of spin-1 nitrogen-vacancy centers in diamond, QORA discovers AID-ROD, a series of AI-discovered sequences that nearly double the measured spin coherence time relative to the state-of-the-art human-designed sequence DROID-C3PO. Subsequence analysis by human researchers reveals a hierarchy of error suppression: 18-pulse blocks suppress linear and quadratic onsite disorder and common-mode drive-amplitude errors, while their arrangement over a longer cycle reduces dipolar interactions, providing a physical explanation for the observed improvement and robustness in AID-ROD. These results demonstrate AI-guided experimental discovery of robust quantum control and identify a design strategy for protecting coherence in interacting multi-level systems beyond qubits.",
    "primary_category": "quant-ph",
    "categories": [
     "quant-ph"
    ],
    "published": "2026-11-16",
-   "updated": "2026-11-17",
+   "updated": "2026-11-18",
    "doi": "",
    "journal_ref": "",
    "found_by": [
@@ -111,65 +77,118 @@
     "arXiv-OAI",
     "arXiv-API"
    ],
-   "score": 1
+   "score": 4
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.23046",
+   "url": "https://arxiv.org/abs/2611.23046",
+   "title": "Frequency Multiplexing of Purcell-Enhanced Optically Coherent NV Centers",
+   "authors": [
+    "Alok Gokhale",
+    "Marco E. Stucki",
+    "Malo Bezard",
+    "Maarten H. van der Hoeven",
+    "Kilian Unterguggenberger",
+    "Gregor Pieplow",
+    "Tommaso Pregnolato",
+    "Julian M. Bopp",
+    "Laura Orphal-Kobin",
+    "Tim Schr\\\"oder"
+   ],
+   "abstract": "Integrating optically coherent quantum emitters into nanophotonic structures is key to scalable quantum networks. Realizing them with nitrogen-vacancy (NV) centers in diamond is hindered by the degradation of optical coherence accompanying nanofabrication. Here, we overcome this challenge by integrating multiple NV centers into a monolithic diamond photonic crystal nanocavity while preserving near-lifetime-limited optical coherence. We observe linewidths as narrow as 19 MHz, enabling the frequency multiplexing of spectrally distinct NV centers within a common cavity mode, while maintaining charge-state stability over several minutes under resonant excitation. Tuning the cavity into resonance with the NV zero-phonon line enhances the optical emission, consistent with Purcell enhancement predicted by finite-element simulations. Additionally, individual cavities can be independently brought into resonance with NV zero-phonon lines on the same chip. These results combine bulk-like optical coherence with frequency multiplexing and cavity-enhanced emission, establishing a scalable nanophotonic platform for NV-based quantum network nodes.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "physics.optics",
+    "quant-ph"
+   ],
+   "published": "2026-11-17",
+   "updated": "2026-11-18",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 0
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.22074",
+   "url": "https://arxiv.org/abs/2611.22074",
+   "title": "Electrostatic screening and nitrogen-vacancy charge states in boron-doped/nitrogen-doped diamond junctions",
+   "authors": [
+    "Masato Koga",
+    "Haizen Cho",
+    "El Mustapha Mansouri",
+    "Eikichi Kimura",
+    "Ryo Matsumoto",
+    "Yoshihiko Takano",
+    "Keigo Arai"
+   ],
+   "abstract": "Boron-doped diamond (BDD) enables the integration of electrical functionality with nitrogen-vacancy (NV) centers, but the influence of junction electrostatics on NV charge-state stability remains unclear. In this study, we investigate the equilibrium electrostatics of BDD/nitrogen-doped diamond junctions using self-consistent Poisson-Fermi calculations. The results reveal two distinct electrostatic length scales in the nitrogen-doped substrate: a near-interface region of ionized donors that produces dominant band bending and determines the NV$^{0/-}$ charge-state boundary, and a much longer screening tail associated with weak donor ionization in the neutral bulk. The resulting NV$^-$ depletion depth depends strongly on the nitrogen concentration but exhibits a more moderate dependence on boron doping. At $N_B = 10^{21}$ cm$^{-3}$, varying the interface grading scale $w$ from 0.5 to 8 nm changes the depletion depth by approximately 22 nm, whereas variations in the modeled bulk BDD charge response produce a shift of only 1.27 nm. These results indicate that, under the conditions studied, the nitrogen donor concentration and local interface structure primarily govern the equilibrium NV charge-state profile, rather than the bulk electronic response of BDD alone.",
+   "primary_category": "cond-mat.mtrl-sci",
+   "categories": [
+    "cond-mat.mtrl-sci",
+    "quant-ph"
+   ],
+   "published": "2026-11-17",
+   "updated": "2026-11-18",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 0
   }
  ],
  "journal_new": [
   {
    "source": "Crossref",
-   "id": "10.1021/acsomega.6c10278",
-   "url": "https://doi.org/10.1021/acsomega.6c10278",
-   "title": "Folate-Functionalized PAMAM–Nanodiamond Conjugates for Sustained pH-Dependent Cabazitaxel Release and Enhanced Cytotoxicity in Prostate Cancer Cells",
+   "id": "10.1002/apxr.70178",
+   "url": "https://doi.org/10.1002/apxr.70178",
+   "title": "Overcoming Depth Sensitivity and Directional Ambiguity in NV Magnetic Imaging via Laplacian‐Constrained Tensor Tilt",
    "authors": [
-    "Sachin Patil",
-    "Vishnu S. Mishra",
-    "Nisha Yadav",
-    "Puli Chandramouli Reddy",
-    "Bimlesh Lochab"
+    "Yikai Peng",
+    "Kaiqi Zhang",
+    "Xin Li",
+    "Qiang Zhu",
+    "Ye Tian",
+    "Hui Peng",
+    "Huanfei Wen",
+    "Jun Tang",
+    "Jun Liu"
    ],
-   "abstract": "Abstract Cabazitaxel (CTX) is an effective chemotherapeutic agent for advanced prostate cancer, but limited aqueous solubility and systemic toxicity motivate alternative delivery strategies. Herein, we developed a folate receptor-targeted nanodiamond-based nanoconjugate (ND-PAMAM-FA-CTX) for selective and controlled drug delivery. Cabazitaxel was first converted to CTX-hemisuccinate and subsequently conjugated to a fourth-generation polyamidoamine (PAMAM) dendrimer along with folic acid (FA), followed by covalent attachment to nanodiamonds (NDs). Comprehensive physicochemical characterization confirmed the successful construction of the nanoconjugate while preserving the structural integrity of the nanodiamond core. The resulting platform exhibited high CTX-loading capacity and a sustained, pH-responsive drug-release profile, with enhanced release under acidic conditions relevant to the tumor microenvironment. The drug-free carrier showed excellent biocompatibility, whereas ND-PAMAM-FA-CTX demonstrated superior anticancer activity against folate receptor (FAR)-overexpressing PC3 prostate cancer cells compared with free CTX and nontargeted controls. Flow cytometry and confocal microscopy revealed significantly enhanced cellular uptake mediated by folate receptor-dependent endocytosis, which was further confirmed through competitive inhibition studies using free folic acid. Moreover, ND-PAMAM-FA-CTX exhibited a low nanomolar IC50 value (∼5 nM) and markedly suppressed PC3 cell migration. Overall, these findings demonstrate that ND-PAMAM-FA-CTX is a promising targeted nanotherapeutic platform that combines selective cellular delivery and controlled drug release with enhanced efficacy, offering potential for future targeted chemotherapy applications.",
-   "venue": "ACS Omega",
-   "created": "2026-11-16T22:01:51Z",
-   "published": "2026-11-16",
-   "doi": "10.1021/acsomega.6c10278",
-   "_key": "10.1021/acsomega.6c10278",
-   "score": 6
+   "abstract": "ABSTRACT Wide‐field NV‐ensemble vector magnetometry provides four optically detected magnetic resonance (ODMR) projection maps on a single sensor plane. After bias/reference sign calibration, standard vector inversion converts these projections into the Cartesian field components B x , B y , and B z . We propose Laplacian–Constrained Tensor Tilt (LCTT), a post‐processing method that combines the measurable in‐plane derivatives with ∇ · B = 0 to infer G zz and generate a signed two‐dimensional topology map. The method is evaluated numerically using Cartesian magnetic‐field maps generated for parallel and inclined current‐carrying wires. Compared with magnetic‐field‐modulus imaging, LCTT reduces locally common amplitude variations and improves the visibility of weak structural features within a feature‐scale‐ and SNR‐dependent detectable range. It also preserves relative current‐polarity changes under the calibrated sign convention, but does not recover absolute polarity from unsigned ODMR splittings. Detectable depth depends on lateral feature size, sensor standoff, and effective gradient SNR rather than a universal number of micrometres. LCTT is therefore intended as a qualitative screening and region‐of‐interest tool, not as a full three‐dimensional field reconstruction or a replacement for quantitative current‐density inversion.",
+   "venue": "Advanced Physics Research",
+   "created": "2026-11-17T15:44:11Z",
+   "published": "2026-11-17",
+   "doi": "10.1002/apxr.70178",
+   "_key": "10.1002/apxr.70178",
+   "score": 7
   },
   {
    "source": "Crossref",
-   "id": "10.1103/2r9y-xfmb",
-   "url": "https://doi.org/10.1103/2r9y-xfmb",
-   "title": "Photoelectrical readout and Ramsey interferometry of single shallowly implanted NV centers in diamond",
+   "id": "10.1016/j.surfin.2026.111340",
+   "url": "https://doi.org/10.1016/j.surfin.2026.111340",
+   "title": "Co3O4/Nanodiamond Heterostructure Gas Sensors for Enhanced Xylene Detection",
    "authors": [
-    "Ilia Chuprina",
-    "Christoph Findler",
-    "Johannes Lang",
-    "Petr Siyushev",
-    "Fedor Jelezko"
+    "Yutong Jin",
+    "Xiao Liang",
+    "Zhen Liu",
+    "Yuqing Shi",
+    "Nan Gao",
+    "Jing Zhang"
    ],
    "abstract": "",
-   "venue": "Physical Review Research",
-   "created": "2026-11-16T13:32:11Z",
-   "published": "2026-11-16",
-   "doi": "10.1103/2r9y-xfmb",
-   "_key": "10.1103/2r9y-xfmb",
-   "score": 0
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1016/j.optcom.2026.133961",
-   "url": "https://doi.org/10.1016/j.optcom.2026.133961",
-   "title": "Nanodiamond Pigments for Digital Visual Arts: Optical Engineering and Colorimetric Performance",
-   "authors": [
-    "Hong Chen",
-    "Jingwen Fan"
-   ],
-   "abstract": "",
-   "venue": "Optics Communications",
-   "created": "2026-11-17T07:46:22Z",
+   "venue": "Surfaces and Interfaces",
+   "created": "2026-11-17T16:31:45Z",
    "published": "2026-11",
-   "doi": "10.1016/j.optcom.2026.133961",
-   "_key": "10.1016/j.optcom.2026.133961",
+   "doi": "10.1016/j.surfin.2026.111340",
+   "_key": "10.1016/j.surfin.2026.111340",
    "score": 0
   }
  ]

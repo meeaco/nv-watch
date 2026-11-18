@@ -1,0 +1,195 @@
+{
+ "generated_utc": "2026-11-18T08:36:06+00:00",
+ "date": "2026-11-18",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44268388773",
+ "arxiv_announcement": "2026-11-18",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-11-13T08:36+00:00",
+  "2026-11-18T08:36+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 3,
+   "secs": 13,
+   "scanned": 320
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 8,
+   "secs": 54
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 6,
+   "secs": 27
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 9,
+   "secs": 13
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 40,
+   "secs": 3
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 8
+  }
+ },
+ "arxiv_new": [
+  {
+   "source": "arXiv",
+   "id": "2611.21765",
+   "url": "https://arxiv.org/abs/2611.21765",
+   "title": "AI Scientist Discovered Robust Quantum Control",
+   "authors": [
+    "Jiahao Yan",
+    "Xuanying Lai",
+    "Xiaoshui Lin",
+    "Yizhou Wang",
+    "Changyu Yao",
+    "Guanghui He",
+    "Thomas Lewer",
+    "Chong Zu",
+    "Chuanwei Zhang"
+   ],
+   "abstract": "Protecting quantum coherence is a central theme of modern quantum technologies. Carefully designed control pulses can extend coherence by suppressing disorder and unwanted interactions. However, designing robust pulse sequences remains challenging in interacting multi-level systems, where multiple independent error channels must be controlled in the presence of experimental imperfections. Here we introduce QORA, a multi-agent artificial intelligence framework that integrates theoretical reasoning, automated experimental calibration and control for closed-loop discovery of quantum control sequences. Applied to a dense ensemble of spin-1 nitrogen-vacancy centers in diamond, QORA discovers AID-ROD, a series of AI-discovered sequences that nearly double the measured spin coherence time relative to the state-of-the-art human-designed sequence DROID-C3PO. Subsequence analysis by human researchers reveals a hierarchy of error suppression: 18-pulse blocks suppress linear and quadratic onsite disorder and common-mode drive-amplitude errors, while their arrangement over a longer cycle reduces dipolar interactions, providing a physical explanation for the observed improvement and robustness in AID-ROD. These results demonstrate AI-guided experimental discovery of robust quantum control and identify a design strategy for protecting coherence in interacting multi-level systems beyond qubits.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-16",
+   "updated": "2026-11-18",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 4
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.23046",
+   "url": "https://arxiv.org/abs/2611.23046",
+   "title": "Frequency Multiplexing of Purcell-Enhanced Optically Coherent NV Centers",
+   "authors": [
+    "Alok Gokhale",
+    "Marco E. Stucki",
+    "Malo Bezard",
+    "Maarten H. van der Hoeven",
+    "Kilian Unterguggenberger",
+    "Gregor Pieplow",
+    "Tommaso Pregnolato",
+    "Julian M. Bopp",
+    "Laura Orphal-Kobin",
+    "Tim Schr\\\"oder"
+   ],
+   "abstract": "Integrating optically coherent quantum emitters into nanophotonic structures is key to scalable quantum networks. Realizing them with nitrogen-vacancy (NV) centers in diamond is hindered by the degradation of optical coherence accompanying nanofabrication. Here, we overcome this challenge by integrating multiple NV centers into a monolithic diamond photonic crystal nanocavity while preserving near-lifetime-limited optical coherence. We observe linewidths as narrow as 19 MHz, enabling the frequency multiplexing of spectrally distinct NV centers within a common cavity mode, while maintaining charge-state stability over several minutes under resonant excitation. Tuning the cavity into resonance with the NV zero-phonon line enhances the optical emission, consistent with Purcell enhancement predicted by finite-element simulations. Additionally, individual cavities can be independently brought into resonance with NV zero-phonon lines on the same chip. These results combine bulk-like optical coherence with frequency multiplexing and cavity-enhanced emission, establishing a scalable nanophotonic platform for NV-based quantum network nodes.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "physics.optics",
+    "quant-ph"
+   ],
+   "published": "2026-11-17",
+   "updated": "2026-11-18",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 0
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.22074",
+   "url": "https://arxiv.org/abs/2611.22074",
+   "title": "Electrostatic screening and nitrogen-vacancy charge states in boron-doped/nitrogen-doped diamond junctions",
+   "authors": [
+    "Masato Koga",
+    "Haizen Cho",
+    "El Mustapha Mansouri",
+    "Eikichi Kimura",
+    "Ryo Matsumoto",
+    "Yoshihiko Takano",
+    "Keigo Arai"
+   ],
+   "abstract": "Boron-doped diamond (BDD) enables the integration of electrical functionality with nitrogen-vacancy (NV) centers, but the influence of junction electrostatics on NV charge-state stability remains unclear. In this study, we investigate the equilibrium electrostatics of BDD/nitrogen-doped diamond junctions using self-consistent Poisson-Fermi calculations. The results reveal two distinct electrostatic length scales in the nitrogen-doped substrate: a near-interface region of ionized donors that produces dominant band bending and determines the NV$^{0/-}$ charge-state boundary, and a much longer screening tail associated with weak donor ionization in the neutral bulk. The resulting NV$^-$ depletion depth depends strongly on the nitrogen concentration but exhibits a more moderate dependence on boron doping. At $N_B = 10^{21}$ cm$^{-3}$, varying the interface grading scale $w$ from 0.5 to 8 nm changes the depletion depth by approximately 22 nm, whereas variations in the modeled bulk BDD charge response produce a shift of only 1.27 nm. These results indicate that, under the conditions studied, the nitrogen donor concentration and local interface structure primarily govern the equilibrium NV charge-state profile, rather than the bulk electronic response of BDD alone.",
+   "primary_category": "cond-mat.mtrl-sci",
+   "categories": [
+    "cond-mat.mtrl-sci",
+    "quant-ph"
+   ],
+   "published": "2026-11-17",
+   "updated": "2026-11-18",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 0
+  }
+ ],
+ "journal_new": [
+  {
+   "source": "Crossref",
+   "id": "10.1002/apxr.70178",
+   "url": "https://doi.org/10.1002/apxr.70178",
+   "title": "Overcoming Depth Sensitivity and Directional Ambiguity in NV Magnetic Imaging via Laplacian‐Constrained Tensor Tilt",
+   "authors": [
+    "Yikai Peng",
+    "Kaiqi Zhang",
+    "Xin Li",
+    "Qiang Zhu",
+    "Ye Tian",
+    "Hui Peng",
+    "Huanfei Wen",
+    "Jun Tang",
+    "Jun Liu"
+   ],
+   "abstract": "ABSTRACT Wide‐field NV‐ensemble vector magnetometry provides four optically detected magnetic resonance (ODMR) projection maps on a single sensor plane. After bias/reference sign calibration, standard vector inversion converts these projections into the Cartesian field components B x , B y , and B z . We propose Laplacian–Constrained Tensor Tilt (LCTT), a post‐processing method that combines the measurable in‐plane derivatives with ∇ · B = 0 to infer G zz and generate a signed two‐dimensional topology map. The method is evaluated numerically using Cartesian magnetic‐field maps generated for parallel and inclined current‐carrying wires. Compared with magnetic‐field‐modulus imaging, LCTT reduces locally common amplitude variations and improves the visibility of weak structural features within a feature‐scale‐ and SNR‐dependent detectable range. It also preserves relative current‐polarity changes under the calibrated sign convention, but does not recover absolute polarity from unsigned ODMR splittings. Detectable depth depends on lateral feature size, sensor standoff, and effective gradient SNR rather than a universal number of micrometres. LCTT is therefore intended as a qualitative screening and region‐of‐interest tool, not as a full three‐dimensional field reconstruction or a replacement for quantitative current‐density inversion.",
+   "venue": "Advanced Physics Research",
+   "created": "2026-11-17T15:44:11Z",
+   "published": "2026-11-17",
+   "doi": "10.1002/apxr.70178",
+   "_key": "10.1002/apxr.70178",
+   "score": 7
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.surfin.2026.111340",
+   "url": "https://doi.org/10.1016/j.surfin.2026.111340",
+   "title": "Co3O4/Nanodiamond Heterostructure Gas Sensors for Enhanced Xylene Detection",
+   "authors": [
+    "Yutong Jin",
+    "Xiao Liang",
+    "Zhen Liu",
+    "Yuqing Shi",
+    "Nan Gao",
+    "Jing Zhang"
+   ],
+   "abstract": "",
+   "venue": "Surfaces and Interfaces",
+   "created": "2026-11-17T16:31:45Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.surfin.2026.111340",
+   "_key": "10.1016/j.surfin.2026.111340",
+   "score": 0
+  }
+ ]
+}
