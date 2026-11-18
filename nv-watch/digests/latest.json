@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-18T08:36:06+00:00",
+ "generated_utc": "2026-11-18T10:46:27+00:00",
  "date": "2026-11-18",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44268388773",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44288525149",
  "arxiv_announcement": "2026-11-18",
  "abstract_backfill": {
   "missing": 1,
@@ -11,35 +11,35 @@
   ]
  },
  "search_window_utc": [
-  "2026-11-13T08:36+00:00",
-  "2026-11-18T08:36+00:00"
+  "2026-11-13T10:46+00:00",
+  "2026-11-18T10:46+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 3,
-   "secs": 13,
+   "secs": 14,
    "scanned": 320
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 8,
-   "secs": 54
+   "secs": 53
   },
   "arXiv-API": {
    "ok": true,
    "hits": 6,
-   "secs": 27
+   "secs": 11
   },
   "Crossref": {
    "ok": true,
-   "hits": 9,
+   "hits": 10,
    "secs": 13
   },
   "OpenAlex": {
    "ok": true,
    "hits": 40,
-   "secs": 3
+   "secs": 2
   },
   "arXiv": {
    "ok": true,
@@ -189,6 +189,25 @@
    "published": "2026-11",
    "doi": "10.1016/j.surfin.2026.111340",
    "_key": "10.1016/j.surfin.2026.111340",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1007/s43452-026-01680-6",
+   "url": "https://doi.org/10.1007/s43452-026-01680-6",
+   "title": "Tracing Tb-SrAl2O4 hydration dynamics through Tb–NV− interactions using direct optically detected magnetic resonance (dODMR)",
+   "authors": [
+    "Andrzej Kruk",
+    "Mariusz Mrózek",
+    "Stefan Kreiβl",
+    "Dominika Madej"
+   ],
+   "abstract": "",
+   "venue": "Archives of Civil and Mechanical Engineering",
+   "created": "2026-11-18T08:47:03Z",
+   "published": "2026-11-18",
+   "doi": "10.1007/s43452-026-01680-6",
+   "_key": "10.1007/s43452-026-01680-6",
    "score": 0
   }
  ]

@@ -1,11 +1,11 @@
 # NV watch digest 2026-11-18
 
-Generated 2026-11-18T08:36:06+00:00 UTC. Search window 2026-11-13T08:36+00:00 → 2026-11-18T08:36+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-18T10:46:27+00:00 UTC. Search window 2026-11-13T10:46+00:00 → 2026-11-18T10:46+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 3 hits of 320 scanned; arXiv-OAI: ok, 8 hits; arXiv-API: ok, 6 hits; Crossref: ok, 9 hits; OpenAlex: ok, 40 hits; arXiv: ok, 8 hits
+Sources: arXiv-RSS: ok, 3 hits of 320 scanned; arXiv-OAI: ok, 8 hits; arXiv-API: ok, 6 hits; Crossref: ok, 10 hits; OpenAlex: ok, 40 hits; arXiv: ok, 8 hits
 
 arXiv announcement covered by RSS: 2026-11-18. Journal abstracts back-filled: 0/1 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
-Run: https://github.com/meeaco/nv-watch/actions/runs/44268388773
+Run: https://github.com/meeaco/nv-watch/actions/runs/44288525149
 
 ## arXiv (3 new)
 
@@ -21,7 +21,7 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/44268388773
 - Masato Koga et al. (7 authors) · arXiv:2611.22074 · cond-mat.mtrl-sci (cats: cond-mat.mtrl-sci, quant-ph) · submitted 2026-11-17 · relevance score 0 · found by arXiv-RSS+arXiv-OAI+arXiv-API
 - Abstract: Boron-doped diamond (BDD) enables the integration of electrical functionality with nitrogen-vacancy (NV) centers, but the influence of junction electrostatics on NV charge-state stability remains unclear. In this study, we investigate the equilibrium electrostatics of BDD/nitrogen-doped diamond junctions using self-consistent Poisson-Fermi calculations. The results reveal two distinct electrostatic length scales in the nitrogen-doped substrate: a near-interface region of ionized donors that produces dominant band bending and determines the NV$^{0/-}$ charge-state boundary, and a much longer screening tail associated with weak donor ionization in the neutral bulk. The resulting NV$^-$ depletion depth depends strongly on the nitrogen concentration but exhibits a more moderate dependence on boron doping. At $N_B = 10^{21}$ cm$^{-3}$, varying the interface grading scale $w$ from 0.5 to 8 nm changes the depletion depth by approximately 22 nm, whereas variations in the modeled bulk BDD charge response produce a shift of only 1.27 nm. These results indicate that, under the conditions studied, the nitrogen donor concentration and local interface structure primarily govern the equilibrium NV charge-state profile, rather than the bulk electronic response of BDD alone.
 
-## Journals (2 new)
+## Journals (3 new)
 
 ### [Overcoming Depth Sensitivity and Directional Ambiguity in NV Magnetic Imaging via Laplacian‐Constrained Tensor Tilt](https://doi.org/10.1002/apxr.70178)
 - Yikai Peng et al. (9 authors) · Advanced Physics Research · created 2026-11-17 · published 2026-11-17 · via Crossref · relevance score 7
@@ -29,4 +29,8 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/44268388773
 
 ### [Co3O4/Nanodiamond Heterostructure Gas Sensors for Enhanced Xylene Detection](https://doi.org/10.1016/j.surfin.2026.111340)
 - Yutong Jin et al. (6 authors) · Surfaces and Interfaces · created 2026-11-17 · published 2026-11 · via Crossref · relevance score 0
+- Abstract: (not provided by any index)
+
+### [Tracing Tb-SrAl2O4 hydration dynamics through Tb–NV− interactions using direct optically detected magnetic resonance (dODMR)](https://doi.org/10.1007/s43452-026-01680-6)
+- Andrzej Kruk, Mariusz Mrózek, Stefan Kreiβl, Dominika Madej · Archives of Civil and Mechanical Engineering · created 2026-11-18 · published 2026-11-18 · via Crossref · relevance score 0
 - Abstract: (not provided by any index)
