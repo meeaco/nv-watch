@@ -1,11 +1,11 @@
 # NV watch digest 2026-11-19
 
-Generated 2026-11-19T08:51:34+00:00 UTC. Search window 2026-11-14T08:51+00:00 → 2026-11-19T08:51+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-19T10:47:05+00:00 UTC. Search window 2026-11-14T10:47+00:00 → 2026-11-19T10:47+00:00 (items already reported in earlier digests are excluded).
 
 Sources: arXiv-RSS: ok, 0 hits of 263 scanned; arXiv-OAI: ok, 6 hits; arXiv-API: ok, 5 hits; Crossref: ok, 9 hits; OpenAlex: ok, 42 hits; arXiv: ok, 6 hits
 
 arXiv announcement covered by RSS: 2026-11-19. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/44491174981
+Run: https://github.com/meeaco/nv-watch/actions/runs/44508832363
 
 ## arXiv (0 new)
 
