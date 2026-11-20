@@ -1,0 +1,188 @@
+{
+ "generated_utc": "2026-11-20T08:38:30+00:00",
+ "date": "2026-11-20",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44704157714",
+ "arxiv_announcement": "2026-11-20",
+ "abstract_backfill": {
+  "missing": 1,
+  "filled": 0,
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
+ },
+ "search_window_utc": [
+  "2026-11-15T08:38+00:00",
+  "2026-11-20T08:38+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 0,
+   "secs": 14,
+   "scanned": 250
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 5,
+   "secs": 47
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 5,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 10,
+   "secs": 13
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 42,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 5
+  }
+ },
+ "arxiv_new": [],
+ "journal_new": [
+  {
+   "source": "Crossref",
+   "id": "10.1038/s41467-026-78803-3",
+   "url": "https://doi.org/10.1038/s41467-026-78803-3",
+   "title": "Quantum sensing-enabled deuterium NMR spectroscopy with nanoscale sensitivity at low magnetic fields",
+   "authors": [
+    "Dileep Singh",
+    "Riley W. Hooper",
+    "Christoph Findler",
+    "Utsab Banerjee",
+    "Dominik B. Bucher"
+   ],
+   "abstract": "Abstract Nuclear magnetic resonance (NMR) spectroscopy provides unparalleled access to molecular structure and dynamics but is traditionally limited by weak signal strength, requiring large sample volumes and high magnetic fields. Here, we demonstrate nanoscale deuterium ( 2 H) NMR spectroscopy using nitrogen vacancy (NV) centers in diamond, yielding characteristic quadrupolar powder line shapes that are present in conventional bulk NMR spectra. By detecting statistical spin fluctuations from nanometer-scale detection volumes, our approach delivers a sensitivity enhancement of seven to eight orders of magnitude in terms of spin sensitivity over inductive detection, while operating at magnetic fields two orders of magnitude lower than those used in conventional NMR. Temperature-dependent measurements of a deuterated polymer and a molecular solid reveal distinct motional averaging and phase transitions with nanoscale sensitivity. Powder-like NV-detected 2 H NMR establishes a powerful tool for probing molecular dynamics on the nanoscale - capabilities beyond those of most existing spectroscopic techniques.",
+   "venue": "Nature Communications",
+   "created": "2026-11-19T17:34:01Z",
+   "published": "2026-11-19",
+   "doi": "10.1038/s41467-026-78803-3",
+   "_key": "10.1038/s41467-026-78803-3",
+   "score": 4
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/4sfb-4vqd",
+   "url": "https://doi.org/10.1103/4sfb-4vqd",
+   "title": "Visualization of current-driven vortex formation in high- T c cuprate superconductors",
+   "authors": [
+    "Shunsuke Nishimura",
+    "Takeyuki Tsuji",
+    "Takayuki Iwasaki",
+    "Mutsuko Hatano",
+    "Kento Sasaki",
+    "Kensuke Kobayashi"
+   ],
+   "abstract": "Cooling a type-II superconductor through 𝑇𝑐 under a transport current is routine, yet the vortex state after this process remains unclear. We investigate this process by imaging the magnetic field of a high-𝑇𝑐 cuprate strip using a quantum diamond microscope. Upon confirming that field cooling reproduces established edge effects, we find that current-biased cooling nucleates vortices even at zero applied field, leaving a central vortex- depleted region. In a small applied field, the vortex pattern polarizes opposite to the Lorentz force direction, and the vortex-depleted region shifts with increasing current. These observations show that cooling freezes the driven steady-state magnetic profile and are consistent with a self-consistent flux flow description. These results show how current history becomes imprinted and demonstrate that vortices undergo a glassy crossover from flow to a frozen configuration, opening an avenue to test nonequilibrium vortex dynamics.",
+   "venue": "Physical review. B./Physical review. B",
+   "created": "2025-11-28T00:00:00",
+   "published": "2026-11-03",
+   "doi": "10.1103/4sfb-4vqd",
+   "_key": "10.1103/4sfb-4vqd",
+   "score": 3
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1016/j.matdes.2026.117582",
+   "url": "https://doi.org/10.1016/j.matdes.2026.117582",
+   "title": "Electrochemical immobilization of nanodiamonds to augment titanium surface properties for improved soft‑tissue sealing in dental implants",
+   "authors": [
+    "Kedar Mehta",
+    "Katharina Ekat",
+    "Friederike Kaiser",
+    "Garcia-Zintzun Aidee I",
+    "Martin Kormunda",
+    "Darius Pohl",
+    "Bernd Rellinghaus",
+    "Karoline Schulz",
+    "Jörg L. Opitz",
+    "Bernd Kreikemeyer",
+    "Cornelia Wolf‐Brandstetter"
+   ],
+   "abstract": "Biofilm-driven peri -implant diseases remain a major challenge in implantology. Implant surfaces that promote soft-tissue sealing while limiting bacterial adhesion are essential for establishing a stable biological barrier. In this study, we systematically investigated the effects of topography, surface energy, and surface chemistry on oral cell behavior and biofilm formation using chemically modified and nanodiamond (ND)-functionalized titanium surfaces. Hydroxylated NDs with different aggregate sizes (∼50–100 nm) were immobilized on polished commercially pure titanium by electrochemical anodization. Selected surfaces were additionally functionalized with 3-aminopropyltriethoxysilane (APTES) or 1H,1H,2H,2H-perfluorooctyltriethoxysilane (PFOS). Cross-sectional analysis confirmed stable partial integration of NDs within the anodic TiO 2 layer. Surface characterization revealed three distinct roughness levels and two wettability regimes, with hydroxyl-ND and APTES surfaces remaining hydrophilic and PFOS surfaces becoming hydrophobic. ND-coated surfaces consistently enhanced fibroblast number and spreading independent of surface chemistry, indicating a dominant effect of nanoscale topography. Keratinocytes, however, were more sensitive to surface chemistry and preferentially adhered to hydrophilic and neutrally charged surfaces. Biofilm formation showed no significant differences between surface variants after saliva conditioning, suggesting masking effects of the salivary pellicle. Overall, ND-modified titanium surfaces show potential for improving soft-tissue integration without increasing biofilm accumulation.",
+   "venue": "Materials & Design",
+   "created": "2026-05-21T00:00:00",
+   "published": "2026-11-01",
+   "doi": "10.1016/j.matdes.2026.117582",
+   "_key": "10.1016/j.matdes.2026.117582",
+   "score": 3
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1116/5.0352555",
+   "url": "https://doi.org/10.1116/5.0352555",
+   "title": "Power sensitivity of broadband radiofrequency detectors based on quantum diamond spins",
+   "authors": [
+    "Nicholas Gillespie",
+    "Christopher T.-K. Lew",
+    "Ryan Kinsella",
+    "Andy Sayers",
+    "Brant Gibson",
+    "David A. Broadway",
+    "Jean-Philippe Tetienne"
+   ],
+   "abstract": "Nitrogen-vacancy (NV) centers in diamond can be used to detect radiofrequency (RF) signals through coupling of the RF magnetic field with the NV spins, combined with optical readout of the spin state. The sensitivity of such RF detectors has so far been mainly studied in terms of magnetic field sensitivity, which is relevant when the RF signal is generated by a near-field source. However, for applications where the RF input is delivered externally, a more relevant quantity is the sensitivity in terms of the input RF power. Here, we theoretically analyze the power sensitivity of NV-based RF detectors as a function of the RF–spin interface geometry. We derive scaling laws of the power sensitivity for both slope-detection and variance-detection RF sensing protocols, and for various noise regimes. We find that, in most scenarios, the power sensitivity scales inversely with the characteristic physical dimension of the RF–spin interface, for instance, the width of a coplanar waveguide or the diameter of a loop antenna. In other words, the smaller the structure and the probed NV volume, the better the power sensitivity, which is contrary to the case of magnetic field sensitivity. Lastly, we numerically estimate that photon shot-noise-limited sensitivities of 10−20 W Hz−1 (slope) and 10−12 W Hz−1/2 (variance) are achievable. This work lays the groundwork for further optimization of NV-based RF detectors.",
+   "venue": "AVS Quantum Science",
+   "created": "2026-11-19T19:52:36Z",
+   "published": "2026-11-19",
+   "doi": "10.1116/5.0352555",
+   "_key": "10.1116/5.0352555",
+   "score": 1
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1109/jsen.2026.3753611",
+   "url": "https://doi.org/10.1109/jsen.2026.3753611",
+   "title": "The Closed-loop NV Magnetometer utilizing PI Feedback Combined Magnetic Flux Concentrators for High SNR",
+   "authors": [
+    "Hui Wang",
+    "Doudou Zheng",
+    "Yang Li",
+    "Chenyu Hou",
+    "Huanfei Wen",
+    "Zhonghao Li",
+    "Xin Li",
+    "Jiuyan Wei",
+    "Hao Guo",
+    "Yanjun Li",
+    "Zongmin Ma",
+    "Jun Tang",
+    "Jun Liu"
+   ],
+   "abstract": "",
+   "venue": "IEEE Sensors Journal",
+   "created": "2026-11-19T20:23:09Z",
+   "published": "2026",
+   "doi": "10.1109/jsen.2026.3753611",
+   "_key": "10.1109/jsen.2026.3753611",
+   "score": 1
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/cxv4-r2bs",
+   "url": "https://doi.org/10.1103/cxv4-r2bs",
+   "title": "Efficient time-dependent dynamics of matrix product states using average Hamiltonians",
+   "authors": [
+    "Belal Abouraya",
+    "Jirawat Saiphet",
+    "Fedor Jelezko",
+    "Ressa S. Said"
+   ],
+   "abstract": "Simulating quantum many-body systems (QMBS) is one of the long-standing, highly nontrivial challenges in condensed matter physics and quantum information due to the exponentially growing size of the system's Hilbert space. To date, tensor networks have been an essential tool for studying such quantum systems, owing to their ability to efficiently capture the entanglement properties of the systems they represent. One of the well-known tensor network architectures, namely, matrix product states (MPS), is the standard method for simulating one-dimensional QMBS. Here, we propose a simple, yet efficient, method to augment the already available MPS algorithms to simulate the dynamics of time-dependent Hamiltonians with better accuracy and a faster convergence rate, giving a second-order convergence compared to the first-order convergence of the Riemann method available in standard software packages. We apply our proposed method to simulate the dynamics of a chain of single spins associated with nitrogen-vacancy (NV) color centers in diamond, which has potential applications for practical and scalable quantum technologies, and find that our method improves the average error for a system of a few NV centers by a factor of about 1000 for moderate step sizes. Additionally, we compare our method to the midpoint rule, which has second-order convergence as well, and show some of the trade-offs between the two methods. Our work paves the way for efficient simulation of QMBS under the influence of time-dependent Hamiltonians.",
+   "venue": "Physical Review Research",
+   "created": "2026-10-07T00:00:00",
+   "published": "2026-11-18",
+   "doi": "10.1103/cxv4-r2bs",
+   "_key": "10.1103/cxv4-r2bs",
+   "score": 0
+  }
+ ]
+}
