@@ -1,43 +1,43 @@
 {
- "generated_utc": "2026-11-20T13:00:02+00:00",
- "date": "2026-11-20",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44740436091",
- "arxiv_announcement": "2026-11-20",
+ "generated_utc": "2026-11-21T08:20:06+00:00",
+ "date": "2026-11-21",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44884371385",
+ "arxiv_announcement": "2026-11-21",
  "abstract_backfill": {
   "missing": 0,
   "filled": 0,
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-15T13:00+00:00",
-  "2026-11-20T13:00+00:00"
+  "2026-11-16T08:20+00:00",
+  "2026-11-21T08:20+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 0,
-   "secs": 14,
-   "scanned": 250
+   "secs": 13,
+   "scanned": 0
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 5,
-   "secs": 47
+   "secs": 44
   },
   "arXiv-API": {
    "ok": true,
    "hits": 5,
-   "secs": 19
+   "secs": 11
   },
   "Crossref": {
    "ok": true,
    "hits": 10,
-   "secs": 11
+   "secs": 13
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 42,
-   "secs": 1
+   "hits": 43,
+   "secs": 2
   },
   "arXiv": {
    "ok": true,
@@ -47,140 +47,114 @@
  "arxiv_new": [],
  "journal_new": [
   {
-   "source": "Crossref",
-   "id": "10.1038/s41467-026-78803-3",
-   "url": "https://doi.org/10.1038/s41467-026-78803-3",
-   "title": "Quantum sensing-enabled deuterium NMR spectroscopy with nanoscale sensitivity at low magnetic fields",
+   "source": "OpenAlex",
+   "id": "10.1186/s12645-026-00444-4",
+   "url": "https://doi.org/10.1186/s12645-026-00444-4",
+   "title": "Effect of fullerene C60, diamond, and graphene oxide on oncolytic properties of herpes simplex virus type 1 against hepatocellular carcinoma",
    "authors": [
-    "Dileep Singh",
-    "Riley W. Hooper",
-    "Christoph Findler",
-    "Utsab Banerjee",
-    "Dominik B. Bucher"
+    "Malwina Sosnowska",
+    "Monika Janik",
+    "Tomasz Gabler",
+    "Joanna Cymerys",
+    "Klara Piotrowska",
+    "Agnieszka Ostrowska",
+    "Totka Nikolaeva Bakalova",
+    "Aneta Bombalska",
+    "Wojciech Skrzeczanowski",
+    "Barbara Nasiłowska",
+    "Marta Kutwin"
    ],
-   "abstract": "Abstract Nuclear magnetic resonance (NMR) spectroscopy provides unparalleled access to molecular structure and dynamics but is traditionally limited by weak signal strength, requiring large sample volumes and high magnetic fields. Here, we demonstrate nanoscale deuterium ( 2 H) NMR spectroscopy using nitrogen vacancy (NV) centers in diamond, yielding characteristic quadrupolar powder line shapes that are present in conventional bulk NMR spectra. By detecting statistical spin fluctuations from nanometer-scale detection volumes, our approach delivers a sensitivity enhancement of seven to eight orders of magnitude in terms of spin sensitivity over inductive detection, while operating at magnetic fields two orders of magnitude lower than those used in conventional NMR. Temperature-dependent measurements of a deuterated polymer and a molecular solid reveal distinct motional averaging and phase transitions with nanoscale sensitivity. Powder-like NV-detected 2 H NMR establishes a powerful tool for probing molecular dynamics on the nanoscale - capabilities beyond those of most existing spectroscopic techniques.",
-   "venue": "Nature Communications",
-   "created": "2026-11-19T17:34:01Z",
+   "abstract": "Background Oncolytic viruses selectively target cancer cells but have their virulence or latency factors removed, which reduces their therapeutic efficacy. Oncolytic viruses represent a new tool in the cancer therapy, but their effectiveness depends on efficient delivery before recognition by the immune system. The aim of this study was to determine the effect of fullerene C 60 , diamond, and graphene oxide nanoparticles on the oncolytic properties of modified herpes simplex virus type 1 (+ GFP, -γ34.5, -UL39). We hypothesised that carbon nanoparticles facilitate entry of the oncolytic virus into cancer cells via nanopores and enhance cancer cell death. Results Fullerene and diamond nanoparticles were biocompatible with cancer cells after 24 h of incubation. Graphene oxide at concentrations of 50 and 100 mg/L inhibited cellular metabolic activity. HSV-1 induced a dose-dependent cytopathic effect (CPE) including cell rounding and syncytium formation, which were more pronounced in C3A cells than in SNU-449 cells. Fullerene and diamond showed aggregation in the presence of HSV-1. The Combination of the virus with graphene oxide and nanodiamond nanoparticles caused a physical reduction in the size of the virus particles. ND caused the best increase in the number of HSV-1 copies in the cells and culture medium of the C3A line, while C 60 increased viral DNA in the SNU-449 culture medium. Carbon nanoparticle-modified HSV-1 entered cells, expressed green fluorescent protein, and reduced mitochondrial activity without increasing lactate dehydrogenase leakage into the extracellular environment. Graphene oxide and diamond reduced expression of icp27 , vp16 , gD , casp3 , and bcl2 , as well as the HSV-1 receptor hvem at the mRNA level. Carbon nanoparticles kept the virus inside the cells, which was associated with reduced vp16 expression. Moreover, the addition of C 60 and diamond to HSV-1 resulted in an increase in viral antigen levels in cells. Conclusion Carbon-based nanomaterials differentially influenced HSV-1 DNA levels, viral antigen expression, and cellular responses in hepatocellular carcinoma cell lines. These effects depended on both the nanomaterial and the investigated cell line. Although the findings suggest that fullerene C 60 and nanodiamonds warrant further investigation as potential components of oncolytic virus delivery strategies, the present results do not establish enhanced production of infectious viral progeny or synergistic oncolytic activity.",
+   "venue": "Cancer Nanotechnology",
+   "created": "2026-11-20T00:00:00",
    "published": "2026-11-19",
-   "doi": "10.1038/s41467-026-78803-3",
-   "_key": "10.1038/s41467-026-78803-3",
-   "score": 4
+   "doi": "10.1186/s12645-026-00444-4",
+   "_key": "10.1186/s12645-026-00444-4",
+   "score": 6
   },
   {
    "source": "OpenAlex",
-   "id": "10.1103/4sfb-4vqd",
-   "url": "https://doi.org/10.1103/4sfb-4vqd",
-   "title": "Visualization of current-driven vortex formation in high- T c cuprate superconductors",
+   "id": "10.1103/jc77-2nvb",
+   "url": "https://doi.org/10.1103/jc77-2nvb",
+   "title": "Surface Adsorbates Suppress Low-Frequency Noise for Shallow Nitrogen-Vacancy Centers",
    "authors": [
-    "Shunsuke Nishimura",
-    "Takeyuki Tsuji",
-    "Takayuki Iwasaki",
-    "Mutsuko Hatano",
-    "Kento Sasaki",
-    "Kensuke Kobayashi"
+    "Yuan Zhiyang",
+    "David A. Fehr",
+    "Kalliope Zervas",
+    "Sorawis Sangtawesin",
+    "Lila V. H. Rodgers",
+    "Patryk Gumann",
+    "Michael E. Flatté",
+    "Nathalie P. de Leon"
    ],
-   "abstract": "Cooling a type-II superconductor through 𝑇𝑐 under a transport current is routine, yet the vortex state after this process remains unclear. We investigate this process by imaging the magnetic field of a high-𝑇𝑐 cuprate strip using a quantum diamond microscope. Upon confirming that field cooling reproduces established edge effects, we find that current-biased cooling nucleates vortices even at zero applied field, leaving a central vortex- depleted region. In a small applied field, the vortex pattern polarizes opposite to the Lorentz force direction, and the vortex-depleted region shifts with increasing current. These observations show that cooling freezes the driven steady-state magnetic profile and are consistent with a self-consistent flux flow description. These results show how current history becomes imprinted and demonstrate that vortices undergo a glassy crossover from flow to a frozen configuration, opening an avenue to test nonequilibrium vortex dynamics.",
+   "abstract": "Shallow nitrogen-vacancy (NV) centers in diamond are promising nanoscale quantum sensors, yet their coherence is strongly limited by surface-induced noise. Surface adsorbates are widely believed to be a major source of decoherence. Here, we test this assumption by characterizing shallow single NV centers under ultrahigh vacuum (UHV) conditions, where the diamond surface is kept free of adsorbates, and comparing their behavior to ambient conditions. Surprisingly, we observe a ∼ 4 × reduction in the Hahn echo coherence time T 2 in UHV. By combining Hahn echo measurements in the single-quantum and double-quantum (DQ) bases, we separate contributions from different noise sources and find that both electric and magnetic noise are enhanced in UHV. In contrast, T 1 measurements reveal an increased DQ T 1 in UHV, indicating suppressed electric field noise in the ∼ 100 MHz frequency regime. These results point to a modification of the surface noise spectrum upon adsorbate removal, with different frequency regimes arising from distinct microscopic mechanisms. Specifically, we find that the low-frequency noise is consistent with increased surface charge in UHV that can be compensated by surface adsorbates in ambient conditions. Our findings highlight a complex and previously underappreciated role of surface adsorbates in shaping the noise environment of shallow NV centers, with important implications for nanoscale quantum sensing.",
+   "venue": "PRX Quantum",
+   "created": "2026-10-09T00:00:00",
+   "published": "2026-11-06",
+   "doi": "10.1103/jc77-2nvb",
+   "_key": "10.1103/jc77-2nvb",
+   "score": 5
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/7xrx-2fd2",
+   "url": "https://doi.org/10.1103/7xrx-2fd2",
+   "title": "First-principles cumulant approach to the vibronic structure of spin defects",
+   "authors": [
+    "Jinsoo Park",
+    "Yu Jin",
+    "Arpan Kundu",
+    "Jorge O. Sofo",
+    "Giulia Galli"
+   ],
+   "abstract": "Color centers in wide-band-gap semiconductors are leading platforms for solid-state quantum technologies, yet a quantitative description of their vibronic structure has remained elusive due to the complexity of multiphonon processes in localized defect states. Here we present a first-principles Green's function framework based on the retarded cumulant ansatz (RCA) to describe electron-phonon interactions in spin defects; our approach goes beyond the adiabatic and lowest-order perturbation theory approximations underlying widely used approaches. Applied to the negatively charged nitrogen-vacancy ( NV − ) center in diamond within the harmonic approximation, our method reveals that multiphonon satellites persist over a 400 meV energy window even at zero temperature, driven by quantum zero-point fluctuations. We demonstrate that accurate spectral functions require mode-, momentum-, spin-, and orbital-resolved electron-phonon matrix elements sampled across the full Brillouin zone, to account for hybridized and propagating phonon channels. We find that the vibronic structure of the NV − center exhibits strong spin and orbital anisotropy, with different orbitals coupling to qualitatively distinct parts of the phonon spectrum, and spin-selective coupling affecting both sideband positions and intensities.",
    "venue": "Physical review. B./Physical review. B",
-   "created": "2025-11-28T00:00:00",
-   "published": "2026-11-03",
-   "doi": "10.1103/4sfb-4vqd",
-   "_key": "10.1103/4sfb-4vqd",
+   "created": "2026-09-25T00:00:00",
+   "published": "2026-11-05",
+   "doi": "10.1103/7xrx-2fd2",
+   "_key": "10.1103/7xrx-2fd2",
    "score": 3
   },
   {
    "source": "OpenAlex",
-   "id": "10.1016/j.matdes.2026.117582",
-   "url": "https://doi.org/10.1016/j.matdes.2026.117582",
-   "title": "Electrochemical immobilization of nanodiamonds to augment titanium surface properties for improved soft‑tissue sealing in dental implants",
+   "id": "10.1126/science.aeh3114",
+   "url": "https://doi.org/10.1126/science.aeh3114",
+   "title": "Elastic-field reorganization stabilizes soft-lattice perovskites for durable solar cells",
    "authors": [
-    "Kedar Mehta",
-    "Katharina Ekat",
-    "Friederike Kaiser",
-    "Garcia-Zintzun Aidee I",
-    "Martin Kormunda",
-    "Darius Pohl",
-    "Bernd Rellinghaus",
-    "Karoline Schulz",
-    "Jörg L. Opitz",
-    "Bernd Kreikemeyer",
-    "Cornelia Wolf‐Brandstetter"
+    "Biao Li",
+    "Tianchi Zhang",
+    "Xingtao Wang",
+    "Yehui Wen",
+    "Yong Wang",
+    "Chenxia Kan",
+    "Deren Yang"
    ],
-   "abstract": "Biofilm-driven peri -implant diseases remain a major challenge in implantology. Implant surfaces that promote soft-tissue sealing while limiting bacterial adhesion are essential for establishing a stable biological barrier. In this study, we systematically investigated the effects of topography, surface energy, and surface chemistry on oral cell behavior and biofilm formation using chemically modified and nanodiamond (ND)-functionalized titanium surfaces. Hydroxylated NDs with different aggregate sizes (∼50–100 nm) were immobilized on polished commercially pure titanium by electrochemical anodization. Selected surfaces were additionally functionalized with 3-aminopropyltriethoxysilane (APTES) or 1H,1H,2H,2H-perfluorooctyltriethoxysilane (PFOS). Cross-sectional analysis confirmed stable partial integration of NDs within the anodic TiO 2 layer. Surface characterization revealed three distinct roughness levels and two wettability regimes, with hydroxyl-ND and APTES surfaces remaining hydrophilic and PFOS surfaces becoming hydrophobic. ND-coated surfaces consistently enhanced fibroblast number and spreading independent of surface chemistry, indicating a dominant effect of nanoscale topography. Keratinocytes, however, were more sensitive to surface chemistry and preferentially adhered to hydrophilic and neutrally charged surfaces. Biofilm formation showed no significant differences between surface variants after saliva conditioning, suggesting masking effects of the salivary pellicle. Overall, ND-modified titanium surfaces show potential for improving soft-tissue integration without increasing biofilm accumulation.",
-   "venue": "Materials & Design",
-   "created": "2026-05-21T00:00:00",
-   "published": "2026-11-01",
-   "doi": "10.1016/j.matdes.2026.117582",
-   "_key": "10.1016/j.matdes.2026.117582",
-   "score": 3
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1116/5.0352555",
-   "url": "https://doi.org/10.1116/5.0352555",
-   "title": "Power sensitivity of broadband radiofrequency detectors based on quantum diamond spins",
-   "authors": [
-    "Nicholas Gillespie",
-    "Christopher T.-K. Lew",
-    "Ryan Kinsella",
-    "Andy Sayers",
-    "Brant Gibson",
-    "David A. Broadway",
-    "Jean-Philippe Tetienne"
-   ],
-   "abstract": "Nitrogen-vacancy (NV) centers in diamond can be used to detect radiofrequency (RF) signals through coupling of the RF magnetic field with the NV spins, combined with optical readout of the spin state. The sensitivity of such RF detectors has so far been mainly studied in terms of magnetic field sensitivity, which is relevant when the RF signal is generated by a near-field source. However, for applications where the RF input is delivered externally, a more relevant quantity is the sensitivity in terms of the input RF power. Here, we theoretically analyze the power sensitivity of NV-based RF detectors as a function of the RF–spin interface geometry. We derive scaling laws of the power sensitivity for both slope-detection and variance-detection RF sensing protocols, and for various noise regimes. We find that, in most scenarios, the power sensitivity scales inversely with the characteristic physical dimension of the RF–spin interface, for instance, the width of a coplanar waveguide or the diameter of a loop antenna. In other words, the smaller the structure and the probed NV volume, the better the power sensitivity, which is contrary to the case of magnetic field sensitivity. Lastly, we numerically estimate that photon shot-noise-limited sensitivities of 10−20 W Hz−1 (slope) and 10−12 W Hz−1/2 (variance) are achievable. This work lays the groundwork for further optimization of NV-based RF detectors.",
-   "venue": "AVS Quantum Science",
-   "created": "2026-11-19T19:52:36Z",
+   "abstract": "The soft lattice that enables the exceptional performance of halide perovskites inherently compromises their operational stability. Here, we show that soft-lattice perovskites can be stabilized through elastic-field reorganization induced by rigid nanodiamond inclusions. Their inclusion enabled efficient bulk-to-boundary load transfer, redistributing and dissipating internal elastic fields at grain boundaries rather than allowing their accumulation within the crystal interior. Suppression of intergranular sliding constrained lattice deformation and mitigated defect generation during prolonged operation. Devices based on the stabilized perovskites with an area of 0.09 square centimeters achieved a certified power conversion efficiency of 27.6%, and minimodules with an area of 16.1 square centimeters achieved 24.3%. These devices retained 80% of their initial PCE after 5000 hours of maximum power point operation at 85°C and 98% after 5000 hours of dynamically varying light-intensity day-night cycling.",
+   "venue": "Science",
+   "created": "2026-11-20T00:00:00",
    "published": "2026-11-19",
-   "doi": "10.1116/5.0352555",
-   "_key": "10.1116/5.0352555",
-   "score": 1
-  },
-  {
-   "source": "Crossref",
-   "id": "10.1109/jsen.2026.3753611",
-   "url": "https://doi.org/10.1109/jsen.2026.3753611",
-   "title": "The Closed-loop NV Magnetometer utilizing PI Feedback Combined Magnetic Flux Concentrators for High SNR",
-   "authors": [
-    "Hui Wang",
-    "Doudou Zheng",
-    "Yang Li",
-    "Chenyu Hou",
-    "Huanfei Wen",
-    "Zhonghao Li",
-    "Xin Li",
-    "Jiuyan Wei",
-    "Hao Guo",
-    "Yanjun Li",
-    "Zongmin Ma",
-    "Jun Tang",
-    "Jun Liu"
-   ],
-   "abstract": "",
-   "venue": "IEEE Sensors Journal",
-   "created": "2026-11-19T20:23:09Z",
-   "published": "2026",
-   "doi": "10.1109/jsen.2026.3753611",
-   "_key": "10.1109/jsen.2026.3753611",
-   "score": 1
+   "doi": "10.1126/science.aeh3114",
+   "_key": "10.1126/science.aeh3114",
+   "score": 3
   },
   {
    "source": "OpenAlex",
-   "id": "10.1103/cxv4-r2bs",
-   "url": "https://doi.org/10.1103/cxv4-r2bs",
-   "title": "Efficient time-dependent dynamics of matrix product states using average Hamiltonians",
+   "id": "10.1103/d3p6-yxps",
+   "url": "https://doi.org/10.1103/d3p6-yxps",
+   "title": "High-fidelity state transfer in silicon-vacancy-phononic networks with closed mechanical subsystems",
    "authors": [
-    "Belal Abouraya",
-    "Jirawat Saiphet",
-    "Fedor Jelezko",
-    "Ressa S. Said"
+    "Weihu Xu",
+    "Juntao Li",
+    "Zeyang Liao",
+    "Xiaoqi Zhou"
    ],
-   "abstract": "Simulating quantum many-body systems (QMBS) is one of the long-standing, highly nontrivial challenges in condensed matter physics and quantum information due to the exponentially growing size of the system's Hilbert space. To date, tensor networks have been an essential tool for studying such quantum systems, owing to their ability to efficiently capture the entanglement properties of the systems they represent. One of the well-known tensor network architectures, namely, matrix product states (MPS), is the standard method for simulating one-dimensional QMBS. Here, we propose a simple, yet efficient, method to augment the already available MPS algorithms to simulate the dynamics of time-dependent Hamiltonians with better accuracy and a faster convergence rate, giving a second-order convergence compared to the first-order convergence of the Riemann method available in standard software packages. We apply our proposed method to simulate the dynamics of a chain of single spins associated with nitrogen-vacancy (NV) color centers in diamond, which has potential applications for practical and scalable quantum technologies, and find that our method improves the average error for a system of a few NV centers by a factor of about 1000 for moderate step sizes. Additionally, we compare our method to the midpoint rule, which has second-order convergence as well, and show some of the trade-offs between the two methods. Our work paves the way for efficient simulation of QMBS under the influence of time-dependent Hamiltonians.",
+   "abstract": "Building on the alternating-waveguide closed-mechanical-subsystem architecture introduced by Kuzyk and Wang [], we develop a diamond phononic network that overcomes the coupling-hierarchy bottleneck in the implementation analyzed there. Beyond replacing nitrogen-vacancy centers with silicon-vacancy (SiV) centers, we independently engineer the two relevant couplings: Localized defect modes and strong SiV orbital-strain interaction enhance the spin-phonon coupling G , whereas cavity-waveguide engineering suppresses the cavity-waveguide coupling g . The resulting coupling hierarchy reverses that found in earlier physical implementations of closed-mechanical-subsystem networks and places the system in the G ≫ g regime required for direct state transfer. This hierarchy reversal qualitatively changes the appropriate control strategy from bichromatic Mølmer-Sørensen driving to a simple direct triple swap. Within our model, the resulting protocol enables state transfer with a fidelity of 0.999 on a microsecond timescale and remains robust against mechanical dissipation, spin dephasing, and finite thermal occupation. Our results establish a distinct route for scalable solid-state phononic quantum networks.",
    "venue": "Physical Review Research",
-   "created": "2026-10-07T00:00:00",
-   "published": "2026-11-18",
-   "doi": "10.1103/cxv4-r2bs",
-   "_key": "10.1103/cxv4-r2bs",
-   "score": 0
+   "created": "2026-10-20T00:00:00",
+   "published": "2026-11-09",
+   "doi": "10.1103/d3p6-yxps",
+   "_key": "10.1103/d3p6-yxps",
+   "score": 2
   }
  ]
 }
