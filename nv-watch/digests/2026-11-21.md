@@ -1,15 +1,15 @@
 # NV watch digest 2026-11-21
 
-Generated 2026-11-21T10:16:09+00:00 UTC. Search window 2026-11-16T10:16+00:00 → 2026-11-21T10:16+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-21T12:44:06+00:00 UTC. Search window 2026-11-16T12:44+00:00 → 2026-11-21T12:44+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 5 hits; arXiv-API: ok, 4 hits; Crossref: ok, 11 hits; OpenAlex: ok, 43 hits; arXiv: ok, 5 hits
+Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 5 hits; arXiv-API: ok, 4 hits; Crossref: ok, 11 hits; OpenAlex: ok, 40 hits; arXiv: ok, 5 hits
 
-arXiv announcement covered by RSS: 2026-11-21. Journal abstracts back-filled: 0/1 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
-Run: https://github.com/meeaco/nv-watch/actions/runs/44893517402
+arXiv announcement covered by RSS: 2026-11-21. Journal abstracts back-filled: 0/0.
+Run: https://github.com/meeaco/nv-watch/actions/runs/44905359832
 
 ## arXiv (0 new)
 
-## Journals (6 new)
+## Journals (7 new)
 
 ### [Effect of fullerene C60, diamond, and graphene oxide on oncolytic properties of herpes simplex virus type 1 against hepatocellular carcinoma](https://doi.org/10.1186/s12645-026-00444-4)
 - Malwina Sosnowska et al. (11 authors) · Cancer Nanotechnology · created 2026-11-20 · published 2026-11-19 · via OpenAlex · relevance score 6
@@ -18,6 +18,10 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/44893517402
 ### [Surface Adsorbates Suppress Low-Frequency Noise for Shallow Nitrogen-Vacancy Centers](https://doi.org/10.1103/jc77-2nvb)
 - Yuan Zhiyang et al. (8 authors) · PRX Quantum · created 2026-10-09 · published 2026-11-06 · via OpenAlex · relevance score 5
 - Abstract: Shallow nitrogen-vacancy (NV) centers in diamond are promising nanoscale quantum sensors, yet their coherence is strongly limited by surface-induced noise. Surface adsorbates are widely believed to be a major source of decoherence. Here, we test this assumption by characterizing shallow single NV centers under ultrahigh vacuum (UHV) conditions, where the diamond surface is kept free of adsorbates, and comparing their behavior to ambient conditions. Surprisingly, we observe a ∼ 4 × reduction in the Hahn echo coherence time T 2 in UHV. By combining Hahn echo measurements in the single-quantum and double-quantum (DQ) bases, we separate contributions from different noise sources and find that both electric and magnetic noise are enhanced in UHV. In contrast, T 1 measurements reveal an increased DQ T 1 in UHV, indicating suppressed electric field noise in the ∼ 100 MHz frequency regime. These results point to a modification of the surface noise spectrum upon adsorbate removal, with different frequency regimes arising from distinct microscopic mechanisms. Specifically, we find that the low-frequency noise is consistent with increased surface charge in UHV that can be compensated by surface adsorbates in ambient conditions. Our findings highlight a complex and previously underappreciated role of surface adsorbates in shaping the noise environment of shallow NV centers, with important implications for nanoscale quantum sensing.
+
+### [Long-range and steady-state entanglement of nitrogen vacancy centers using microwaves as a drive and synthetic antiferromagnet as a dissipator](https://doi.org/10.1103/3524-86sk)
+- Federico Garcia-Gaitan, Branislav K. Nikolić · Physical review. B./Physical review. B · created 2026-07-18 · published 2026-11-20 · via OpenAlex · relevance score 3
+- Abstract: The search for optimal schemes and dissipative environments that can mediate long-range entanglement between two distant nitrogen-vacancy centers (NVCs) in diamond has been the subject of vigorous efforts over the past decade due to potential applications of such microscopic solid-state qubits in quantum sensing and quantum computing. However, stabilizing entanglement of NVCs into a {\em steady state} poses a significant challenge, typically requiring tuning the environment {\em out of equilibrium}. Here we microscopically and rigorously derive a Lindblad quantum master equation (QME) for a system of two {\em driven-dissipative} NVCs, where the drive is microwave radiation and dissipation is provided by a single magnetic bath that is kept in {\em equilibrium}. The jump operators within the Lindblad QME are expressed in terms of Keldysh Green's functions defined as correlators of dipolar field operators of the bath. This QME makes it possible to predict precise conditions for long-range and steady-state entanglement of two NVCs, while suggesting that a synthetic antiferromagnet could be an {\em optimal} choice for a dissipative environment. By using realistic parameters from available experiments, we estimate steady-state concurrence reaching $\mathcal{C}\simeq 0.28$ for two NVCs separated by $\sim 100 \: \mathrm{nm}$.
 
 ### [First-principles cumulant approach to the vibronic structure of spin defects](https://doi.org/10.1103/7xrx-2fd2)
 - Jinsoo Park et al. (5 authors) · Physical review. B./Physical review. B · created 2026-09-25 · published 2026-11-05 · via OpenAlex · relevance score 3

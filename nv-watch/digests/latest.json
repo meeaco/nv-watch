@@ -1,18 +1,16 @@
 {
- "generated_utc": "2026-11-21T10:16:09+00:00",
+ "generated_utc": "2026-11-21T12:44:06+00:00",
  "date": "2026-11-21",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44893517402",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44905359832",
  "arxiv_announcement": "2026-11-21",
  "abstract_backfill": {
-  "missing": 1,
+  "missing": 0,
   "filled": 0,
-  "errors": [
-   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
-  ]
+  "errors": []
  },
  "search_window_utc": [
-  "2026-11-16T10:16+00:00",
-  "2026-11-21T10:16+00:00"
+  "2026-11-16T12:44+00:00",
+  "2026-11-21T12:44+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
@@ -24,12 +22,12 @@
   "arXiv-OAI": {
    "ok": true,
    "hits": 5,
-   "secs": 44
+   "secs": 45
   },
   "arXiv-API": {
    "ok": true,
    "hits": 4,
-   "secs": 11
+   "secs": 12
   },
   "Crossref": {
    "ok": true,
@@ -38,8 +36,8 @@
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 43,
-   "secs": 1
+   "hits": 40,
+   "secs": 3
   },
   "arXiv": {
    "ok": true,
@@ -96,6 +94,23 @@
    "doi": "10.1103/jc77-2nvb",
    "_key": "10.1103/jc77-2nvb",
    "score": 5
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/3524-86sk",
+   "url": "https://doi.org/10.1103/3524-86sk",
+   "title": "Long-range and steady-state entanglement of nitrogen vacancy centers using microwaves as a drive and synthetic antiferromagnet as a dissipator",
+   "authors": [
+    "Federico Garcia-Gaitan",
+    "Branislav K. Nikolić"
+   ],
+   "abstract": "The search for optimal schemes and dissipative environments that can mediate long-range entanglement between two distant nitrogen-vacancy centers (NVCs) in diamond has been the subject of vigorous efforts over the past decade due to potential applications of such microscopic solid-state qubits in quantum sensing and quantum computing. However, stabilizing entanglement of NVCs into a {\\em steady state} poses a significant challenge, typically requiring tuning the environment {\\em out of equilibrium}. Here we microscopically and rigorously derive a Lindblad quantum master equation (QME) for a system of two {\\em driven-dissipative} NVCs, where the drive is microwave radiation and dissipation is provided by a single magnetic bath that is kept in {\\em equilibrium}. The jump operators within the Lindblad QME are expressed in terms of Keldysh Green's functions defined as correlators of dipolar field operators of the bath. This QME makes it possible to predict precise conditions for long-range and steady-state entanglement of two NVCs, while suggesting that a synthetic antiferromagnet could be an {\\em optimal} choice for a dissipative environment. By using realistic parameters from available experiments, we estimate steady-state concurrence reaching $\\mathcal{C}\\simeq 0.28$ for two NVCs separated by $\\sim 100 \\: \\mathrm{nm}$.",
+   "venue": "Physical review. B./Physical review. B",
+   "created": "2026-07-18T00:00:00",
+   "published": "2026-11-20",
+   "doi": "10.1103/3524-86sk",
+   "_key": "10.1103/3524-86sk",
+   "score": 3
   },
   {
    "source": "OpenAlex",
