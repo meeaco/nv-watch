@@ -1,22 +1,24 @@
 {
- "generated_utc": "2026-11-21T08:20:06+00:00",
+ "generated_utc": "2026-11-21T10:16:09+00:00",
  "date": "2026-11-21",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44884371385",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/44893517402",
  "arxiv_announcement": "2026-11-21",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 1,
   "filled": 0,
-  "errors": []
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
  },
  "search_window_utc": [
-  "2026-11-16T08:20+00:00",
-  "2026-11-21T08:20+00:00"
+  "2026-11-16T10:16+00:00",
+  "2026-11-21T10:16+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 0,
-   "secs": 13,
+   "secs": 14,
    "scanned": 0
   },
   "arXiv-OAI": {
@@ -26,18 +28,18 @@
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 5,
+   "hits": 4,
    "secs": 11
   },
   "Crossref": {
    "ok": true,
-   "hits": 10,
-   "secs": 13
+   "hits": 11,
+   "secs": 12
   },
   "OpenAlex": {
    "ok": true,
    "hits": 43,
-   "secs": 2
+   "secs": 1
   },
   "arXiv": {
    "ok": true,
@@ -155,6 +157,27 @@
    "doi": "10.1103/d3p6-yxps",
    "_key": "10.1103/d3p6-yxps",
    "score": 2
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1007/s10854-026-18918-x",
+   "url": "https://doi.org/10.1007/s10854-026-18918-x",
+   "title": "Multiscale reinforcement of sintered Ag joints through Ag-coated nanodiamond and bimodal filler design",
+   "authors": [
+    "Zhao Li",
+    "Yaqin Qi",
+    "Miao Zhang",
+    "Junkai Wang",
+    "Pengdong Feng",
+    "Yang Li"
+   ],
+   "abstract": "",
+   "venue": "Journal of Materials Science: Materials in Electronics",
+   "created": "2026-11-21T09:21:19Z",
+   "published": "2026-11",
+   "doi": "10.1007/s10854-026-18918-x",
+   "_key": "10.1007/s10854-026-18918-x",
+   "score": 0
   }
  ]
 }

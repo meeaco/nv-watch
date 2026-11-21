@@ -1,15 +1,15 @@
 # NV watch digest 2026-11-21
 
-Generated 2026-11-21T08:20:06+00:00 UTC. Search window 2026-11-16T08:20+00:00 → 2026-11-21T08:20+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-21T10:16:09+00:00 UTC. Search window 2026-11-16T10:16+00:00 → 2026-11-21T10:16+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 5 hits; arXiv-API: ok, 5 hits; Crossref: ok, 10 hits; OpenAlex: ok, 43 hits; arXiv: ok, 5 hits
+Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 5 hits; arXiv-API: ok, 4 hits; Crossref: ok, 11 hits; OpenAlex: ok, 43 hits; arXiv: ok, 5 hits
 
-arXiv announcement covered by RSS: 2026-11-21. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/44884371385
+arXiv announcement covered by RSS: 2026-11-21. Journal abstracts back-filled: 0/1 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
+Run: https://github.com/meeaco/nv-watch/actions/runs/44893517402
 
 ## arXiv (0 new)
 
-## Journals (5 new)
+## Journals (6 new)
 
 ### [Effect of fullerene C60, diamond, and graphene oxide on oncolytic properties of herpes simplex virus type 1 against hepatocellular carcinoma](https://doi.org/10.1186/s12645-026-00444-4)
 - Malwina Sosnowska et al. (11 authors) · Cancer Nanotechnology · created 2026-11-20 · published 2026-11-19 · via OpenAlex · relevance score 6
@@ -30,3 +30,7 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/44884371385
 ### [High-fidelity state transfer in silicon-vacancy-phononic networks with closed mechanical subsystems](https://doi.org/10.1103/d3p6-yxps)
 - Weihu Xu, Juntao Li, Zeyang Liao, Xiaoqi Zhou · Physical Review Research · created 2026-10-20 · published 2026-11-09 · via OpenAlex · relevance score 2
 - Abstract: Building on the alternating-waveguide closed-mechanical-subsystem architecture introduced by Kuzyk and Wang [], we develop a diamond phononic network that overcomes the coupling-hierarchy bottleneck in the implementation analyzed there. Beyond replacing nitrogen-vacancy centers with silicon-vacancy (SiV) centers, we independently engineer the two relevant couplings: Localized defect modes and strong SiV orbital-strain interaction enhance the spin-phonon coupling G , whereas cavity-waveguide engineering suppresses the cavity-waveguide coupling g . The resulting coupling hierarchy reverses that found in earlier physical implementations of closed-mechanical-subsystem networks and places the system in the G ≫ g regime required for direct state transfer. This hierarchy reversal qualitatively changes the appropriate control strategy from bichromatic Mølmer-Sørensen driving to a simple direct triple swap. Within our model, the resulting protocol enables state transfer with a fidelity of 0.999 on a microsecond timescale and remains robust against mechanical dissipation, spin dephasing, and finite thermal occupation. Our results establish a distinct route for scalable solid-state phononic quantum networks.
+
+### [Multiscale reinforcement of sintered Ag joints through Ag-coated nanodiamond and bimodal filler design](https://doi.org/10.1007/s10854-026-18918-x)
+- Zhao Li et al. (6 authors) · Journal of Materials Science: Materials in Electronics · created 2026-11-21 · published 2026-11 · via Crossref · relevance score 0
+- Abstract: (not provided by any index)
