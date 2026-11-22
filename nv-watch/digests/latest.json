@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-22T10:22:43+00:00",
+ "generated_utc": "2026-11-22T12:38:52+00:00",
  "date": "2026-11-22",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45012134887",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45023358424",
  "arxiv_announcement": "2026-11-22",
  "abstract_backfill": {
   "missing": 0,
@@ -9,20 +9,20 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-17T10:22+00:00",
-  "2026-11-22T10:22+00:00"
+  "2026-11-17T12:38+00:00",
+  "2026-11-22T12:38+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 0,
-   "secs": 13,
+   "secs": 14,
    "scanned": 0
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 5,
-   "secs": 44
+   "secs": 40
   },
   "arXiv-API": {
    "ok": true,
@@ -32,7 +32,7 @@
   "Crossref": {
    "ok": true,
    "hits": 9,
-   "secs": 12
+   "secs": 14
   },
   "OpenAlex": {
    "ok": true,
