@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-24T12:57:31+00:00",
+ "generated_utc": "2026-11-24T14:55:58+00:00",
  "date": "2026-11-24",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45398525431",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45419597936",
  "arxiv_announcement": "2026-11-24",
  "abstract_backfill": {
   "missing": 0,
@@ -9,8 +9,8 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-19T12:57+00:00",
-  "2026-11-24T12:57+00:00"
+  "2026-11-19T14:55+00:00",
+  "2026-11-24T14:55+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
@@ -22,17 +22,17 @@
   "arXiv-OAI": {
    "ok": true,
    "hits": 3,
-   "secs": 36
+   "secs": 40
   },
   "arXiv-API": {
-   "ok": false,
-   "error": "GET failed: https://export.arxiv.org/api/query?search_query=%28abs%3A%22nitrogen-vacancy%22+OR+ti%3A%22nitrogen-vacancy%22+OR+abs%3A%22nitrogen+vacancy%22+OR+abs%3A%22NV+center%22+OR+abs%3A%22NV+centers%22+OR+abs%3A%22NV+centre%22+OR+abs%3A%22NV+centres%22+OR+abs%3A%22NV+ensemble%22%29+AND+submitted",
-   "secs": 92
+   "ok": true,
+   "hits": 2,
+   "secs": 12
   },
   "Crossref": {
    "ok": true,
    "hits": 6,
-   "secs": 14
+   "secs": 12
   },
   "OpenAlex": {
    "ok": true,

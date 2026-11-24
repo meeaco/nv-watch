@@ -1,11 +1,11 @@
 # NV watch digest 2026-11-24
 
-Generated 2026-11-24T12:57:31+00:00 UTC. Search window 2026-11-19T12:57+00:00 → 2026-11-24T12:57+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-24T14:55:58+00:00 UTC. Search window 2026-11-19T14:55+00:00 → 2026-11-24T14:55+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 3 hits of 468 scanned; arXiv-OAI: ok, 3 hits; arXiv-API: FAILED – GET failed: https://export.arxiv.org/api/query?search_query=%28abs%3A%22nitrogen-vacancy%22+OR+ti%3A%22nitrogen-vacancy%22+OR+abs%3A%22nitrogen+vacancy%22+OR+abs%3A%22NV+center%22+OR+abs%3A%22NV+centers%22+OR+abs%3A%22NV+centre%22+OR+abs%3A%22NV+centres%22+OR+abs%3A%22NV+ensemble%22%29+AND+submitted; Crossref: ok, 6 hits; OpenAlex: ok, 45 hits; arXiv: ok, 3 hits
+Sources: arXiv-RSS: ok, 3 hits of 468 scanned; arXiv-OAI: ok, 3 hits; arXiv-API: ok, 2 hits; Crossref: ok, 6 hits; OpenAlex: ok, 45 hits; arXiv: ok, 3 hits
 
 arXiv announcement covered by RSS: 2026-11-24. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/45398525431
+Run: https://github.com/meeaco/nv-watch/actions/runs/45419597936
 
 ## arXiv (3 new)
 
