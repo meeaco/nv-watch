@@ -1,0 +1,137 @@
+{
+ "generated_utc": "2026-11-24T11:02:21+00:00",
+ "date": "2026-11-24",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45380412361",
+ "arxiv_announcement": "2026-11-24",
+ "abstract_backfill": {
+  "missing": 0,
+  "filled": 0,
+  "errors": []
+ },
+ "search_window_utc": [
+  "2026-11-19T11:02+00:00",
+  "2026-11-24T11:02+00:00"
+ ],
+ "sources": {
+  "arXiv-RSS": {
+   "ok": true,
+   "hits": 3,
+   "secs": 15,
+   "scanned": 468
+  },
+  "arXiv-OAI": {
+   "ok": true,
+   "hits": 3,
+   "secs": 35
+  },
+  "arXiv-API": {
+   "ok": true,
+   "hits": 2,
+   "secs": 11
+  },
+  "Crossref": {
+   "ok": true,
+   "hits": 5,
+   "secs": 14
+  },
+  "OpenAlex": {
+   "ok": true,
+   "hits": 45,
+   "secs": 2
+  },
+  "arXiv": {
+   "ok": true,
+   "hits": 3
+  }
+ },
+ "arxiv_new": [
+  {
+   "source": "arXiv",
+   "id": "2611.28121",
+   "url": "https://arxiv.org/abs/2611.28121",
+   "title": "In-pixel lock-in readout for wide-field nitrogen-vacancy radio-frequency spectrum analysis",
+   "authors": [
+    "Shihao Ru",
+    "Jiakai Chen",
+    "Xiaodan Lyu",
+    "Mingyu Hao",
+    "Zitong Xu",
+    "Edwin Hang Tong Teo",
+    "Fedor Jelezko",
+    "Jesus Z\\'u\\~niga-Pere",
+    "Weibo Gao"
+   ],
+   "abstract": "The growing use of radio-frequency (RF) technologies requires compact, room-temperature sensors that can analyze a wide RF band in real time. Here we present a quantum RF spectrum analyzer based on the gradient-encoded electron spin resonance of a nitrogen-vacancy (NV) ensemble in diamond and read out with a $512\\times542$-pixel lock-in camera that demodulates the signal in each pixel. On/off keying the signal under test at the camera's reference frequency lets every pixel extract the spin-resonant photoluminescence modulation. Before digitization, each pixel suppresses the static background and low-frequency noise that limit conventional camera readout. Translating a single permanent magnet tunes the encoded band continuously from 10~MHz to 32~GHz. The magnet position establishes a trade-off between instantaneous bandwidth (up to 4~GHz) and frequency resolution (7--22~MHz), with a 5~ms readout time. The wide-field readout integrates all spectral channels in parallel in a room-temperature sensor head and requires no phase synchronization to the RF carrier. The SNR remains above 70 at an applied power as low as $-32.5$~dBm. The magnetic-field configuration can be adapted to different RF bands without changing the pixel-parallel readout.",
+   "primary_category": "physics.ins-det",
+   "categories": [
+    "physics.ins-det",
+    "quant-ph"
+   ],
+   "published": "2026-11-18",
+   "updated": "2026-11-24",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI"
+   ],
+   "score": 10
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.30575",
+   "url": "https://arxiv.org/abs/2611.30575",
+   "title": "Quantum Imaging of Nonlinear Magnetization Reversal and Dissipative Domain Dynamics",
+   "authors": [
+    "Manali Verma",
+    "Dasika Shishir",
+    "Prajna Shubhranshu Mahaku",
+    "P. S Anil Kumar",
+    "Kasturi Saha"
+   ],
+   "abstract": "To investigate the rich nonlinear dynamics of magnetic materials, we introduce a stroboscopic quantum diamond microscopy technique to probe the dynamic AC response of a Pt/Co/Pt thin film using nitrogen-vacancy centres in diamond. By overcoming the limited dynamic range of conventional optically detected magnetic resonance based imaging, our approach enables the observation of magnetization reversal under various large-amplitude sinusoidal and square wave excitations. The observed phase delay between the applied field and the sample response reveals information about the energy dissipated within the material. The temporal evolution reveals magnetization reversal through domain nucleation and growth also demonstrating isolated bubble domains associated with the defects. Furthermore, the detection of higher order harmonics provides access to the nonlinear AC susceptibility. These results establish stroboscopic quantum diamond microscope as a promising tool for spatially and temporally resolving nonlinear magnetization dynamics, with potential applications extending beyond ferromagnetic systems to complex magnetic crystals, magnetic phase transitions and superconductor vortex dynamics.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-23",
+   "updated": "2026-11-24",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 6
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.28958",
+   "url": "https://arxiv.org/abs/2611.28958",
+   "title": "Systematically improvable semiclassical clustering for accurate and efficient quantum dynamics in large spin ensembles",
+   "authors": [
+    "Pranay Venkatesh",
+    "Andr\\'es Montoya-Castillo"
+   ],
+   "abstract": "Predicting the decoherence of spin qubits in realistic environments is key to identifying the interactions that limit their coherence---a prerequisite for designing better quantum technologies. While accurate methods for spin dynamics are limited to relatively small systems, the dissipative spin environments in real experiments typically involve orders of magnitude more spins. Semiclassical methods can reach these sizes, but their classical treatment of the bath cannot capture the sensor-bath entanglement that generates coherence revivals, especially under the application of refocusing pulses. Here, we resolve this tension. We introduce cluster spin-LSC, a method that clusters the sensor together with a few strongly coupled bath spins, treating them quantum mechanically in an otherwise classical spin bath. We show that our method is applicable to systems containing arbitrary spin species under dynamical decoupling pulse sequences. Our method converges systematically to the exact dynamics with cluster size, providing an internal consistency check when no exact benchmarks exist. We demonstrate that cluster spin-LSC recovers numerically exact coherence and population dynamics for a nitrogen-vacancy center and a molecular qubit, reducing day-long multi-GPU simulations to only minutes on a CPU. We further extend our method to systems with large spin baths that lie beyond the reach of exact methods. Our approach thus offers a scalable and systematically improvable route to accurately simulate the decoherence dynamics of sensors in realistic spin environments.",
+   "primary_category": "physics.chem-ph",
+   "categories": [
+    "cond-mat.mes-hall",
+    "physics.chem-ph",
+    "quant-ph"
+   ],
+   "published": "2026-11-21",
+   "updated": "2026-11-24",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 4
+  }
+ ],
+ "journal_new": []
+}

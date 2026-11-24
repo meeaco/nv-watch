@@ -1,23 +1,23 @@
 {
- "generated_utc": "2026-11-23T14:46:55+00:00",
- "date": "2026-11-23",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45197855691",
- "arxiv_announcement": "2026-11-23",
+ "generated_utc": "2026-11-24T11:02:21+00:00",
+ "date": "2026-11-24",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45380412361",
+ "arxiv_announcement": "2026-11-24",
  "abstract_backfill": {
   "missing": 0,
   "filled": 0,
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-18T14:46+00:00",
-  "2026-11-23T14:46+00:00"
+  "2026-11-19T11:02+00:00",
+  "2026-11-24T11:02+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 0,
-   "secs": 13,
-   "scanned": 225
+   "hits": 3,
+   "secs": 15,
+   "scanned": 468
   },
   "arXiv-OAI": {
    "ok": true,
@@ -26,13 +26,13 @@
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 0,
+   "hits": 2,
    "secs": 11
   },
   "Crossref": {
    "ok": true,
-   "hits": 6,
-   "secs": 16
+   "hits": 5,
+   "secs": 14
   },
   "OpenAlex": {
    "ok": true,
@@ -44,66 +44,94 @@
    "hits": 3
   }
  },
- "arxiv_new": [],
- "journal_new": [
+ "arxiv_new": [
   {
-   "source": "OpenAlex",
-   "id": "10.1021/acsnano.6c14413",
-   "url": "https://doi.org/10.1021/acsnano.6c14413",
-   "title": "Correlating Spin and Optical Properties of Quantum Emitters in hBN",
+   "source": "arXiv",
+   "id": "2611.28121",
+   "url": "https://arxiv.org/abs/2611.28121",
+   "title": "In-pixel lock-in readout for wide-field nitrogen-vacancy radio-frequency spectrum analysis",
    "authors": [
-    "Nika Teran",
-    "Benjamin Whitefield",
-    "Nicholas P. Sloane",
-    "Kenji Watanabe",
-    "Takashi Taniguchi",
-    "Igor Aharonovichand Mehran Kianinia",
-    "Mehran Kianinia"
+    "Shihao Ru",
+    "Jiakai Chen",
+    "Xiaodan Lyu",
+    "Mingyu Hao",
+    "Zitong Xu",
+    "Edwin Hang Tong Teo",
+    "Fedor Jelezko",
+    "Jesus Z\\'u\\~niga-Pere",
+    "Weibo Gao"
    ],
-   "abstract": "Optically addressable spin defects in hexagonal boron nitride (hBN) are well suited for near-surface quantum sensing. They offer bright, wavelength-tunable single-photon emission with high optically detected magnetic resonance (ODMR) contrast at room temperature. Here, we synthesize a high density of visible defects in carbon-doped hBN flakes with a high yield (14%) of ODMR-active emitters. We find that the zero-field splitting parameter D is directly correlated with the zero-phonon line of an emitter, while the ODMR contrast shows no such correlation. We further analyze an individual narrowband defect showing 68% ODMR contrast and enhance its photon collection by ∼40% using a solid immersion lens. By advancing both the practical synthesis of the spin complexes and the understanding of their microscopic origin, our results move us toward the deterministic creation of ODMR-active quantum emitters.",
-   "venue": "ACS Nano",
-   "created": "2026-08-06T00:00:00",
+   "abstract": "The growing use of radio-frequency (RF) technologies requires compact, room-temperature sensors that can analyze a wide RF band in real time. Here we present a quantum RF spectrum analyzer based on the gradient-encoded electron spin resonance of a nitrogen-vacancy (NV) ensemble in diamond and read out with a $512\\times542$-pixel lock-in camera that demodulates the signal in each pixel. On/off keying the signal under test at the camera's reference frequency lets every pixel extract the spin-resonant photoluminescence modulation. Before digitization, each pixel suppresses the static background and low-frequency noise that limit conventional camera readout. Translating a single permanent magnet tunes the encoded band continuously from 10~MHz to 32~GHz. The magnet position establishes a trade-off between instantaneous bandwidth (up to 4~GHz) and frequency resolution (7--22~MHz), with a 5~ms readout time. The wide-field readout integrates all spectral channels in parallel in a room-temperature sensor head and requires no phase synchronization to the RF carrier. The SNR remains above 70 at an applied power as low as $-32.5$~dBm. The magnetic-field configuration can be adapted to different RF bands without changing the pixel-parallel readout.",
+   "primary_category": "physics.ins-det",
+   "categories": [
+    "physics.ins-det",
+    "quant-ph"
+   ],
+   "published": "2026-11-18",
+   "updated": "2026-11-24",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI"
+   ],
+   "score": 10
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.30575",
+   "url": "https://arxiv.org/abs/2611.30575",
+   "title": "Quantum Imaging of Nonlinear Magnetization Reversal and Dissipative Domain Dynamics",
+   "authors": [
+    "Manali Verma",
+    "Dasika Shishir",
+    "Prajna Shubhranshu Mahaku",
+    "P. S Anil Kumar",
+    "Kasturi Saha"
+   ],
+   "abstract": "To investigate the rich nonlinear dynamics of magnetic materials, we introduce a stroboscopic quantum diamond microscopy technique to probe the dynamic AC response of a Pt/Co/Pt thin film using nitrogen-vacancy centres in diamond. By overcoming the limited dynamic range of conventional optically detected magnetic resonance based imaging, our approach enables the observation of magnetization reversal under various large-amplitude sinusoidal and square wave excitations. The observed phase delay between the applied field and the sample response reveals information about the energy dissipated within the material. The temporal evolution reveals magnetization reversal through domain nucleation and growth also demonstrating isolated bubble domains associated with the defects. Furthermore, the detection of higher order harmonics provides access to the nonlinear AC susceptibility. These results establish stroboscopic quantum diamond microscope as a promising tool for spatially and temporally resolving nonlinear magnetization dynamics, with potential applications extending beyond ferromagnetic systems to complex magnetic crystals, magnetic phase transitions and superconductor vortex dynamics.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-23",
+   "updated": "2026-11-24",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 6
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.28958",
+   "url": "https://arxiv.org/abs/2611.28958",
+   "title": "Systematically improvable semiclassical clustering for accurate and efficient quantum dynamics in large spin ensembles",
+   "authors": [
+    "Pranay Venkatesh",
+    "Andr\\'es Montoya-Castillo"
+   ],
+   "abstract": "Predicting the decoherence of spin qubits in realistic environments is key to identifying the interactions that limit their coherence---a prerequisite for designing better quantum technologies. While accurate methods for spin dynamics are limited to relatively small systems, the dissipative spin environments in real experiments typically involve orders of magnitude more spins. Semiclassical methods can reach these sizes, but their classical treatment of the bath cannot capture the sensor-bath entanglement that generates coherence revivals, especially under the application of refocusing pulses. Here, we resolve this tension. We introduce cluster spin-LSC, a method that clusters the sensor together with a few strongly coupled bath spins, treating them quantum mechanically in an otherwise classical spin bath. We show that our method is applicable to systems containing arbitrary spin species under dynamical decoupling pulse sequences. Our method converges systematically to the exact dynamics with cluster size, providing an internal consistency check when no exact benchmarks exist. We demonstrate that cluster spin-LSC recovers numerically exact coherence and population dynamics for a nitrogen-vacancy center and a molecular qubit, reducing day-long multi-GPU simulations to only minutes on a CPU. We further extend our method to systems with large spin baths that lie beyond the reach of exact methods. Our approach thus offers a scalable and systematically improvable route to accurately simulate the decoherence dynamics of sensors in realistic spin environments.",
+   "primary_category": "physics.chem-ph",
+   "categories": [
+    "cond-mat.mes-hall",
+    "physics.chem-ph",
+    "quant-ph"
+   ],
    "published": "2026-11-21",
-   "doi": "10.1021/acsnano.6c14413",
-   "_key": "10.1021/acsnano.6c14413",
-   "score": 6
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1080/26941112.2026.2763204",
-   "url": "https://doi.org/10.1080/26941112.2026.2763204",
-   "title": "Diamond and related carbon-based materials for biomedical devices: processing, surface engineering, and functional interfaces",
-   "authors": [
-    "Lin Jiang",
-    "Lijuan Zheng",
-    "Chengyong Wang"
+   "updated": "2026-11-24",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
    ],
-   "abstract": "Diamond and related carbon-based materials are being explored for biomedical devices that require durable contact surfaces, stable electrochemical transduction, or functional optical and biological interfaces. This Review examines crystalline diamond, nanodiamond, nanocrystalline and ultrananocrystalline diamond, boron-doped and fluorescent diamond, diamond-like carbon (DLC), and diamond-containing composites. We discuss how HPHT synthesis, CVD/MPCVD growth, doping, defect engineering, and interfacial modification connect processing with structure, surface behavior, and device function. Representative studies in surgical and dental instruments, orthopedic and cardiovascular technologies, ophthalmology, drug delivery, bioimaging, biosensing, neural interfaces, and regenerative medicine are compared in terms of their methods, reported outcomes, and limitations. Across these areas, we identify opportunities in wear-resistant coatings, conductive diamond electrodes, and functionalized nanodiamond carriers and probes for drug delivery and bioimaging. Surface chemistry, interfacial adhesion, and device architecture emerge as recurring factors governing mechanical durability, electrochemical performance, optical readout, and biological interactions. Particular attention is given to coating failure, wear debris, corrosion, material-dependent biological responses, fouling, signal drift, and device integration. We distinguish direct biomedical findings from manufacturing studies that provide useful but unvalidated engineering principles. Finally, we discuss application-specific comparison metrics, relevant medical-device testing frameworks, and challenges in translating diamond functions into reproducible, safe, and clinically useful technologies.",
-   "venue": "Functional Diamond",
-   "created": "2026-11-22T00:00:00",
-   "published": "2026-11-20",
-   "doi": "10.1080/26941112.2026.2763204",
-   "_key": "10.1080/26941112.2026.2763204",
-   "score": 6
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1103/4y9n-4kww",
-   "url": "https://doi.org/10.1103/4y9n-4kww",
-   "title": "Transparent conductive electrodes for electrical spin readout in solid-state systems",
-   "authors": [
-    "D. Reinhardt",
-    "A. Witte",
-    "P. Schlupp",
-    "R. Wunderlich"
-   ],
-   "abstract": "In this work, we demonstrate a transparent electrode structure on a diamond surface for spatial defect mapping and the electrical spin state readout of defect ensembles. For this purpose, a 210 nm thin bar-shaped layer of tin doped indium oxide (ITO) is directly deposited on the diamond surface. The layer is both transparent in the optical wavelength range and electrically conductive and allows therefore simultaneous acquisition of photocurrent (PC) and photoluminescence (PL) near the ITO/diamond interface. The spin system considered are nitrogen vacancy (NV) center ensembles intrinsically present in the diamond sample. The targeted spin manipulation of the NV centers is achieved by a CW microwave field applied via the near field of a thin copper wire. The sample is mounted directly on a printed circuit board (PCB) that houses all necessary electronics for the low noise acquisition of the PC. Simultaneous detection of conventional PL by confocal fluorescence microscopy enables a direct comparison with optical readout techniques. Measurements of different 2D areas parallel as well as perpendicular to the ITO/diamond interface at different bias voltages are presented. Furthermore, we performed photoelectric detection of magnetic resonance (PDMR) studies and compared the results with optical detection of magnetic resonance (ODMR) measurements. Our findings demonstrate that an ITO layer can be reliably produced on a diamond surface and effectively utilized as a transparent electrode, enabling robust PC detection over areas of several hundred square micrometers. This opens new avenues for optimized electrical readout techniques for defect based quantum sensing in solids.",
-   "venue": "Physical Review Applied",
-   "created": "2026-11-21T00:00:00",
-   "published": "2026-11-20",
-   "doi": "10.1103/4y9n-4kww",
-   "_key": "10.1103/4y9n-4kww",
-   "score": 5
+   "score": 4
   }
- ]
+ ],
+ "journal_new": []
 }
