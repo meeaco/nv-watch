@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-24T11:02:21+00:00",
+ "generated_utc": "2026-11-24T12:57:31+00:00",
  "date": "2026-11-24",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45380412361",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45398525431",
  "arxiv_announcement": "2026-11-24",
  "abstract_backfill": {
   "missing": 0,
@@ -9,29 +9,29 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-19T11:02+00:00",
-  "2026-11-24T11:02+00:00"
+  "2026-11-19T12:57+00:00",
+  "2026-11-24T12:57+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 3,
-   "secs": 15,
+   "secs": 14,
    "scanned": 468
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 3,
-   "secs": 35
+   "secs": 36
   },
   "arXiv-API": {
-   "ok": true,
-   "hits": 2,
-   "secs": 11
+   "ok": false,
+   "error": "GET failed: https://export.arxiv.org/api/query?search_query=%28abs%3A%22nitrogen-vacancy%22+OR+ti%3A%22nitrogen-vacancy%22+OR+abs%3A%22nitrogen+vacancy%22+OR+abs%3A%22NV+center%22+OR+abs%3A%22NV+centers%22+OR+abs%3A%22NV+centre%22+OR+abs%3A%22NV+centres%22+OR+abs%3A%22NV+ensemble%22%29+AND+submitted",
+   "secs": 92
   },
   "Crossref": {
    "ok": true,
-   "hits": 5,
+   "hits": 6,
    "secs": 14
   },
   "OpenAlex": {
@@ -133,5 +133,26 @@
    "score": 4
   }
  ],
- "journal_new": []
+ "journal_new": [
+  {
+   "source": "Crossref",
+   "id": "10.1108/sr-07-2026-0757",
+   "url": "https://doi.org/10.1108/sr-07-2026-0757",
+   "title": "A non-contact alternating magnetic field imaging system based on diamond nitrogen-vacancy color centers",
+   "authors": [
+    "Xin Bai",
+    "Kun Huang",
+    "Tao Hu",
+    "Shuangquan Ran",
+    "Long Chen"
+   ],
+   "abstract": "Purpose This study aims to present a non-contact alternating-current (AC) magnetic-field imaging system based on diamond nitrogen-vacancy (NV) centers that reduces dependence on external arbitrary waveform generators and lock-in amplifiers. Design/methodology/approach Fixed-frequency optically detected magnetic resonance was implemented with an STM32F1 microcontroller, which generates a 1 kHz excitation, triggers synchronous ADC acquisition, constructs a phase-coherent reference and performs in-phase/quadrature software lock-in demodulation. Straight, L-shaped and antiparallel printed circuit board traces provided validation. Findings At 1 kHz, the system achieved 6.54 nT/Hz1/2 sensitivity and a 56 dB usable dynamic range. The measured profile had a 3.8 mm full width at half maximum at a 1 mm stand-off. Reconstructed maps reproduced the features of the NV-axis-projected Biot-Savart model. Research limitations/implications The system measures only the magnetic-field projection along one NV axis and its effective lateral response depends on probe geometry, stand-off distance and scan interval. Validation was limited to controlled test traces. Practical implications Replacing the external waveform generator and lock-in amplifier in the low-frequency excitation and demodulation chain provides a lower-cost basis for circuit-board magnetic-field imaging. The laser, microwave source, scanning stage and host computer remain external. Originality/value Low-frequency excitation, synchronous acquisition and digital lock-in demodulation are integrated on one general-purpose microcontroller and demonstrated in two-dimensional NV-center magnetic-field imaging.",
+   "venue": "Sensor Review",
+   "created": "2026-11-24T11:50:12Z",
+   "published": "2026-11-25",
+   "doi": "10.1108/sr-07-2026-0757",
+   "_key": "10.1108/sr-07-2026-0757",
+   "score": 4
+  }
+ ]
 }
