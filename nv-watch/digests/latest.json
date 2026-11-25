@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-25T11:46:34+00:00",
+ "generated_utc": "2026-11-25T14:29:46+00:00",
  "date": "2026-11-25",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45607536166",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45634648619",
  "arxiv_announcement": "2026-11-25",
  "abstract_backfill": {
   "missing": 0,
@@ -9,20 +9,20 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-20T11:46+00:00",
-  "2026-11-25T11:46+00:00"
+  "2026-11-20T14:29+00:00",
+  "2026-11-25T14:29+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 1,
-   "secs": 15,
+   "secs": 13,
    "scanned": 283
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 3,
-   "secs": 44
+   "secs": 38
   },
   "arXiv-API": {
    "ok": true,
@@ -31,13 +31,13 @@
   },
   "Crossref": {
    "ok": true,
-   "hits": 4,
-   "secs": 16
+   "hits": 6,
+   "secs": 20
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 43,
-   "secs": 3
+   "hits": 45,
+   "secs": 2
   },
   "arXiv": {
    "ok": true,
@@ -108,6 +108,29 @@
    "score": 5
   },
   {
+   "source": "Crossref",
+   "id": "10.1063/5.0347711",
+   "url": "https://doi.org/10.1063/5.0347711",
+   "title": "An integrated ultrahigh vacuum cluster tool for diamond surface science and single nitrogen-vacancy center measurements",
+   "authors": [
+    "Zhiyang Yuan",
+    "Sorawis Sangtawesin",
+    "Lila V. H. Rodgers",
+    "Kalliope Zervas",
+    "James J. Allred",
+    "Jared Rovny",
+    "Patryk Gumann",
+    "Nathalie P. de Leon"
+   ],
+   "abstract": "We present a custom-designed ultrahigh vacuum cluster tool developed for studying shallow nitrogen-vacancy (NV) centers in diamond, enabling in situ diamond surface preparation, characterization, and measurements of single NV center dynamics within a single connected platform. The system combines a surface science chamber for controlled surface modification and analysis with a cryogenic confocal microscope chamber dedicated to NV spin and optical measurements. This integrated approach enables a direct correlation between diamond surface chemistry and the resulting NV spin and charge properties. The instrument provides a versatile platform for systematic studies of surface-induced decoherence mechanisms and charge dynamics for shallow NV centers and establishes a pathway toward reproducible surface engineering for quantum sensing applications.",
+   "venue": "Review of Scientific Instruments",
+   "created": "2026-11-25T11:42:21Z",
+   "published": "2026-11-1",
+   "doi": "10.1063/5.0347711",
+   "_key": "10.1063/5.0347711",
+   "score": 5
+  },
+  {
    "source": "OpenAlex",
    "id": "10.3390/ma19234963",
    "url": "https://doi.org/10.3390/ma19234963",
@@ -134,6 +157,25 @@
   },
   {
    "source": "OpenAlex",
+   "id": "10.1142/s021827182741001x",
+   "url": "https://doi.org/10.1142/s021827182741001x",
+   "title": "Robustness of Gravitationally Induced Entanglement against Coherent Transverse Magnetic Drift via Symmetry-Protected Control",
+   "authors": [
+    "A.-B. A. Mohamed",
+    "M. Alotaibi",
+    "M. Hashem",
+    "Muhammad Noman"
+   ],
+   "abstract": "Gravitationally induced entanglement (GIE) in Bose-Marletto-Vedral (BMV)-type proposals provides an operational route to witness quantum coherence in gravity, but the gravitational phase is extremely weak compared with realistic electromagnetic disturbances. We study an effective NV-center-motivated spin-path model in which two electronic spins encode interferometric branches, with dynamics governed by a time-dependent gravitational Ising interaction, coherent transverse magnetic drift, and finite-correlation-time residual dephasing described by a time-convolutionless (TCL) master equation. We examine collective [Formula: see text]-axis dynamical-decoupling (DD) control that commutes with the effective gravitational signal and refocuses the specified coherent transverse drift, assuming collisional and blackbody decoherence have already been independently suppressed. Numerical simulations show that the control can substantially enhance the attainable entanglement (peak concurrence [Formula: see text] in representative regimes), with some parameter regions showing particularly large protected-unprotected contrast. We also map the effective parameters to masses, separations, interaction times, and equivalent stray magnetic fields. These mappings are intended as assumption-dependent benchmarks for the present effective model, rather than as universal detectability thresholds or a claim of near-term experimental feasibility.",
+   "venue": "International Journal of Modern Physics D",
+   "created": "2026-11-25T00:00:00",
+   "published": "2026-11-24",
+   "doi": "10.1142/s021827182741001x",
+   "_key": "10.1142/s021827182741001x",
+   "score": 2
+  },
+  {
+   "source": "OpenAlex",
    "id": "10.1039/d6an01004k",
    "url": "https://doi.org/10.1039/d6an01004k",
    "title": "Development of a dual-readout growth-based viability assay with optical density and fluorescence for assessment of nanomaterial toxicity",
@@ -153,6 +195,26 @@
    "doi": "10.1039/d6an01004k",
    "_key": "10.1039/d6an01004k",
    "score": 1
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1103/npj5-82pg",
+   "url": "https://doi.org/10.1103/npj5-82pg",
+   "title": "Scalable spin squeezing in power-law-interacting X X Z models with disorder",
+   "authors": [
+    "Samuel E. Begg",
+    "Bishal Ghosh",
+    "Chong Zu",
+    "Chuanwei Zhang",
+    "Michael Kolodrubetz"
+   ],
+   "abstract": "While spin squeezing has been traditionally considered in all-to-all interacting models, recent works have shown that it can also occur in systems with power-law interactions, enabling direct tests in Rydberg atoms, trapped ions, ultracold atoms, and nitrogen-vacancy (NV) centers in diamond. For the latter, Wu et al. Nature 646 (2025) demonstrated that spin squeezing is heavily affected by positional disorder, reducing any capacity for a practical squeezing advantage, which requires scalability with the system size. In this Letter we explore the robustness of spin squeezing in two-dimensional lattices with a fraction of unoccupied lattice sites. Using semiclassical modeling, we demonstrate the existence of scalable squeezing in power-law interacting XXZ models up to a disorder threshold, above which it breaks down. We produce a phase diagram for scalable squeezing, and demonstrate the impact of critical slowing down close to the phase boundary. Our work is consistent with—and offers a plausible explanation for—the absence of scalable squeezing in the aforementioned NV experiment, while illustrating the maximum disorder allowed for realizing scalable spin squeezing in a host of quantum simulators. We highlight a regime with substantial disorder tolerance and identify controlled defect creation as a promising route for scalable squeezing in solid-state systems.",
+   "venue": "Physical Review A",
+   "created": "2026-01-17T00:00:00",
+   "published": "2026-11-24",
+   "doi": "10.1103/npj5-82pg",
+   "_key": "10.1103/npj5-82pg",
+   "score": 0
   },
   {
    "source": "OpenAlex",
@@ -191,6 +253,27 @@
    "published": "2026-12",
    "doi": "10.1016/j.applthermaleng.2026.134164",
    "_key": "10.1016/j.applthermaleng.2026.134164",
+   "score": 0
+  },
+  {
+   "source": "Crossref",
+   "id": "10.22331/q-2026-11-25-2284",
+   "url": "https://doi.org/10.22331/q-2026-11-25-2284",
+   "title": "Optimal Calibration of Qubit Detuning and Crosstalk",
+   "authors": [
+    "David Shnaiderov",
+    "Matan Ben Dov",
+    "Yoav Woldiger",
+    "Assaf Hamo",
+    "Eugene Demler",
+    "Emanuele G. Dalla Torre"
+   ],
+   "abstract": "Characterizing and calibrating physical qubits is essential for maintaining the performance of quantum processors. A key challenge in this process is crosstalk, which complicates the estimation of individual qubit detunings. In this work, we derive optimal strategies for estimating detuning and crosstalk parameters by optimizing Ramsey interference experiments using Fisher information and the Cramér–Rao bound. We compare several calibration protocols, including measurements of a single quadrature at multiple times and of two quadratures at a single time, for a fixed number of total measurements. Our results predict that the latter approach yields the highest precision and robustness in both cases of isolated and coupled qubits. We validate our approach experimentally using both a single NV center and superconducting transmon qubits. Our approach enables accurate parameter extraction with significantly fewer measurements, resulting in up to a 50% reduction in calibration time while maintaining estimation accuracy.",
+   "venue": "Quantum",
+   "created": "2026-11-25T11:15:54Z",
+   "published": "2026-11-25",
+   "doi": "10.22331/q-2026-11-25-2284",
+   "_key": "10.22331/q-2026-11-25-2284",
    "score": 0
   }
  ]
