@@ -1,30 +1,28 @@
 {
- "generated_utc": "2026-11-25T09:54:13+00:00",
+ "generated_utc": "2026-11-25T11:46:34+00:00",
  "date": "2026-11-25",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45589798394",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45607536166",
  "arxiv_announcement": "2026-11-25",
  "abstract_backfill": {
-  "missing": 1,
+  "missing": 0,
   "filled": 0,
-  "errors": [
-   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
-  ]
+  "errors": []
  },
  "search_window_utc": [
-  "2026-11-20T09:54+00:00",
-  "2026-11-25T09:54+00:00"
+  "2026-11-20T11:46+00:00",
+  "2026-11-25T11:46+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 1,
-   "secs": 14,
+   "secs": 15,
    "scanned": 283
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 3,
-   "secs": 45
+   "secs": 44
   },
   "arXiv-API": {
    "ok": true,
@@ -34,12 +32,12 @@
   "Crossref": {
    "ok": true,
    "hits": 4,
-   "secs": 21
+   "secs": 16
   },
   "OpenAlex": {
    "ok": true,
    "hits": 43,
-   "secs": 2
+   "secs": 3
   },
   "arXiv": {
    "ok": true,
@@ -133,6 +131,47 @@
    "doi": "10.3390/ma19234963",
    "_key": "10.3390/ma19234963",
    "score": 3
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1039/d6an01004k",
+   "url": "https://doi.org/10.1039/d6an01004k",
+   "title": "Development of a dual-readout growth-based viability assay with optical density and fluorescence for assessment of nanomaterial toxicity",
+   "authors": [
+    "Stephanie L. Mitchell",
+    "Natalie V. Hudson-Smith",
+    "Beza Tuga",
+    "Timmy B. Nguyen",
+    "Radwa Abdelaziz",
+    "Erin E. Carlson",
+    "Christy L. Haynes"
+   ],
+   "abstract": "Engineered nanomaterials can disrupt microbial communities through dysbiosis, with potentially harmful consequences. However, existing methods for assessing nanomaterial toxicity on bacterial viability are largely restricted to single-readout approaches based on bacterial density, limiting their throughput, sensitivity, and analytical scope. Herein, we present the method optimization for converting a growth-based viability assay to a dual-readout functionality that combines optical density and fluorescence measurements to enable more comprehensive and high-throughput bacterial toxicity screening. Method optimization addressed fluorescence signal acquisition, effects of selection antibiotics, and automated R-code data analysis. As a proof of concept, we evaluated the toxicity of positively-charged nanodiamonds against a green fluorescent protein-expressing Shewanella oneidensis. This dual-readout platform expands the utility of growth-based viability assays by enabling simultaneous assessment of bacterial viability alongside genetic events (e.g., horizontal gene transfer, gene expression, gene copy number), and facilitates future polymicrobial experimental designs, offering a versatile tool for nanomaterial toxicity research.",
+   "venue": "The Analyst",
+   "created": "2026-11-04T00:00:00",
+   "published": "2026-11-23",
+   "doi": "10.1039/d6an01004k",
+   "_key": "10.1039/d6an01004k",
+   "score": 1
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1039/d6ay01402j",
+   "url": "https://doi.org/10.1039/d6ay01402j",
+   "title": "Development and optimization of a vortex-assisted micro-solid phase extraction (VA-µSPE) method for sensitive fluoxetine determination using a novel CoNiCr-LDH@ND-COOH nanocomposite",
+   "authors": [
+    "Mürüvvet Begüm Özen",
+    "Hassan Elzain Hassan Ahmed",
+    "Qamar Salamat",
+    "Mustafa Soylak"
+   ],
+   "abstract": "In this work, an innovative CoNiCr-LDH@ND-COOH nanocomposite was synthesized and utilized as an efficient adsorbent for the effective extraction of fluoxetine. The nanocomposite structure combines the exceptional adsorption performance and capacity of carboxyl-functionalized nanodiamonds with the large surface area and tunable chemistry of layered double hydroxides (LDHs). The synthesized materials were characterized using FESEM, FESEM-EDX, FTIR, XRD, and BET analyses. These analyses demonstrated the nanocomposite's structural strength and surface characteristics. The developed extraction method was designed and optimized using Plackett-Burman and Central Composite Design methods. The optimal extraction conditions were as follows: 30 mg of adsorbent, pH 6.5, adsorption/desorption times of 5 minutes, ethanol as the eluent, and centrifugation at 4100 rpm. The method exhibited excellent analytical performance, with recoveries ranging from 87 to 99% at 225 nm (HPLC-DAD), a preconcentration factor of 50, a linear range of 1 to 5000 µg L-1, a LOD of 0.25 µg L-1, and a LOQ of 0.75 µg L-1. The precision was acceptable, with intra- and inter-day RSD values of 4.8% and 6.7%, respectively. Furthermore, the adsorbent showed acceptable reusability for eight cycles. The presented method is robust, sensitive, and reusable for the extraction and determination of fluoxetine.",
+   "venue": "Analytical Methods",
+   "created": "2026-09-18T00:00:00",
+   "published": "2026-11-12",
+   "doi": "10.1039/d6ay01402j",
+   "_key": "10.1039/d6ay01402j",
+   "score": 0
   },
   {
    "source": "Crossref",
