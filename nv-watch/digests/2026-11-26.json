@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-26T11:32:30+00:00",
+ "generated_utc": "2026-11-26T13:57:44+00:00",
  "date": "2026-11-26",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45811484837",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45834205693",
  "arxiv_announcement": "2026-11-26",
  "abstract_backfill": {
   "missing": 0,
@@ -9,20 +9,20 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-21T11:32+00:00",
-  "2026-11-26T11:32+00:00"
+  "2026-11-21T13:57+00:00",
+  "2026-11-26T13:57+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 6,
-   "secs": 13,
+   "secs": 14,
    "scanned": 292
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 9,
-   "secs": 42
+   "secs": 40
   },
   "arXiv-API": {
    "ok": true,
@@ -31,13 +31,13 @@
   },
   "Crossref": {
    "ok": true,
-   "hits": 10,
-   "secs": 12
+   "hits": 11,
+   "secs": 13
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 45,
-   "secs": 2
+   "hits": 46,
+   "secs": 1
   },
   "arXiv": {
    "ok": true,
@@ -287,6 +287,29 @@
    "doi": "10.1016/j.electacta.2026.150521",
    "_key": "10.1016/j.electacta.2026.150521",
    "score": 3
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1140/epjqt/s40507-026-00606-8",
+   "url": "https://doi.org/10.1140/epjqt/s40507-026-00606-8",
+   "title": "Modular low-cost 3D printed setup for coherent control experiments with NV centres",
+   "authors": [
+    "Dennis Stiegekötter",
+    "Jonas Homrighausen",
+    "Glen Neiteler",
+    "Marina Peters",
+    "Luca Sapion",
+    "Stefan Heusler",
+    "Peter Glösekötter",
+    "Markus Gregor"
+   ],
+   "abstract": "Abstract With steadily growing interest in quantum technologies and their promising applications, education in this field faces the challenge of providing accessible laboratory equipment for hands-on experience with quantum-state manipulation. Here, we present an open-source hardware experimental platform based on nitrogen-vacancy centres in diamond that combines a recently proposed didactically designed 3D printed cube system with custom-built measurement electronics and a Jupyter Notebook control interface to conduct pulsed electron paramagnetic resonance experiments on fluorescent microdiamonds. Measurement and visualisation of common spin phenomena, including optical detection of magnetic resonances, Rabi oscillations, longitudinal spin relaxation, and Hahn-echo, are demonstrated, as well as electron-nuclear interactions arising from 13 C and 14 N isotopes. The mechanisms underlying the measurements are further explained using the Bloch sphere to help understand decoherence and quantum programming in qubits. With low costs sub €900 and the open-source hardware accessibility of our platform, educational institutions are not only provided with an affordable approach to hands-on coherent control spin experiments, but also with this paper, serving as a manual for lecturers in quantum physics laboratory courses to describe operating instructions along with foundational knowledge about the quantum system.",
+   "venue": "EPJ Quantum Technology",
+   "created": "2026-11-26T12:57:53Z",
+   "published": "2026-11-26",
+   "doi": "10.1140/epjqt/s40507-026-00606-8",
+   "_key": "10.1140/epjqt/s40507-026-00606-8",
+   "score": 2
   },
   {
    "source": "OpenAlex",

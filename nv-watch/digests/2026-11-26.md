@@ -1,11 +1,11 @@
 # NV watch digest 2026-11-26
 
-Generated 2026-11-26T11:32:30+00:00 UTC. Search window 2026-11-21T11:32+00:00 → 2026-11-26T11:32+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-26T13:57:44+00:00 UTC. Search window 2026-11-21T13:57+00:00 → 2026-11-26T13:57+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 6 hits of 292 scanned; arXiv-OAI: ok, 9 hits; arXiv-API: ok, 9 hits; Crossref: ok, 10 hits; OpenAlex: ok, 45 hits; arXiv: ok, 9 hits
+Sources: arXiv-RSS: ok, 6 hits of 292 scanned; arXiv-OAI: ok, 9 hits; arXiv-API: ok, 9 hits; Crossref: ok, 11 hits; OpenAlex: ok, 46 hits; arXiv: ok, 9 hits
 
 arXiv announcement covered by RSS: 2026-11-26. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/45811484837
+Run: https://github.com/meeaco/nv-watch/actions/runs/45834205693
 
 ## arXiv (6 new)
 
@@ -33,7 +33,7 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/45811484837
 - Cl\'ement Fourniols et al. (7 authors) · arXiv:2611.34484 · cond-mat.mes-hall (cats: cond-mat.mes-hall) · submitted 2026-11-25 · relevance score 0 · found by arXiv-RSS+arXiv-OAI+arXiv-API
 - Abstract: We demonstrate mode-resolved ferromagnetic resonance (FMR) spectroscopy using optically detected magnetic resonance (ODMR) of a single nitrogen-vacancy (NV) center in (111)-oriented diamond. A two-tone drive couples the magnetization dynamics to the NV spin resonance via the magnon Kerr effect. We show that the NV can detect the static stray field produced by this effect down to precession cone angles $\theta \approx \SI{1}{\degree}$, providing a generic scheme to measure the linear FMR spectrum with the spatial resolution of an atomic-size probe. We validate the approach on a normally magnetized yttrium iron garnet (YIG) microdisk, resolving its intrinsic quantized spin-wave modes. Scanning the probe across the surface, we map the spatial profile of the modes and find quantitative agreement with analytical models.
 
-## Journals (5 new)
+## Journals (6 new)
 
 ### [A deep-learning-boosted framework for quantum sensing with nitrogen-vacancy centers in diamond](https://doi.org/10.1073/pnas.2612349123)
 - Changyu Yao et al. (16 authors) · Proceedings of the National Academy of Sciences · created 2026-11-25 · published 2026-11-25 · via Crossref · relevance score 11
@@ -46,6 +46,10 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/45811484837
 ### [Rationally Engineered Bismuthene/Activated Carbon/Carboxylated Nanodiamond Nanocomposite for Highly Sensitive and Green Electrochemical Determination of Dacomitinib in Pharmaceutical and Biological Samples](https://doi.org/10.1016/j.electacta.2026.150521)
 - Elif Naz Öven et al. (5 authors) · Electrochimica Acta · created 2026-11-26 · published 2026-11 · via Crossref · relevance score 3
 - Abstract: (not provided by any index)
+
+### [Modular low-cost 3D printed setup for coherent control experiments with NV centres](https://doi.org/10.1140/epjqt/s40507-026-00606-8)
+- Dennis Stiegekötter et al. (8 authors) · EPJ Quantum Technology · created 2026-11-26 · published 2026-11-26 · via Crossref · relevance score 2
+- Abstract: Abstract With steadily growing interest in quantum technologies and their promising applications, education in this field faces the challenge of providing accessible laboratory equipment for hands-on experience with quantum-state manipulation. Here, we present an open-source hardware experimental platform based on nitrogen-vacancy centres in diamond that combines a recently proposed didactically designed 3D printed cube system with custom-built measurement electronics and a Jupyter Notebook control interface to conduct pulsed electron paramagnetic resonance experiments on fluorescent microdiamonds. Measurement and visualisation of common spin phenomena, including optical detection of magnetic resonances, Rabi oscillations, longitudinal spin relaxation, and Hahn-echo, are demonstrated, as well as electron-nuclear interactions arising from 13 C and 14 N isotopes. The mechanisms underlying the measurements are further explained using the Bloch sphere to help understand decoherence and quantum programming in qubits. With low costs sub €900 and the open-source hardware accessibility of our platform, educational institutions are not only provided with an affordable approach to hands-on coherent control spin experiments, but also with this paper, serving as a manual for lecturers in quantum physics laboratory courses to describe operating instructions along with foundational knowledge about the quantum system.
 
 ### [Developing a tool to both clean and study a diamond’s surface](https://doi.org/10.1063/10.0047664)
 - Jennifer Shim · Scilight · created 2026-11-26 · published 2026-11-25 · via OpenAlex · relevance score 0
