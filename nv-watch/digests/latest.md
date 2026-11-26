@@ -1,11 +1,11 @@
 # NV watch digest 2026-11-26
 
-Generated 2026-11-26T09:37:57+00:00 UTC. Search window 2026-11-21T09:37+00:00 → 2026-11-26T09:37+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-26T11:32:30+00:00 UTC. Search window 2026-11-21T11:32+00:00 → 2026-11-26T11:32+00:00 (items already reported in earlier digests are excluded).
 
 Sources: arXiv-RSS: ok, 6 hits of 292 scanned; arXiv-OAI: ok, 9 hits; arXiv-API: ok, 9 hits; Crossref: ok, 10 hits; OpenAlex: ok, 45 hits; arXiv: ok, 9 hits
 
-arXiv announcement covered by RSS: 2026-11-26. Journal abstracts back-filled: 0/3 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
-Run: https://github.com/meeaco/nv-watch/actions/runs/45793741442
+arXiv announcement covered by RSS: 2026-11-26. Journal abstracts back-filled: 0/0.
+Run: https://github.com/meeaco/nv-watch/actions/runs/45811484837
 
 ## arXiv (6 new)
 
@@ -33,7 +33,7 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/45793741442
 - Cl\'ement Fourniols et al. (7 authors) · arXiv:2611.34484 · cond-mat.mes-hall (cats: cond-mat.mes-hall) · submitted 2026-11-25 · relevance score 0 · found by arXiv-RSS+arXiv-OAI+arXiv-API
 - Abstract: We demonstrate mode-resolved ferromagnetic resonance (FMR) spectroscopy using optically detected magnetic resonance (ODMR) of a single nitrogen-vacancy (NV) center in (111)-oriented diamond. A two-tone drive couples the magnetization dynamics to the NV spin resonance via the magnon Kerr effect. We show that the NV can detect the static stray field produced by this effect down to precession cone angles $\theta \approx \SI{1}{\degree}$, providing a generic scheme to measure the linear FMR spectrum with the spatial resolution of an atomic-size probe. We validate the approach on a normally magnetized yttrium iron garnet (YIG) microdisk, resolving its intrinsic quantized spin-wave modes. Scanning the probe across the surface, we map the spatial profile of the modes and find quantitative agreement with analytical models.
 
-## Journals (4 new)
+## Journals (5 new)
 
 ### [A deep-learning-boosted framework for quantum sensing with nitrogen-vacancy centers in diamond](https://doi.org/10.1073/pnas.2612349123)
 - Changyu Yao et al. (16 authors) · Proceedings of the National Academy of Sciences · created 2026-11-25 · published 2026-11-25 · via Crossref · relevance score 11
@@ -46,6 +46,10 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/45793741442
 ### [Rationally Engineered Bismuthene/Activated Carbon/Carboxylated Nanodiamond Nanocomposite for Highly Sensitive and Green Electrochemical Determination of Dacomitinib in Pharmaceutical and Biological Samples](https://doi.org/10.1016/j.electacta.2026.150521)
 - Elif Naz Öven et al. (5 authors) · Electrochimica Acta · created 2026-11-26 · published 2026-11 · via Crossref · relevance score 3
 - Abstract: (not provided by any index)
+
+### [Developing a tool to both clean and study a diamond’s surface](https://doi.org/10.1063/10.0047664)
+- Jennifer Shim · Scilight · created 2026-11-26 · published 2026-11-25 · via OpenAlex · relevance score 0
+- Abstract: An ultrahigh vacuum cluster tool was built to clean diamond samples and conduct measurements at the single nitrogen-vacancy level without being exposed to air.
 
 ### [Crystal facet and surface termination co-engineering of nanodiamond-decorated glass fiber separators for durable aqueous zinc-ion batteries](https://doi.org/10.1016/j.jpowsour.2026.242079)
 - Zhenghe Zhang et al. (9 authors) · Journal of Power Sources · created 2026-11-26 · published 2027-2 · via Crossref · relevance score 0
