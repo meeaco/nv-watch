@@ -1,38 +1,40 @@
 {
- "generated_utc": "2026-11-25T14:29:46+00:00",
- "date": "2026-11-25",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45634648619",
- "arxiv_announcement": "2026-11-25",
+ "generated_utc": "2026-11-26T09:37:57+00:00",
+ "date": "2026-11-26",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45793741442",
+ "arxiv_announcement": "2026-11-26",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 3,
   "filled": 0,
-  "errors": []
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
  },
  "search_window_utc": [
-  "2026-11-20T14:29+00:00",
-  "2026-11-25T14:29+00:00"
+  "2026-11-21T09:37+00:00",
+  "2026-11-26T09:37+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
-   "hits": 1,
-   "secs": 13,
-   "scanned": 283
+   "hits": 6,
+   "secs": 14,
+   "scanned": 292
   },
   "arXiv-OAI": {
    "ok": true,
-   "hits": 3,
-   "secs": 38
+   "hits": 9,
+   "secs": 40
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 3,
+   "hits": 9,
    "secs": 11
   },
   "Crossref": {
    "ok": true,
-   "hits": 6,
-   "secs": 20
+   "hits": 10,
+   "secs": 15
   },
   "OpenAlex": {
    "ok": true,
@@ -41,38 +43,31 @@
   },
   "arXiv": {
    "ok": true,
-   "hits": 3
+   "hits": 9
   }
  },
  "arxiv_new": [
   {
    "source": "arXiv",
-   "id": "2611.33085",
-   "url": "https://arxiv.org/abs/2611.33085",
-   "title": "Signatures of Kitaev quantum spin liquid states in $\\alpha$-RuCl$_3$ revealed by nitrogen-vacancy spin-noise spectroscopy",
+   "id": "2611.33360",
+   "url": "https://arxiv.org/abs/2611.33360",
+   "title": "Nitrogen-Vacancy Nuclear Magnetic Resonance Spectroscopy of $^{15}$N Spins in Potassium Nitrite Solution",
    "authors": [
-    "Jitender Kumar",
     "Sehrish Iqbal",
-    "Himani Saraswat",
-    "Benjamin Hammons",
-    "Tianlin Li",
-    "Ariel Smooha",
+    "Jitender Kumar",
+    "Suvechhya Lamichhane",
     "Rupak Timalsina",
-    "Arnab K. Pariari",
     "Sy-Hwang Liou",
-    "Xia Hong",
-    "Markus H\\\"ucker",
-    "Amit Finkler",
     "Abdelghani Laraoui"
    ],
-   "abstract": "Bond-dependent magnetic interactions, strong spin-orbit coupling, and quantum fluctuations in $\\alpha$-RuCl$_3$ make it an archetypical candidate for exotic Kitaev quantum spin liquid (QSL) states. While electronic transport, neutron scattering, optical and tunneling spectroscopies were used to probe global QSL signatures in large scale $\\alpha$-RuCl$_3$ samples, nanoscale evidence of local QSL behavior via a non-invasive experimental probe is still missing. Here, we use diamond nitrogen-vacancy (NV) spin-noise spectroscopy to probe QSL states in {\\alpha}-RuCl3 nanoflakes with thicknesses ranging from 8 to 150 nm over a temperature range of 4.3-250 K. Our measurements reveal a pronounced decrease in the NV spin-lattice relaxation time ($T_{1}$) below ~100 K in proximity to the $\\alpha$-RuCl$_3$ flakes, indicating enhanced GHz-frequency magnetic fluctuations. This temperature scale is consistent with the energy scale associated with Kitaev interactions (~8 meV) and the emergence of low-energy fractionalized excitations. Below 50 K, thicker (> 90 nm) flakes exhibit a distinct bi-exponential $T_{1}$ decay, unlike the single-exponential behavior observed for off-flake and thinner (8 nm) flake measurements, suggesting an increasingly heterogeneous magnetic noise environment. These results establish NV spin-noise spectroscopy as a local, non-invasive probe of low-energy spin dynamics in $\\alpha$-RuCl$_3$ nanoflakes and open a route to testing predicted noise signatures of fractionalized excitations in atomically thin QSL candidates.",
-   "primary_category": "cond-mat.str-el",
+   "abstract": "Nitrogen is essential in agricultural fertilizers, yet its nanoscale interfacial dynamics remain largely unexplored. Although quadrupolar broadening complicates $^{14}$N nuclear magnetic resonance (NMR) detection, $^{15}$N (I=1/2) provides well-defined nuclear-spin signatures but remains challenging to detect at the nanoscale due to its low natural abundance and small gyromagnetic ratio. Here, we use a microfluidic quantum sensing platform based on shallow nitrogen vacancy (NV) centers in diamond to detect $^{15}$N NMR from KNO$_{3}$ solution at room temperature and in a low magnetic field regime. Within femtoliter-scale sensing volumes, we measure a magnetic-field variance of up to ~442 nT$^{2}$, ~43 times greater than the expected statistical polarization. The $^{15}$N spin correlation decays within ~500 $\\mu\\mathrm{s}$, mainly limited by the NV spin lattice relaxation time and not by the molecular diffusion of the KNO$_{3}$ molecules. This is consistent with the formation of a KNO$_{3}$ adsorption layer on the diamond surface, supported by surface characterization.",
+   "primary_category": "quant-ph",
    "categories": [
     "cond-mat.mes-hall",
-    "cond-mat.str-el"
+    "quant-ph"
    ],
    "published": "2026-11-24",
-   "updated": "2026-11-25",
+   "updated": "2026-11-26",
    "doi": "",
    "journal_ref": "",
    "found_by": [
@@ -81,199 +76,242 @@
     "arXiv-API"
    ],
    "score": 5
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.33936",
+   "url": "https://arxiv.org/abs/2611.33936",
+   "title": "Phonon-Aware Electron-to-Nuclear Spin Quantum Memory in NV Centers",
+   "authors": [
+    "Manjith Baby Sarojam Chellam"
+   ],
+   "abstract": "Nitrogen-vacancy (NV) centers in diamond are a promising solid-state platform for quantum memory: the electron spin can be optically initialized and read out, while nearby nuclear spins have long coherence times and can serve as storage qubits. In this work, we develop a phonon-aware open quantum system model for electron-to-nuclear spin state transfer in a single NV center. The model includes the NV electron spin, a coupled 13C nuclear spin, the hyperfine interaction, an effective microwave/radio-frequency-assisted SWAP interaction for writing and reading, a single effective phonon mode with longitudinal spin-phonon coupling, and Lindblad relaxation and dephasing channels. The dynamics are simulated with the Lindblad master equation in QuTiP, using the secular approximation and a hyperfine-resonant drive in the rotating frame. Without spin-phonon coupling and electron decoherence, the write-store-read protocol recovers the stored state with a fidelity above 0.9999. With the default decoherence rates, increasing the spin-phonon coupling from 0 to 0.06 MHz lowers the worst-case retrieval fidelity from 0.9994 to 0.9884, and the fidelity oscillates with the phonon-mode period because electron-phonon entanglement generated during the write step is partially undone during the read step. With a phenomenological temperature-dependent rate model, the fidelity decreases monotonically from 0.9997 at 1 K to 0.9938 at 300 K, while storage-time losses follow the assumed nuclear-spin decoherence rates. The storage-time plots, temperature sweep, and parameter maps identify operating regimes for NV-center quantum memory, and the accompanying open-source code provides a reproducible framework for studying phonon-limited quantum memory.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-25",
+   "updated": "2026-11-26",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 5
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.33481",
+   "url": "https://arxiv.org/abs/2611.33481",
+   "title": "Infrared-absorption magnetometry in a diamond nanocavity: demonstration and limits at the nanoscale",
+   "authors": [
+    "Nicholas J. Sorensen",
+    "Elham Zohari",
+    "Chris Coutts",
+    "Sean McNaney",
+    "Matteo Feder",
+    "Hadi Zadeh-Haghighi",
+    "Sigurd Fl{\\aa}gan",
+    "Vinaya K. Kavatamane",
+    "Christoph Simon",
+    "Paul E. Barclay"
+   ],
+   "abstract": "Diamond quantum sensors promise both high spatial resolution and high sensitivity; however, conventional photoluminescence-based spin readout can be difficult to integrate efficiently. Infrared absorption by nitrogen-vacancy (NV) centres in diamond provides a promising alternative, although the sensitivity of compact absorption-based sensors is limited by the short optical interaction length between the probe field and the NV ensemble. To overcome this limitation, we demonstrate, for the first time, singlet-absorption magnetometry using spin-dense diamond nanocavities. By probing cavity modes near the 1042 nm NV singlet transition, we observe spin-dependent cavity transmission and perform cavity-enhanced magnetic field sensing. We further develop and experimentally validate a model that accurately predicts the spin-dependent cavity response, describes the optimal operating conditions, and identifies the practical limitations of different optically detected magnetic resonance modalities. Together, these results establish cavity-enhanced singlet absorption as a scalable readout mechanism for integrated diamond quantum sensors and provide a practical framework for engineering next-generation nanophotonic diamond quantum magnetometers.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "cond-mat.mes-hall",
+    "physics.app-ph",
+    "physics.optics",
+    "quant-ph"
+   ],
+   "published": "2026-11-24",
+   "updated": "2026-11-26",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 4
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.33699",
+   "url": "https://arxiv.org/abs/2611.33699",
+   "title": "Dimensional crossover to a slow disordered spin bath below the mean spin spacing",
+   "authors": [
+    "Chikara Shinei"
+   ],
+   "abstract": "How thin must a layer of spins be to act as a two-dimensional bath? For nitrogen spins around an NV$^-$ centre in diamond, a cluster expansion with flip-flopping outer spins gives a crossover near the mean spin spacing. Thin layers follow two-dimensional scaling with a prefactor six to seven times that of bulk. Without hyperfine disorder the crossover remains but the step is under three: the disorder leaves each spin almost no resonant partner. Flip-flops allow several milliseconds, so another process must set the measured 0.5 ms; nitrogen spin-lattice relaxation is consistent.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-25",
+   "updated": "2026-11-26",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 2
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.34321",
+   "url": "https://arxiv.org/abs/2611.34321",
+   "title": "On the performance of nanoscale detection methods in NV-center spectroscopy",
+   "authors": [
+    "Koushik Paul",
+    "Pol Alsina-Bol\\'ivar",
+    "Jorge Casanova"
+   ],
+   "abstract": "Nuclear magnetic resonance (NMR) in subfemtoliter volumes operates in a regime where statistical fluctuations of the nuclear magnetization can exceed its thermal mean. Solid-state quantum sensors such as nitrogen-vacancy (NV) centers in diamond are sensitive enough to detect NMR signals from such small volumes, which has motivated several detection protocols, based either on correlating the statistical polarization or on coherently detecting hyperpolarized samples. Here we bring Qdyne, CS, MCS, and CASR into a single framework for nanoscale samples. Specifically, we derive a unified analytical expression for the SNR and spin-number sensitivity applicable to all four protocols under consistent experimental conditions. Numerical simulations of the full measurement sequences confirm this expression over the whole range of parameters explored. This formulation enables a quantitative comparison of their performance while accounting for the distinct measurement sequences, acquisition times, and other related parameters. Using the SNR and the spin-number sensitivity as figures of merit, we identify which protocol performs best in each experimental regime, thereby providing a practical guide for choosing and tuning the most suitable method for a given experiment.",
+   "primary_category": "quant-ph",
+   "categories": [
+    "quant-ph"
+   ],
+   "published": "2026-11-25",
+   "updated": "2026-11-26",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 1
+  },
+  {
+   "source": "arXiv",
+   "id": "2611.34484",
+   "url": "https://arxiv.org/abs/2611.34484",
+   "title": "Mode-resolved spin-wave spectroscopy by a single paramagnetic center",
+   "authors": [
+    "Cl\\'ement Fourniols",
+    "Maki Umeda",
+    "Eric Clot",
+    "Eyub Yildiz",
+    "Isabelle Joumard",
+    "Benjamin Pigeau",
+    "Olivier Klein"
+   ],
+   "abstract": "We demonstrate mode-resolved ferromagnetic resonance (FMR) spectroscopy using optically detected magnetic resonance (ODMR) of a single nitrogen-vacancy (NV) center in (111)-oriented diamond. A two-tone drive couples the magnetization dynamics to the NV spin resonance via the magnon Kerr effect. We show that the NV can detect the static stray field produced by this effect down to precession cone angles $\\theta \\approx \\SI{1}{\\degree}$, providing a generic scheme to measure the linear FMR spectrum with the spatial resolution of an atomic-size probe. We validate the approach on a normally magnetized yttrium iron garnet (YIG) microdisk, resolving its intrinsic quantized spin-wave modes. Scanning the probe across the surface, we map the spatial profile of the modes and find quantitative agreement with analytical models.",
+   "primary_category": "cond-mat.mes-hall",
+   "categories": [
+    "cond-mat.mes-hall"
+   ],
+   "published": "2026-11-25",
+   "updated": "2026-11-26",
+   "doi": "",
+   "journal_ref": "",
+   "found_by": [
+    "arXiv-RSS",
+    "arXiv-OAI",
+    "arXiv-API"
+   ],
+   "score": 0
   }
  ],
  "journal_new": [
   {
    "source": "Crossref",
-   "id": "10.1039/d6tb00874g",
-   "url": "https://doi.org/10.1039/d6tb00874g",
-   "title": "Enhanced ODMR thermometry of fluorescent nanodiamonds <i>via</i> NaCl-assisted oxidation: role of particle morphology and surface states",
+   "id": "10.1073/pnas.2612349123",
+   "url": "https://doi.org/10.1073/pnas.2612349123",
+   "title": "A deep-learning-boosted framework for quantum sensing with nitrogen-vacancy centers in diamond",
    "authors": [
-    "Kota Shiraya",
-    "Yuki S. Kato",
-    "Hiroshi Abe",
-    "Takeshi Ohshima",
-    "Yoshie Harada",
-    "Yumi Yoshida",
-    "Kohji Maeda",
-    "Shingo Sotoma"
+    "Changyu Yao",
+    "Haochen Shen",
+    "Zhongyuan Liu",
+    "Ruotian Gong",
+    "Md Shakil Bin Kashem",
+    "Stella Varnum",
+    "Liangyu Li",
+    "Hangyue Li",
+    "Yue Yu",
+    "Yizhou Wang",
+    "Xiaoshui Lin",
+    "Jonathan R. Brestoff",
+    "Chenyang Lu",
+    "Shankar Mukherji",
+    "Chuanwei Zhang",
+    "Chong Zu"
    ],
-   "abstract": "We examined how oxidation conditions affect the particle properties and ODMR thermometry performance of fluorescent nanodiamonds, demonstrating the applicability of NaCl-assisted oxidation to particles of different sizes.",
-   "venue": "Journal of Materials Chemistry B",
-   "created": "2026-11-24T18:17:00Z",
-   "published": "2026",
-   "doi": "10.1039/d6tb00874g",
-   "_key": "10.1039/d6tb00874g",
-   "score": 5
+   "abstract": "Nitrogen-vacancy (NV) centers in diamond are a versatile quantum sensing platform for high sensitivity measurements of magnetic fields, temperature, and strain with nanoscale spatial resolution. A common bottleneck is the analysis of optically detected magnetic resonance (ODMR) spectra, where target quantities are encoded in resonance features. Conventional nonlinear fitting is often computationally expensive, sensitive to initialization, and prone to failure at low signal-to-noise ratio (SNR). Here we introduce a robust, efficient machine learning (ML) framework for real-time ODMR analysis based on a one-dimensional convolutional neural network (1D-CNN). The model performs direct parameter inference without initial guesses or iterative optimization, and is naturally parallelizable on graphics processing units (GPU) for high-throughput processing. We validate the approach on both synthetic and experimental datasets, showing improved throughput, accuracy, and robustness than standard nonlinear fitting, with the largest gains in the low-SNR regime. We further validate our methods in two representative sensing applications: diagnosing intracellular temperature changes using nanodiamond probes and widefield magnetic imaging of superconducting vortices in a high-temperature superconductor. This deep-learning inference framework enables fast and reliable extraction of physical parameters from complex ODMR data and provides a scalable route to real-time quantum sensing and imaging.",
+   "venue": "Proceedings of the National Academy of Sciences",
+   "created": "2026-11-25T18:32:38Z",
+   "published": "2026-11-25",
+   "doi": "10.1073/pnas.2612349123",
+   "_key": "10.1073/pnas.2612349123",
+   "score": 11
   },
   {
    "source": "Crossref",
-   "id": "10.1063/5.0347711",
-   "url": "https://doi.org/10.1063/5.0347711",
-   "title": "An integrated ultrahigh vacuum cluster tool for diamond surface science and single nitrogen-vacancy center measurements",
+   "id": "10.1016/j.diamond.2026.114413",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114413",
+   "title": "Magnetic nanodiamonds coated with polyethylene glycol diacrylate-conjugated poly(2-hydroxypropyl methacrylate-co-acrylic acid): A pH-sensitive and temperature-dependent platform for palbociclib delivery in breast cancer therapy",
    "authors": [
-    "Zhiyang Yuan",
-    "Sorawis Sangtawesin",
-    "Lila V. H. Rodgers",
-    "Kalliope Zervas",
-    "James J. Allred",
-    "Jared Rovny",
-    "Patryk Gumann",
-    "Nathalie P. de Leon"
+    "Afshar Eskandarisefat",
+    "Elham Moniri",
+    "Amir Heydarinasab",
+    "Mahsasadat Miralinaghi",
+    "Babak Feizi"
    ],
-   "abstract": "We present a custom-designed ultrahigh vacuum cluster tool developed for studying shallow nitrogen-vacancy (NV) centers in diamond, enabling in situ diamond surface preparation, characterization, and measurements of single NV center dynamics within a single connected platform. The system combines a surface science chamber for controlled surface modification and analysis with a cryogenic confocal microscope chamber dedicated to NV spin and optical measurements. This integrated approach enables a direct correlation between diamond surface chemistry and the resulting NV spin and charge properties. The instrument provides a versatile platform for systematic studies of surface-induced decoherence mechanisms and charge dynamics for shallow NV centers and establishes a pathway toward reproducible surface engineering for quantum sensing applications.",
-   "venue": "Review of Scientific Instruments",
-   "created": "2026-11-25T11:42:21Z",
-   "published": "2026-11-1",
-   "doi": "10.1063/5.0347711",
-   "_key": "10.1063/5.0347711",
-   "score": 5
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.3390/ma19234963",
-   "url": "https://doi.org/10.3390/ma19234963",
-   "title": "The Influence of Carbon Fibers and Cavitation-Synthesized Nanodiamonds on the Variatropic Concrete Characteristics",
-   "authors": [
-    "Evgenii M. Shcherban’",
-    "Andrei A. Chernil'nik",
-    "Левон Рафаэлович Маилян",
-    "Sergey A. Stel’makh",
-    "Diana M. El'shaeva",
-    "Sergey Udodov",
-    "Yuri Pakhomov",
-    "Доценко Наталья Александровна",
-    "Ivan A. Yefremenko",
-    "Alexey Nikolaevich Beskopylny"
-   ],
-   "abstract": "Recent advances in construction materials science underscore the relevance and significant potential of using carbon-based additives to enhance the properties of cementitious composites. The current understanding of how these additives can be applied in the technology of variatropic (functionally graded) concretes remains limited. The goal of this study is to identify the best parameters for altering variatropic concretes made by centrifugation (C) and vibro-centrifugation (VC) with carbon-based additives (CF) and an aqueous nanodiamond suspension (ASN) to enhance their characteristics. An experimental investigation was conducted on the effects of combined modification with CF and ASN on the water absorption, density, compressive strength, and flexural strength of C and VC concretes. Optimal modification parameters were identified as 0.5% ASN and 0.8% CF. Under these conditions, the modified C and VC concretes reached peak compressive strengths of 51.2 MPa and 54.2 MPa, respectively—representing increases of 14.3% and 16.1% over the control composition. Flexural strengths reached 6.8 MPa and 7.2 MPa, exceeding the values of the control sample by 23.6% and 26.3%, respectively. Furthermore, water absorption in the C and VC concretes decreased by 41.1% and 53.4%. Scanning electron microscopy (SEM) analysis revealed that the modified C and VC composites possess a homogeneous cement matrix structure, characterized by a uniform distribution of hydration reaction products. The resulting variatropic concretes exhibit improved performance characteristics and can be used to manufacture reinforced concrete products with an annular cross-section for industrial and civil infrastructure facilities.",
-   "venue": "Materials",
-   "created": "2026-11-24T00:00:00",
-   "published": "2026-11-23",
-   "doi": "10.3390/ma19234963",
-   "_key": "10.3390/ma19234963",
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-11-25T20:38:18Z",
+   "published": "2027-1",
+   "doi": "10.1016/j.diamond.2026.114413",
+   "_key": "10.1016/j.diamond.2026.114413",
    "score": 3
   },
   {
-   "source": "OpenAlex",
-   "id": "10.1142/s021827182741001x",
-   "url": "https://doi.org/10.1142/s021827182741001x",
-   "title": "Robustness of Gravitationally Induced Entanglement against Coherent Transverse Magnetic Drift via Symmetry-Protected Control",
-   "authors": [
-    "A.-B. A. Mohamed",
-    "M. Alotaibi",
-    "M. Hashem",
-    "Muhammad Noman"
-   ],
-   "abstract": "Gravitationally induced entanglement (GIE) in Bose-Marletto-Vedral (BMV)-type proposals provides an operational route to witness quantum coherence in gravity, but the gravitational phase is extremely weak compared with realistic electromagnetic disturbances. We study an effective NV-center-motivated spin-path model in which two electronic spins encode interferometric branches, with dynamics governed by a time-dependent gravitational Ising interaction, coherent transverse magnetic drift, and finite-correlation-time residual dephasing described by a time-convolutionless (TCL) master equation. We examine collective [Formula: see text]-axis dynamical-decoupling (DD) control that commutes with the effective gravitational signal and refocuses the specified coherent transverse drift, assuming collisional and blackbody decoherence have already been independently suppressed. Numerical simulations show that the control can substantially enhance the attainable entanglement (peak concurrence [Formula: see text] in representative regimes), with some parameter regions showing particularly large protected-unprotected contrast. We also map the effective parameters to masses, separations, interaction times, and equivalent stray magnetic fields. These mappings are intended as assumption-dependent benchmarks for the present effective model, rather than as universal detectability thresholds or a claim of near-term experimental feasibility.",
-   "venue": "International Journal of Modern Physics D",
-   "created": "2026-11-25T00:00:00",
-   "published": "2026-11-24",
-   "doi": "10.1142/s021827182741001x",
-   "_key": "10.1142/s021827182741001x",
-   "score": 2
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1039/d6an01004k",
-   "url": "https://doi.org/10.1039/d6an01004k",
-   "title": "Development of a dual-readout growth-based viability assay with optical density and fluorescence for assessment of nanomaterial toxicity",
-   "authors": [
-    "Stephanie L. Mitchell",
-    "Natalie V. Hudson-Smith",
-    "Beza Tuga",
-    "Timmy B. Nguyen",
-    "Radwa Abdelaziz",
-    "Erin E. Carlson",
-    "Christy L. Haynes"
-   ],
-   "abstract": "Engineered nanomaterials can disrupt microbial communities through dysbiosis, with potentially harmful consequences. However, existing methods for assessing nanomaterial toxicity on bacterial viability are largely restricted to single-readout approaches based on bacterial density, limiting their throughput, sensitivity, and analytical scope. Herein, we present the method optimization for converting a growth-based viability assay to a dual-readout functionality that combines optical density and fluorescence measurements to enable more comprehensive and high-throughput bacterial toxicity screening. Method optimization addressed fluorescence signal acquisition, effects of selection antibiotics, and automated R-code data analysis. As a proof of concept, we evaluated the toxicity of positively-charged nanodiamonds against a green fluorescent protein-expressing Shewanella oneidensis. This dual-readout platform expands the utility of growth-based viability assays by enabling simultaneous assessment of bacterial viability alongside genetic events (e.g., horizontal gene transfer, gene expression, gene copy number), and facilitates future polymicrobial experimental designs, offering a versatile tool for nanomaterial toxicity research.",
-   "venue": "The Analyst",
-   "created": "2026-11-04T00:00:00",
-   "published": "2026-11-23",
-   "doi": "10.1039/d6an01004k",
-   "_key": "10.1039/d6an01004k",
-   "score": 1
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1103/npj5-82pg",
-   "url": "https://doi.org/10.1103/npj5-82pg",
-   "title": "Scalable spin squeezing in power-law-interacting X X Z models with disorder",
-   "authors": [
-    "Samuel E. Begg",
-    "Bishal Ghosh",
-    "Chong Zu",
-    "Chuanwei Zhang",
-    "Michael Kolodrubetz"
-   ],
-   "abstract": "While spin squeezing has been traditionally considered in all-to-all interacting models, recent works have shown that it can also occur in systems with power-law interactions, enabling direct tests in Rydberg atoms, trapped ions, ultracold atoms, and nitrogen-vacancy (NV) centers in diamond. For the latter, Wu et al. Nature 646 (2025) demonstrated that spin squeezing is heavily affected by positional disorder, reducing any capacity for a practical squeezing advantage, which requires scalability with the system size. In this Letter we explore the robustness of spin squeezing in two-dimensional lattices with a fraction of unoccupied lattice sites. Using semiclassical modeling, we demonstrate the existence of scalable squeezing in power-law interacting XXZ models up to a disorder threshold, above which it breaks down. We produce a phase diagram for scalable squeezing, and demonstrate the impact of critical slowing down close to the phase boundary. Our work is consistent with—and offers a plausible explanation for—the absence of scalable squeezing in the aforementioned NV experiment, while illustrating the maximum disorder allowed for realizing scalable spin squeezing in a host of quantum simulators. We highlight a regime with substantial disorder tolerance and identify controlled defect creation as a promising route for scalable squeezing in solid-state systems.",
-   "venue": "Physical Review A",
-   "created": "2026-01-17T00:00:00",
-   "published": "2026-11-24",
-   "doi": "10.1103/npj5-82pg",
-   "_key": "10.1103/npj5-82pg",
-   "score": 0
-  },
-  {
-   "source": "OpenAlex",
-   "id": "10.1039/d6ay01402j",
-   "url": "https://doi.org/10.1039/d6ay01402j",
-   "title": "Development and optimization of a vortex-assisted micro-solid phase extraction (VA-µSPE) method for sensitive fluoxetine determination using a novel CoNiCr-LDH@ND-COOH nanocomposite",
-   "authors": [
-    "Mürüvvet Begüm Özen",
-    "Hassan Elzain Hassan Ahmed",
-    "Qamar Salamat",
-    "Mustafa Soylak"
-   ],
-   "abstract": "In this work, an innovative CoNiCr-LDH@ND-COOH nanocomposite was synthesized and utilized as an efficient adsorbent for the effective extraction of fluoxetine. The nanocomposite structure combines the exceptional adsorption performance and capacity of carboxyl-functionalized nanodiamonds with the large surface area and tunable chemistry of layered double hydroxides (LDHs). The synthesized materials were characterized using FESEM, FESEM-EDX, FTIR, XRD, and BET analyses. These analyses demonstrated the nanocomposite's structural strength and surface characteristics. The developed extraction method was designed and optimized using Plackett-Burman and Central Composite Design methods. The optimal extraction conditions were as follows: 30 mg of adsorbent, pH 6.5, adsorption/desorption times of 5 minutes, ethanol as the eluent, and centrifugation at 4100 rpm. The method exhibited excellent analytical performance, with recoveries ranging from 87 to 99% at 225 nm (HPLC-DAD), a preconcentration factor of 50, a linear range of 1 to 5000 µg L-1, a LOD of 0.25 µg L-1, and a LOQ of 0.75 µg L-1. The precision was acceptable, with intra- and inter-day RSD values of 4.8% and 6.7%, respectively. Furthermore, the adsorbent showed acceptable reusability for eight cycles. The presented method is robust, sensitive, and reusable for the extraction and determination of fluoxetine.",
-   "venue": "Analytical Methods",
-   "created": "2026-09-18T00:00:00",
-   "published": "2026-11-12",
-   "doi": "10.1039/d6ay01402j",
-   "_key": "10.1039/d6ay01402j",
-   "score": 0
-  },
-  {
    "source": "Crossref",
-   "id": "10.1016/j.applthermaleng.2026.134164",
-   "url": "https://doi.org/10.1016/j.applthermaleng.2026.134164",
-   "title": "Functionalized nanodiamond phase change composite for enhanced heat transfer in thermoelectric-assisted thermal management",
+   "id": "10.1016/j.electacta.2026.150521",
+   "url": "https://doi.org/10.1016/j.electacta.2026.150521",
+   "title": "Rationally Engineered Bismuthene/Activated Carbon/Carboxylated Nanodiamond Nanocomposite for Highly Sensitive and Green Electrochemical Determination of Dacomitinib in Pharmaceutical and Biological Samples",
    "authors": [
-    "Xiankang Zhang",
-    "Chenggong Zhao",
-    "Lingling Wang",
-    "Wei Yu",
-    "Yifan Li"
+    "Elif Naz Öven",
+    "Nevin Erk",
+    "Mustafa Soylak",
+    "Abdirashid Adam Isak",
+    "Hassan Elzain Hassan Ahmed"
    ],
    "abstract": "",
-   "venue": "Applied Thermal Engineering",
-   "created": "2026-11-24T19:28:44Z",
-   "published": "2026-12",
-   "doi": "10.1016/j.applthermaleng.2026.134164",
-   "_key": "10.1016/j.applthermaleng.2026.134164",
-   "score": 0
+   "venue": "Electrochimica Acta",
+   "created": "2026-11-26T08:46:40Z",
+   "published": "2026-11",
+   "doi": "10.1016/j.electacta.2026.150521",
+   "_key": "10.1016/j.electacta.2026.150521",
+   "score": 3
   },
   {
    "source": "Crossref",
-   "id": "10.22331/q-2026-11-25-2284",
-   "url": "https://doi.org/10.22331/q-2026-11-25-2284",
-   "title": "Optimal Calibration of Qubit Detuning and Crosstalk",
+   "id": "10.1016/j.jpowsour.2026.242079",
+   "url": "https://doi.org/10.1016/j.jpowsour.2026.242079",
+   "title": "Crystal facet and surface termination co-engineering of nanodiamond-decorated glass fiber separators for durable aqueous zinc-ion batteries",
    "authors": [
-    "David Shnaiderov",
-    "Matan Ben Dov",
-    "Yoav Woldiger",
-    "Assaf Hamo",
-    "Eugene Demler",
-    "Emanuele G. Dalla Torre"
+    "Zhenghe Zhang",
+    "Jiangtao Yuan",
+    "Zhongqi Wei",
+    "Yongping Du",
+    "Yuankong Wei",
+    "Yanmei Zhang",
+    "Zhijun Zhang",
+    "Wenshu Chen",
+    "Xining Zang"
    ],
-   "abstract": "Characterizing and calibrating physical qubits is essential for maintaining the performance of quantum processors. A key challenge in this process is crosstalk, which complicates the estimation of individual qubit detunings. In this work, we derive optimal strategies for estimating detuning and crosstalk parameters by optimizing Ramsey interference experiments using Fisher information and the Cramér–Rao bound. We compare several calibration protocols, including measurements of a single quadrature at multiple times and of two quadratures at a single time, for a fixed number of total measurements. Our results predict that the latter approach yields the highest precision and robustness in both cases of isolated and coupled qubits. We validate our approach experimentally using both a single NV center and superconducting transmon qubits. Our approach enables accurate parameter extraction with significantly fewer measurements, resulting in up to a 50% reduction in calibration time while maintaining estimation accuracy.",
-   "venue": "Quantum",
-   "created": "2026-11-25T11:15:54Z",
-   "published": "2026-11-25",
-   "doi": "10.22331/q-2026-11-25-2284",
-   "_key": "10.22331/q-2026-11-25-2284",
+   "abstract": "",
+   "venue": "Journal of Power Sources",
+   "created": "2026-11-26T05:26:59Z",
+   "published": "2027-2",
+   "doi": "10.1016/j.jpowsour.2026.242079",
+   "_key": "10.1016/j.jpowsour.2026.242079",
    "score": 0
   }
  ]
