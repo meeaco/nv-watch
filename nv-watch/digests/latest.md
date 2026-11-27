@@ -1,16 +1,24 @@
 # NV watch digest 2026-11-27
 
-Generated 2026-11-27T09:43:14+00:00 UTC. Search window 2026-11-22T09:43+00:00 → 2026-11-27T09:43+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-27T11:27:50+00:00 UTC. Search window 2026-11-22T11:27+00:00 → 2026-11-27T11:27+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 9 hits; arXiv-API: ok, 8 hits; Crossref: ok, 11 hits; OpenAlex: ok, 46 hits; arXiv: ok, 9 hits
+Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 9 hits; arXiv-API: ok, 8 hits; Crossref: ok, 13 hits; OpenAlex: ok, 46 hits; arXiv: ok, 9 hits
 
-arXiv announcement covered by RSS: 2026-11-27. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/45976012041
+arXiv announcement covered by RSS: 2026-11-27. Journal abstracts back-filled: 0/1 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
+Run: https://github.com/meeaco/nv-watch/actions/runs/45990651084
 
 ## arXiv (0 new)
 
-## Journals (1 new)
+## Journals (3 new)
 
 ### [Dense Fluorination of Nanodiamonds for Quantum Sensing](https://doi.org/10.1002/advs.78782)
 - Michal Gulka et al. (13 authors) · Advanced Science · created 2026-11-27 · published 2026-11-26 · via Crossref · relevance score 8
 - Abstract: ABSTRACT Shallow nitrogen‐vacancy (NV) centers in high‐pressure high‐temperature nanodiamonds (HPHT NDs) enable nanoscale quantum sensing and bioimaging, but their charge and spin stabilities are dominated by surface chemistry. Fluorine termination of diamond is of interest because of its chemical inertness, suppression of non‐specific molecular interactions, and beneficial electronic effects of NV centers. Here we establish a scalable fluorination route for HPHT NDs based on high‐pressure treatment with elemental F 2 . We show that pre‐hydrogenation of ∼28 nm HPHT NDs enables dense C─F surface termination, resulting in markedly improved NV performance. Spin‐lattice relaxation times ( T 1 ) are extended. Electron paramagnetic resonance spectroscopy reveals a ∼3‐fold increase in the concentration of negatively‐charged NV centers, accompanied by a 2.3‐fold increase in single‐particle brightness. Spectral deconvolution confirms unprecedented NV − charge stability with NV − fraction increasing to ∼94% upon fluorination compared ∼57% for tri‐acid oxidized NDs. Finally, taking advantage of colloidal stability of fluorinated NDs in water, we demonstrate adsorption‐free, concentration‐dependent detection of gadolinium (Gd 3+ ) in chelated electroneutral form (gadoteridol) using in‐solution T 1 relaxometry. These results establish fluorination as an effective strategy to stabilize shallow NV centers and expand the utility of NDs for quantitative sensing in aqueous environments.
+
+### [Fabry–Pérot cavity fiber-optic temperature sensing with a nitrogen-vacancy-containing diamond film directly grown on a tapered fiber end face](https://doi.org/10.1007/s12648-026-04280-5)
+- Qiao Yang et al. (6 authors) · Indian Journal of Physics · created 2026-11-27 · published 2026-11-27 · via Crossref · relevance score 3
+- Abstract: (not provided by any index)
+
+### [Experimental comparison of electron Rabi oscillations for spin centers (NV, N and Be) in 6H-SiC](https://doi.org/10.26907/mrsej-26303)
+- F. F. Murzakhanov et al. (9 authors) · Magnetic Resonance in Solids · created 2026-11-27 · published 2026-11-27 · via Crossref · relevance score 2
+- Abstract: Spin defects, once regarded as undesirable lattice imperfections, have emerged as versatile building blocks for quantum technologies, functioning as well-isolated two-level quantum systems. In this work, we employ high frequency (94GHz) pulsed electron paramagnetic resonance spectroscopy to probe Rabi oscillations of spin centers in the 6H polytype of silicon carbide (6H-SiC). Three distinct defect species are investigated: nitrogen (N) donors and beryllium (Be) acceptors, each carrying electron spin S = 1/2, alongside optically active nitrogen-vacancy (NV) centers with a high-spin S = 1 configuration. Despite pronounced differences in local environment, spin relaxation times (T 2,Be = 8.5µs, T 2,N = 13.5µs and T 2,NV = 68µs), and spin density distribution, all three centers display Rabi oscillation decay within a comparable microsecond window. We identify the spatial inhomogeneity of the microwave magnetic field amplitude B 1 across the resonator cavity (filling factor K = 0.5) as the dominant mechanism underlying spin magnetization dephasing. Our measurements further confirm that Be and N impurities at high concentrations (10 17 –10 18 cm −3 ) can coexist within a single 6H-SiC host matrix, simultaneously enabling p-type and n-type conductivity. Critically, this co-doping introduces neither significant lattice dislocations nor dipole-dipole-induced dispersion of the Rabi frequency Ω R . These findings position co-doped 6H-SiC as a multi-functional semiconductor platform for quantum information processing applications, where sustained spin coherence across chemically distinct impurity species facilitates the architectural integration of robust qubit registers into scalable electronic frameworks.
