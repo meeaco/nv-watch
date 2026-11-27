@@ -1,24 +1,22 @@
 {
- "generated_utc": "2026-11-27T11:27:50+00:00",
+ "generated_utc": "2026-11-27T13:56:20+00:00",
  "date": "2026-11-27",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/45990651084",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/46011392177",
  "arxiv_announcement": "2026-11-27",
  "abstract_backfill": {
-  "missing": 1,
+  "missing": 0,
   "filled": 0,
-  "errors": [
-   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
-  ]
+  "errors": []
  },
  "search_window_utc": [
-  "2026-11-22T11:27+00:00",
-  "2026-11-27T11:27+00:00"
+  "2026-11-22T13:56+00:00",
+  "2026-11-27T13:56+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 0,
-   "secs": 14,
+   "secs": 13,
    "scanned": 0
   },
   "arXiv-OAI": {
@@ -29,17 +27,17 @@
   "arXiv-API": {
    "ok": true,
    "hits": 8,
-   "secs": 13
+   "secs": 11
   },
   "Crossref": {
    "ok": true,
-   "hits": 13,
-   "secs": 14
+   "hits": 14,
+   "secs": 11
   },
   "OpenAlex": {
    "ok": true,
    "hits": 46,
-   "secs": 2
+   "secs": 3
   },
   "arXiv": {
    "ok": true,
@@ -120,6 +118,22 @@
    "doi": "10.26907/mrsej-26303",
    "_key": "10.26907/mrsej-26303",
    "score": 2
+  },
+  {
+   "source": "Crossref",
+   "id": "10.18127/j20700814-202605-05",
+   "url": "https://doi.org/10.18127/j20700814-202605-05",
+   "title": "Effect of the geometric parameters of combined optical pumping on the spectral and temporal characteristics of superluminescence in HPHT diamonds with NV⁻ centers",
+   "authors": [
+    "T.S. Misnikova"
+   ],
+   "abstract": "The paper examines the influence and efficiency of combined optical pumping on the intensity of superluminescence in synthetic HPHT diamond with NV¯ centers. Purpose – The purpose of this study is to determine the effect of the geometric parameters of combined optical pumping on the intensity and spectral-temporal characteristics of superluminescence. A significant increase in the intensity of superluminescence was observed when additional radiation with wavelengths of 443 and 403 nm and radiation from a UV lamp with λmax = 392 nm was used in a combined-pumping scheme. Increasing the volume of pumping also led to a sharp increase in the intensity of the superluminescence pulse, while simultaneously reducing its duration. The practical significance of the work lies in the prospect of using HPHT-diamond as an element of laser generation, namely, in understanding the evolution of the shape of the spectrum of forced radiation from a mode structure to a smooth one. This observation leads to the establishment of a threshold value and conditions for the formation of HPHT-diamonds.",
+   "venue": "Information-measuring and Control Systems",
+   "created": "2026-11-27T12:31:53Z",
+   "published": "2026",
+   "doi": "10.18127/j20700814-202605-05",
+   "_key": "10.18127/j20700814-202605-05",
+   "score": 0
   }
  ]
 }
