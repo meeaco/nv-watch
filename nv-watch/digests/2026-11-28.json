@@ -1,16 +1,18 @@
 {
- "generated_utc": "2026-11-28T10:55:49+00:00",
+ "generated_utc": "2026-11-28T13:07:47+00:00",
  "date": "2026-11-28",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/46137453286",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/46148042013",
  "arxiv_announcement": "2026-11-28",
  "abstract_backfill": {
-  "missing": 0,
+  "missing": 1,
   "filled": 0,
-  "errors": []
+  "errors": [
+   "Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque"
+  ]
  },
  "search_window_utc": [
-  "2026-11-23T10:55+00:00",
-  "2026-11-28T10:55+00:00"
+  "2026-11-23T13:07+00:00",
+  "2026-11-28T13:07+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
@@ -22,17 +24,17 @@
   "arXiv-OAI": {
    "ok": true,
    "hits": 8,
-   "secs": 42
+   "secs": 40
   },
   "arXiv-API": {
    "ok": true,
-   "hits": 8,
-   "secs": 12
+   "hits": 7,
+   "secs": 11
   },
   "Crossref": {
    "ok": true,
-   "hits": 15,
-   "secs": 12
+   "hits": 16,
+   "secs": 13
   },
   "OpenAlex": {
    "ok": true,
@@ -125,6 +127,31 @@
    "doi": "10.1002/smll.76977",
    "_key": "10.1002/smll.76977",
    "score": 3
+  },
+  {
+   "source": "Crossref",
+   "id": "10.1016/j.diamond.2026.114457",
+   "url": "https://doi.org/10.1016/j.diamond.2026.114457",
+   "title": "Study of photoionization and optical recharging of NV centers in N-irradiated diamond via photoluminescence spectroscopy",
+   "authors": [
+    "María A. Arranz-Martínez",
+    "Ramón Bernardo-Gavito",
+    "Julia García-Pérez",
+    "Daniel Granados",
+    "Alberto Andrino-Gómez",
+    "Gastón García-López",
+    "Andrés Redondo-Cubero",
+    "José Luis Pau",
+    "Nuria Gordillo",
+    "Miguel Ángel Ramos"
+   ],
+   "abstract": "",
+   "venue": "Diamond and Related Materials",
+   "created": "2026-11-28T11:45:09Z",
+   "published": "2027-1",
+   "doi": "10.1016/j.diamond.2026.114457",
+   "_key": "10.1016/j.diamond.2026.114457",
+   "score": 0
   }
  ]
 }

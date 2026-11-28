@@ -1,15 +1,15 @@
 # NV watch digest 2026-11-28
 
-Generated 2026-11-28T10:55:49+00:00 UTC. Search window 2026-11-23T10:55+00:00 → 2026-11-28T10:55+00:00 (items already reported in earlier digests are excluded).
+Generated 2026-11-28T13:07:47+00:00 UTC. Search window 2026-11-23T13:07+00:00 → 2026-11-28T13:07+00:00 (items already reported in earlier digests are excluded).
 
-Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 8 hits; arXiv-API: ok, 8 hits; Crossref: ok, 15 hits; OpenAlex: ok, 47 hits; arXiv: ok, 8 hits
+Sources: arXiv-RSS: ok, 0 hits of 0 scanned; arXiv-OAI: ok, 8 hits; arXiv-API: ok, 7 hits; Crossref: ok, 16 hits; OpenAlex: ok, 47 hits; arXiv: ok, 8 hits
 
-arXiv announcement covered by RSS: 2026-11-28. Journal abstracts back-filled: 0/0.
-Run: https://github.com/meeaco/nv-watch/actions/runs/46137453286
+arXiv announcement covered by RSS: 2026-11-28. Journal abstracts back-filled: 0/1 (Semantic Scholar: POST failed: https://api.semanticscholar.org/graph/v1/paper/batch?fields=abstract,externalIds,tldr :: HTTP 400 Bad Reque).
+Run: https://github.com/meeaco/nv-watch/actions/runs/46148042013
 
 ## arXiv (0 new)
 
-## Journals (3 new)
+## Journals (4 new)
 
 ### [High‐Pressure Spin Spectroscopy and Sensing in Monolithic Silicon Carbide Anvil Cells](https://doi.org/10.1002/adom.72122)
 - Ji Xu et al. (11 authors) · Advanced Optical Materials · created 2026-11-28 · published 2026-11-27 · via OpenAlex · relevance score 9
@@ -22,3 +22,7 @@ Run: https://github.com/meeaco/nv-watch/actions/runs/46137453286
 ### [Interfacial Engineering of Nanopolycrystalline Diamond Enables Mechanical Reinforcement and Texture‐Enhanced Thermal Transport](https://doi.org/10.1002/smll.76977)
 - Xiangjun Li et al. (12 authors) · Small · created 2026-11-28 · published 2026-11-27 · via OpenAlex · relevance score 3
 - Abstract: Nanopolycrystalline diamond (NPD), composed of randomly oriented nanoscale diamond grains, combines near-isotropic mechanical response with exceptional hardness and wear resistance. However, the high density of grain boundaries can strongly scatter phonons and thereby suppress thermal transport, limiting its multifunctional performance. Herein, we report a synthesis strategy for NPD that achieves enhanced preferred orientation, resulting in a simultaneous improvement in mechanical robustness and a twofold enhancement in thermal conductivity over conventional NPD with comparable grain sizes. We introduce few-layer reduced graphene oxide (rGO) as an interfacial mediator during high-pressure high-temperature (HPHT) sintering of nanodiamond. This mediator mitigates local stress concentrations on nanograins and may facilitate grain rotation, sliding, and stress-induced texturing. Concurrently, the high-pressure conversion and consumption of interfacial sp2 carbon promote robust intergranular bonding, stabilizing the resulting grain boundaries. This engineered microstructure endows NPD with superior thermal performance without compromising mechanical robustness, offering a pathway for developing high-performance NPD and tailoring the properties of other strongly covalent polycrystalline materials.
+
+### [Study of photoionization and optical recharging of NV centers in N-irradiated diamond via photoluminescence spectroscopy](https://doi.org/10.1016/j.diamond.2026.114457)
+- María A. Arranz-Martínez et al. (10 authors) · Diamond and Related Materials · created 2026-11-28 · published 2027-1 · via Crossref · relevance score 0
+- Abstract: (not provided by any index)
