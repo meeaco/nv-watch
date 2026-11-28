@@ -1,7 +1,7 @@
 {
- "generated_utc": "2026-11-28T08:56:34+00:00",
+ "generated_utc": "2026-11-28T10:55:49+00:00",
  "date": "2026-11-28",
- "run_url": "https://github.com/meeaco/nv-watch/actions/runs/46128124159",
+ "run_url": "https://github.com/meeaco/nv-watch/actions/runs/46137453286",
  "arxiv_announcement": "2026-11-28",
  "abstract_backfill": {
   "missing": 0,
@@ -9,34 +9,34 @@
   "errors": []
  },
  "search_window_utc": [
-  "2026-11-23T08:56+00:00",
-  "2026-11-28T08:56+00:00"
+  "2026-11-23T10:55+00:00",
+  "2026-11-28T10:55+00:00"
  ],
  "sources": {
   "arXiv-RSS": {
    "ok": true,
    "hits": 0,
-   "secs": 14,
+   "secs": 13,
    "scanned": 0
   },
   "arXiv-OAI": {
    "ok": true,
    "hits": 8,
-   "secs": 41
+   "secs": 42
   },
   "arXiv-API": {
    "ok": true,
    "hits": 8,
-   "secs": 11
+   "secs": 12
   },
   "Crossref": {
    "ok": true,
    "hits": 15,
-   "secs": 20
+   "secs": 12
   },
   "OpenAlex": {
    "ok": true,
-   "hits": 46,
+   "hits": 47,
    "secs": 1
   },
   "arXiv": {
@@ -46,6 +46,32 @@
  },
  "arxiv_new": [],
  "journal_new": [
+  {
+   "source": "OpenAlex",
+   "id": "10.1002/adom.72122",
+   "url": "https://doi.org/10.1002/adom.72122",
+   "title": "High‐Pressure Spin Spectroscopy and Sensing in Monolithic Silicon Carbide Anvil Cells",
+   "authors": [
+    "Ji Xu",
+    "Lunxuan Yu",
+    "Haojie Zhou",
+    "Bo Liang",
+    "Guizhen Yan",
+    "Chen Zhang",
+    "肖淑敏 Xiao Shumin",
+    "Qinghai Song",
+    "Junfeng Wang",
+    "Xiaodi Liu",
+    "Yu Zhou"
+   ],
+   "abstract": "High‐pressure quantum sensing can reveal local magnetic, thermal, and stress responses obscured by conventional volume‐averaged measurements. Diamond nitrogen‐vacancy centers have advanced anvil‐cell microscopy, but complementary material platforms are needed to combine high‐pressure generation with integrated quantum sensing. Silicon carbide offers such a platform because it is both a robust anvil material and a host for spin defects with large pressure susceptibility. However, the spin response of basal spin defects under non‐hydrostatic culet stress remains unresolved. Here, we develop a monolithic silicon carbide anvil cell (SiC‐DAC) with spin‐defect sensors implanted approximately 30 nm beneath the culet surface. Pressure‐dependent ODMR spectroscopy resolves multiple spin‐defect resonances up to 11.2 GPa, while vector‐field measurements reveal spectral evolution consistent with six orientations of a PL7 basal defect and a decrease in the transverse splitting of PL5 in the measured pressure series. Under respective optimized conditions, the photon‐shot‐noise‐limited sensitivities of the platform are estimated to be for temperature, for pressure, and for magnetic field. These estimates were obtained at different operating points and do not represent simultaneous three‐parameter sensing. These results demonstrate the feasibility of monolithically integrating divacancy spin sensors into pressure‐generating SiC anvils, enabling high‐pressure spin spectroscopy and the characterization of temperature‐, pressure‐, and magnetic‐field‐dependent sensing responses within a single device architecture.",
+   "venue": "Advanced Optical Materials",
+   "created": "2026-11-28T00:00:00",
+   "published": "2026-11-27",
+   "doi": "10.1002/adom.72122",
+   "_key": "10.1002/adom.72122",
+   "score": 9
+  },
   {
    "source": "Crossref",
    "id": "10.1002/smll.76969",
@@ -72,6 +98,33 @@
    "doi": "10.1002/smll.76969",
    "_key": "10.1002/smll.76969",
    "score": 6
+  },
+  {
+   "source": "OpenAlex",
+   "id": "10.1002/smll.76977",
+   "url": "https://doi.org/10.1002/smll.76977",
+   "title": "Interfacial Engineering of Nanopolycrystalline Diamond Enables Mechanical Reinforcement and Texture‐Enhanced Thermal Transport",
+   "authors": [
+    "Xiangjun Li",
+    "Donghao Li",
+    "Desi Chen",
+    "Hengyu Li",
+    "Yuchen Shang",
+    "Yuyi Yin",
+    "Saisai Wang",
+    "Xu Li",
+    "Guangyue Liu",
+    "Jiajun Dong",
+    "Jie Zhu",
+    "Mingguang Yao"
+   ],
+   "abstract": "Nanopolycrystalline diamond (NPD), composed of randomly oriented nanoscale diamond grains, combines near-isotropic mechanical response with exceptional hardness and wear resistance. However, the high density of grain boundaries can strongly scatter phonons and thereby suppress thermal transport, limiting its multifunctional performance. Herein, we report a synthesis strategy for NPD that achieves enhanced preferred orientation, resulting in a simultaneous improvement in mechanical robustness and a twofold enhancement in thermal conductivity over conventional NPD with comparable grain sizes. We introduce few-layer reduced graphene oxide (rGO) as an interfacial mediator during high-pressure high-temperature (HPHT) sintering of nanodiamond. This mediator mitigates local stress concentrations on nanograins and may facilitate grain rotation, sliding, and stress-induced texturing. Concurrently, the high-pressure conversion and consumption of interfacial sp2 carbon promote robust intergranular bonding, stabilizing the resulting grain boundaries. This engineered microstructure endows NPD with superior thermal performance without compromising mechanical robustness, offering a pathway for developing high-performance NPD and tailoring the properties of other strongly covalent polycrystalline materials.",
+   "venue": "Small",
+   "created": "2026-11-28T00:00:00",
+   "published": "2026-11-27",
+   "doi": "10.1002/smll.76977",
+   "_key": "10.1002/smll.76977",
+   "score": 3
   }
  ]
 }
